@@ -9,7 +9,7 @@ from datetime import datetime
 #ticker.recommendations
 #ticker.calendar
 
-
+#sklajfsdlæfjslækfjlsdkfjlsdf
 
 cash_stack = None
 grand_exchange = []
