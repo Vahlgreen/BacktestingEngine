@@ -11,21 +11,22 @@ from datetime import datetime
 
 #sklajfsdlæfjslækfjlsdkfjlsdf
 
-cash_stack = None
-grand_exchange = []
-portfolio = [""] #["MSFT","AAPL", "PFE", "T", "AMZN", "F", "TSLA"]
-#pickle.dump( cash_stack, open( "cashstack.p", "wb" ) )
-#pickle.dump( portfolio, open( "portfolio.p", "wb" ) )
+#cash_stack = 10000
+#grand_exchange = []
+#portfolio = ["TIV.CO","DRLCO","AP Moeller Maersk A/S Class A"] #["MSFT","AAPL", "PFE", "T", "AMZN", "F", "TSLA"]
+
+
 def main():
-    
-    global cash_stack,grand_exchange,portfolio
+
     cash_stack = pickle.load( open( "cashstack.p", "rb" ) )
     portfolio = pickle.load( open( "portfolio.p", "rb" ) )
 
     print("Starting cash stack; $",cash_stack)
     print("Starting portfolio",portfolio)
-    
-    grand_exchange = pd.read_csv("tickersymbols.csv",nrows=40)["Name"] # 411 stocks
+
+    # press key to continue
+
+    exchange = pd.read_csv("tickersymbols.csv",nrows=40)["Name"] # 411 stocks
     candidates = DecideBuy()
     print(candidates)
     DecideSell()
@@ -62,7 +63,7 @@ def GetPortfolioWorth(portfolio):
     return worth
 
 
-def Sell(stock):
+def Sell(stock,portfolio):
     global cash_stack
     price = float(yf.Ticker(stock).history(period="1d")["Open"][0])
     print("Selling ", stock)
@@ -71,7 +72,7 @@ def Sell(stock):
     print("new portfolio ;", portfolio, "new cashstack; $", cash_stack)
 
 
-def Buy(stock):
+def Buy(stock,portfolio):
     global cash_stack
     #print(yf.Ticker(stock).history(period="1d")["Open"][0])
     price = float(yf.Ticker(stock).history(period="1d")["Open"][0])
@@ -87,12 +88,12 @@ def Buy(stock):
         print("Not enough cash to complete transaction")
         return False
     
-def DecideBuy():
+def DecideBuy(exchange,portfolio):
     candidates = []
     print("looking for stocks to buy...")
     index = 0
     global cash_stack
-    for stock in grand_exchange:
+    for stock in exchange:
         #try:
         if(stock not in portfolio):
             index = index+1
@@ -116,9 +117,9 @@ def DecideBuy():
 
 
 
-def DecideSell():
+def DecideSell(exchange,portfolio):
     print("looking for stocks to sell...")
-    for stock in grand_exchange:
+    for stock in exchange:
         if(stock in portfolio):
             history = yf.Ticker(stock).history(period="20d")["Open"]
             pd.to_numeric(history, errors='coerce')
