@@ -24,12 +24,12 @@ def main():
     cash = pickle.load( open( "cashstack.p", "rb" ) )
     portfolio = pickle.load( open( "portfolio.p", "rb" ) )
 
-    print(f"Current cash stack ${cash}\n")
+    #print(f"Current cash stack ${cash}\n")
     print(f"Current portfolio\n {portfolio}\n")
 
     #input("press any key to continue")
 
-    exchange = pd.read_csv("tickersymbols.csv",nrows=20)["Name"] # 411 stocks
+    exchange = pd.read_csv("tickersymbols.csv",nrows=400)["Name"] # 411 stocks
     cash,portfolio = DecideBuy(exchange, portfolio, cash)
     cash,portfolio= DecideSell(portfolio,cash)
 
