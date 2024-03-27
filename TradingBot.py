@@ -4,9 +4,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from datetime import datetime
 
-def DumpPortfolio(portfolio: dict):
-    #
-
+def DumpPortfolio(portfolio: dict) -> None:
     with open("C:/Users/Vahlg/PycharmProjects/TradingBot/portfolio.p", "wb") as f:
         pickle.dump(portfolio,f)
         f.close()
@@ -15,31 +13,43 @@ def LoadPortfolio() -> dict:
         portfolio = pickle.load(f)
         f.close()
     return portfolio
-def ResetPortfolio():
-    DumpPortfolioToFile({})
+def ResetPortfolio() -> None:
+    DumpPortfolio({})
 
-def DumpCashstack(portfolio: dict):
+def DumpCashstack(cashstack: float) -> None:
     # explicit path
-    with open("C:/Users/Vahlg/PycharmProjects/TradingBot/portfolio.p", "wb") as f:
-        pickle.dump(portfolio,f)
+    with open("C:/Users/Vahlg/PycharmProjects/TradingBot/cashstack.p", "wb") as f:
+        pickle.dump(cashstack,f)
         f.close()
-def LoadCashstack() -> dict:
-    with  open("C:/Users/Vahlg/PycharmProjects/TradingBot/portfolio.p", "rb") as f:
-        portfolio = pickle.load(f)
+def LoadCashstack() -> float:
+    with  open("C:/Users/Vahlg/PycharmProjects/TradingBot/cashstack.p", "rb") as f:
+        cashstack = pickle.load(f)
         f.close()
-    return portfolio
-def ResetCashstack():
-    DumpCashstack({})
+    return float(cashstack)
+def ResetCashstack() -> None:
+    DumpCashstack(float(10000))
 
-# download sp500 ticker list every monday? and overwrite in disk
-exchange = pd.read_csv("tickersymbols.csv",nrows=400)["Name"] # 411 stocks
 
-stock = yf.Ticker("AMZN")
+def Main():
+    # download sp500 ticker list every monday? and overwrite in disk
+    exchange = pd.read_csv("tickersymbols.csv", nrows=400)#["Name"]  # 411 stocks
+    #loop through
+    for row in exchange.iterrows():
+        print(row)
 
-# GET TODAYS DATE AND CONVERT IT TO A STRING WITH YYYY-MM-DD FORMAT (YFINANCE EXPECTS THAT FORMAT)
-end_date = datetime.now().strftime('%Y-%m-%d')
-stockHist = stock.history(start='2022-01-01',end=end_date)["Close"]
-print("")
+    ResetCashstack()
+    ResetPortfolio()
+
+    cashstack = LoadCashstack()
+    portfolio = LoadCashstack()
+
+
+
+    # GET TODAYS DATE AND CONVERT IT TO A STRING WITH YYYY-MM-DD FORMAT (YFINANCE EXPECTS THAT FORMAT)
+    #end_date = datetime.now().strftime('%Y-%m-%d')
+    #stockHist = stock.history(start='2022-01-01', end=end_date)["Close"]
+    print("")
+
 
 
 #momentum strat:
@@ -53,3 +63,6 @@ print("")
 #We rank all four ETFs every month based on last month’s performance/momentum.
 #We go long the ONE ETF with the best performance the prior month (it doesn’t matter if negative or positive return).
 #Hold for one month and rinse and repeat (or continue being long the same instrument)
+
+if(__name__ ==  "__main__"):
+    Main()
