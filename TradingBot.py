@@ -4,7 +4,11 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from datetime import datetime
 
+import requests
+import json
+
 def DumpPortfolio(portfolio: dict) -> None:
+    #Todo: explicit path
     with open("C:/Users/Vahlg/PycharmProjects/TradingBot/portfolio.p", "wb") as f:
         pickle.dump(portfolio,f)
         f.close()
@@ -15,7 +19,6 @@ def LoadPortfolio() -> dict:
     return portfolio
 def ResetPortfolio(val: dict = {}) -> None:
     DumpPortfolio({})
-
 def DumpCashstack(cashstack: float) -> None:
     # explicit path
     with open("C:/Users/Vahlg/PycharmProjects/TradingBot/cashstack.p", "wb") as f:
@@ -28,27 +31,55 @@ def LoadCashstack() -> float:
     return float(cashstack)
 def ResetCashstack(val: float = 10000) -> None:
     DumpCashstack(float(val))
+def BuyStock(portfolio: dict, cashstack: float, stock: yf.ticker.Ticker) -> None:
+    curPrice = stock.history()['Close'].iloc[-1]
+    if stock[1]["Name"] not in portfolio.keys() and cashstack>curPrice:
+        cashstack = cashstack - curPrice
+    else:
+        #Todo: errorhandling
+        raise Exception
 
+def get_stock_price(symbol):
+    """get a stock price from yahoo finance"""
+
+    url = "https://query1.finance.yahoo.com/v7/finance/quote?symbols=" + symbol
+    headers = {'User-Agent': 'Mozilla/5.0'}
+    response = requests.get(url, headers=headers)
+    data = json.loads(response.text)
+
+    return data['quoteResponse']['result'][0]['regularMarketPrice']
 
 def Main():
-    # download sp500 ticker list every monday? and overwrite in disk
+    #Todo: download sp500 ticker list every monday? and overwrite in disk
     exchange = pd.read_csv("tickersymbols.csv", nrows=400)#["Name"]  # 411 stocks
-    #loop through
-    for row in exchange.iterrows():
-        print(row)
-    #Todo impl
+
     ResetCashstack()
     ResetPortfolio()
 
     cashstack = LoadCashstack()
-    portfolio = LoadCashstack()
+    portfolio = LoadPortfolio()
 
 
 
-    # GET TODAYS DATE AND CONVERT IT TO A STRING WITH YYYY-MM-DD FORMAT (YFINANCE EXPECTS THAT FORMAT)
-    #end_date = datetime.now().strftime('%Y-%m-%d')
-    #stockHist = stock.history(start='2022-01-01', end=end_date)["Close"]
-    print("")
+    #check næste gang
+    #print(get_stock_price('AAPL'))
+
+
+    #loop through
+    for row in exchange.iterrows():
+        stockTicker = row[1]["Name"]
+        # GET TODAYS DATE AND CONVERT IT TO A STRING WITH YYYY-MM-DD FORMAT (YFINANCE EXPECTS THAT FORMAT)
+        end_date = datetime.now().strftime('%Y-%m-%d')
+        stock = yf.Ticker(stockTicker)
+        stockHist = stock.history(start='2022-01-01', end=end_date)["Close"]
+        print("")
+
+
+
+
+
+
+
 
 
 
