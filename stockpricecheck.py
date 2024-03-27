@@ -4,11 +4,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from datetime import datetime
 from datetime import timedelta
-#ticker.info
-#ticker.action
-#ticker.sustainability
-#ticker.recommendations
-#ticker.calendar
+
 
 
 
@@ -21,25 +17,7 @@ from datetime import timedelta
 
 def main():
 
-    end_date = datetime.now().strftime('%Y-%m-%d')
 
-    cash = pickle.load( open( "cashstack.p", "rb" ) )
-    portfolio = pickle.load( open( "portfolio.p", "rb" ) )
-
-    print(f"Current cash stack ${cash}\n")
-    print(f"Current portfolio\n {portfolio}\n")
-
-    input("press any key to continue")
-
-    exchange = pd.read_csv("tickersymbols.csv",nrows=400)["Name"] # 411 stocks
-    cash,portfolio = DecideBuy(exchange, portfolio, cash)
-    cash,portfolio= DecideSell(portfolio,cash)
-
-    print(f"Final portolio: {portfolio} which is worth $ {GetPortfolioWorth(portfolio)}")
-    print(f"Final cash stack: ${cash}")
-
-    pickle.dump(cash,open("cashstack.p", "wb"))
-    pickle.dump(portfolio,open( "portfolio.p","wb"))
     
 
 
