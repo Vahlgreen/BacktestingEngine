@@ -13,7 +13,7 @@ def LoadPortfolio() -> dict:
         portfolio = pickle.load(f)
         f.close()
     return portfolio
-def ResetPortfolio() -> None:
+def ResetPortfolio(val: dict = {}) -> None:
     DumpPortfolio({})
 
 def DumpCashstack(cashstack: float) -> None:
@@ -26,8 +26,8 @@ def LoadCashstack() -> float:
         cashstack = pickle.load(f)
         f.close()
     return float(cashstack)
-def ResetCashstack() -> None:
-    DumpCashstack(float(10000))
+def ResetCashstack(val: float = 10000) -> None:
+    DumpCashstack(float(val))
 
 
 def Main():
@@ -36,7 +36,7 @@ def Main():
     #loop through
     for row in exchange.iterrows():
         print(row)
-
+    #Todo impl
     ResetCashstack()
     ResetPortfolio()
 
