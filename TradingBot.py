@@ -66,30 +66,60 @@ def MomentumBasedStrategy(stockHist: yf.ticker.Ticker.history,flag: str) -> bool
         #For some reason list[-x:-1] does not contain the last element of the list. However, list[-1] returns exactly that
         for obs in stockHist.iloc[-period+1:-1]:
             curMax = max(curMax, obs)
-        return curMax > stockHist.iloc[-1]
+        return curMax < stockHist.iloc[-1]
     elif flag == "sell":
         for obs in stockHist.iloc[-period+1:-1]:
             curMax = max(curMax, obs)
-        return curMax < stockHist.iloc[-1]
+        return curMax > stockHist.iloc[-1]
     else:
         raise Exception
-def SummarizeRun(portfolio: dict):
-    totValue = 0
+def SummarizeRun(portfolio: dict) -> None:
+    #Todo: perhaps make portfolio custom class?
+    totValue = GetPortfolioWorth(portfolio)
     numStocks = len(portfolio.items())
+
+    print(f"Portfolio consists of {numStocks} stocks\nTotal portfolio value: {round(totValue,1)}")
+def GetPortfolioWorth(portfolio: dict) -> float:
+    totValue = 0
     for key in portfolio.keys():
         totValue = totValue + portfolio[key].GetTotalValue()
+    return totValue
+def ProcessStockPool(stockPool: dict, portfolio: dict,funds: float) -> None:
+    df = pd.DataFrame(stockPool)
 
-    print(f"Portfolio consists of {numStocks} stocks\nTotal portfolio value: {totValue}")
+    #Todo: Filter very large stock prices away
+
+    #cleanup
+    df = df[df.apply(lambda x: True if (x.Momentum) < 2 else False, axis=1)]
+    df = df.sort_values("Momentum",ascending=False)
+
+    #allocate funds to buy based on distribution of momentum
+    df['FundProportion'] = df.apply(lambda x: x.Momentum/df["Momentum"].sum(), axis=1)
+
+    #define units to buy
+    df['UnitsToBuy'] = df.apply(lambda x: int(x.FundProportion*funds/x.Price), axis=1)
 
 def Main():
     #Todo: download sp500 ticker list every ?monday? and overwrite in disk
-    exchange = pd.read_csv("tickersymbols.csv", nrows=500)  #sp500
-
+    exchange = pd.read_csv("tickersymbols.csv", nrows=50)  #sp500
+    stockPool = {
+        "Name": [],
+        "Price":[],
+        "Momentum":[]
+    }
     ResetFunds()
     ResetPortfolio()
 
     funds = LoadFunds()
     portfolio = LoadPortfolio()
+
+    if funds < 0:
+        print("No funds available. Terminating..")
+        raise Exception
+    else:
+        primoFunds = funds
+        #Todo: save primo numbers to file for monthly recap
+        #primoPortfolio = GetPortfolioWorth(portfolio)
 
     #loop through exchange
     for row in exchange.iterrows():
@@ -98,11 +128,11 @@ def Main():
         #Ticker object
         stockObject = yf.Ticker(stockTicker)
 
-        # Format is strict
+        #Date format is strict
         endDate = datetime.now().strftime('%Y-%m-%d')
-        #APD
         stockHist = stockObject.history(start='2000-01-01', end=endDate)["Close"]
 
+        #Todo: data cleaning; decide if the data is valid
         if stockHist.empty:
             continue
         curPrice = stockHist.iloc[-1]
@@ -115,8 +145,13 @@ def Main():
         else:
             if MomentumBasedStrategy(stockHist, "buy"):
                 #Todo:Do not buy on observation: Pool first
-                BuyStock(portfolio,funds,stockTicker,curPrice)
+                #Todo: keep statistics on the amount of stocks passing the momentum criteria
+                stockPool["Name"].append(stockTicker)
+                stockPool["Price"].append(curPrice)
+                stockPool["Momentum"].append(curPrice/(sum(stockHist[-25:])/25)-1)
+                #BuyStock(portfolio,funds,stockTicker,curPrice)
 
+    ProcessStockPool(stockPool,portfolio,funds)
     SummarizeRun(portfolio)
 
 #d = datetime.today() - timedelta(days=days_to_subtract)
