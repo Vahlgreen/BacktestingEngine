@@ -2,10 +2,16 @@ import yfinance as yf
 import pickle
 import pandas as pd
 import matplotlib.pyplot as plt
-from datetime import datetime
+from datetime import datetime, timedelta
+import time
+class PortfolioObject:
+    def __init__(self, curPrice: float, units: int,transactionDate: str):
+        self.curPrice = curPrice
+        self.units = units
+        self.transactionDate = transactionDate
 
-import requests
-import json
+    def GetTotalValue(self):
+        return self.curPrice*self.units
 
 def DumpPortfolio(portfolio: dict) -> None:
     #Todo: explicit path
@@ -19,73 +25,108 @@ def LoadPortfolio() -> dict:
     return portfolio
 def ResetPortfolio(val: dict = {}) -> None:
     DumpPortfolio({})
-def DumpCashstack(cashstack: float) -> None:
-    # explicit path
-    with open("C:/Users/Vahlg/PycharmProjects/TradingBot/cashstack.p", "wb") as f:
-        pickle.dump(cashstack,f)
+def DumpFunds(funds: float) -> None:
+    #TODO:explicit path
+    with open("C:/Users/Vahlg/PycharmProjects/TradingBot/funds.p", "wb") as f:
+        pickle.dump(funds,f)
         f.close()
-def LoadCashstack() -> float:
-    with  open("C:/Users/Vahlg/PycharmProjects/TradingBot/cashstack.p", "rb") as f:
-        cashstack = pickle.load(f)
+def LoadFunds() -> float:
+    # TODO:explicit path
+    with  open("C:/Users/Vahlg/PycharmProjects/TradingBot/funds.p", "rb") as f:
+        funds = pickle.load(f)
         f.close()
-    return float(cashstack)
-def ResetCashstack(val: float = 10000) -> None:
-    DumpCashstack(float(val))
-def BuyStock(portfolio: dict, cashstack: float, stock: yf.ticker.Ticker) -> None:
-    curPrice = stock.history()['Close'].iloc[-1]
-    if stock[1]["Name"] not in portfolio.keys() and cashstack>curPrice:
-        cashstack = cashstack - curPrice
+    return float(funds)
+def ResetFunds(val: float = 10000) -> None:
+    DumpFunds(float(val))
+def BuyStock(portfolio: dict, funds: float, stockTicker: str, curPrice: float) -> None:
+    if funds >= curPrice:
+        funds = funds - curPrice
+        portfolioObject = PortfolioObject(curPrice,1,datetime.now().strftime('%Y-%m-%d'))
+        portfolio[stockTicker] = portfolioObject
+        print(f"Bought {stockTicker}")
+    else:
+        pass
+        #Todo: errorhandling
+        #raise Exception
+def SellStock(portfolio: dict, funds: float, stockTicker: str, curPrice: float):
+    if stockTicker in portfolio.keys():
+        funds = funds+curPrice
+        del portfolio[stockTicker]
     else:
         #Todo: errorhandling
         raise Exception
+def BackTestStrategy() -> None:
+    quit()
+def MomentumBasedStrategy(stockHist: yf.ticker.Ticker.history,flag: str) -> bool:
+    # When the close crosses above the 25-day high of the close, we go long at the close.
+    # When the close crosses below the 25-day high of the close, we sell at the close.
+    period = 25
+    curMax = 0
+    if flag == "buy":
+        #For some reason list[-x:-1] does not contain the last element of the list. However, list[-1] returns exactly that
+        for obs in stockHist.iloc[-period+1:-1]:
+            curMax = max(curMax, obs)
+        return curMax > stockHist.iloc[-1]
+    elif flag == "sell":
+        for obs in stockHist.iloc[-period+1:-1]:
+            curMax = max(curMax, obs)
+        return curMax < stockHist.iloc[-1]
+    else:
+        raise Exception
+def SummarizeRun(portfolio: dict):
+    totValue = 0
+    numStocks = len(portfolio.items())
+    for key in portfolio.keys():
+        totValue = totValue + portfolio[key].GetTotalValue()
 
-def get_stock_price(symbol):
-    """get a stock price from yahoo finance"""
-
-    url = "https://query1.finance.yahoo.com/v7/finance/quote?symbols=" + symbol
-    headers = {'User-Agent': 'Mozilla/5.0'}
-    response = requests.get(url, headers=headers)
-    data = json.loads(response.text)
-
-    return data['quoteResponse']['result'][0]['regularMarketPrice']
+    print(f"Portfolio consists of {numStocks} stocks\nTotal portfolio value: {totValue}")
 
 def Main():
-    #Todo: download sp500 ticker list every monday? and overwrite in disk
-    exchange = pd.read_csv("tickersymbols.csv", nrows=400)#["Name"]  # 411 stocks
+    #Todo: download sp500 ticker list every ?monday? and overwrite in disk
+    exchange = pd.read_csv("tickersymbols.csv", nrows=500)  #sp500
 
-    ResetCashstack()
+    ResetFunds()
     ResetPortfolio()
 
-    cashstack = LoadCashstack()
+    funds = LoadFunds()
     portfolio = LoadPortfolio()
 
-
-
-    #check næste gang
-    #print(get_stock_price('AAPL'))
-
-
-    #loop through
+    #loop through exchange
     for row in exchange.iterrows():
-        stockTicker = row[1]["Name"]
-        # GET TODAYS DATE AND CONVERT IT TO A STRING WITH YYYY-MM-DD FORMAT (YFINANCE EXPECTS THAT FORMAT)
-        end_date = datetime.now().strftime('%Y-%m-%d')
-        stock = yf.Ticker(stockTicker)
-        stockHist = stock.history(start='2022-01-01', end=end_date)["Close"]
-        print("")
+        stockTicker = row[1][0]
 
+        #Ticker object
+        stockObject = yf.Ticker(stockTicker)
 
+        # Format is strict
+        endDate = datetime.now().strftime('%Y-%m-%d')
+        #APD
+        stockHist = stockObject.history(start='2000-01-01', end=endDate)["Close"]
 
+        if stockHist.empty:
+            continue
+        curPrice = stockHist.iloc[-1]
 
+        #Evaluate strategy
+        if stockTicker in portfolio.keys():
+            if MomentumBasedStrategy(stockHist, "sell"):
+                SellStock(portfolio, funds, curPrice, stockTicker)
 
+        else:
+            if MomentumBasedStrategy(stockHist, "buy"):
+                #Todo:Do not buy on observation: Pool first
+                BuyStock(portfolio,funds,stockTicker,curPrice)
+
+    SummarizeRun(portfolio)
+
+#d = datetime.today() - timedelta(days=days_to_subtract)
 
 
 
 
 
 #momentum strat:
-#When the close crosses above the 25-day high of the close, we go long at the close.
-#When the close crosses below the 25-day high of the close, we sell at the close.
+
 
 #When the close crosses above the 100-day high of the close, we go long at the close.
 #When the close crosses below the lowest close in the last 100 days, we sell at the close.
