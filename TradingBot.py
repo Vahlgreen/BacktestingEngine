@@ -1,9 +1,12 @@
+import pandas
 import yfinance as yf
 import pickle
 import pandas as pd
 import matplotlib.pyplot as plt
 from datetime import datetime, timedelta
 import time
+import math
+
 class PortfolioObject:
     def __init__(self, curPrice: float, units: int,transactionDate: str):
         self.curPrice = curPrice
@@ -38,16 +41,16 @@ def LoadFunds() -> float:
     return float(funds)
 def ResetFunds(val: float = 10000) -> None:
     DumpFunds(float(val))
-def BuyStock(portfolio: dict, funds: float, stockTicker: str, curPrice: float) -> None:
+def BuyStock(portfolio: dict, funds: float, stockTicker: str, curPrice: float, numUnits: int) -> None:
     if funds >= curPrice:
-        funds = funds - curPrice
-        portfolioObject = PortfolioObject(curPrice,1,datetime.now().strftime('%Y-%m-%d'))
+        funds = funds - curPrice*numUnits
+        portfolioObject = PortfolioObject(curPrice,numUnits,datetime.now().strftime('%Y-%m-%d'))
         portfolio[stockTicker] = portfolioObject
         print(f"Bought {stockTicker}")
     else:
-        pass
         #Todo: errorhandling
         #raise Exception
+        print("")
 def SellStock(portfolio: dict, funds: float, stockTicker: str, curPrice: float):
     if stockTicker in portfolio.keys():
         funds = funds+curPrice
@@ -84,20 +87,48 @@ def GetPortfolioWorth(portfolio: dict) -> float:
     for key in portfolio.keys():
         totValue = totValue + portfolio[key].GetTotalValue()
     return totValue
+def PrepareStockPool(stockPool: dict, stockTicker: str, curPrice: float, stockHist: yf.ticker.Ticker.history) -> None:
+    stockPool["Name"].append(stockTicker)
+    stockPool["Price"].append(curPrice)
+
+    #Given a pd.dataframe we can compute RSI as a one-liner
+    df = pd.DataFrame(stockHist,columns=["Close"])
+
+    #look-back period
+    n = 14
+
+    #RSI computation
+    df['Rsi'] = 100 - (100 / (
+            1 + df['Close'].diff(1).mask(df['Close'].diff(1) < 0, 0).ewm(alpha=1 / n, adjust=False).mean() /
+        df['Close'].diff(1).mask(df['Close'].diff(1) > 0, -0.0).abs().ewm(alpha=1 / n, adjust=False).mean()))
+
+    stockPool["Rsi"].append(df["Rsi"].iloc[-1])
 def ProcessStockPool(stockPool: dict, portfolio: dict,funds: float) -> None:
+    #Process and buy stockpool.
+    #Todo: Don't use 100% of available funds by default
     df = pd.DataFrame(stockPool)
 
-    #Todo: Filter very large stock prices away
+    #cleanup. stocks with RSI>70 is considered over-saturated
+    df = df[df.apply(lambda x: True if x.Rsi < 70 else False, axis=1)]
+    df = df.sort_values("Rsi")
 
-    #cleanup
-    df = df[df.apply(lambda x: True if (x.Momentum) < 2 else False, axis=1)]
-    df = df.sort_values("Momentum",ascending=False)
+    #allocate funds based on distribution of RSI
+    df['Temp'] = df.apply(lambda x: 1 / (x.Rsi ** 2), axis=1)
+    df['FundProportion'] = df.apply(lambda x: (1/(x.Rsi ** 2))/df["Temp"].sum(), axis=1)
 
-    #allocate funds to buy based on distribution of momentum
-    df['FundProportion'] = df.apply(lambda x: x.Momentum/df["Momentum"].sum(), axis=1)
-
-    #define units to buy
+    #define number of units to buy
     df['UnitsToBuy'] = df.apply(lambda x: int(x.FundProportion*funds/x.Price), axis=1)
+
+    for row in df.iterrows():
+        series = row[1]
+        BuyStock(portfolio,funds,series["Name"],series["Price"],series["UnitsToBuy"])
+def ValidateHistoryData(stockHist: yf.ticker.Ticker.history) -> bool:
+    if stockHist.empty:
+        return False
+    elif stockHist.last_valid_index().strftime('%Y-%m-%d') < (datetime.today() - timedelta(weeks=1)).strftime('%Y-%m-%d'):
+        return False
+    else:
+        return True
 
 def Main():
     #Todo: download sp500 ticker list every ?monday? and overwrite in disk
@@ -105,7 +136,7 @@ def Main():
     stockPool = {
         "Name": [],
         "Price":[],
-        "Momentum":[]
+        "Rsi":[]
     }
     ResetFunds()
     ResetPortfolio()
@@ -132,8 +163,7 @@ def Main():
         endDate = datetime.now().strftime('%Y-%m-%d')
         stockHist = stockObject.history(start='2000-01-01', end=endDate)["Close"]
 
-        #Todo: data cleaning; decide if the data is valid
-        if stockHist.empty:
+        if not ValidateHistoryData(stockHist):
             continue
         curPrice = stockHist.iloc[-1]
 
@@ -144,25 +174,13 @@ def Main():
 
         else:
             if MomentumBasedStrategy(stockHist, "buy"):
-                #Todo:Do not buy on observation: Pool first
                 #Todo: keep statistics on the amount of stocks passing the momentum criteria
-                stockPool["Name"].append(stockTicker)
-                stockPool["Price"].append(curPrice)
-                stockPool["Momentum"].append(curPrice/(sum(stockHist[-25:])/25)-1)
-                #BuyStock(portfolio,funds,stockTicker,curPrice)
+                PrepareStockPool(stockPool,stockTicker,curPrice,stockHist)
 
     ProcessStockPool(stockPool,portfolio,funds)
     SummarizeRun(portfolio)
 
-#d = datetime.today() - timedelta(days=days_to_subtract)
-
-
-
-
-
 #momentum strat:
-
-
 #When the close crosses above the 100-day high of the close, we go long at the close.
 #When the close crosses below the lowest close in the last 100 days, we sell at the close.
 
