@@ -16,7 +16,7 @@ def Main() -> None:
     endDate = datetime.now().strftime('%Y-%m-%d')
     backtestData = GetBacktestData()
     portfolio = Portfolio()
-    logPaths = ["Resources/Statistics/BacktestResults.txt", "Resources/Statistics/TradeReturns.txt"]
+    logPaths = ["Resources/Statistics/BacktestResults.csv", "Resources/Statistics/TradeReturns.csv"]
 
     # reset logs
     ResetLogs(logPaths)
@@ -37,16 +37,13 @@ def LogIndexForLogScript(dateIterable: list, data: pd.DataFrame) -> None:
 
     startDate = dateIterable[0]
     endDate = dateIterable[-1]
-    index = data.loc[startDate:endDate,"Index"].to_csv(data_file,sep=",",header=False)
+    (data.loc[startDate:endDate,"S&P500"]/data.loc[startDate,"S&P500"]).to_csv(data_file,sep=",",header=False)
 
 def GetBacktestData() -> pd.DataFrame:
     # Find directory (explicitly, to avoid issues on pe server)
     script_directory = os.path.dirname(os.path.abspath(__file__))
     data_file = os.path.join(script_directory, "Resources/Data/Backtestdata.csv")
-    data = pd.read_csv(data_file, sep=",")
-
-    data.index = data["Date"].apply(lambda x: x.split(" ")[0])
-    data = data.drop("Date", axis=1)
+    data = pd.read_csv(data_file,index_col="Date", sep=",")
 
     if data.empty:
         raise Exception

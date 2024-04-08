@@ -54,7 +54,7 @@ class Portfolio:
 
     def LogPortfolioState(self, endDate: str) -> None:
         script_directory = os.path.dirname(os.path.abspath(__file__))
-        data_file = os.path.join(script_directory, "Resources/Statistics/BacktestResults.txt")
+        data_file = os.path.join(script_directory, "Resources/Statistics/BacktestResults.csv")
 
         with open(data_file, "a") as f:
             f.write(f"{self.totValue},{self.totValue - self.funds},{self.funds},{self.tradeCounter}{endDate}\n")
@@ -62,7 +62,7 @@ class Portfolio:
 
     def LogTradeReturns(self) -> None:
         script_directory = os.path.dirname(os.path.abspath(__file__))
-        data_file = os.path.join(script_directory, "Resources/Statistics/TradeReturns.txt")
+        data_file = os.path.join(script_directory, "Resources/Statistics/TradeReturns.csv")
         printList = [str(num)+"\n" for num in self.tradeReturns]
         with open(data_file, "w") as f:
             f.writelines(printList)
