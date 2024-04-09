@@ -12,7 +12,7 @@ from LogFunctions import LoadLogs, ResetLogs
 
 def Main() -> None:
     # Initiate backtest parameters
-    startDate = "01-01-2000"
+    startDate = "01-01-2020"
     endDate = datetime.now().strftime('%Y-%m-%d')
     backtestData = GetBacktestData()
     portfolio = Portfolio()
@@ -30,20 +30,23 @@ def Main() -> None:
         Backtest(backtestData, portfolio, date)
 
     portfolio.LogTradeReturns()
-    LogIndexForLogScript(dateIterable,backtestData)
+    LogIndexForLogScript(dateIterable, backtestData)
+
+
 def LogIndexForLogScript(dateIterable: list, data: pd.DataFrame) -> None:
     script_directory = os.path.dirname(os.path.abspath(__file__))
     data_file = os.path.join(script_directory, "Resources/Data/s&pIndex.csv")
 
     startDate = dateIterable[0]
     endDate = dateIterable[-1]
-    (data.loc[startDate:endDate,"S&P500"]/data.loc[startDate,"S&P500"]).to_csv(data_file,sep=",",header=False)
+    (data.loc[startDate:endDate, "S&P500"] / data.loc[startDate, "S&P500"]).to_csv(data_file, sep=",", header=False)
+
 
 def GetBacktestData() -> pd.DataFrame:
     # Find directory (explicitly, to avoid issues on pe server)
     script_directory = os.path.dirname(os.path.abspath(__file__))
-    data_file = os.path.join(script_directory, "Resources/Data/Backtestdata.csv")
-    data = pd.read_csv(data_file,index_col="Date", sep=",")
+    data_file = os.path.join(script_directory, "Resources/Data/s&p500.csv")
+    data = pd.read_csv(data_file, sep=";", decimal=',', index_col="Date").drop("Unnamed: 0", axis=1).apply(pd.to_numeric,errors="coerce")
 
     if data.empty:
         raise Exception
@@ -95,7 +98,7 @@ def MomentumBasedStrategy(stockHist: pd.DataFrame, currentPrice: float, date: st
 
 def Backtest(data: pd.DataFrame, portfolio: Portfolio, date: str) -> None:
     # loop through symbols
-    for stockTicker in data.columns:
+    for stockTicker in data.columns[:25]:
         stockHist = pd.DataFrame({stockTicker: data[stockTicker]})
         currentPrice = stockHist.loc[date, stockTicker]
 

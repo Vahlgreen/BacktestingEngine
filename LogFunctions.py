@@ -14,7 +14,7 @@ def LoadLogs() -> None:
 
     data_file = os.path.join(script_directory, "Resources/Data/s&pIndex.csv")
     exchangeIndex = pd.read_csv(data_file, sep=",",names=["Date","S&P500"])
-
+    portfolioLog["Date"] = exchangeIndex["Date"]
 
     ax = portfolioLog.plot(x="Date", y="PortfolioIndex")
     exchangeIndex.plot(x="Date", y="S&P500", ax=ax)
