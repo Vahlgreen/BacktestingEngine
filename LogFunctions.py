@@ -7,24 +7,38 @@ import csv
 def LoadLogs() -> None:
     script_directory = os.path.dirname(os.path.abspath(__file__))
 
-    data_file = os.path.join(script_directory, "Resources/Statistics/BacktestResults.csv")
-    portfolioLog = pd.read_csv(data_file, sep=",", names=["TotalValue", "portfolioValue", "funds", "Date"])
+    #Read logs
+    #portfolio development
+    data_file = os.path.join(script_directory, "Resources/Results/BacktestPortfolioStates.csv")
+    portfolioLog = pd.read_csv(data_file, sep=",", names=["TotalValue", "portfolioValue", "funds","Trades","Positions","Date"])
     portfolioLog["Date"].apply(lambda x: x.split(" ")[0])
     portfolioLog["PortfolioIndex"] = portfolioLog["TotalValue"] / portfolioLog["TotalValue"].to_list()[0]
 
+    #Index for comparison
     data_file = os.path.join(script_directory, "Resources/Data/s&pIndex.csv")
     exchangeIndex = pd.read_csv(data_file, sep=",",names=["Date","S&P500"])
     portfolioLog["Date"] = exchangeIndex["Date"]
 
-    ax = portfolioLog.plot(x="Date", y="PortfolioIndex")
+    #Returns
+    data_file = os.path.join(script_directory, "Resources/Results/TradeReturns.csv")
+    returns = pd.read_csv(data_file, sep=",", names=["Returns"])
+
+    #plots
+    #portfolio
+    ax = portfolioLog.plot(x="Date", y="PortfolioIndex",figsize=(15, 7))
     exchangeIndex.plot(x="Date", y="S&P500", ax=ax)
+    plt.savefig(os.path.join(script_directory, "Resources/Results/Plots/portfolio_vs_index.png"))
     plt.show(block=True)
 
-    # Read returns
-    data_file = os.path.join(script_directory, "Resources/Statistics/TradeReturns.csv")
-    portfolioLog = pd.read_csv(data_file, sep=",", names=["Returns"])
+    #Trades and positions
+    ax = portfolioLog.plot(x="Date",y="Trades",figsize=(15, 7))
+    portfolioLog.plot(x="Date", y="Positions", ax=ax)
+    plt.savefig(os.path.join(script_directory, "Resources/Results/Plots/TradesAndPositions.png"))
+    plt.show(block=True)
 
-    portfolioLog.plot.hist(bins=500)
+    #Returns
+    returns.plot.hist(bins=500,figsize=(15, 7))
+    plt.savefig(os.path.join(script_directory, "Resources/Results/Plots/returns.png"))
     plt.show(block=True)
 
 
