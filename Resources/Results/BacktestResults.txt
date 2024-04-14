@@ -1,0 +1,13 @@
+Total portfolio return:            68.8%
+Average profit:                    $236
+Average Profit var. coefficient:   6.6%
+Average loss:                      $149
+Average loss var. coefficient:     3.4%
+Profit factor:                     1.2
+Max drawdown:                      -7.4%
+Win Rate:                          43.8%
+Sharpe Ratio:                      6.0
+Sortino Ratio:                     13.0
+Longest position held (INTU):      126 days
+Number of trades:                  3258
+Average trades pr day:             2.1
