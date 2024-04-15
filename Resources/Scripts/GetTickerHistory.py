@@ -5,7 +5,7 @@ from pathlib import Path
 
 script_directory = os.path.dirname(os.path.abspath(__file__))
 #data_file = os.path.join(script_directory, "../Data/s&pTickers.csv")
-data_file = os.path.join(script_directory, "../Data/selectedTickers.csv")
+data_file = os.path.join(script_directory, "../Data/DeprecatedData/selectedTickers.csv")
 
 tickers = pd.read_csv(data_file)
 tickers = tickers["TICKERS"].to_list()

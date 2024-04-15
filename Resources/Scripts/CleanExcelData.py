@@ -4,11 +4,11 @@ import yfinance as yf
 import numpy as np
 def LoadAndClean():
     script_directory = os.path.dirname(os.path.abspath(__file__))
-    data_file = os.path.join(script_directory, "../Data/s&p500ExcelData.csv")
+    data_file = os.path.join(script_directory, "../Data/DeprecatedData/s&p500ExcelData.csv")
     data = pd.read_csv(data_file, sep=";",decimal=",")
 
     script_directory = os.path.dirname(os.path.abspath(__file__))
-    data_file = os.path.join(script_directory, "../Data/backtestData.csv")
+    data_file = os.path.join(script_directory, "../Data/DeprecatedData/Backtestdata.csv")
     oldData = pd.read_csv(data_file, sep=",")
 
     data["S&P500"] = data.sum(axis=1)
@@ -20,11 +20,11 @@ def LoadAndClean():
 
 def Repair():
     script_directory = os.path.dirname(os.path.abspath(__file__))
-    data_file = os.path.join(script_directory, "../Data/s&p500ExcelData.csv")
+    data_file = os.path.join(script_directory, "../Data/DeprecatedData/s&p500ExcelData.csv")
     data = pd.read_csv(data_file, sep=";", decimal=",")
 
     script_directory = os.path.dirname(os.path.abspath(__file__))
-    data_file = os.path.join(script_directory, "../Data/backtestData.csv")
+    data_file = os.path.join(script_directory, "../Data/DeprecatedData/Backtestdata.csv")
     oldData = pd.read_csv(data_file, sep=",")
 
     test = oldData.iloc[1837:]["Date"]
@@ -51,11 +51,11 @@ def Repair():
 
 def concept():
     script_directory = os.path.dirname(os.path.abspath(__file__))
-    data_file = os.path.join(script_directory, "../Data/s&p500ExcelData.csv")
+    data_file = os.path.join(script_directory, "../Data/DeprecatedData/s&p500ExcelData.csv")
     data = pd.read_csv(data_file, sep=";",decimal=",")
 
     script_directory = os.path.dirname(os.path.abspath(__file__))
-    data_file = os.path.join(script_directory, "../Data/backtestData.csv")
+    data_file = os.path.join(script_directory, "../Data/DeprecatedData/Backtestdata.csv")
     oldData = pd.read_csv(data_file, sep=",")
 
     test = oldData.iloc[1837:]["Date"]

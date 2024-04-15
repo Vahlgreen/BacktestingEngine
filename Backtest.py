@@ -5,6 +5,7 @@ import pandas as pd
 from datetime import timedelta, datetime
 import numpy as np
 
+
 # project files
 from PortfolioClass import Portfolio
 import functions
@@ -15,7 +16,7 @@ def Main():
     backtestData = GetBacktestData()
     startDate = "2020-01-02"
     endDate = str(backtestData.last_valid_index())
-    portfolio = Portfolio(startDate, endDate)
+    portfolio = Portfolio(startDate, endDate,funds=1000)
 
     # establish trade dates
     marketDays = [date.strftime('%Y-%m-%d') for date in pd.date_range(startDate, endDate, freq='d').round("d") if

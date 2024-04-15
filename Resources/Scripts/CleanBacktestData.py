@@ -2,7 +2,7 @@ import os
 import pandas as pd
 import matplotlib.pyplot as plt
 script_directory = os.path.dirname(os.path.abspath(__file__))
-data_file = os.path.join(script_directory, "../Data/RawBacktestData.csv")
+data_file = os.path.join(script_directory, "../Data/DeprecatedData/RawBacktestData.csv")
 
 data = pd.read_csv(data_file, sep = ",")
 
