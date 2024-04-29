@@ -6,7 +6,7 @@ import numpy as np
 # project files
 import functions
 from portfolio import Portfolio
-from parameters import data_provider
+from parameters import data_provider, ticker_list
 def main():
     main_timer = time.time()
     # Initiate backtest parameters
@@ -14,78 +14,64 @@ def main():
     index_data_path =  functions.get_absolute_path(f"Resources/Data/BacktestData/{data_provider}_index.csv")
 
     backtest_data = get_backtest_data(backtest_data_path)
-    start_date = "2000-01-03"
+    start_date = "2001-01-03"
     end_date = str(backtest_data.last_valid_index())
 
     portfolio = Portfolio(start_date, end_date,funds=50000)
 
-    #structure data
-    grouped_data = backtest_data.groupby("Ticker")
-    tickers= list(set(backtest_data['Ticker'].values))
-    ticker_data = {}
-    for key in tickers:
-        ticker_data.update({key:grouped_data.get_group(key)})
-
-    #{key:value for (key,value) in dictonary.items()}
-
-    #Define market days
-    temp = backtest_data[backtest_data["Ticker"].values == "MMM"].index
-    try:
-        temp.get_loc(start_date)
-    except Exception:
-        print("Start date is not an open market day")
-
-    market_days = temp[temp.get_loc(start_date):].tolist()
+    # Structure data
+    ticker_data, market_days = structure_input_data(backtest_data, start_date, ticker_list)
 
     # Run backtest
     for i, date in enumerate(market_days):
-        #timer = time.time()
-        run_backtest(backtest_data, portfolio, date,ticker_data)
+        timer = time.time()
+        run_backtest(portfolio,date,end_date,ticker_data)
         if i % 10 == 0:
             print(f"Backtesting.. Simulation {i + 1} of {len(market_days)}")
         #print(time.time()-timer)
 
-
     # Log comparable index in the selected backtest time frame
     log_index(start_date, end_date, index_data_path)
+
     # logs results
-    portfolio.log_back_test_results()
+    portfolio.log_back_test_results(ticker_data, end_date)
+
     print(f"backtest duration: {(time.time() - main_timer)/60} minutes)")
-def run_backtest(data: pd.DataFrame, portfolio: Portfolio, date: str, ticker_data: dict) -> None:
+
+def run_backtest(portfolio: Portfolio, start_date: str, end_date: str, ticker_data: dict) -> None:
     pool = {}
     # loop through symbols
-    #Todo: somehow only parse the indicies between start date and end date
     for stock_ticker,stock_data in ticker_data.items():
-        #locate stock data
-        current_price = stock_data.at[date, "Open"]
 
+        current_price = stock_data.at[start_date, "Open"]
+
+        #if price is nan and in holding it means the stock is delisted. sell at entry price
         if pd.isna(current_price):
-            #TODO: take loss if stock is in holdings
             if stock_ticker in portfolio.open_trades:
-                portfolio.sell(stock_ticker, portfolio.open_trades[stock_ticker].entry_price, date)
-
+                portfolio.sell(stock_ticker, portfolio.open_trades[stock_ticker].entry_price, start_date)
             continue
 
         # Deploy strategy
         if stock_ticker in portfolio.open_trades:
-            if strategy(stock_data, current_price, date, portfolio, stock_ticker, "sell"):
-                portfolio.sell(stock_ticker, current_price, date)
+            if strategy(stock_data, current_price, start_date, portfolio, stock_ticker, "sell"):
+                portfolio.sell(stock_ticker, current_price, start_date)
 
         else:
-            if strategy(stock_data, current_price, date, portfolio, stock_ticker, "buy"):
+            if strategy(stock_data, current_price, start_date, portfolio, stock_ticker, "buy"):
                 pool.update({stock_ticker:current_price})
 
     # If the pool is not empty we process and buy
     if len(pool)>0:
-        # Todo: Don't use 100% of available funds by default
-        # maintain equal risk. divide investment equally among stocks to trade. divide price of the stock into that portion
+        # Maintain equal risk. divide investment equally among stocks to trade.
         fund_proportion = portfolio.funds / len(pool)
         for stock_ticker, current_price in pool.items():
             position_size = int(fund_proportion/current_price)
             if position_size > 0 and portfolio.funds >= current_price * position_size:
-                portfolio.buy(stock_ticker, position_size, current_price, date)
+                portfolio.buy(stock_ticker, position_size, current_price, start_date)
 
-    portfolio.log_portfolio_state(ticker_data,date)
+
+
+    portfolio.log_portfolio_state(ticker_data, start_date)
 
 def log_index(start_date: str, end_date: str, index_path: str) -> None:
     data = pd.read_csv(index_path, sep=",", index_col="date")
@@ -113,16 +99,15 @@ def strategy(stock_history: pd.DataFrame, current_price: float, date: str, portf
 
         # Filter3: stocks with RSI>70 is considered over-saturated.
 
-        # look-back period
-        n = 14
+        # n = 14
         # rsi = 100 - (100 / (
-        #         1 + stock_history["Open"].diff(1).mask(stock_history["Open"].diff(1) < 0, 0).ewm(alpha=1 / n, adjust=False).mean() /
-        #         stock_history["Open"].diff(1).mask(stock_history["Open"].diff(1) > 0, -0.0).abs().ewm(alpha=1 / n,
-        #                                                                               adjust=False).mean())).values[-1][0]
-
+        #          1 + stock_history["Open"].diff(1).mask(stock_history["Open"].diff(1) < 0, 0).ewm(alpha=1 / n, adjust=False).mean() /
+        #          stock_history["Open"].diff(1).mask(stock_history["Open"].diff(1) > 0, -0.0).abs().ewm(alpha=1 / n,
+        #                                                                                adjust=False).mean())).values[-1]
+        #
         # filter3 = rsi < 70
 
-        return  filter2
+        return  filter2 #and filter3
 
     elif flag.lower() == "sell":
         lowerDate = functions.subtract_days(date, 20)
@@ -139,6 +124,47 @@ def strategy(stock_history: pd.DataFrame, current_price: float, date: str, portf
             return False
     else:
         raise Exception
+def structure_input_data(data: pd.DataFrame, start_date: str, input_tickers: list) -> tuple:
+    grouped_data = data.groupby("Ticker")
+    available_tickers= list(set(data['Ticker'].values))
+    ticker_data = {}
+
+    if not isinstance(input_tickers,list):
+        print("input tickers must be a list")
+        raise Exception
+
+    if len(input_tickers)==0:
+        print("No input tickers")
+        raise Exception
+
+    if input_tickers[0].lower() == "all":
+        if len(input_tickers)>1:
+            print("Choose 'all' or specific tickers")
+            raise Exception
+        else:
+            for key in available_tickers:
+                    ticker_data.update({key: grouped_data.get_group(key)})
+    else:
+        for key in available_tickers:
+            if key in input_tickers:
+                ticker_data.update({key: grouped_data.get_group(key)})
+
+    if len(ticker_data) == 0:
+        print("No data found")
+        raise Exception
+
+    # Define market days
+    # All tickers has well-defined index for the entire period. pick the first one
+    temp_tick = list(ticker_data.keys())[0]
+    market_days = data[data["Ticker"].values == "AAPL"].index
+    try:
+        market_days.get_loc(start_date)
+    except Exception:
+        print("Start date is not an open market day")
+
+    market_days = market_days[market_days.get_loc(start_date):].tolist()
+
+    return ticker_data, market_days
 
 if (__name__ == "__main__"):
     main()

@@ -12,7 +12,7 @@ def load_logs() -> tuple:
 
     # Read logs
     # portfolio development
-    data_file = functions.get_absolute_path("Resources/Results/potfolio_states.csv")
+    data_file = functions.get_absolute_path("Resources/Results/portfolio_states.csv")
     portfolio_log = pd.read_csv(data_file, sep=",", names=["totalValue", "portfolioValue", "funds","trades","positions","date"])
     portfolio_log["date"].apply(lambda x: x.split(" ")[0])
     portfolio_log["portfolioIndex"] = portfolio_log["totalValue"] / portfolio_log["totalValue"].to_list()[0]
@@ -98,6 +98,6 @@ def plot_indices():
     fig.write_html(functions.get_absolute_path("Resources/Results/Plots/index_comparison.html"))
     fig.show()
 if __name__ == "__main__":
-    portfolio_states, trade_log = load_logs()
-    create_plots(portfolio_states, trade_log)
-    #plot_indices()
+    #portfolio_states, trade_log = load_logs()
+    #create_plots(portfolio_states, trade_log)
+    plot_indices()

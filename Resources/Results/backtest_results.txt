@@ -1,13 +1,13 @@
-Total portfolio return:            -97.3%
-Average profit:                    $8
-Average Profit var. coefficient:   4.7%
-Average loss:                      $7
-Average loss var. coefficient:     11.7%
-Profit factor:                     0.8
-Max drawdown:                      -97.3%
-Win Rate:                          43.9%
-Sharpe Ratio:                      -8.2
-Sortino Ratio:                     -11.2
-Longest position held (RTN):      162 days
-Number of trades:                  29534
-Average trades pr day:             3.3
+Total portfolio return:            203.8%
+Average profit:                    $38
+Average Profit var. coefficient:   5.5%
+Average loss:                      $25
+Average loss var. coefficient:     5.8%
+Profit factor:                     1.1
+Max drawdown:                      -40.6%
+Win Rate:                          42.1%
+Sharpe Ratio:                      -15.8
+Sortino Ratio:                     -16.5
+Longest position held (RTN):      165 days
+Number of trades:                  63592
+Average trades pr day:             7.5

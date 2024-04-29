@@ -1,13 +1,8 @@
-import os
-import pickle
 import pandas as pd
-from datetime import timedelta, datetime
 import numpy as np
 
 #Project files
 import functions
-
-#TODO: log top three stocks and associated results. Perhaps plot those equity curves
 
 class Portfolio:
     def __init__(self, start_date: str, end_date: str, funds: float = 100000.0):
@@ -17,21 +12,21 @@ class Portfolio:
         self.open_trades = {}
         self.trade_history = []
         self.max_drawdown = 1
-        self.total_value_primo = funds
-        self.total_value = funds
-        self.state_log = []
+        self.portfolio_value_primo = funds
+        self.portfolio_value = 0
+        self.state_log = {}
         self.trade_log = {}
-        self.transaction_fee = 0.5
+        self.transaction_fee = 0
 
     def sell(self, ticker: str, currentPrice: float, date: str) -> None:
         # Complete trade
         trade = self.open_trades[ticker].complete_trade(currentPrice, date)
         self.trade_history.append(trade)
 
-        # adjust funds
+        # Adjust funds
         self.funds = self.funds + currentPrice * self.open_trades[ticker].position_size - self.transaction_fee
 
-        # log trade
+        # Log trade
         if date in self.trade_log:
             self.trade_log[date].update({ticker: (trade.return_, trade.gain, trade.entry_date, trade.duration)})
         else:
@@ -47,82 +42,95 @@ class Portfolio:
         # Add trade to holdings
         self.open_trades[ticker] = newTrade
 
-        # adjust funds
+        # Adjust funds
         self.funds = self.funds - currentPrice * positionSize - self.transaction_fee
 
-    def get_portfolio_value(self, data: dict, date: str) -> float:
+    def compute_portfolio_value(self, data: dict, date: str) -> None:
         # portfolio value includes funds (cash)
         # Uses today's price to compute portfolio value.
-        self.total_value = 0
+        self.portfolio_value = 0
         for key in self.open_trades:
             stock_data = data[key]
             currentPrice = stock_data.at[date, "Open"]
-            self.total_value += self.open_trades[key].position_size * currentPrice
+            self.portfolio_value += self.open_trades[key].position_size * currentPrice
 
-        return self.total_value + self.funds
+        self.portfolio_value += self.funds
+
 
     def log_portfolio_state(self, data: dict, date: str) -> None:
         # Logs portfolio state each timestep
-        total_portfolio_value = self.get_portfolio_value(data, date)
-        asset_value = max(total_portfolio_value - self.funds, 0)
+        #self.portfolio_value = self.compute_portfolio_value(data, date)
+        self.compute_portfolio_value(data,date)
+        asset_value = max(self.portfolio_value - self.funds, 0)
 
-        self.max_drawdown = min(self.max_drawdown, total_portfolio_value / self.total_value_primo)
+        self.max_drawdown = min(self.max_drawdown, self.portfolio_value / self.portfolio_value_primo)
 
-        # Todo: Consider more appropriate datastructure
-        self.state_log.append(
-            (round(total_portfolio_value), round(asset_value), round(self.funds), len(self.trade_history), len(self.open_trades), date))
+        self.state_log.update({date:{
+            "total_portfolio_value": round(self.portfolio_value),
+            "asset_value": round(asset_value),
+            "funds": round(self.funds),
+            "number_of_trades": len(self.trade_history),
+            "number_of_open_positions": len(self.open_trades)
+        }})
 
-    def log_back_test_results(self) -> None:
+    def log_back_test_results(self, stock_data: dict, date: str) -> None:
         # Summarizes backtest and prints to files
-
         nTrades = len(self.trade_history)
         nDays = functions.date_difference(self.start_date, self.end_date)
-        riske_free_rate = (1.03)**(nDays/365)-1
-        portfolioReturn = (self.total_value + self.funds) / self.total_value_primo
-        winCount = 0
-        maxTradeDuration = (0,"")
-        listOfReturns = np.array([])
-        listOfLosses = np.array([])
-        listOfProfits = np.array([])
+        risk_free_rate = 1.03**(nDays/252)-1
+        portfolio_return = self.portfolio_value / self.portfolio_value_primo
+        win_count = 0
+        max_trade_duration = (0,"")
+        list_of_returns = np.array([])
+        list_of_losses = np.array([])
+        list_of_profits = np.array([])
 
-        # Loop through trades and compute statistics
+        # Compute tade-based statistics
         for trade in self.trade_history:
             if trade.win:
-                winCount += trade.win
-                #maybe use combined average?
-                listOfProfits = np.append(listOfProfits, trade.profit)
+                win_count += trade.win
+                list_of_profits = np.append(list_of_profits, trade.profit)
             else:
-                listOfLosses = np.append(listOfLosses, trade.loss)
+                list_of_losses = np.append(list_of_losses, trade.loss)
 
-            # Todo: Consider currently open trades
-            if maxTradeDuration[0] < trade.duration:
-                maxTradeDuration = (trade.duration,trade.ticker)
+            if max_trade_duration[0] < trade.duration:
+                max_trade_duration = (trade.duration,trade.ticker)
+            list_of_returns = np.append(list_of_returns,trade.return_)
 
-            listOfReturns = np.append(listOfReturns, trade.return_-1)
 
-        averageProfit = np.mean(listOfProfits)
-        averageLoss = np.mean(listOfLosses)
-        averageReturn = np.mean(listOfReturns)
-        sharpDeviation = np.std(listOfReturns)
-        sortinoDeviation = np.std(listOfReturns, where=listOfReturns < 1)
 
-        sharpeRatio = (averageReturn - riske_free_rate) / sharpDeviation
-        sortinoRatio = (averageReturn - riske_free_rate) / sortinoDeviation
-        winRate = winCount / nTrades
+
+        average_profit = np.mean(list_of_profits)
+        average_loss = np.mean(list_of_losses)
+
+        # Sharpe and sortino ratios
+        temp_df = pd.DataFrame(columns=["returns"],data=list_of_returns).pct_change()
+
+        average_return= temp_df["returns"].mean()
+        sharp_deviation = temp_df["returns"].std()
+
+        temp_df_down = temp_df[temp_df["returns"]>0]
+        sortino_deviation = temp_df_down["returns"].std()
+
+        sharpeRatio = (average_return - risk_free_rate) / sharp_deviation
+        sortinoRatio = (average_return - risk_free_rate) / sortino_deviation
+
+        # Profit factor
+        winRate = win_count / nTrades
         lossRate = 1 - winRate
-        profitFactor = (winRate * averageProfit) / (lossRate * averageLoss)
+        profitFactor = (winRate * average_profit) / (lossRate * average_loss)
 
-        logString = f"Total portfolio return:            {round((portfolioReturn-1)*100,1)}%\n" \
-                    f"Average profit:                    ${round(averageProfit)}\n" \
-                    f"Average Profit var. coefficient:   {round(np.std(listOfProfits)/averageProfit,1)}%\n"\
-                    f"Average loss:                      ${round(averageLoss)}\n" \
-                    f"Average loss var. coefficient:     {round(np.std(listOfLosses)/averageLoss,1)}%\n"\
+        logString = f"Total portfolio return:            {round((portfolio_return-1)*100,1)}%\n" \
+                    f"Average profit:                    ${round(average_profit)}\n" \
+                    f"Average Profit var. coefficient:   {round(np.std(list_of_profits)/average_profit,1)}%\n"\
+                    f"Average loss:                      ${round(average_loss)}\n" \
+                    f"Average loss var. coefficient:     {round(np.std(list_of_losses)/average_loss,1)}%\n"\
                     f"Profit factor:                     {round(profitFactor,1)}\n" \
                     f"Max drawdown:                      {round((self.max_drawdown - 1) * 100, 1)}%\n" \
                     f"Win Rate:                          {round(winRate*100,1)}%\n" \
                     f"Sharpe Ratio:                      {round(sharpeRatio,1)}\n" \
                     f"Sortino Ratio:                     {round(sortinoRatio,1)}\n" \
-                    f"Longest position held ({maxTradeDuration[1]}):      {maxTradeDuration[0]} days\n" \
+                    f"Longest position held ({max_trade_duration[1]}):      {max_trade_duration[0]} days\n" \
                     f"Number of trades:                  {len(self.trade_history)}\n" \
                     f"Average trades pr day:             {round(len(self.trade_history) / nDays, 1)}"
 
@@ -131,11 +139,11 @@ class Portfolio:
             f.write(logString)
             f.close()
 
-        data_file = functions.get_absolute_path("Resources/Results/potfolio_states.csv")
+        data_file = functions.get_absolute_path("Resources/Results/portfolio_states.csv")
         logString = ""
-        for state in self.state_log:
-            logString += f"{state[0]},{state[1]},{state[2]},{state[3]},{state[4]},{state[5]}\n"
-
+        for date,state in self.state_log.items():
+            logString += (f'{state["total_portfolio_value"]},{state["asset_value"]},{state["funds"]},{state["number_of_trades"]},'
+                          f'{state["number_of_open_positions"]},{date}\n')
         with open(data_file, "w") as f:
             f.write(logString)
             f.close()
@@ -157,6 +165,7 @@ class Portfolio:
         with open(data_file, "w") as f:
             f.write(logString)
             f.close()
+
 class _Trade:
     def __init__(self, entry_price: float, position_size: int, entry_date: str, ticker: str):
         self.entry_price = entry_price
