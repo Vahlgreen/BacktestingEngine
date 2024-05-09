@@ -3,20 +3,19 @@ TODO: Don't use 100% of available funds by default
 TODO: log top three stocks and associated results. Perhaps plot those equity curves
 TODO: Consider currently open trades when computing longest held positions (and multiple other trade statistics)
 TODO: Fix sharpe and sortino ratios. (Compute these on a real trade-day basis, not an unrealised state-basis)
-TODO: use backtest statistics to create signals for bad-performing strategies
 TODO: develop infrastructure to apply multiple strategies
 TODO: indicator library (see https://github.com/voice32/stock_market_indicators/blob/master/indicators.py)
-TODO: do not buy all portfolio in the pool. Use only those that historically played well with current strategy
-TODO: check out quantstats for reporting
+TODO: Use dash for dashboard reporting and check out quantstats for reporting
 TODO: if input tickers is not 'all' we should plot the chosen index/stock
+TODO: implement validation log
 
 Data
 TODO: make all data providers fit into current infrastructure
 TODO: find c25 dataset
-TODO: get Tiingo dataset
-
 
 Strategies
 - statebased trading: Identify current market state and allocate strategies accordingly
 - dynamic positionsizing: identify current market volatility and compute size accordingly
 - volatility filter
+- use backtest statistics to create signals for bad-performing strategies
+- do not buy all stocks in the pool. Use only those that historically played well with current strategy

@@ -1,4 +1,19 @@
-#simfin or macrotrend or alphavantage or custom
+# Macrotrend or alphavantage or custom
 data_provider = "custom"
-#all or specific tickers
+# All or half or specific tickers
 ticker_list = ["all"]
+# First observation is 2001-01-03. Exception is thrown if date is not a valid trade day
+# Start date should be no less than 2001-02-01. This way look-back statistics will have sufficient data available
+start_date = "2001-02-01"
+# Initial funds.
+initial_funds = 10000
+# Transaction fee.
+transaction_fee = 0.5
+
+
+
+######################### CODE ASSUMPTIONS ######################
+# 1. Code assumes all tickers have entries for all trade days between 2001-01-03 and 2024-03-27
+# 2. Ticker data can be NaN if and only if the ticker is not currently listed. That is, the no NaNs appear withing the time duration in which the stock is listed. Only before and after.
+# 3. All tickers must have following columns: 'Date', 'Open', 'High', 'Low', 'Close', 'Volume', 'Ticker'
+# 4. All price observations are measured in the same currency

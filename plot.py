@@ -34,35 +34,44 @@ def load_logs() -> tuple:
 
     return portfolio_log, returns
 
-def create_plots(portfolio_states: pd.DataFrame, trade_log: pd.DataFrame) -> None:
+def create_plots(states: pd.DataFrame, trades: pd.DataFrame) -> None:
 
     # Create main plot. Portfolio index vs s&p 500
     fig = go.Figure()
     # portfolio
-    fig.add_trace(go.Scatter(x=portfolio_states["date"],
-                             y=portfolio_states["portfolioIndex"],
-                             name="Portfolio index"))
-                             #mode='markers',
-                             #marker = dict(size=5)))
+    fig.add_trace(go.Scatter(x=states["date"],
+                             y=states["portfolioIndex"],
+                             name="Portfolio index",
+                             customdata=states[["portfolioIndex","totalValue","portfolioValue", "funds","trades","positions"]],
+                             hovertemplate=
+                            "portfolioIndex: <b>%{customdata[0]}</b><br>" +
+                            "total equity: <b>%{customdata[1]:$,.0f}</b><br>" +
+                            "asset value: <b>%{customdata[2]:$,.0f}</b><br>" +
+                            "funds: <b>%{customdata[3]:$,.0f}</b><br>" +
+                            "trades: <b>%{customdata[4]}</b><br>" +
+                            "positions: <b>%{customdata[5]}</b><br>" +
+                            "<extra></extra>"))
 
-    # moving average
-    fig.add_trace(go.Scatter(x=portfolio_states["date"],
-                             y=portfolio_states["movingAverage"],
-                             name="Moving Average"))
+    # # moving average
+    # fig.add_trace(go.Scatter(x=states["date"],
+    #                          y=states["movingAverage"],
+    #                          name="Moving Average"))
 
     # confidence interval
-    fig.add_traces([go.Scatter(x=portfolio_states["date"],
-                              y=portfolio_states["movingAverage"]-portfolio_states["volatility"]
-                              ,showlegend = False,
-                              line_color = 'rgba(0,0,0,0)'),
-                   go.Scatter(x=portfolio_states["date"],
-                              y=portfolio_states["movingAverage"]+portfolio_states["volatility"],
+    fig.add_traces([go.Scatter(x=states["date"],
+                               y=states["movingAverage"] - states["volatility"],
+                               showlegend = False,
+                               line_color = 'rgba(0,0,0,0)',
+                               hoverinfo='skip'),
+                   go.Scatter(x=states["date"],
+                              y=states["movingAverage"] + states["volatility"],
                               name = 'Volatility',
                               line_color='rgba(0,0,0,0)',
-                              fill='tonexty',fillcolor = 'rgba(255, 0, 0, 0.2)')])
+                              fill='tonexty', fillcolor = 'rgba(255, 0, 0, 0.2)',
+                              hoverinfo='skip')])
     # s&p
-    fig.add_trace(go.Scatter(x=portfolio_states["date"],
-                             y=portfolio_states["exchangeIndex"],
+    fig.add_trace(go.Scatter(x=states["date"],
+                             y=states["exchangeIndex"],
                              name="S&P 500"))
                              #mode='markers',
                              #marker=dict(size=5)))
@@ -71,12 +80,12 @@ def create_plots(portfolio_states: pd.DataFrame, trade_log: pd.DataFrame) -> Non
     fig.show()
 
     # trades and positions
-    ax = portfolio_states.plot(x="date",y="trades",figsize=(15, 7))
-    portfolio_states.plot(x="date", y="positions", ax=ax)
+    ax = states.plot(x="date", y="trades", figsize=(15, 7))
+    states.plot(x="date", y="positions", ax=ax)
     plt.savefig(functions.get_absolute_path("Resources/Results/Plots/TradesAndPositions.png"))
 
     # portfolio returns
-    hist_figure = px.histogram(trade_log, x="returns", nbins=round(trade_log.shape[0] / 1.5))
+    hist_figure = px.histogram(trades, x="returns", nbins=round(trades.shape[0] / 1.5))
     hist_figure.write_image(functions.get_absolute_path("Resources/Results/Plots/Returns.png"))
     #hist_figure.show()
 
@@ -98,6 +107,6 @@ def plot_indices():
     fig.write_html(functions.get_absolute_path("Resources/Results/Plots/index_comparison.html"))
     fig.show()
 if __name__ == "__main__":
-    #portfolio_states, trade_log = load_logs()
-    #create_plots(portfolio_states, trade_log)
-    plot_indices()
+    portfolio_states, trade_log = load_logs()
+    create_plots(portfolio_states, trade_log)
+    #plot_indices()
