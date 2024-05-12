@@ -14,6 +14,7 @@ transaction_fee = 0.5
 
 ######################### CODE ASSUMPTIONS ######################
 # 1. Code assumes all tickers have entries for all trade days between 2001-01-03 and 2024-03-27
-# 2. Ticker data can be NaN if and only if the ticker is not currently listed. That is, the no NaNs appear withing the time duration in which the stock is listed. Only before and after.
+# 2. Ticker data can be NaN if and only if the ticker is not currently listed. That is, no NaNs appear withing the time duration in which the stock is listed. Only before and after.
 # 3. All tickers must have following columns: 'Date', 'Open', 'High', 'Low', 'Close', 'Volume', 'Ticker'
 # 4. All price observations are measured in the same currency
+# 5. Currently, positions on a ticker that gets delisted will be sold at entry price

@@ -16,13 +16,17 @@ def get_absolute_path(path_from_script: str) -> str:
     script_directory = os.path.dirname(os.path.abspath(__file__))
     return os.path.join(script_directory, path_from_script)
 
-def reset_logs(paths: list) -> None:
+def reset_logs(paths: list):
     # removes files given in input list
     for path in paths:
         script_directory = os.path.dirname(os.path.abspath(__file__))
         data_file = os.path.join(script_directory, path)
         if os.path.exists(data_file):
             os.remove(data_file)
+
+def mean_list(inp_list: list) -> float:
+    # native python is faster than numpy for small lists (>150 entries)
+    return sum(inp_list)/len(inp_list)
 
 def exponential_moving_average(data: np.ndarray, look_back_period: int) -> np.ndarray:
     # returns a vector with ewma of input data. Equivalent to pandas ewm(adjust=False).mean()
@@ -51,21 +55,17 @@ def directional_movement_index(data: pd.DataFrame, look_back_period: int, curren
 
     # Isolate date range
     current_date_index = np.where(data["Date"].values == current_date)[0][0]
-    data_high = trim_stock_data(data["High"].values,current_date_index,look_back_period)
-    data_low = trim_stock_data(data["Low"].values,current_date_index, look_back_period)
-    data_close = trim_stock_data(data["Close"].values,current_date_index, look_back_period)
+    data_high = trim_stock_data(data["High"].values,current_date_index)
+    data_low = trim_stock_data(data["Low"].values,current_date_index)
+    data_close = trim_stock_data(data["Close"].values,current_date_index)
 
 
     hl = data_high-data_low
-    # hc = np.abs(data['High'] - data['Close'].shift(1)).values
-    # lc = np.abs(data['Low'] - data['Close'].shift(1)).values
     hc = np.abs(shifted_array_difference(data_high, data_close, 2))
     lc = np.abs(shifted_array_difference(data_low, data_close, 2))
     tr = np.nanmax(np.column_stack((hc, hl, lc)),axis=1)
 
     atr = exponential_moving_average(tr,look_back_period)
-    # hph = (data['High'] - data['High'].shift(1)).values
-    # pll = (data['Low'].shift(1) - data['Low']).values
     hph = shifted_array_difference(data_high,data_high,2)
     pll = shifted_array_difference(data_low,data_low,1)
 
@@ -110,3 +110,13 @@ def trim_stock_data(arr: np.array, current_date_index: int, max_obs: int = 50):
         arr = arr[first_valid_index:current_date_index]
 
     return arr
+def chaikin_volatility(data: pd.DataFrame, current_date: str, look_back_period: int):
+
+    current_date_index = np.where(data["Date"].values == current_date)[0][0]
+    data_high = trim_stock_data(data["High"].values, current_date_index)
+    data_low = trim_stock_data(data["Low"].values, current_date_index)
+
+    smoothed_difference = exponential_moving_average(data_high-data_low,look_back_period)
+
+    cv = (smoothed_difference[look_back_period:]/smoothed_difference[:-look_back_period]-1)*100
+    return cv

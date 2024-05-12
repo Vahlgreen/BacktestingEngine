@@ -3,7 +3,13 @@ import os
 import matplotlib.pyplot as plt
 import plotly.express as px
 import plotly.graph_objects as go
-import mplcursors
+from plotly.subplots import make_subplots
+import plotly.io as pio
+import dash
+from dash import dcc, html
+import dash_bootstrap_components as dbc
+from dash.dependencies import Input, Output
+
 
 # project files
 import functions
@@ -12,83 +18,179 @@ def load_logs() -> tuple:
 
     # Read logs
     # portfolio development
-    data_file = functions.get_absolute_path("Resources/Results/portfolio_states.csv")
-    portfolio_log = pd.read_csv(data_file, sep=",", names=["totalValue", "portfolioValue", "funds","trades","positions","date"])
+    data_file = functions.get_absolute_path("Results/portfolio_states.csv")
+    portfolio_log = pd.read_csv(data_file, sep=",")
     portfolio_log["date"].apply(lambda x: x.split(" ")[0])
-    portfolio_log["portfolioIndex"] = portfolio_log["totalValue"] / portfolio_log["totalValue"].to_list()[0]
+    portfolio_log["portfolio_index"] = portfolio_log["total_value"] / portfolio_log["total_value"].to_list()[0]
+    portfolio_log["cummulative_returns"] = (portfolio_log["return"]-1).cumsum()
+
     # rolling statistics
-    portfolio_log["movingAverage"] = portfolio_log["portfolioIndex"].rolling(window=50,min_periods=1).mean()
-    portfolio_log["volatility"] = portfolio_log["portfolioIndex"].rolling(window=50,min_periods=1).std().fillna(0)
+    portfolio_log["moving_average"] = portfolio_log["portfolio_index"].rolling(window=50,min_periods=1).mean()
+    portfolio_log["volatility"] = portfolio_log["portfolio_index"].rolling(window=50,min_periods=1).std().fillna(0)
 
     # Index for comparison
-    data_file = functions.get_absolute_path(f"Resources/Results/Index/{data_provider}_index.csv")
+    data_file = functions.get_absolute_path(f"Results/Index/{data_provider}_index.csv")
     exchange_index = pd.read_csv(data_file, sep=",",names=["date","index"])
 
     # Create common dataframe
     portfolio_log["date"] = exchange_index["date"]
-    portfolio_log["exchangeIndex"] = exchange_index["index"]
+    portfolio_log["exchange_index"] = exchange_index["index"]
 
     #Returns are logged on a trade basis, and so the df has different length
-    data_file = functions.get_absolute_path("Resources/Results/trade_returns.csv")
-    returns = pd.read_csv(data_file, sep=",", names=["returns"])
+    data_file = functions.get_absolute_path("Results/returns.csv")
+    trade_returns = pd.read_csv(data_file, sep=",", names=["returns"])
 
-    return portfolio_log, returns
+    return portfolio_log, trade_returns
 
-def create_plots(states: pd.DataFrame, trades: pd.DataFrame) -> None:
+def create_figures(states: pd.DataFrame, trade_returns: pd.DataFrame) -> dict:
 
     # Create main plot. Portfolio index vs s&p 500
-    fig = go.Figure()
+    portfolio_vs_index_fig = go.Figure()
     # portfolio
-    fig.add_trace(go.Scatter(x=states["date"],
-                             y=states["portfolioIndex"],
+    portfolio_vs_index_fig.add_trace(go.Scatter(x=states["date"],
+                             y=states["portfolio_index"],
                              name="Portfolio index",
-                             customdata=states[["portfolioIndex","totalValue","portfolioValue", "funds","trades","positions"]],
+                             line=dict(color="blue"),
+                             customdata=states[["portfolio_index","total_value","asset_value", "funds","trades","positions","date"]],
                              hovertemplate=
-                            "portfolioIndex: <b>%{customdata[0]}</b><br>" +
+                            "portfolio index: <b>%{customdata[0]}</b><br>" +
                             "total equity: <b>%{customdata[1]:$,.0f}</b><br>" +
                             "asset value: <b>%{customdata[2]:$,.0f}</b><br>" +
                             "funds: <b>%{customdata[3]:$,.0f}</b><br>" +
                             "trades: <b>%{customdata[4]}</b><br>" +
                             "positions: <b>%{customdata[5]}</b><br>" +
+                            "date: <b>%{customdata[6]}</b><br>" +
                             "<extra></extra>"))
+    portfolio_vs_index_fig.add_trace(go.Scatter(x=states["date"],
+                             y=states["exchange_index"],
+                             name="S&P 500",
+                             line=dict(color="purple"),
+                             hoverinfo='skip'))
 
-    # # moving average
-    # fig.add_trace(go.Scatter(x=states["date"],
-    #                          y=states["movingAverage"],
-    #                          name="Moving Average"))
+    # moving average
+    portfolio_vs_index_fig.add_trace(go.Scatter(x=states["date"],
+                             y=states["moving_average"],
+                             name="Moving average",
+                             line=dict(color="grey"),
+                             hoverinfo='skip'))
+
+    portfolio_vs_index_fig.add_hline(y=states["portfolio_index"].max(), line_width=1.5, line_dash = "dash",line_color="green", name="peak")
+    portfolio_vs_index_fig.add_hline(y=states["portfolio_index"].min(), line_width=1.5, line_dash="dash", line_color="red", name="Max drawdown")
 
     # confidence interval
-    fig.add_traces([go.Scatter(x=states["date"],
-                               y=states["movingAverage"] - states["volatility"],
-                               showlegend = False,
-                               line_color = 'rgba(0,0,0,0)',
-                               hoverinfo='skip'),
-                   go.Scatter(x=states["date"],
-                              y=states["movingAverage"] + states["volatility"],
-                              name = 'Volatility',
-                              line_color='rgba(0,0,0,0)',
-                              fill='tonexty', fillcolor = 'rgba(255, 0, 0, 0.2)',
-                              hoverinfo='skip')])
-    # s&p
-    fig.add_trace(go.Scatter(x=states["date"],
-                             y=states["exchangeIndex"],
-                             name="S&P 500"))
-                             #mode='markers',
-                             #marker=dict(size=5)))
+    # portfolio_vs_index_fig.add_traces([go.Scatter(x=states["date"],
+    #                            y=states["movingAverage"] - states["volatility"],
+    #                            showlegend = False,
+    #                            line_color = 'rgba(0,0,0,0)',
+    #                            hoverinfo='skip'),
+    #                go.Scatter(x=states["date"],
+    #                           y=states["movingAverage"] + states["volatility"],
+    #                           name = 'Volatility',
+    #                           line_color='rgba(0,0,0,0)',
+    #                           fill='tonexty', fillcolor = 'rgba(255, 0, 0, 0.2)',
+    #                           hoverinfo='skip')])
 
-    fig.write_html(functions.get_absolute_path("Resources/Results/Plots/portfolio_vs_index.html"))
-    fig.show()
 
-    # trades and positions
-    ax = states.plot(x="date", y="trades", figsize=(15, 7))
-    states.plot(x="date", y="positions", ax=ax)
-    plt.savefig(functions.get_absolute_path("Resources/Results/Plots/TradesAndPositions.png"))
+
+    portfolio_vs_index_fig.write_html(functions.get_absolute_path("Results/Plots/portfolio_vs_index.html"))
+    #portfolio_vs_index_fig.show()
+
+    # risk and cummulative returns
+    risk_cum_return_fig = make_subplots(specs=[[{"secondary_y": True}]])
+    risk_cum_return_fig.add_trace(go.Scatter(x=states["date"],
+                             y=states["cummulative_returns"],
+                             name="Cummulative returns"))
+    risk_cum_return_fig.add_trace(go.Scatter(x=states["date"],
+                             y=states["risk"],
+                             name="Risk"),secondary_y=True)
+    risk_cum_return_fig.write_html(functions.get_absolute_path("Results/Plots/cum_returns_and_risk.html"))
+    #risk_cum_return_fig.show()
+
+    funds_and_asset_value_fig = go.Figure()
+    funds_and_asset_value_fig.add_trace(go.Scatter(x=states["date"],
+                             y=states["funds"],
+                             name="Funds"))
+    funds_and_asset_value_fig.add_trace(go.Scatter(x=states["date"],
+                             y=states["asset_value"],
+                             name="Asset value"))
+
+    # positions
+    positions_fig = go.Figure()
+    positions_fig.add_trace(go.Scatter(x=states["date"],
+                             y=states["positions"],
+                             name="pos"))
 
     # portfolio returns
-    hist_figure = px.histogram(trades, x="returns", nbins=round(trades.shape[0] / 1.5))
-    hist_figure.write_image(functions.get_absolute_path("Resources/Results/Plots/Returns.png"))
-    #hist_figure.show()
+    hist_figure = px.histogram(trade_returns, x="returns", nbins=round(trade_returns.shape[0] / 1.5))
+    hist_figure.write_html(functions.get_absolute_path("Results/Plots/Returns.html"))
 
+    # winrate, risk and funds
+    wr_risk_funds_fig = go.Figure()#make_subplots(specs=[[{"secondary_y": True}]])
+    wr_risk_funds_fig.add_trace(go.Scatter(x=states["date"],
+                             y=states["win_rate"],
+                             name="Win rate", opacity = 0.25,line_dash = "dash"))
+    wr_risk_funds_fig.add_trace(go.Scatter(x=states["date"],
+                             y=states["risk"],
+                             name="Risk", opacity = 0.25,line_dash = "dash"))
+    wr_risk_funds_fig.add_trace(go.Scatter(x=states["date"],
+                             y=states["risk"]*states["win_rate"],
+                             name="Risk x Winrate",opacity = 0.75))
+
+    return_dict = {
+        "portfolio_vs_index_fig": portfolio_vs_index_fig,
+        "risk_cum_return_fig": risk_cum_return_fig,
+        "hist_figure": hist_figure,
+        "funds_and_asset_value_fig": funds_and_asset_value_fig,
+        "positions_fig": positions_fig,
+        "wr_risk_funds_fig": wr_risk_funds_fig
+    }
+
+    return return_dict
+
+def create_dashboard(figures: dict):
+
+    app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
+    port_index = figures["portfolio_vs_index_fig"]
+    risk_cum_return_fig= figures["risk_cum_return_fig"]
+    hist_fig = figures["hist_figure"]
+    funds_and_asset_value_fig = figures["funds_and_asset_value_fig"]
+    positions_fig = figures["positions_fig"]
+    wr_risk_funds_fig = figures["wr_risk_funds_fig"]
+
+    # Charts
+    app.layout = dbc.Container(
+        [
+            html.H1("Backtest Results"),
+
+            # Charts
+            dbc.Row(
+                [
+                    dbc.Col([dcc.Graph(figure=port_index)], width=12),
+                ],justify="center",style={"height": "100%"}),
+            dbc.Row(
+                [
+                    dbc.Col([dcc.Graph(figure=hist_fig)], width=12)
+                ]),
+            dbc.Row(
+                [
+                    dbc.Col([dcc.Graph(figure=risk_cum_return_fig)], width=12),
+                ]),
+            dbc.Row(
+                [
+                    dbc.Col([dcc.Graph(figure=funds_and_asset_value_fig)], width=12),
+                ]),
+            dbc.Row(
+                [
+                    dbc.Col([dcc.Graph(figure=positions_fig)], width=12),
+                ]),
+            dbc.Row(
+                [
+                    dbc.Col([dcc.Graph(figure=wr_risk_funds_fig)], width=12),
+                ])
+        ]
+    )
+
+    app.run_server(host="localhost", debug=True, use_reloader=False)
 def plot_indices():
     path = functions.get_absolute_path("Resources/Data/BacktestData/")
     dir_list = os.listdir(path)
@@ -104,9 +206,10 @@ def plot_indices():
                                  y=exchange_index["index"],
                                  name=label))
 
-    fig.write_html(functions.get_absolute_path("Resources/Results/Plots/index_comparison.html"))
+    fig.write_html(functions.get_absolute_path("Results/Plots/index_comparison.html"))
     fig.show()
 if __name__ == "__main__":
     portfolio_states, trade_log = load_logs()
-    create_plots(portfolio_states, trade_log)
+    figures = create_figures(portfolio_states, trade_log)
+    create_dashboard(figures)
     #plot_indices()

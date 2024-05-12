@@ -3,13 +3,13 @@ import numpy as np
 
 import functions
 
-def rsi(data: pd.DataFrame, current_date: str, look_back_period: int = 14, max_obs: int = 50) -> bool:
-    # Returns rsi at current date
+def rsi(data: pd.DataFrame, current_date: str, look_back_period: int = 14) -> bool:
+    # Source: https://en.wikipedia.org/wiki/Relative_strength_index
 
     current_date_index = np.where(data["Date"].values == current_date)[0][0]
-    data_close = functions.trim_stock_data(data["Close"].values,current_date_index,max_obs)
+    data_close = functions.trim_stock_data(data["Close"].values,current_date_index)
 
-    if data_close.size < 10:
+    if data_close.size < look_back_period:
         return False
 
     diff_arr = np.diff(data_close,1)
@@ -24,14 +24,13 @@ def rsi(data: pd.DataFrame, current_date: str, look_back_period: int = 14, max_o
     with np.errstate(divide='ignore'):
         current_rsi = 100 - (100 / (1 + average_gain / average_loss))[-1]
     return 30 < current_rsi < 70
+def bollinger_bands(data: pd.DataFrame, current_date: str, look_back_period: int = 14, d: int = 2) -> bool:
+    # Source: https://en.wikipedia.org/wiki/Bollinger_Bands
 
-
-def bollinger_bands(data: pd.DataFrame, current_date: str, look_back_period: int = 14, max_obs: int = 50,
-                    d: int = 2):
     current_date_index = np.where(data["Date"].values == current_date)[0][0]
-    data_close = functions.trim_stock_data(data["Close"].values, current_date_index, max_obs)
+    data_close = functions.trim_stock_data(data["Close"].values, current_date_index)
 
-    if data_close.size < 10:
+    if data_close.size < look_back_period:
         return False
 
     smoothed_data_close = functions.exponential_moving_average(data_close, look_back_period)
@@ -48,7 +47,6 @@ def bollinger_bands(data: pd.DataFrame, current_date: str, look_back_period: int
     percent_b = (data_close[-1] - lower_band) / (upper_band - lower_band)*100
 
     return percent_b > 75
-
 def moving_average(data: pd.DataFrame, current_date: str, long_window_size: int = 14, short_window_size: int = 7) -> bool:
     # computes average price in the given window ranges
 
@@ -62,16 +60,15 @@ def moving_average(data: pd.DataFrame, current_date: str, long_window_size: int 
     short_window_average = np.mean(data_close[-short_window_size:])
 
     return long_window_average < short_window_average
-
-def dmi(data: pd.DataFrame,current_date: str, look_back_period: int) -> bool:
-    # Returns a vector with dmi for each timestep in isolated range
+def dmi_(data: pd.DataFrame,current_date: str, look_back_period: int = 14) -> bool:
+    # Source: https://en.wikipedia.org/wiki/Average_directional_movement_index
 
     current_date_index = np.where(data["Date"].values == current_date)[0][0]
-    data_high = functions.trim_stock_data(data["High"].values,current_date_index,look_back_period)
-    data_low = functions.trim_stock_data(data["Low"].values,current_date_index, look_back_period)
-    data_close = functions.trim_stock_data(data["Close"].values,current_date_index, look_back_period)
+    data_high = functions.trim_stock_data(data["High"].values,current_date_index)
+    data_low = functions.trim_stock_data(data["Low"].values,current_date_index)
+    data_close = functions.trim_stock_data(data["Close"].values,current_date_index)
 
-    if data_close.size < 10:
+    if data_close.size < look_back_period:
         return False
 
     hl = data_high-data_low
@@ -96,3 +93,20 @@ def dmi(data: pd.DataFrame,current_date: str, look_back_period: int) -> bool:
 
     adx = functions.exponential_moving_average(dx[np.logical_not(np.isnan(dx))], look_back_period)
     return adx[-1] > 50
+def chaikin_volatility(data: pd.DataFrame, current_date: str, look_back_period: int = 14) -> bool:
+    # Source: https://www.marketvolume.com/technicalanalysis/chaikinvolatility.asp
+
+    current_date_index = np.where(data["Date"].values == current_date)[0][0]
+    data_high = functions.trim_stock_data(data["High"].values, current_date_index)
+    data_low = functions.trim_stock_data(data["Low"].values, current_date_index)
+
+    if data_high.size <= look_back_period:
+        return False
+
+    smoothed_difference = functions.exponential_moving_average(data_high-data_low,look_back_period)
+
+    cv = (smoothed_difference[look_back_period:]/smoothed_difference[:-look_back_period]-1)*100
+
+    current_cv = cv[-1]
+
+    return current_cv < 50

@@ -7,7 +7,7 @@ import numpy as np
 import functions
 from portfolio import Portfolio
 from parameters import data_provider, ticker_list, start_date, initial_funds, transaction_fee
-from indicators import rsi, moving_average
+from indicators import rsi, moving_average, bollinger_bands, dmi_, chaikin_volatility
 
 def main():
     main_timer = time.time()
@@ -37,7 +37,7 @@ def main():
     print(f"backtest duration: {round((time.time() - main_timer)/60,2)} minutes")
 
 
-def run_backtest(portfolio: Portfolio, current_date: str, ticker_data: dict) -> None:
+def run_backtest(portfolio: Portfolio, current_date: str, ticker_data: dict):
     pool = {}
     # loop through symbols
     for stock_ticker,stock_data in ticker_data.items():
@@ -55,7 +55,10 @@ def run_backtest(portfolio: Portfolio, current_date: str, ticker_data: dict) -> 
     if len(pool)>0:
         sorted_pool_tickers = sorted(pool, key=lambda x: pool[x]['dmi'], reverse=True)
         num_tickers = min(3,len(pool))
-        assigned_equity = portfolio.funds / num_tickers
+        # Assign equal equity to all candidates. Use kelly criteria to decide final assigned equity
+
+        p = functions.mean_list(portfolio.winrate[-min(14,len(portfolio.winrate)):])
+        assigned_equity = (p*portfolio.funds*portfolio.risk_tolerance) / num_tickers
         for i in range(num_tickers):
             ticker = sorted_pool_tickers[i]
             current_price = pool[ticker]["current_price"]
@@ -63,25 +66,20 @@ def run_backtest(portfolio: Portfolio, current_date: str, ticker_data: dict) -> 
             if position_size > 0 and portfolio.funds >= current_price * position_size:
                 portfolio.buy(ticker, position_size, current_price, current_date)
 
-
-    portfolio.log_portfolio_state(ticker_data, current_date)
-def log_index(start_date: str, end_date: str) -> None:
-    path = functions.get_absolute_path(f"Resources/Data/BacktestData/{data_provider}_index.csv")
-    data = pd.read_csv(path, sep=",", index_col="date")
-    log_path = functions.get_absolute_path(f"Resources/Results/index/{path.split('/')[-1]}")
-    (data.loc[start_date:end_date, "index"] / data.loc[start_date, "index"]).to_csv(log_path, sep=",", header=False)
-def get_backtest_data() -> pd.DataFrame:
-    path = functions.get_absolute_path(f"Resources/Data/BacktestData/{data_provider}_historical_data.csv")
-    data = pd.read_csv(path, sep=",", index_col=False)
-    data.index = data["Date"]
-    if data.empty:
-        raise Exception
-    return data
-def strategy(stock_history: pd.DataFrame, stock_ticker: str, current_date: str, portfolio: Portfolio, current_price: float, pool: dict) -> None:
+    portfolio.update_and_log(ticker_data, current_date)
+def strategy(stock_history: pd.DataFrame, stock_ticker: str, current_date: str, portfolio: Portfolio, current_price: float, pool: dict):
     # implements the trading strategy.
-    ma_filter = moving_average(stock_history, current_date)
-    rsi_filter = rsi(stock_history,current_date)
-    buy_signal = ma_filter and rsi_filter
+
+    buy_signal = False
+    if moving_average(stock_history, current_date):
+        if rsi(stock_history, current_date):
+            buy_signal = True
+
+        # if bollinger_bands(stock_history,current_date):
+        #     if chaikin_volatility(stock_history,current_date):
+        #         if rsi(stock_history,current_date):
+        #             if dmi_(stock_history,current_date):
+        #
 
     # if ticker is in holdings check sell condition, otherwise check buy condition
     if stock_ticker in portfolio.open_trades:
@@ -139,6 +137,18 @@ def structure_input_data(data: pd.DataFrame, s_date: str, input_tickers: list) -
     market_days = market_days[market_days.get_loc(s_date):].tolist()
 
     return ticker_data, market_days
+def log_index(s_date: str, end_date: str):
+    path = functions.get_absolute_path(f"Resources/Data/BacktestData/{data_provider}_index.csv")
+    data = pd.read_csv(path, sep=",", index_col="date")
+    log_path = functions.get_absolute_path(f"Results/index/{path.split('/')[-1]}")
+    (data.loc[s_date:end_date, "index"] / data.loc[s_date, "index"]).to_csv(log_path, sep=",", header=False)
+def get_backtest_data() -> pd.DataFrame:
+    path = functions.get_absolute_path(f"Resources/Data/BacktestData/{data_provider}_historical_data.csv")
+    data = pd.read_csv(path, sep=",", index_col=False)
+    data.index = data["Date"]
+    if data.empty:
+        raise Exception
+    return data
 
 if (__name__ == "__main__"):
     # Suppress/hide warnings
