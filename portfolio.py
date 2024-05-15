@@ -65,7 +65,7 @@ class Portfolio:
 
         self.update_portfolio_value(data, current_date)
         self.update_asset_value()
-        self.update_returns(current_date)
+        self.update_returns_and_winrate(current_date)
         self.update_risk_tolerance()
         self.update_max_drawdown()
         self.log_portfolio_state(current_date)
@@ -81,8 +81,8 @@ class Portfolio:
         self.portfolio_value += self.funds
     def update_asset_value(self):
         self.asset_value = max(self.portfolio_value - self.funds, 0)
-    def update_returns(self, current_date: str):
-        # Logs average return of all trades that occurred that day.
+    def update_returns_and_winrate(self, current_date: str):
+        # Logs average return of all trades that occurred that day, as well as the winrate
 
         if len(self.trade_log.keys()) > 0:
             if current_date == list(self.trade_log.keys())[-1]:
@@ -190,6 +190,7 @@ class Portfolio:
                     f"Average trades pr day:             {round(num_trades / num_days, 1)}\n" \
                     f"Transaction expenses:              ${self.transaction_expenses} ({round(self.transaction_expenses/self.portfolio_value_primo,2)*100}% of initial funds)"
 
+        # Print information
         data_file = functions.get_absolute_path("Results/backtest_results.txt")
         with open(data_file, "w") as f:
             f.write(logString)
@@ -219,8 +220,6 @@ class Portfolio:
             logString += "\n"
         with open(data_file, "w") as f:
             f.write(logString)
-
-
 
 class _Trade:
     def __init__(self, entry_price: float, position_size: int, entry_date: str, ticker: str, stop_loss: float):
