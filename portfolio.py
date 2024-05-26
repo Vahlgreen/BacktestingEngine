@@ -3,10 +3,10 @@ import numpy as np
 
 #Project files
 import functions
-
+import strategy
 
 class Portfolio:
-    def __init__(self, start_date: str, end_date: str, funds: float = 100000.0, transaction_fee: float = 0.5, risk_tolerance: float = 0.5):
+    def __init__(self, start_date: str, end_date: str,strategies: list, funds: float, transaction_fee: float, risk_tolerance: float = 0.5):
         self.funds = funds
         self.asset_value = 0
         self.start_date = start_date
@@ -16,6 +16,7 @@ class Portfolio:
         self.portfolio_value = 0
         self.transaction_fee = transaction_fee
         self.transaction_expenses = 0
+        self.strategies = {name: getattr(strategy, name)() for name in strategies} # instantiate strategy objects
         self.winrate = [1]                     # Current winrate. Avoid collapsing the kelly criteria by appending 1
         self.open_trades = {}                  # Currently open positions
         self.all_trades = []                   # List of all completed trades
@@ -24,6 +25,9 @@ class Portfolio:
         self.trade_log = {}                    # Completed trades, aggregated on date
         self.risk_tolerance = risk_tolerance   # Ratio of total equity assigned to trading
 
+    def deploy_strategies(self,ticker_data: dict, current_date: str):
+        for _, strat in self.strategies.items():
+            strat.deploy(self,ticker_data,current_date)
     def sell(self, ticker: str, current_price: float, date: str):
         # Complete trade
         trade = self.open_trades[ticker].complete_trade(current_price, date)
@@ -176,6 +180,7 @@ class Portfolio:
         lossRate = 1 - winRate
         profitFactor = (winRate * average_profit) / (lossRate * average_loss)
 
+
         logString = f"Total portfolio return:            {round((portfolio_return-1)*100,1)}%\n" \
                     f"Average profit:                    ${round(average_profit)}\n" \
                     f"Average loss:                      ${round(average_loss)}\n" \
@@ -190,6 +195,26 @@ class Portfolio:
                     f"Average trades pr day:             {round(num_trades / num_days, 1)}\n" \
                     f"Transaction expenses:              ${self.transaction_expenses} ({round(self.transaction_expenses/self.portfolio_value_primo,2)*100}% of initial funds)"
 
+        # In addition to printing the aggregated results to txt we also save them in a csv to create a dataframe for the dashboard
+
+        aggregated_backtest_results = {
+            "Total portfolio return" : [f"{round((portfolio_return - 1) * 100, 1)}%"],
+            "Average profit": [f"${round(average_profit)}"],
+            "Average loss": [f"${round(average_loss)}"],
+            "Profit factor": [round(profitFactor, 1)],
+            "Average Profit var. coefficient": [f"{round(np.std(list_of_profits) / average_profit, 1)}%"],
+            "Average loss var. coefficient": [f"{round(np.std(list_of_losses)/average_loss,1)}%"],
+            "Max drawdown": [f"{round((self.max_drawdown - 1) * 100, 1)}%"],
+            "Win Rate": [f"{round(winRate*100,1)}%"],
+            "Sharpe Ratio": [round(sharpe_ratio,1)],
+            "Longest position held": [f"{max_trade_duration['Duration']} days ({max_trade_duration['Ticker']})"],
+            "Number of trades": [num_trades],
+            "Average trades pr day": [round(num_trades / num_days, 1)],
+            "Transaction expenses": [f"${self.transaction_expenses} ({round(self.transaction_expenses/self.portfolio_value_primo,2)*100}% of initial funds)"]
+        }
+        print_df = pd.DataFrame.from_dict(data=aggregated_backtest_results,columns=["Results"],orient="index")
+        print_df.index.name = "Metric"
+        print_df.to_csv(functions.get_absolute_path("Results/backtest_results_df.csv"))
         # Print information
         data_file = functions.get_absolute_path("Results/backtest_results.txt")
         with open(data_file, "w") as f:
