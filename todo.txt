@@ -1,9 +1,15 @@
 Infrastructure
-TODO: log top three stocks and associated results. Perhaps plot those equity curves
+TODO: log top three stocks and associated results, that is, plot when we bought it etc
 TODO: Fix sharpe and sortino ratios.
 TODO: develop infrastructure to apply multiple strategies
 TODO: if input tickers is not 'all' we should plot the chosen index/stock
 TODO: implement validation log
+TODO: validate backtester on 5% return equity curve
+TODO: check plots from pyfolio
+TODO: using "half" parameter produces alternating results
+TODO: find flexible way to allocate funds to strategies
+TODO: plot results for all strategies (if more than one)
+TODO: risk management should occur on a strategy level
 
 Data
 TODO: make all data providers fit into current infrastructure
