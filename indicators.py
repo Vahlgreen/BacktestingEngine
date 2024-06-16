@@ -4,7 +4,7 @@ import numpy as np
 import functions
 
 def rsi(data: pd.DataFrame, current_date: str, look_back_period: int = 14) -> bool:
-    # Source: https://en.wikipedia.org/wiki/Relative_strength_index
+    """Source: https://en.wikipedia.org/wiki/Relative_strength_index"""
 
     current_date_index = np.where(data["Date"].values == current_date)[0][0]
     data_close = functions.trim_stock_data(data["Close"].values,current_date_index)
@@ -25,7 +25,7 @@ def rsi(data: pd.DataFrame, current_date: str, look_back_period: int = 14) -> bo
         current_rsi = 100 - (100 / (1 + average_gain / average_loss))[-1]
     return 30 < current_rsi < 70
 def bollinger_bands(data: pd.DataFrame, current_date: str, look_back_period: int = 14, d: int = 2) -> bool:
-    # Source: https://en.wikipedia.org/wiki/Bollinger_Bands
+    """Source: https://en.wikipedia.org/wiki/Bollinger_Bands"""
 
     current_date_index = np.where(data["Date"].values == current_date)[0][0]
     data_close = functions.trim_stock_data(data["Close"].values, current_date_index)
@@ -48,7 +48,7 @@ def bollinger_bands(data: pd.DataFrame, current_date: str, look_back_period: int
 
     return percent_b > 75
 def moving_average(data: pd.DataFrame, current_date: str, long_window_size: int = 14, short_window_size: int = 7) -> bool:
-    # computes average price in the given window ranges
+    """Computes average price in the given window ranges"""
 
     current_date_index = np.where(data["Date"].values == current_date)[0][0]
     data_close = functions.trim_stock_data(data["Close"].values, current_date_index)
@@ -61,7 +61,7 @@ def moving_average(data: pd.DataFrame, current_date: str, long_window_size: int 
 
     return long_window_average < short_window_average
 def dmi_(data: pd.DataFrame,current_date: str, look_back_period: int = 14) -> bool:
-    # Source: https://en.wikipedia.org/wiki/Average_directional_movement_index
+    """Source: https://en.wikipedia.org/wiki/Average_directional_movement_index"""
 
     current_date_index = np.where(data["Date"].values == current_date)[0][0]
     data_high = functions.trim_stock_data(data["High"].values,current_date_index)
@@ -94,7 +94,7 @@ def dmi_(data: pd.DataFrame,current_date: str, look_back_period: int = 14) -> bo
     adx = functions.exponential_moving_average(dx[np.logical_not(np.isnan(dx))], look_back_period)
     return adx[-1] > 50
 def chaikin_volatility(data: pd.DataFrame, current_date: str, look_back_period: int = 14) -> bool:
-    # Source: https://www.marketvolume.com/technicalanalysis/chaikinvolatility.asp
+    """Source: https://www.marketvolume.com/technicalanalysis/chaikinvolatility.asp"""
 
     current_date_index = np.where(data["Date"].values == current_date)[0][0]
     data_high = functions.trim_stock_data(data["High"].values, current_date_index)

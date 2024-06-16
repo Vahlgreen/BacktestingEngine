@@ -10,6 +10,8 @@ from parameters import *
 
 
 def main():
+    """Main module. Contains basic backtest logic"""
+
     main_timer = time.time()
 
     # Initiate backtest parameters
@@ -38,7 +40,7 @@ def main():
 
     print(f"backtest duration: {round((time.time() - main_timer)/60,2)} minutes")
 def structure_input_data(data: pd.DataFrame, s_date: str, input_tickers: list) -> tuple:
-    # Validates input parameters and isolates tickers according to said parameters
+    """Validates input parameters and isolates tickers according to said parameters"""
 
     grouped_data = data.groupby("Ticker")
     available_tickers= list(set(data['Ticker'].values))
@@ -84,11 +86,15 @@ def structure_input_data(data: pd.DataFrame, s_date: str, input_tickers: list) -
 
     return ticker_data, market_days
 def log_index(s_date: str, end_date: str):
+    """Logs index in the backtest time period"""
+
     path = functions.get_absolute_path(f"Resources/Data/BacktestData/{data_provider}_index.csv")
     data = pd.read_csv(path, sep=",", index_col="date")
     log_path = functions.get_absolute_path(f"Results/index/{path.split('/')[-1]}")
     (data.loc[s_date:end_date, "index"] / data.loc[s_date, "index"]).to_csv(log_path, sep=",", header=False)
 def get_backtest_data() -> pd.DataFrame:
+    """Fetches backtest data"""
+
     path = functions.get_absolute_path(f"Resources/Data/BacktestData/{data_provider}_historical_data.csv")
     data = pd.read_csv(path, sep=",", index_col=False)
     data.index = data["Date"]
