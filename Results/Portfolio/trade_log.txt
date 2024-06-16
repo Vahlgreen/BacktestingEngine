@@ -1,0 +1,3798 @@
+2015-02-04
+ticker: AAPL-StrategyAAPL, Return: 1.0038130758938555, gain: 9, entry date: 2015-02-02, duration: 2
+
+2015-02-10
+ticker: AAPL-StrategyAAPL, Return: 1.0012477579349606, gain: 2, entry date: 2015-02-05, duration: 3
+
+2015-02-19
+ticker: AAPL-StrategyAAPL, Return: 1.0465088417987822, gain: 91, entry date: 2015-02-11, duration: 6
+
+2015-02-25
+ticker: MAT-SimpleMomentum, Return: 0.9075660242683797, gain: -8, entry date: 2015-02-09, duration: 12
+ticker: AAPL-StrategyAAPL, Return: 1.0228569052387915, gain: 46, entry date: 2015-02-20, duration: 3
+
+2015-02-27
+ticker: AAPL-StrategyAAPL, Return: 1.0094342234588922, gain: 19, entry date: 2015-02-26, duration: 1
+
+2015-03-04
+ticker: AAPL-StrategyAAPL, Return: 0.9988378989765235, gain: -2, entry date: 2015-03-02, duration: 2
+
+2015-03-10
+ticker: SWN-SimpleMomentum, Return: 0.8347232752084913, gain: -52, entry date: 2015-02-03, duration: 25
+
+2015-03-11
+ticker: PCG-SimpleMomentum, Return: 0.8793542905692439, gain: -99, entry date: 2015-02-02, duration: 27
+
+2015-03-12
+ticker: CMS-SimpleMomentum, Return: 0.8768617021276595, gain: -23, entry date: 2015-02-04, duration: 26
+
+2015-03-19
+ticker: FSLR-SimpleMomentum, Return: 1.0275722932078009, gain: 2, entry date: 2015-03-12, duration: 5
+
+2015-03-20
+ticker: AAPL-StrategyAAPL, Return: 0.9961158998857617, gain: -5, entry date: 2015-03-19, duration: 1
+
+2015-03-26
+ticker: AAPL-StrategyAAPL, Return: 0.9656993194559855, gain: -36, entry date: 2015-03-23, duration: 3
+
+2015-04-09
+ticker: CME-SimpleMomentum, Return: 0.9284989649250748, gain: -5, entry date: 2015-03-13, duration: 19
+ticker: AAPL-StrategyAAPL, Return: 0.985976625381051, gain: -13, entry date: 2015-04-07, duration: 2
+
+2015-04-17
+ticker: AAPL-StrategyAAPL, Return: 0.9780325466899523, gain: -17, entry date: 2015-04-13, duration: 4
+
+2015-04-30
+ticker: KIM-SimpleMomentum, Return: 0.8926796263044213, gain: -89, entry date: 2015-02-02, duration: 63
+ticker: AAPL-StrategyAAPL, Return: 0.9770847138065539, gain: -15, entry date: 2015-04-24, duration: 4
+
+2015-05-01
+ticker: TEL-SimpleMomentum, Return: 0.9404327058162404, gain: -4, entry date: 2015-03-12, duration: 36
+
+2015-05-06
+ticker: NFLX-SimpleMomentum, Return: 1.2768452568547115, gain: 18, entry date: 2015-02-10, duration: 61
+ticker: AAPL-StrategyAAPL, Return: 1.0036476226831235, gain: 2, entry date: 2015-05-01, duration: 3
+
+2015-05-13
+ticker: AAPL-StrategyAAPL, Return: 1.0043785250837538, gain: 3, entry date: 2015-05-12, duration: 1
+
+2015-05-18
+ticker: AAPL-StrategyAAPL, Return: 0.9946524983665188, gain: -4, entry date: 2015-05-15, duration: 1
+
+2015-05-21
+ticker: AAPL-StrategyAAPL, Return: 0.9952554000815107, gain: -3, entry date: 2015-05-19, duration: 2
+
+2015-05-29
+ticker: AAPL-StrategyAAPL, Return: 0.997187088940605, gain: -2, entry date: 2015-05-22, duration: 5
+
+2015-06-02
+ticker: KSS-SimpleMomentum, Return: 0.9628698278520508, gain: -2, entry date: 2015-02-17, duration: 75
+
+2015-06-03
+ticker: AAPL-StrategyAAPL, Return: 0.9958827967211229, gain: -3, entry date: 2015-06-01, duration: 2
+
+2015-06-10
+ticker: PBI-SimpleMomentum, Return: 0.9395652173913043, gain: -3, entry date: 2015-02-23, duration: 77
+
+2015-06-11
+ticker: WMB-SimpleMomentum, Return: 1.0370691523954043, gain: 5, entry date: 2015-02-05, duration: 90
+ticker: RRC-SimpleMomentum, Return: 0.8626686169348285, gain: -8, entry date: 2015-05-08, duration: 24
+
+2015-06-15
+ticker: SWN-SimpleMomentum, Return: 0.8652321630804078, gain: -4, entry date: 2015-04-24, duration: 36
+
+2015-06-16
+ticker: MU-SimpleMomentum, Return: 0.7466608498275497, gain: -8, entry date: 2015-02-13, duration: 87
+
+2015-06-19
+ticker: AAPL-StrategyAAPL, Return: 1.0037712152662701, gain: 1, entry date: 2015-06-18, duration: 1
+
+2015-06-25
+ticker: AAPL-StrategyAAPL, Return: 1.0129728296330414, gain: 6, entry date: 2015-06-24, duration: 1
+
+2015-06-30
+ticker: ICE-SimpleMomentum, Return: 0.9439659250009459, gain: -2, entry date: 2015-03-03, duration: 85
+ticker: ADM-SimpleMomentum, Return: 1.0097107438016528, gain: 1, entry date: 2015-02-04, duration: 104
+ticker: WU-SimpleMomentum, Return: 1.0571281523417395, gain: 1, entry date: 2015-03-06, duration: 82
+ticker: TER-SimpleMomentum, Return: 0.922197534223109, gain: -2, entry date: 2015-06-08, duration: 16
+ticker: X-SimpleMomentum, Return: 0.8785475792988314, gain: -20, entry date: 2015-02-05, duration: 103
+ticker: AAPL-StrategyAAPL, Return: 0.983552128384486, gain: -9, entry date: 2015-06-26, duration: 2
+
+2015-07-02
+ticker: PBI-SimpleMomentum, Return: 0.9554140127388535, gain: -1, entry date: 2015-06-19, duration: 9
+
+2015-07-06
+ticker: ATI-SimpleMomentum, Return: 0.907035175879397, gain: -12, entry date: 2015-02-06, duration: 106
+ticker: RRD-SimpleMomentum, Return: 0.8797533401849948, gain: -9, entry date: 2015-03-13, duration: 81
+
+2015-07-09
+ticker: BK-SimpleMomentum, Return: 0.9521930842422835, gain: -2, entry date: 2015-05-13, duration: 41
+ticker: TXN-SimpleMomentum, Return: 0.852529315531389, gain: -7, entry date: 2015-03-02, duration: 93
+
+2015-07-10
+ticker: AMAT-SimpleMomentum, Return: 0.9340679451203957, gain: -4, entry date: 2015-05-18, duration: 39
+ticker: AAPL-SimpleMomentum, Return: 0.9507800711546714, gain: -1, entry date: 2015-02-26, duration: 96
+ticker: NVDA-SimpleMomentum, Return: 0.8716208801258369, gain: -15, entry date: 2015-03-12, duration: 86
+
+2015-07-13
+ticker: APA-SimpleMomentum, Return: 0.9412811387900355, gain: -3, entry date: 2015-07-02, duration: 7
+
+2015-07-22
+ticker: MAT-SimpleMomentum, Return: 0.8519713261648746, gain: -4, entry date: 2015-05-05, duration: 56
+
+2015-07-23
+ticker: TER-SimpleMomentum, Return: 0.9750540982158629, gain: 0, entry date: 2015-07-20, duration: 3
+ticker: AAPL-StrategyAAPL, Return: 1.003816510911126, gain: 2, entry date: 2015-07-15, duration: 6
+
+2015-07-24
+ticker: KSS-SimpleMomentum, Return: 0.9684524982724271, gain: -1, entry date: 2015-06-24, duration: 22
+
+2015-07-27
+ticker: AAPL-StrategyAAPL, Return: 0.9822059141251182, gain: -5, entry date: 2015-07-24, duration: 1
+
+2015-07-29
+ticker: URBN-SimpleMomentum, Return: 0.9438329099633078, gain: -2, entry date: 2015-06-11, duration: 34
+
+2015-08-03
+ticker: AAPL-StrategyAAPL, Return: 0.9910286626625104, gain: -2, entry date: 2015-07-31, duration: 1
+
+2015-08-04
+ticker: FOSL-SimpleMomentum, Return: 0.9245337159253945, gain: -5, entry date: 2015-07-01, duration: 24
+
+2015-08-07
+ticker: DFS-SimpleMomentum, Return: 0.9075857408346004, gain: -5, entry date: 2015-02-10, duration: 128
+ticker: WMB-SimpleMomentum, Return: 0.8366499394358886, gain: -9, entry date: 2015-07-02, duration: 26
+
+2015-08-17
+ticker: AAPL-StrategyAAPL, Return: 1.0150470389066257, gain: 2, entry date: 2015-08-14, duration: 1
+
+2015-08-18
+ticker: AMZN-SimpleMomentum, Return: 1.432542835058187, gain: 16, entry date: 2015-02-19, duration: 128
+
+2015-08-19
+ticker: AAPL-StrategyAAPL, Return: 0.9971650531125592, gain: -1, entry date: 2015-08-18, duration: 1
+
+2015-08-21
+ticker: MU-SimpleMomentum, Return: 0.7166314230802387, gain: -6, entry date: 2015-07-20, duration: 24
+ticker: XYL-SimpleMomentum, Return: 0.8940269749518304, gain: -4, entry date: 2015-07-06, duration: 34
+ticker: MET-SimpleMomentum, Return: 1.0270000000000001, gain: 1, entry date: 2015-02-11, duration: 137
+
+2015-08-24
+ticker: AFL-SimpleMomentum, Return: 0.873130134191502, gain: -3, entry date: 2015-04-10, duration: 96
+ticker: SBUX-SimpleMomentum, Return: 0.8874740316347818, gain: -5, entry date: 2015-07-07, duration: 34
+ticker: ETFC-SimpleMomentum, Return: 0.8354700854700855, gain: -9, entry date: 2015-03-16, duration: 115
+ticker: UNM-SimpleMomentum, Return: 0.8587848932676518, gain: -5, entry date: 2015-06-16, duration: 49
+ticker: WU-SimpleMomentum, Return: 0.868731563421829, gain: -3, entry date: 2015-08-04, duration: 14
+ticker: APH-SimpleMomentum, Return: 0.8281189848677781, gain: -9, entry date: 2015-03-17, duration: 114
+ticker: X-SimpleMomentum, Return: 0.7680332122470162, gain: -4, entry date: 2015-08-03, duration: 15
+ticker: AAPL-StrategyAAPL, Return: 0.859097784073176, gain: -46, entry date: 2015-08-21, duration: 1
+
+2015-08-25
+ticker: NFX-SimpleMomentum, Return: 0.9366197183098592, gain: -8, entry date: 2015-02-06, duration: 142
+ticker: BSX-SimpleMomentum, Return: 1.0920245398773005, gain: 30, entry date: 2015-02-03, duration: 145
+ticker: AMZN-SimpleMomentum, Return: 0.9191141451023972, gain: -2, entry date: 2015-08-20, duration: 3
+ticker: MKC-SimpleMomentum, Return: 1.0139361193545187, gain: 0, entry date: 2015-04-10, duration: 97
+ticker: QEP-SimpleMomentum, Return: 0.8804757111434217, gain: -2, entry date: 2015-08-10, duration: 11
+ticker: EFX-SimpleMomentum, Return: 1.0482713633398564, gain: 4, entry date: 2015-03-11, duration: 119
+ticker: MSFT-SimpleMomentum, Return: 0.9065230536477016, gain: -4, entry date: 2015-05-06, duration: 79
+ticker: IGT-SimpleMomentum, Return: 0.8991953330769621, gain: -3, entry date: 2015-04-17, duration: 92
+ticker: BMS-SimpleMomentum, Return: 0.9370946822308691, gain: -6, entry date: 2015-02-09, duration: 141
+ticker: T-SimpleMomentum, Return: 0.9303175049171114, gain: -2, entry date: 2015-07-01, duration: 39
+
+2015-08-26
+ticker: PLD-SimpleMomentum, Return: 0.9598653180922038, gain: -1, entry date: 2015-07-13, duration: 32
+ticker: KIM-SimpleMomentum, Return: 0.9764619345347553, gain: -1, entry date: 2015-07-10, duration: 33
+ticker: LEG-SimpleMomentum, Return: 0.902138821630347, gain: -5, entry date: 2015-07-02, duration: 39
+ticker: SHW-SimpleMomentum, Return: 0.9369327276038222, gain: -47, entry date: 2015-02-02, duration: 147
+
+2015-09-02
+ticker: DLTR-SimpleMomentum, Return: 0.8818581293157564, gain: -9, entry date: 2015-03-11, duration: 125
+ticker: AAPL-StrategyAAPL, Return: 0.9983637654249197, gain: -1, entry date: 2015-09-01, duration: 1
+
+2015-09-08
+ticker: AAPL-StrategyAAPL, Return: 1.0245930887946346, gain: 12, entry date: 2015-09-04, duration: 2
+
+2015-09-14
+ticker: AAPL-StrategyAAPL, Return: 1.0572256327237173, gain: 23, entry date: 2015-09-10, duration: 2
+
+2015-09-17
+ticker: AAPL-StrategyAAPL, Return: 0.9976711921514221, gain: -1, entry date: 2015-09-15, duration: 2
+
+2015-09-21
+ticker: AAPL-StrategyAAPL, Return: 1.0130105888236522, gain: 7, entry date: 2015-09-18, duration: 1
+
+2015-09-23
+ticker: SEE-SimpleMomentum, Return: 0.9916496945010183, gain: 0, entry date: 2015-06-01, duration: 82
+ticker: AAPL-StrategyAAPL, Return: 1.0022019135213078, gain: 1, entry date: 2015-09-22, duration: 1
+
+2015-09-25
+ticker: LEG-SimpleMomentum, Return: 0.9434348023625624, gain: -2, entry date: 2015-09-16, duration: 7
+
+2015-09-28
+ticker: BAX-SimpleMomentum, Return: 0.8933128785393148, gain: -4, entry date: 2015-06-30, duration: 64
+
+2015-09-29
+ticker: DVA-SimpleMomentum, Return: 0.9424355224674289, gain: -4, entry date: 2015-09-21, duration: 6
+ticker: GPS-SimpleMomentum, Return: 0.929229739901313, gain: -5, entry date: 2015-09-10, duration: 13
+ticker: ETN-SimpleMomentum, Return: 0.89470871191876, gain: -6, entry date: 2015-09-10, duration: 13
+ticker: AAPL-StrategyAAPL, Return: 0.9910423895240978, gain: -6, entry date: 2015-09-28, duration: 1
+
+2015-09-30
+ticker: VMC-SimpleMomentum, Return: 1.0451683216275127, gain: 4, entry date: 2015-03-11, duration: 145
+ticker: RRC-SimpleMomentum, Return: 0.8170478170478171, gain: -49, entry date: 2015-09-02, duration: 20
+
+2015-10-01
+ticker: IGT-SimpleMomentum, Return: 0.9635247968139747, gain: -3, entry date: 2015-09-29, duration: 2
+ticker: FOSL-SimpleMomentum, Return: 0.9131289952466809, gain: -5, entry date: 2015-09-08, duration: 17
+
+2015-10-12
+ticker: AAPL-StrategyAAPL, Return: 1.0248207435377292, gain: 11, entry date: 2015-10-09, duration: 1
+
+2015-10-14
+ticker: AAPL-StrategyAAPL, Return: 1.0042424073269245, gain: 2, entry date: 2015-10-13, duration: 1
+
+2015-10-19
+ticker: AAPL-StrategyAAPL, Return: 0.9988289185421231, gain: -1, entry date: 2015-10-15, duration: 2
+
+2015-10-21
+ticker: AAPL-StrategyAAPL, Return: 1.0238909746088944, gain: 13, entry date: 2015-10-20, duration: 1
+
+2015-10-27
+ticker: AAPL-StrategyAAPL, Return: 1.0093567025449766, gain: 6, entry date: 2015-10-22, duration: 3
+
+2015-10-30
+ticker: AAPL-StrategyAAPL, Return: 1.0347203065423667, gain: 27, entry date: 2015-10-28, duration: 2
+
+2015-11-04
+ticker: AAPL-StrategyAAPL, Return: 1.0271967915305844, gain: 22, entry date: 2015-11-02, duration: 2
+
+2015-11-09
+ticker: AEP-SimpleMomentum, Return: 0.9630824372759857, gain: -2, entry date: 2015-07-08, duration: 88
+
+2015-11-10
+ticker: AAPL-StrategyAAPL, Return: 0.9593788025954237, gain: -36, entry date: 2015-11-05, duration: 3
+
+2015-11-13
+ticker: IBM-SimpleMomentum, Return: 0.9305887928601477, gain: -7, entry date: 2015-09-23, duration: 37
+ticker: SEE-SimpleMomentum, Return: 0.897236438075742, gain: -5, entry date: 2015-10-15, duration: 21
+
+2015-11-16
+ticker: TJX-SimpleMomentum, Return: 0.8975974594693366, gain: -13, entry date: 2015-08-27, duration: 57
+ticker: BIG-SimpleMomentum, Return: 0.8679840235442505, gain: -19, entry date: 2015-09-01, duration: 54
+
+2015-11-23
+ticker: INTU-SimpleMomentum, Return: 1.2145251495881568, gain: 17, entry date: 2015-09-18, duration: 46
+ticker: LUV-SimpleMomentum, Return: 1.3928651587715555, gain: 12, entry date: 2015-07-16, duration: 92
+ticker: AAPL-StrategyAAPL, Return: 1.0005868761211547, gain: 0, entry date: 2015-11-20, duration: 1
+
+2015-11-24
+ticker: AMZN-SimpleMomentum, Return: 1.0518314617285494, gain: 3, entry date: 2015-11-16, duration: 6
+
+2015-11-25
+ticker: AAPL-StrategyAAPL, Return: 1.0160231891883784, gain: 10, entry date: 2015-11-24, duration: 1
+
+2015-12-01
+ticker: NTAP-SimpleMomentum, Return: 0.9748953974895397, gain: -3, entry date: 2015-09-01, duration: 65
+
+2015-12-03
+ticker: AAPL-StrategyAAPL, Return: 0.9852896324453801, gain: -9, entry date: 2015-11-27, duration: 4
+
+2015-12-09
+ticker: AAPL-StrategyAAPL, Return: 1.0010220584931937, gain: 1, entry date: 2015-12-08, duration: 1
+
+2015-12-15
+ticker: AFL-SimpleMomentum, Return: 1.0607305720192377, gain: 6, entry date: 2015-09-23, duration: 59
+ticker: NTAP-SimpleMomentum, Return: 0.9323017408123792, gain: -4, entry date: 2015-12-09, duration: 4
+ticker: SEE-SimpleMomentum, Return: 0.9423204419889503, gain: -3, entry date: 2015-11-30, duration: 11
+
+2015-12-21
+ticker: NFX-SimpleMomentum, Return: 0.7964087000505816, gain: -8, entry date: 2015-10-20, duration: 44
+ticker: AAPL-SimpleMomentum, Return: 0.9887273228608271, gain: -1, entry date: 2015-09-04, duration: 76
+ticker: UNM-SimpleMomentum, Return: 0.9917330067360687, gain: 0, entry date: 2015-10-06, duration: 54
+
+2016-01-04
+ticker: AAPL-StrategyAAPL, Return: 0.9588808486144231, gain: -26, entry date: 2015-12-31, duration: 2
+
+2016-01-05
+ticker: FOSL-SimpleMomentum, Return: 0.8922202119410702, gain: -4, entry date: 2015-12-04, duration: 22
+
+2016-01-06
+ticker: VRSN-SimpleMomentum, Return: 0.9834882583170254, gain: -1, entry date: 2015-11-16, duration: 37
+ticker: TSS-SimpleMomentum, Return: 1.15625, gain: 6, entry date: 2015-05-14, duration: 169
+
+2016-01-07
+ticker: AKAM-SimpleMomentum, Return: 0.9231057062675397, gain: -4, entry date: 2015-12-29, duration: 7
+ticker: MET-SimpleMomentum, Return: 0.9004158004158004, gain: -5, entry date: 2015-10-07, duration: 66
+ticker: MSI-SimpleMomentum, Return: 1.089068026842313, gain: 5, entry date: 2015-05-19, duration: 167
+ticker: LEG-SimpleMomentum, Return: 0.9011812812358019, gain: -4, entry date: 2015-10-09, duration: 64
+
+2016-01-08
+ticker: PAYX-SimpleMomentum, Return: 0.9122015416431661, gain: -5, entry date: 2015-11-17, duration: 38
+ticker: GT-SimpleMomentum, Return: 0.9054307116104869, gain: -3, entry date: 2015-06-04, duration: 156
+ticker: MAS-SimpleMomentum, Return: 0.9962063732928681, gain: 0, entry date: 2015-08-03, duration: 114
+ticker: ADP-SimpleMomentum, Return: 0.9849014225106065, gain: -1, entry date: 2015-09-30, duration: 72
+ticker: TXN-SimpleMomentum, Return: 0.9243093504015975, gain: -3, entry date: 2015-10-22, duration: 56
+
+2016-01-11
+ticker: IP-SimpleMomentum, Return: 0.983419407447676, gain: -1, entry date: 2016-01-07, duration: 2
+ticker: MA-SimpleMomentum, Return: 0.9836647816579162, gain: -1, entry date: 2015-09-25, duration: 76
+ticker: WDC-SimpleMomentum, Return: 0.8872657986662433, gain: -7, entry date: 2015-12-10, duration: 22
+ticker: BIG-SimpleMomentum, Return: 0.9488809766022381, gain: -2, entry date: 2015-12-29, duration: 9
+ticker: TER-SimpleMomentum, Return: 0.9605602712006938, gain: -2, entry date: 2015-11-18, duration: 38
+ticker: ABT-SimpleMomentum, Return: 0.9951169527037084, gain: 0, entry date: 2015-10-14, duration: 63
+ticker: C-SimpleMomentum, Return: 0.9321321321321321, gain: -3, entry date: 2015-09-22, duration: 79
+
+2016-01-12
+ticker: ALL-SimpleMomentum, Return: 0.9861603375527426, gain: -1, entry date: 2015-09-17, duration: 83
+ticker: AMAT-SimpleMomentum, Return: 0.9586647060663892, gain: -3, entry date: 2015-11-17, duration: 40
+ticker: XYL-SimpleMomentum, Return: 0.9179583110636024, gain: -3, entry date: 2015-11-19, duration: 38
+ticker: WMB-SimpleMomentum, Return: 0.7417711598746082, gain: -7, entry date: 2016-01-04, duration: 6
+ticker: CL-SimpleMomentum, Return: 1.0291083840053137, gain: 1, entry date: 2015-09-14, duration: 86
+ticker: CAH-SimpleMomentum, Return: 0.9265219555415428, gain: -5, entry date: 2015-12-08, duration: 25
+
+2016-01-13
+ticker: DVN-SimpleMomentum, Return: 0.829452485840151, gain: -5, entry date: 2016-01-04, duration: 7
+
+2016-01-14
+ticker: HST-SimpleMomentum, Return: 0.770501138952164, gain: -12, entry date: 2015-10-08, duration: 70
+ticker: ADM-SimpleMomentum, Return: 0.9111232279171211, gain: -3, entry date: 2015-12-24, duration: 15
+ticker: AMZN-SimpleMomentum, Return: 0.859630103745593, gain: -5, entry date: 2015-11-25, duration: 36
+ticker: SEE-SimpleMomentum, Return: 0.9641340254837186, gain: -2, entry date: 2016-01-08, duration: 4
+
+2016-01-15
+ticker: NVDA-SimpleMomentum, Return: 0.9872116754026633, gain: -1, entry date: 2015-10-30, duration: 55
+
+2016-01-19
+ticker: PLD-SimpleMomentum, Return: 1.0182122433064726, gain: 1, entry date: 2015-10-02, duration: 77
+ticker: CCI-SimpleMomentum, Return: 0.9261791632865917, gain: -19, entry date: 2015-02-03, duration: 250
+
+2016-01-20
+ticker: QEP-SimpleMomentum, Return: 0.5409196643148141, gain: -21, entry date: 2015-10-19, duration: 67
+
+2016-01-21
+ticker: ETN-SimpleMomentum, Return: 0.9504495504495505, gain: -2, entry date: 2016-01-08, duration: 9
+
+2016-01-28
+ticker: AAPL-StrategyAAPL, Return: 0.9385588742911485, gain: -7, entry date: 2016-01-26, duration: 2
+
+2016-02-08
+ticker: ADBE-SimpleMomentum, Return: 0.9569732937685461, gain: -3, entry date: 2015-09-30, duration: 93
+ticker: AAPL-StrategyAAPL, Return: 0.9648799862167773, gain: -3, entry date: 2016-02-05, duration: 1
+
+2016-02-11
+ticker: AIZ-SimpleMomentum, Return: 0.985551330798479, gain: -1, entry date: 2015-05-27, duration: 186
+
+2016-02-12
+ticker: RRD-SimpleMomentum, Return: 0.9229058561897702, gain: -1, entry date: 2016-01-29, duration: 10
+ticker: FHN-SimpleMomentum, Return: 1.016281062553556, gain: 0, entry date: 2016-02-09, duration: 3
+ticker: AAPL-StrategyAAPL, Return: 1.004264650989175, gain: 0, entry date: 2016-02-11, duration: 1
+
+2016-02-22
+ticker: AAPL-StrategyAAPL, Return: 0.9744044983618171, gain: -3, entry date: 2016-02-18, duration: 2
+
+2016-02-24
+ticker: AAPL-StrategyAAPL, Return: 0.9748960432895716, gain: -3, entry date: 2016-02-23, duration: 1
+
+2016-03-03
+ticker: AAPL-StrategyAAPL, Return: 1.0300034507329445, gain: 3, entry date: 2016-03-01, duration: 2
+
+2016-03-08
+ticker: AAPL-StrategyAAPL, Return: 0.9844694476030881, gain: -3, entry date: 2016-03-04, duration: 2
+
+2016-03-15
+ticker: AAPL-StrategyAAPL, Return: 1.026159375215979, gain: 4, entry date: 2016-03-09, duration: 4
+
+2016-03-18
+ticker: AAPL-StrategyAAPL, Return: 1.0165366353615428, gain: 4, entry date: 2016-03-16, duration: 2
+
+2016-03-23
+ticker: AAPL-StrategyAAPL, Return: 1.0051929059204086, gain: 2, entry date: 2016-03-21, duration: 2
+
+2016-03-28
+ticker: AAPL-StrategyAAPL, Return: 1.0050246877722917, gain: 2, entry date: 2016-03-24, duration: 2
+
+2016-03-30
+ticker: AAPL-StrategyAAPL, Return: 1.0358470492521434, gain: 16, entry date: 2016-03-29, duration: 1
+
+2016-04-04
+ticker: AAPL-StrategyAAPL, Return: 1.0063775815444995, gain: 4, entry date: 2016-03-31, duration: 2
+
+2016-04-06
+ticker: AAPL-StrategyAAPL, Return: 1.0065736367196554, gain: 4, entry date: 2016-04-05, duration: 1
+
+2016-04-08
+ticker: AAPL-StrategyAAPL, Return: 0.9905431706647243, gain: -7, entry date: 2016-04-07, duration: 1
+
+2016-04-11
+ticker: GPS-SimpleMomentum, Return: 0.9140473497091143, gain: -7, entry date: 2015-10-29, duration: 117
+
+2016-04-12
+ticker: KSS-SimpleMomentum, Return: 0.856164648997028, gain: -5, entry date: 2016-01-14, duration: 63
+ticker: FSLR-SimpleMomentum, Return: 1.01079440040479, gain: 1, entry date: 2015-12-07, duration: 91
+
+2016-04-14
+ticker: HRL-SimpleMomentum, Return: 1.3373314913344156, gain: 25, entry date: 2015-08-26, duration: 166
+
+2016-04-15
+ticker: AAPL-StrategyAAPL, Return: 1.0253307931832192, gain: 16, entry date: 2016-04-12, duration: 3
+
+2016-04-19
+ticker: AAPL-StrategyAAPL, Return: 0.9907244047020999, gain: -6, entry date: 2016-04-18, duration: 1
+
+2016-04-22
+ticker: AEE-SimpleMomentum, Return: 1.183248730964467, gain: 7, entry date: 2015-07-08, duration: 207
+ticker: CMS-SimpleMomentum, Return: 1.1663220088626292, gain: 6, entry date: 2015-07-08, duration: 207
+ticker: AEP-SimpleMomentum, Return: 1.0733298986776576, gain: 4, entry date: 2016-01-13, duration: 72
+
+2016-04-28
+ticker: AAPL-SimpleMomentum, Return: 0.8877678141430544, gain: -8, entry date: 2016-04-07, duration: 15
+
+2016-04-29
+ticker: MSFT-SimpleMomentum, Return: 0.9384013543385932, gain: -3, entry date: 2015-10-30, duration: 130
+
+2016-05-02
+ticker: ABT-SimpleMomentum, Return: 0.9693137716694937, gain: -2, entry date: 2016-04-28, duration: 2
+
+2016-05-03
+ticker: NTAP-SimpleMomentum, Return: 0.864824495892457, gain: -4, entry date: 2016-03-14, duration: 36
+
+2016-05-09
+ticker: MSI-SimpleMomentum, Return: 0.9343239402909106, gain: -4, entry date: 2016-04-11, duration: 20
+
+2016-05-12
+ticker: FOSL-SimpleMomentum, Return: 0.6341952741863576, gain: -16, entry date: 2016-03-16, duration: 41
+ticker: TGT-SimpleMomentum, Return: 0.9213551859099803, gain: -6, entry date: 2016-04-01, duration: 29
+
+2016-05-16
+ticker: URBN-SimpleMomentum, Return: 1.0951979780960406, gain: 5, entry date: 2015-12-17, duration: 107
+
+2016-05-17
+ticker: X-SimpleMomentum, Return: 1.9205298013245033, gain: 49, entry date: 2015-12-18, duration: 107
+
+2016-05-19
+ticker: ATI-SimpleMomentum, Return: 0.7142857142857142, gain: -5, entry date: 2016-03-10, duration: 50
+
+2016-05-20
+ticker: HRL-SimpleMomentum, Return: 0.8887224116274896, gain: -4, entry date: 2016-05-11, duration: 7
+
+2016-05-31
+ticker: AAPL-StrategyAAPL, Return: 1.0577741233641753, gain: 19, entry date: 2016-05-18, duration: 9
+
+2016-06-02
+ticker: AAPL-StrategyAAPL, Return: 0.9856624526694018, gain: -7, entry date: 2016-06-01, duration: 1
+
+2016-06-09
+ticker: AAPL-StrategyAAPL, Return: 1.0072589146321393, gain: 4, entry date: 2016-06-03, duration: 4
+
+2016-06-14
+ticker: WY-SimpleMomentum, Return: 0.9410459587955626, gain: -4, entry date: 2016-04-18, duration: 41
+ticker: FSLR-SimpleMomentum, Return: 0.959019686621133, gain: -2, entry date: 2016-06-01, duration: 9
+ticker: AAPL-StrategyAAPL, Return: 0.9861169875185107, gain: -7, entry date: 2016-06-13, duration: 1
+
+2016-06-24
+ticker: AMAT-SimpleMomentum, Return: 0.9799826571128656, gain: -1, entry date: 2016-06-13, duration: 9
+
+2016-06-27
+ticker: PBI-SimpleMomentum, Return: 0.9034334763948497, gain: -5, entry date: 2016-06-02, duration: 17
+
+2016-06-28
+ticker: MAT-SimpleMomentum, Return: 1.1467455621301774, gain: 7, entry date: 2015-11-04, duration: 169
+ticker: HAS-SimpleMomentum, Return: 1.1774123126182507, gain: 12, entry date: 2016-01-15, duration: 117
+ticker: GT-SimpleMomentum, Return: 0.9084222140492828, gain: -2, entry date: 2016-06-07, duration: 15
+ticker: UNM-SimpleMomentum, Return: 0.8558659217877096, gain: -5, entry date: 2016-06-06, duration: 16
+ticker: ETN-SimpleMomentum, Return: 0.8979526551503518, gain: -6, entry date: 2016-03-28, duration: 66
+ticker: TSS-SimpleMomentum, Return: 0.9876861966236344, gain: -1, entry date: 2016-04-22, duration: 47
+
+2016-07-07
+ticker: AAPL-StrategyAAPL, Return: 1.011627960440106, gain: 4, entry date: 2016-07-06, duration: 1
+
+2016-07-14
+ticker: AAPL-StrategyAAPL, Return: 1.0093266257358973, gain: 4, entry date: 2016-07-08, duration: 4
+
+2016-07-19
+ticker: AAPL-StrategyAAPL, Return: 1.006468066395515, gain: 3, entry date: 2016-07-15, duration: 2
+
+2016-07-22
+ticker: AAPL-StrategyAAPL, Return: 0.9925970388155262, gain: -4, entry date: 2016-07-20, duration: 2
+
+2016-07-26
+ticker: AAPL-StrategyAAPL, Return: 0.9854482831896016, gain: -8, entry date: 2016-07-25, duration: 1
+
+2016-07-29
+ticker: AAPL-StrategyAAPL, Return: 1.0132267970593958, gain: 7, entry date: 2016-07-28, duration: 1
+
+2016-08-10
+ticker: DVA-SimpleMomentum, Return: 0.9871285772970012, gain: -1, entry date: 2016-03-30, duration: 95
+ticker: AAPL-StrategyAAPL, Return: 1.0467910317189206, gain: 27, entry date: 2016-08-01, duration: 7
+
+2016-08-15
+ticker: AAPL-StrategyAAPL, Return: 0.9964997468495728, gain: -2, entry date: 2016-08-11, duration: 2
+
+2016-08-17
+ticker: AEE-SimpleMomentum, Return: 0.9515974746508513, gain: -3, entry date: 2016-06-29, duration: 35
+ticker: CMS-SimpleMomentum, Return: 0.9476874719353391, gain: -2, entry date: 2016-06-20, duration: 42
+
+2016-08-18
+ticker: CRM-SimpleMomentum, Return: 1.0092509276069592, gain: 1, entry date: 2016-04-27, duration: 81
+ticker: AAPL-StrategyAAPL, Return: 0.9963497168564157, gain: -2, entry date: 2016-08-16, duration: 2
+
+2016-08-22
+ticker: T-SimpleMomentum, Return: 1.1731651376146788, gain: 12, entry date: 2016-01-22, duration: 151
+ticker: AAPL-StrategyAAPL, Return: 1.0008273108023722, gain: 0, entry date: 2016-08-19, duration: 1
+
+2016-08-25
+ticker: MSFT-SimpleMomentum, Return: 1.0059099483812213, gain: 0, entry date: 2016-08-17, duration: 6
+ticker: AAPL-StrategyAAPL, Return: 0.9889482512021864, gain: -6, entry date: 2016-08-23, duration: 2
+
+2016-08-26
+ticker: SJM-SimpleMomentum, Return: 1.2251304347826086, gain: 26, entry date: 2015-08-27, duration: 261
+ticker: DLTR-SimpleMomentum, Return: 1.2252122607569436, gain: 16, entry date: 2015-09-24, duration: 241
+
+2016-09-01
+ticker: ICE-SimpleMomentum, Return: 1.0469030663135623, gain: 2, entry date: 2016-05-25, duration: 71
+
+2016-09-02
+ticker: FOSL-SimpleMomentum, Return: 1.0028228652081863, gain: 0, entry date: 2016-06-03, duration: 65
+ticker: BAX-SimpleMomentum, Return: 1.385931794372316, gain: 23, entry date: 2015-10-16, duration: 230
+
+2016-09-07
+ticker: AAPL-StrategyAAPL, Return: 0.9993504566850837, gain: 0, entry date: 2016-09-06, duration: 1
+
+2016-09-09
+ticker: AAPL-StrategyAAPL, Return: 0.9756679023650381, gain: -19, entry date: 2016-09-08, duration: 1
+
+2016-09-12
+ticker: HST-SimpleMomentum, Return: 0.9571683521713267, gain: -1, entry date: 2016-03-18, duration: 126
+ticker: EMR-SimpleMomentum, Return: 0.93409636330072, gain: -4, entry date: 2016-03-24, duration: 122
+ticker: MKC-SimpleMomentum, Return: 1.2245224554520093, gain: 15, entry date: 2015-10-01, duration: 247
+ticker: MAS-SimpleMomentum, Return: 1.0426001893341748, gain: 3, entry date: 2016-04-08, duration: 111
+ticker: TXN-SimpleMomentum, Return: 1.1611066896818065, gain: 8, entry date: 2016-04-04, duration: 115
+ticker: ABT-SimpleMomentum, Return: 1.0830858722887375, gain: 3, entry date: 2016-06-29, duration: 53
+
+2016-09-14
+ticker: X-SimpleMomentum, Return: 0.798915722030557, gain: -12, entry date: 2016-07-20, duration: 40
+
+2016-09-15
+ticker: QEP-SimpleMomentum, Return: 0.9772558312424495, gain: -1, entry date: 2016-05-04, duration: 96
+ticker: FSLR-SimpleMomentum, Return: 0.9093270979475188, gain: -3, entry date: 2016-09-02, duration: 9
+
+2016-09-19
+ticker: AAPL-StrategyAAPL, Return: 1.0116801301000828, gain: 9, entry date: 2016-09-15, duration: 2
+
+2016-09-20
+ticker: NTAP-SimpleMomentum, Return: 1.3044743543106585, gain: 8, entry date: 2016-08-09, duration: 30
+ticker: APH-SimpleMomentum, Return: 1.1685243494890567, gain: 4, entry date: 2016-03-11, duration: 137
+
+2016-09-21
+ticker: SBUX-SimpleMomentum, Return: 0.9503843293344953, gain: -2, entry date: 2015-10-01, duration: 254
+ticker: WU-SimpleMomentum, Return: 0.9307764265668849, gain: -3, entry date: 2016-08-24, duration: 20
+ticker: HP-SimpleMomentum, Return: 1.0207466290951912, gain: 1, entry date: 2015-10-16, duration: 243
+ticker: AAPL-StrategyAAPL, Return: 1.0070758868776548, gain: 5, entry date: 2016-09-20, duration: 1
+
+2016-09-26
+ticker: AAPL-StrategyAAPL, Return: 0.9763010044832869, gain: -18, entry date: 2016-09-22, duration: 2
+
+2016-09-29
+ticker: LEG-SimpleMomentum, Return: 0.9993541442411195, gain: 0, entry date: 2016-03-16, duration: 141
+
+2016-09-30
+ticker: GPS-SimpleMomentum, Return: 1.1634179874240171, gain: 9, entry date: 2016-06-03, duration: 85
+ticker: AAPL-StrategyAAPL, Return: 0.9938141334434402, gain: -4, entry date: 2016-09-29, duration: 1
+
+2016-10-04
+ticker: ICE-SimpleMomentum, Return: 0.9541882119764122, gain: -2, entry date: 2016-09-09, duration: 17
+
+2016-10-05
+ticker: PCG-SimpleMomentum, Return: 1.1253348641408343, gain: 7, entry date: 2015-09-28, duration: 267
+
+2016-10-06
+ticker: AAPL-StrategyAAPL, Return: 1.0026438373410549, gain: 2, entry date: 2016-10-05, duration: 1
+
+2016-10-10
+ticker: SO-SimpleMomentum, Return: 1.1154368492530558, gain: 5, entry date: 2015-07-09, duration: 327
+
+2016-10-13
+ticker: FLIR-SimpleMomentum, Return: 0.999970874988168, gain: 0, entry date: 2015-11-19, duration: 235
+
+2016-10-14
+ticker: AAPL-StrategyAAPL, Return: 1.0312313130625004, gain: 24, entry date: 2016-10-07, duration: 5
+
+2016-10-18
+ticker: BIG-SimpleMomentum, Return: 1.0191868433074462, gain: 1, entry date: 2016-03-17, duration: 153
+ticker: AAPL-StrategyAAPL, Return: 1.0072454950719572, gain: 6, entry date: 2016-10-17, duration: 1
+
+2016-10-20
+ticker: GPC-SimpleMomentum, Return: 0.9383624655013799, gain: -6, entry date: 2016-04-07, duration: 140
+ticker: AAPL-StrategyAAPL, Return: 0.9966718077766052, gain: -3, entry date: 2016-10-19, duration: 1
+
+2016-10-24
+ticker: LEG-SimpleMomentum, Return: 0.9834674787905155, gain: -1, entry date: 2016-10-19, duration: 3
+
+2016-10-25
+ticker: DVA-SimpleMomentum, Return: 0.8831464080024249, gain: -8, entry date: 2016-09-22, duration: 23
+ticker: SEE-SimpleMomentum, Return: 0.8985597996242956, gain: -5, entry date: 2016-04-01, duration: 147
+ticker: SWN-SimpleMomentum, Return: 1.56980056980057, gain: 32, entry date: 2015-12-29, duration: 215
+ticker: AAPL-StrategyAAPL, Return: 1.0072597359894484, gain: 7, entry date: 2016-10-24, duration: 1
+
+2016-10-26
+ticker: MMC-SimpleMomentum, Return: 1.1840716167119834, gain: 9, entry date: 2015-09-15, duration: 291
+
+2016-10-27
+ticker: ATI-SimpleMomentum, Return: 1.0723533891850723, gain: 4, entry date: 2016-06-06, duration: 103
+ticker: AVY-SimpleMomentum, Return: 0.9803301237964236, gain: -1, entry date: 2016-04-05, duration: 147
+ticker: CHRW-SimpleMomentum, Return: 1.0901802563182328, gain: 5, entry date: 2015-12-21, duration: 223
+ticker: AAPL-StrategyAAPL, Return: 1.0094503864174822, gain: 8, entry date: 2016-10-26, duration: 1
+
+2016-10-28
+ticker: HST-SimpleMomentum, Return: 0.9492385786802031, gain: -4, entry date: 2016-10-19, duration: 7
+ticker: BSX-SimpleMomentum, Return: 1.0960163432073546, gain: 8, entry date: 2016-04-14, duration: 141
+ticker: KIM-SimpleMomentum, Return: 1.1342132496198785, gain: 9, entry date: 2015-09-30, duration: 282
+ticker: CME-SimpleMomentum, Return: 0.9282054464662512, gain: -6, entry date: 2016-09-06, duration: 38
+
+2016-10-31
+ticker: GT-SimpleMomentum, Return: 0.8797644871397582, gain: -8, entry date: 2016-09-20, duration: 29
+ticker: CAH-SimpleMomentum, Return: 0.9020668981274227, gain: -6, entry date: 2016-10-05, duration: 18
+
+2016-11-02
+ticker: PAYX-SimpleMomentum, Return: 0.9006293474660484, gain: -6, entry date: 2016-07-21, duration: 74
+ticker: XYL-SimpleMomentum, Return: 1.149867053420353, gain: 6, entry date: 2016-04-12, duration: 146
+ticker: RRC-SimpleMomentum, Return: 1.2532239155920282, gain: 13, entry date: 2016-01-12, duration: 211
+ticker: DVN-SimpleMomentum, Return: 0.8540379775795012, gain: -6, entry date: 2016-08-23, duration: 51
+
+2016-11-03
+ticker: PBI-SimpleMomentum, Return: 0.8159955257270693, gain: -7, entry date: 2016-07-11, duration: 83
+ticker: NTAP-SimpleMomentum, Return: 0.9188577890867968, gain: -6, entry date: 2016-09-21, duration: 31
+ticker: MSI-SimpleMomentum, Return: 0.9341335677969341, gain: -4, entry date: 2016-09-02, duration: 44
+
+2016-11-04
+ticker: ROST-SimpleMomentum, Return: 1.015817854360675, gain: 1, entry date: 2016-08-03, duration: 67
+ticker: WY-SimpleMomentum, Return: 0.8769089798411729, gain: -4, entry date: 2016-08-02, duration: 68
+ticker: RRD-SimpleMomentum, Return: 1.0124610591900312, gain: 1, entry date: 2016-09-28, duration: 27
+ticker: CVS-SimpleMomentum, Return: 0.9320565435476517, gain: -6, entry date: 2016-10-27, duration: 6
+
+2016-11-07
+ticker: URBN-SimpleMomentum, Return: 0.8988980716253445, gain: -4, entry date: 2016-08-31, duration: 48
+ticker: FSLR-SimpleMomentum, Return: 0.8609831029185868, gain: -5, entry date: 2016-09-29, duration: 27
+
+2016-11-11
+ticker: HRL-SimpleMomentum, Return: 1.0020258293238795, gain: 0, entry date: 2016-06-17, duration: 105
+
+2016-11-14
+ticker: AAPL-StrategyAAPL, Return: 1.0037436147216643, gain: 2, entry date: 2016-11-11, duration: 1
+
+2016-11-15
+ticker: AMZN-SimpleMomentum, Return: 1.0049568483717748, gain: 0, entry date: 2016-06-08, duration: 114
+
+2016-11-25
+ticker: AAPL-StrategyAAPL, Return: 0.9926761754642267, gain: -6, entry date: 2016-11-22, duration: 3
+
+2016-11-29
+ticker: AAPL-StrategyAAPL, Return: 0.9941676773450958, gain: -5, entry date: 2016-11-28, duration: 1
+
+2016-12-02
+ticker: CRM-SimpleMomentum, Return: 0.8981656555397689, gain: -8, entry date: 2016-11-04, duration: 20
+ticker: AAPL-StrategyAAPL, Return: 0.9785767194950695, gain: -17, entry date: 2016-11-30, duration: 2
+
+2016-12-06
+ticker: CME-SimpleMomentum, Return: 1.036519749623292, gain: 3, entry date: 2016-11-21, duration: 11
+
+2016-12-07
+ticker: BIG-SimpleMomentum, Return: 1.1414675407062804, gain: 7, entry date: 2016-11-10, duration: 19
+
+2016-12-13
+ticker: AAPL-StrategyAAPL, Return: 1.004855180378689, gain: 4, entry date: 2016-12-12, duration: 1
+
+2016-12-15
+ticker: AAPL-StrategyAAPL, Return: 1.0029555913053239, gain: 2, entry date: 2016-12-14, duration: 1
+
+2016-12-20
+ticker: MAT-SimpleMomentum, Return: 0.8837569745815252, gain: -7, entry date: 2016-10-21, duration: 42
+ticker: LIFE-SimpleMomentum, Return: 0.7785467128027681, gain: -9, entry date: 2016-07-11, duration: 116
+ticker: AAPL-StrategyAAPL, Return: 1.0023206657502255, gain: 2, entry date: 2016-12-16, duration: 2
+
+2016-12-22
+ticker: AAPL-StrategyAAPL, Return: 0.9961456118564812, gain: -4, entry date: 2016-12-21, duration: 1
+
+2016-12-27
+ticker: FHN-SimpleMomentum, Return: 1.030637870416876, gain: 2, entry date: 2016-12-13, duration: 10
+ticker: AAPL-StrategyAAPL, Return: 1.008042655863692, gain: 8, entry date: 2016-12-23, duration: 2
+
+2016-12-30
+ticker: AAPL-StrategyAAPL, Return: 0.9925948171044344, gain: -7, entry date: 2016-12-28, duration: 2
+
+2017-01-04
+ticker: EXPE-SimpleMomentum, Return: 0.9145887305699482, gain: -11, entry date: 2016-11-03, duration: 44
+
+2017-01-06
+ticker: KSS-SimpleMomentum, Return: 0.7315095997616645, gain: -11, entry date: 2016-12-12, duration: 19
+ticker: AAPL-StrategyAAPL, Return: 1.0074182984695583, gain: 6, entry date: 2017-01-05, duration: 1
+
+2017-01-11
+ticker: AAPL-StrategyAAPL, Return: 0.9997463363724651, gain: 0, entry date: 2017-01-10, duration: 1
+
+2017-01-13
+ticker: AAPL-StrategyAAPL, Return: 1.001806354458148, gain: 1, entry date: 2017-01-12, duration: 1
+
+2017-01-17
+ticker: TGT-SimpleMomentum, Return: 1.0194496470249246, gain: 1, entry date: 2016-10-10, duration: 71
+
+2017-01-18
+ticker: AAPL-StrategyAAPL, Return: 1.0140276479594992, gain: 10, entry date: 2017-01-17, duration: 1
+
+2017-01-20
+ticker: BK-SimpleMomentum, Return: 1.0184594348222424, gain: 1, entry date: 2016-11-08, duration: 53
+ticker: AAPL-StrategyAAPL, Return: 1.0087953283829572, gain: 7, entry date: 2017-01-19, duration: 1
+
+2017-01-25
+ticker: IP-SimpleMomentum, Return: 1.3049907578558224, gain: 13, entry date: 2016-05-02, duration: 192
+ticker: AAPL-StrategyAAPL, Return: 1.0035005415796912, gain: 3, entry date: 2017-01-23, duration: 2
+
+2017-01-27
+ticker: AAPL-StrategyAAPL, Return: 1.0038628340184086, gain: 4, entry date: 2017-01-26, duration: 1
+
+2017-01-31
+ticker: BSX-SimpleMomentum, Return: 1.1107994389901823, gain: 7, entry date: 2016-12-14, duration: 34
+ticker: PLD-SimpleMomentum, Return: 1.119292005890689, gain: 9, entry date: 2016-04-25, duration: 201
+ticker: AAPL-StrategyAAPL, Return: 1.0018186671412046, gain: 2, entry date: 2017-01-30, duration: 1
+
+2017-02-01
+ticker: BAX-SimpleMomentum, Return: 1.0803376690327953, gain: 3, entry date: 2017-01-06, duration: 18
+
+2017-02-02
+ticker: PBI-SimpleMomentum, Return: 0.8940936863543788, gain: -8, entry date: 2016-11-21, duration: 53
+
+2017-02-03
+ticker: RL-SimpleMomentum, Return: 0.87551867219917, gain: -11, entry date: 2017-01-31, duration: 3
+ticker: AAPL-StrategyAAPL, Return: 1.010076300703376, gain: 12, entry date: 2017-02-01, duration: 2
+
+2017-02-09
+ticker: AAPL-StrategyAAPL, Return: 1.0239045152602932, gain: 28, entry date: 2017-02-06, duration: 3
+
+2017-02-14
+ticker: AN-SimpleMomentum, Return: 0.9180167870388445, gain: -4, entry date: 2017-01-06, duration: 27
+
+2017-02-16
+ticker: FOSL-SimpleMomentum, Return: 0.7579150579150579, gain: -19, entry date: 2017-01-26, duration: 15
+
+2017-02-21
+ticker: AAPL-StrategyAAPL, Return: 1.0284610581418296, gain: 33, entry date: 2017-02-10, duration: 7
+
+2017-02-23
+ticker: AAPL-StrategyAAPL, Return: 1.0069639676711073, gain: 6, entry date: 2017-02-22, duration: 1
+
+2017-02-27
+ticker: AAPL-StrategyAAPL, Return: 1.0090496596129774, gain: 9, entry date: 2017-02-24, duration: 1
+
+2017-03-01
+ticker: TGT-SimpleMomentum, Return: 0.8957634867418469, gain: -7, entry date: 2017-02-13, duration: 12
+
+2017-03-06
+ticker: AAPL-StrategyAAPL, Return: 1.0166693240045144, gain: 17, entry date: 2017-02-28, duration: 4
+
+2017-03-08
+ticker: AAPL-StrategyAAPL, Return: 0.9992079879195045, gain: -1, entry date: 2017-03-07, duration: 1
+
+2017-03-10
+ticker: IGT-SimpleMomentum, Return: 1.2598585897719725, gain: 15, entry date: 2016-06-14, duration: 193
+ticker: AAPL-StrategyAAPL, Return: 1.0036757551514628, gain: 3, entry date: 2017-03-09, duration: 1
+
+2017-03-15
+ticker: AAPL-StrategyAAPL, Return: 1.000787571142901, gain: 1, entry date: 2017-03-14, duration: 1
+
+2017-03-21
+ticker: KMX-SimpleMomentum, Return: 0.943256958326926, gain: -4, entry date: 2017-01-03, duration: 55
+
+2017-03-22
+ticker: PNC-SimpleMomentum, Return: 1.238575480617712, gain: 23, entry date: 2016-11-04, duration: 98
+ticker: FHN-SimpleMomentum, Return: 0.876232741617357, gain: -10, entry date: 2016-12-29, duration: 59
+
+2017-03-24
+ticker: USB-SimpleMomentum, Return: 1.2059899405578418, gain: 9, entry date: 2016-09-07, duration: 142
+ticker: AAPL-StrategyAAPL, Return: 1.0055426464004775, gain: 5, entry date: 2017-03-16, duration: 6
+
+2017-03-28
+ticker: MS-SimpleMomentum, Return: 1.6135040745052387, gain: 16, entry date: 2016-07-01, duration: 192
+ticker: UNM-SimpleMomentum, Return: 1.3995666976168368, gain: 13, entry date: 2016-07-20, duration: 179
+ticker: DFS-SimpleMomentum, Return: 0.9273945825188494, gain: -5, entry date: 2016-12-19, duration: 71
+ticker: AAPL-StrategyAAPL, Return: 1.010905122056201, gain: 10, entry date: 2017-03-27, duration: 1
+
+2017-03-30
+ticker: AAPL-StrategyAAPL, Return: 1.0035493781131626, gain: 4, entry date: 2017-03-29, duration: 1
+
+2017-04-03
+ticker: AKAM-SimpleMomentum, Return: 0.8874034462269758, gain: -8, entry date: 2016-11-07, duration: 105
+ticker: AAPL-StrategyAAPL, Return: 0.9999284359680825, gain: 0, entry date: 2017-03-31, duration: 1
+
+2017-04-05
+ticker: AAPL-StrategyAAPL, Return: 1.0067700371260102, gain: 7, entry date: 2017-04-04, duration: 1
+
+2017-04-11
+ticker: AAPL-StrategyAAPL, Return: 0.9906443239261762, gain: -9, entry date: 2017-04-06, duration: 3
+
+2017-04-12
+ticker: T-SimpleMomentum, Return: 1.1013420980553275, gain: 4, entry date: 2016-11-11, duration: 108
+
+2017-04-13
+ticker: FAST-SimpleMomentum, Return: 1.2017511994087509, gain: 23, entry date: 2016-10-31, duration: 118
+
+2017-04-17
+ticker: ABT-SimpleMomentum, Return: 1.0291243355755528, gain: 1, entry date: 2016-09-23, duration: 146
+
+2017-04-18
+ticker: QEP-SimpleMomentum, Return: 0.8719356936359577, gain: -7, entry date: 2017-04-05, duration: 9
+
+2017-04-19
+ticker: LIFE-SimpleMomentum, Return: 0.9384615384615386, gain: -6, entry date: 2017-02-02, duration: 54
+ticker: CAH-SimpleMomentum, Return: 0.8901411073661586, gain: -7, entry date: 2017-04-13, duration: 4
+ticker: X-SimpleMomentum, Return: 0.8413516609392897, gain: -11, entry date: 2016-12-13, duration: 91
+
+2017-04-20
+ticker: SBUX-SimpleMomentum, Return: 1.0316167911653833, gain: 2, entry date: 2017-04-12, duration: 6
+
+2017-04-24
+ticker: MAT-SimpleMomentum, Return: 0.7251481237656353, gain: -8, entry date: 2017-01-09, duration: 75
+
+2017-04-27
+ticker: AAPL-StrategyAAPL, Return: 1.002944602060624, gain: 3, entry date: 2017-04-24, duration: 3
+
+2017-04-28
+ticker: HP-SimpleMomentum, Return: 0.9265403446302537, gain: -3, entry date: 2016-10-17, duration: 139
+
+2017-05-01
+ticker: K-SimpleMomentum, Return: 0.9558961947021648, gain: -3, entry date: 2016-11-07, duration: 125
+
+2017-05-02
+ticker: BMS-SimpleMomentum, Return: 0.9749945163413029, gain: -1, entry date: 2015-11-04, duration: 389
+
+2017-05-04
+ticker: ADM-SimpleMomentum, Return: 0.9918484775833133, gain: 0, entry date: 2016-06-14, duration: 232
+ticker: AAPL-StrategyAAPL, Return: 1.016863607027395, gain: 16, entry date: 2017-04-28, duration: 4
+
+2017-05-05
+ticker: WPX-SimpleMomentum, Return: 0.9368686868686869, gain: -4, entry date: 2016-09-01, duration: 176
+
+2017-05-10
+ticker: SBUX-SimpleMomentum, Return: 1.0188269951794322, gain: 1, entry date: 2017-05-01, duration: 7
+
+2017-05-11
+ticker: PWR-SimpleMomentum, Return: 1.1933755426917512, gain: 11, entry date: 2016-10-14, duration: 149
+ticker: AAPL-StrategyAAPL, Return: 1.0430214596285081, gain: 27, entry date: 2017-05-05, duration: 4
+
+2017-05-12
+ticker: FOSL-SimpleMomentum, Return: 0.7681159420289855, gain: -16, entry date: 2017-03-31, duration: 30
+
+2017-05-16
+ticker: AAPL-StrategyAAPL, Return: 1.008014633258107, gain: 5, entry date: 2017-05-12, duration: 2
+
+2017-05-17
+ticker: DVA-SimpleMomentum, Return: 1.0363758841360726, gain: 2, entry date: 2016-11-09, duration: 135
+ticker: FAST-SimpleMomentum, Return: 0.9734371139115395, gain: -1, entry date: 2017-05-03, duration: 10
+ticker: URBN-SimpleMomentum, Return: 0.8371897349600336, gain: -12, entry date: 2017-04-03, duration: 32
+
+2017-05-18
+ticker: AAPL-StrategyAAPL, Return: 0.9848312655431596, gain: -10, entry date: 2017-05-17, duration: 1
+
+2017-05-22
+ticker: GPS-SimpleMomentum, Return: 0.8643682693018557, gain: -8, entry date: 2016-10-11, duration: 159
+
+2017-05-26
+ticker: AAPL-StrategyAAPL, Return: 1.0, gain: 0, entry date: 2017-05-22, duration: 4
+
+2017-05-31
+ticker: AAPL-StrategyAAPL, Return: 1.0035859045298126, gain: 2, entry date: 2017-05-30, duration: 1
+
+2017-06-07
+ticker: AAPL-StrategyAAPL, Return: 1.007277003117131, gain: 4, entry date: 2017-06-06, duration: 1
+
+2017-06-09
+ticker: AAPL-StrategyAAPL, Return: 0.9996123721996639, gain: 0, entry date: 2017-06-08, duration: 1
+
+2017-06-13
+ticker: AAPL-StrategyAAPL, Return: 1.009743197771979, gain: 5, entry date: 2017-06-12, duration: 1
+
+2017-06-16
+ticker: TER-SimpleMomentum, Return: 1.1973538710732474, gain: 10, entry date: 2017-01-25, duration: 102
+
+2017-06-19
+ticker: CMS-SimpleMomentum, Return: 1.1012773722627736, gain: 4, entry date: 2016-09-22, duration: 192
+
+2017-06-21
+ticker: ROST-SimpleMomentum, Return: 0.8828274709494661, gain: -7, entry date: 2017-04-24, duration: 42
+
+2017-06-22
+ticker: AAPL-StrategyAAPL, Return: 1.0017187119632325, gain: 1, entry date: 2017-06-21, duration: 1
+
+2017-06-28
+ticker: AAPL-StrategyAAPL, Return: 0.9817904465821198, gain: -15, entry date: 2017-06-26, duration: 2
+
+2017-06-30
+ticker: FLIR-SimpleMomentum, Return: 1.0737590263691683, gain: 9, entry date: 2016-11-03, duration: 171
+ticker: MKC-SimpleMomentum, Return: 0.9760195907904975, gain: -1, entry date: 2016-09-30, duration: 195
+
+2017-07-05
+ticker: AEE-SimpleMomentum, Return: 1.0541488118426177, gain: 3, entry date: 2016-09-22, duration: 204
+
+2017-07-06
+ticker: PCG-SimpleMomentum, Return: 0.9672204093740728, gain: -2, entry date: 2017-03-24, duration: 74
+
+2017-07-11
+ticker: T-SimpleMomentum, Return: 0.9529107373868047, gain: -2, entry date: 2017-05-31, duration: 29
+
+2017-07-12
+ticker: CL-SimpleMomentum, Return: 0.9919548574551387, gain: -1, entry date: 2017-04-20, duration: 59
+
+2017-07-13
+ticker: FSLR-SimpleMomentum, Return: 1.5489833641404804, gain: 45, entry date: 2017-04-19, duration: 61
+
+2017-07-14
+ticker: AAPL-StrategyAAPL, Return: 1.014398445752005, gain: 9, entry date: 2017-07-12, duration: 2
+
+2017-07-18
+ticker: AAPL-StrategyAAPL, Return: 1.0025553149690982, gain: 2, entry date: 2017-07-17, duration: 1
+
+2017-07-24
+ticker: AAPL-StrategyAAPL, Return: 1.0006636885768987, gain: 1, entry date: 2017-07-19, duration: 3
+
+2017-07-26
+ticker: AAPL-StrategyAAPL, Return: 1.0102117992391761, gain: 10, entry date: 2017-07-25, duration: 1
+
+2017-07-28
+ticker: LUV-SimpleMomentum, Return: 1.4338393976740058, gain: 16, entry date: 2016-10-13, duration: 206
+
+2017-07-31
+ticker: AAPL-StrategyAAPL, Return: 0.9749608589924382, gain: -27, entry date: 2017-07-27, duration: 2
+
+2017-08-01
+ticker: LEG-SimpleMomentum, Return: 1.0595707402540517, gain: 3, entry date: 2016-11-08, duration: 190
+
+2017-08-02
+ticker: PBI-SimpleMomentum, Return: 1.0339506172839505, gain: 2, entry date: 2017-04-06, duration: 84
+ticker: BSX-SimpleMomentum, Return: 1.131792896876337, gain: 6, entry date: 2017-02-23, duration: 114
+
+2017-08-03
+ticker: XRAY-SimpleMomentum, Return: 0.9658535923824506, gain: -2, entry date: 2017-03-17, duration: 99
+ticker: RRD-SimpleMomentum, Return: 0.8573839662447258, gain: -8, entry date: 2017-04-11, duration: 82
+
+2017-08-04
+ticker: AAPL-StrategyAAPL, Return: 0.9937603269849553, gain: -8, entry date: 2017-08-03, duration: 1
+
+2017-08-07
+ticker: WDC-SimpleMomentum, Return: 1.7018242818200882, gain: 33, entry date: 2016-06-10, duration: 301
+
+2017-08-08
+ticker: MET-SimpleMomentum, Return: 1.088235294117647, gain: 4, entry date: 2016-09-23, duration: 227
+
+2017-08-09
+ticker: AAPL-StrategyAAPL, Return: 1.014005739255201, gain: 16, entry date: 2017-08-07, duration: 2
+
+2017-08-11
+ticker: AAPL-StrategyAAPL, Return: 0.9793627796312788, gain: -29, entry date: 2017-08-10, duration: 1
+
+2017-08-16
+ticker: APA-SimpleMomentum, Return: 0.82879300059654, gain: -9, entry date: 2017-03-24, duration: 103
+
+2017-08-18
+ticker: AAPL-StrategyAAPL, Return: 0.9908351365124426, gain: -12, entry date: 2017-08-14, duration: 4
+
+2017-08-21
+ticker: NTAP-SimpleMomentum, Return: 0.9475691134413726, gain: -2, entry date: 2017-03-09, duration: 117
+ticker: WMB-SimpleMomentum, Return: 1.0533188248095755, gain: 1, entry date: 2016-08-23, duration: 259
+
+2017-08-23
+ticker: AAPL-StrategyAAPL, Return: 1.0053084459631902, gain: 6, entry date: 2017-08-22, duration: 1
+
+2017-08-29
+ticker: AIZ-SimpleMomentum, Return: 0.9702166991886617, gain: -3, entry date: 2017-02-02, duration: 148
+
+2017-08-30
+ticker: AAPL-StrategyAAPL, Return: 1.0231098461113648, gain: 27, entry date: 2017-08-29, duration: 1
+
+2017-09-01
+ticker: K-SimpleMomentum, Return: 0.9689211188397219, gain: -2, entry date: 2017-07-26, duration: 27
+
+2017-09-06
+ticker: L-SimpleMomentum, Return: 1.0448763457866188, gain: 2, entry date: 2016-11-28, duration: 202
+ticker: AAPL-StrategyAAPL, Return: 0.9943163516588563, gain: -6, entry date: 2017-08-31, duration: 4
+
+2017-09-08
+ticker: T-SimpleMomentum, Return: 0.9261186264308013, gain: -6, entry date: 2017-08-07, duration: 24
+
+2017-09-11
+ticker: AAPL-StrategyAAPL, Return: 0.9901918875895908, gain: -10, entry date: 2017-09-07, duration: 2
+
+2017-10-02
+ticker: MKC-SimpleMomentum, Return: 1.1341437687231175, gain: 5, entry date: 2017-07-19, duration: 53
+
+2017-10-04
+ticker: AAPL-StrategyAAPL, Return: 0.9975324929825095, gain: -2, entry date: 2017-10-03, duration: 1
+
+2017-10-09
+ticker: AAPL-StrategyAAPL, Return: 1.0105732143398705, gain: 8, entry date: 2017-10-05, duration: 2
+
+2017-10-11
+ticker: DVA-SimpleMomentum, Return: 0.9545056867891514, gain: -3, entry date: 2017-08-25, duration: 33
+
+2017-10-13
+ticker: PCG-SimpleMomentum, Return: 0.919746871853876, gain: -6, entry date: 2017-08-17, duration: 41
+ticker: AAPL-StrategyAAPL, Return: 1.004325561124428, gain: 4, entry date: 2017-10-10, duration: 3
+
+2017-10-18
+ticker: AAPL-StrategyAAPL, Return: 1.0159613417326225, gain: 15, entry date: 2017-10-16, duration: 2
+
+2017-10-20
+ticker: AAPL-StrategyAAPL, Return: 0.9991078087076785, gain: -1, entry date: 2017-10-19, duration: 1
+
+2017-10-24
+ticker: AAPL-StrategyAAPL, Return: 0.9961770220329247, gain: -4, entry date: 2017-10-23, duration: 1
+
+2017-10-27
+ticker: AVY-SimpleMomentum, Return: 1.5097729232538086, gain: 35, entry date: 2016-11-14, duration: 249
+
+2017-10-30
+ticker: MAT-SimpleMomentum, Return: 0.8789607097591888, gain: -4, entry date: 2017-10-04, duration: 18
+ticker: AMZN-SimpleMomentum, Return: 1.2061727495368009, gain: 9, entry date: 2017-04-19, duration: 138
+
+2017-11-01
+ticker: GT-SimpleMomentum, Return: 0.9914586070959264, gain: -1, entry date: 2017-09-01, duration: 43
+
+2017-11-02
+ticker: PBI-SimpleMomentum, Return: 0.8113342898134864, gain: -8, entry date: 2017-10-13, duration: 14
+ticker: BSX-SimpleMomentum, Return: 0.9724546722454672, gain: -1, entry date: 2017-09-20, duration: 31
+
+2017-11-07
+ticker: CAH-SimpleMomentum, Return: 0.914202136474426, gain: -5, entry date: 2017-08-31, duration: 48
+ticker: AAPL-StrategyAAPL, Return: 1.0611383159729426, gain: 57, entry date: 2017-10-30, duration: 6
+
+2017-11-09
+ticker: AAPL-StrategyAAPL, Return: 1.0025773446778683, gain: 2, entry date: 2017-11-08, duration: 1
+
+2017-11-10
+ticker: PCG-SimpleMomentum, Return: 0.9599309153713299, gain: -2, entry date: 2017-11-02, duration: 6
+
+2017-11-13
+ticker: AA-SimpleMomentum, Return: 1.4204923486360614, gain: 25, entry date: 2016-11-30, duration: 248
+ticker: IP-SimpleMomentum, Return: 1.0190476190476192, gain: 1, entry date: 2017-02-03, duration: 201
+ticker: BMS-SimpleMomentum, Return: 1.004450691028344, gain: 0, entry date: 2017-09-06, duration: 48
+ticker: AAPL-StrategyAAPL, Return: 0.9908062491383126, gain: -10, entry date: 2017-11-10, duration: 1
+
+2017-11-15
+ticker: LEG-SimpleMomentum, Return: 0.9960387323943662, gain: 0, entry date: 2017-09-11, duration: 47
+ticker: AAPL-StrategyAAPL, Return: 0.9822589922774725, gain: -20, entry date: 2017-11-14, duration: 1
+
+2017-11-16
+ticker: ATI-SimpleMomentum, Return: 1.0103480714957667, gain: 1, entry date: 2017-02-07, duration: 202
+
+2017-11-20
+ticker: KMX-SimpleMomentum, Return: 1.1581050703521771, gain: 9, entry date: 2017-04-28, duration: 146
+
+2017-11-30
+ticker: AAPL-StrategyAAPL, Return: 0.9733290760481752, gain: -34, entry date: 2017-11-24, duration: 4
+
+2017-12-05
+ticker: IGT-SimpleMomentum, Return: 1.563463345535126, gain: 24, entry date: 2017-06-16, duration: 122
+
+2017-12-12
+ticker: AAPL-StrategyAAPL, Return: 1.0174352093601917, gain: 26, entry date: 2017-12-11, duration: 1
+
+2017-12-20
+ticker: AEE-SimpleMomentum, Return: 1.0239242685025818, gain: 3, entry date: 2017-08-10, duration: 94
+ticker: AAPL-StrategyAAPL, Return: 1.0143280413921196, gain: 22, entry date: 2017-12-14, duration: 4
+
+2017-12-21
+ticker: PCG-SimpleMomentum, Return: 0.8007434944237918, gain: -11, entry date: 2017-12-06, duration: 11
+
+2017-12-22
+ticker: CMS-SimpleMomentum, Return: 0.9751182397696895, gain: -1, entry date: 2017-09-01, duration: 80
+ticker: AAPL-StrategyAAPL, Return: 1.0029303548282764, gain: 5, entry date: 2017-12-21, duration: 1
+
+2017-12-26
+ticker: SO-SimpleMomentum, Return: 0.9803961196443007, gain: -2, entry date: 2017-08-03, duration: 103
+ticker: CHRW-SimpleMomentum, Return: 1.2803048576214406, gain: 17, entry date: 2017-06-19, duration: 136
+
+2017-12-27
+ticker: AEP-SimpleMomentum, Return: 1.0913834227787715, gain: 6, entry date: 2017-03-31, duration: 193
+ticker: AAPL-StrategyAAPL, Return: 0.995900877108147, gain: -7, entry date: 2017-12-26, duration: 1
+
+2018-01-08
+ticker: NTAP-SimpleMomentum, Return: 1.3474965548920534, gain: 15, entry date: 2017-10-11, duration: 63
+ticker: WU-SimpleMomentum, Return: 1.11059670781893, gain: 6, entry date: 2017-02-14, duration: 234
+ticker: AAPL-StrategyAAPL, Return: 1.0052455493418644, gain: 8, entry date: 2018-01-05, duration: 1
+
+2018-01-09
+ticker: AKAM-SimpleMomentum, Return: 1.329088336365474, gain: 16, entry date: 2017-06-20, duration: 145
+
+2018-01-11
+ticker: AAPL-StrategyAAPL, Return: 1.0002280938873265, gain: 0, entry date: 2018-01-09, duration: 2
+
+2018-01-17
+ticker: KIM-SimpleMomentum, Return: 0.8634267307831085, gain: -12, entry date: 2017-08-14, duration: 112
+
+2018-01-18
+ticker: AAPL-StrategyAAPL, Return: 1.018107553869492, gain: 32, entry date: 2018-01-12, duration: 4
+
+2018-01-22
+ticker: AAPL-StrategyAAPL, Return: 0.9926653323721354, gain: -15, entry date: 2018-01-19, duration: 1
+
+2018-01-26
+ticker: AAPL-StrategyAAPL, Return: 0.9701077154248775, gain: -58, entry date: 2018-01-23, duration: 3
+
+2018-02-05
+ticker: AAPL-SimpleMomentum, Return: 1.4928286140089417, gain: 25, entry date: 2016-08-22, duration: 380
+ticker: MET-SimpleMomentum, Return: 0.8642883413019492, gain: -7, entry date: 2017-11-06, duration: 65
+ticker: CVX-SimpleMomentum, Return: 1.6631548413728472, gain: 36, entry date: 2015-09-04, duration: 631
+ticker: RRD-SimpleMomentum, Return: 0.8795321637426899, gain: -11, entry date: 2017-11-28, duration: 49
+ticker: SEE-SimpleMomentum, Return: 0.9321862348178137, gain: -3, entry date: 2017-12-27, duration: 28
+
+2018-02-06
+ticker: ALL-SimpleMomentum, Return: 0.8999615606380934, gain: -10, entry date: 2017-12-26, duration: 30
+ticker: AMAT-SimpleMomentum, Return: 1.8211079238535188, gain: 40, entry date: 2016-07-25, duration: 401
+ticker: QEP-SimpleMomentum, Return: 1.103436128123137, gain: 8, entry date: 2017-08-28, duration: 116
+ticker: UNM-SimpleMomentum, Return: 0.9818290734824282, gain: -2, entry date: 2017-08-11, duration: 127
+ticker: LUV-SimpleMomentum, Return: 1.045872649212297, gain: 2, entry date: 2017-09-12, duration: 105
+ticker: MAS-SimpleMomentum, Return: 1.0893433799784715, gain: 3, entry date: 2017-05-19, duration: 187
+ticker: XRAY-SimpleMomentum, Return: 1.031338388223264, gain: 2, entry date: 2017-08-30, duration: 114
+ticker: HRL-SimpleMomentum, Return: 0.8694930493118473, gain: -8, entry date: 2017-12-15, duration: 37
+ticker: CMS-SimpleMomentum, Return: 0.9775878003696858, gain: -1, entry date: 2018-02-05, duration: 1
+
+2018-02-09
+ticker: PSX-SimpleMomentum, Return: 1.0867079005718288, gain: 7, entry date: 2017-08-04, duration: 135
+ticker: PAYX-SimpleMomentum, Return: 0.9579124579124579, gain: -3, entry date: 2017-11-15, duration: 62
+ticker: ICE-SimpleMomentum, Return: 1.0283809872983314, gain: 2, entry date: 2017-07-07, duration: 155
+ticker: EMR-SimpleMomentum, Return: 0.9261800219538969, gain: -5, entry date: 2018-01-11, duration: 21
+ticker: APA-SimpleMomentum, Return: 0.9369015467714216, gain: -3, entry date: 2017-09-13, duration: 107
+ticker: WMB-SimpleMomentum, Return: 0.893167701863354, gain: -7, entry date: 2018-01-19, duration: 15
+ticker: VRSN-SimpleMomentum, Return: 1.3571970655198582, gain: 28, entry date: 2016-09-06, duration: 373
+ticker: FSLR-SimpleMomentum, Return: 1.336670293797606, gain: 15, entry date: 2017-07-26, duration: 142
+ticker: APH-SimpleMomentum, Return: 1.3363641539321967, gain: 20, entry date: 2016-09-26, duration: 359
+ticker: TER-SimpleMomentum, Return: 1.0313228747085013, gain: 1, entry date: 2017-10-24, duration: 78
+ticker: BAX-SimpleMomentum, Return: 1.2390420566817044, gain: 11, entry date: 2017-03-17, duration: 235
+
+2018-02-13
+ticker: CVS-SimpleMomentum, Return: 0.8722472472472471, gain: -10, entry date: 2018-01-18, duration: 18
+
+2018-02-15
+ticker: AAPL-StrategyAAPL, Return: 1.0413689074717074, gain: 61, entry date: 2018-02-14, duration: 1
+
+2018-02-20
+ticker: AAPL-StrategyAAPL, Return: 0.9982010822876358, gain: -3, entry date: 2018-02-16, duration: 2
+
+2018-03-02
+ticker: AN-SimpleMomentum, Return: 1.1142726021110603, gain: 5, entry date: 2017-04-21, duration: 225
+ticker: XRAY-SimpleMomentum, Return: 0.9333561339939362, gain: -4, entry date: 2018-02-26, duration: 4
+
+2018-03-05
+ticker: AAPL-StrategyAAPL, Return: 1.013771287280964, gain: 21, entry date: 2018-02-21, duration: 8
+
+2018-03-08
+ticker: DLTR-SimpleMomentum, Return: 1.3402061855670102, gain: 23, entry date: 2017-07-10, duration: 173
+ticker: AAPL-StrategyAAPL, Return: 0.9863421342786347, gain: -21, entry date: 2018-03-06, duration: 2
+
+2018-03-12
+ticker: BIG-SimpleMomentum, Return: 0.8969091245604294, gain: -6, entry date: 2016-12-13, duration: 324
+
+2018-03-16
+ticker: MAT-SimpleMomentum, Return: 0.8039443155452437, gain: -95, entry date: 2018-02-13, duration: 23
+
+2018-03-20
+ticker: AAPL-StrategyAAPL, Return: 0.9597462277250369, gain: -63, entry date: 2018-03-13, duration: 5
+
+2018-03-21
+ticker: HAS-SimpleMomentum, Return: 0.873691697998171, gain: -25, entry date: 2018-02-12, duration: 27
+ticker: AN-SimpleMomentum, Return: 0.9255669703430897, gain: -4, entry date: 2018-03-14, duration: 5
+
+2018-03-22
+ticker: K-SimpleMomentum, Return: 0.9200173560890946, gain: -6, entry date: 2018-02-16, duration: 24
+ticker: XRAY-SimpleMomentum, Return: 0.918158642290043, gain: -4, entry date: 2018-03-13, duration: 7
+
+2018-03-23
+ticker: AVY-SimpleMomentum, Return: 0.92762639095768, gain: -8, entry date: 2017-12-26, duration: 63
+
+2018-03-26
+ticker: PBI-SimpleMomentum, Return: 1.076850984067479, gain: 6, entry date: 2017-12-01, duration: 81
+ticker: BK-SimpleMomentum, Return: 0.9924826522744795, gain: 0, entry date: 2017-07-11, duration: 184
+ticker: GT-SimpleMomentum, Return: 0.9563055062166964, gain: -2, entry date: 2018-03-20, duration: 4
+ticker: DFS-SimpleMomentum, Return: 0.8955863808322825, gain: -8, entry date: 2018-01-17, duration: 48
+ticker: C-SimpleMomentum, Return: 1.2452252252252252, gain: 14, entry date: 2016-11-29, duration: 344
+ticker: X-SimpleMomentum, Return: 1.6736483195323915, gain: 28, entry date: 2017-05-31, duration: 213
+
+2018-03-27
+ticker: T-SimpleMomentum, Return: 0.8935897435897436, gain: -4, entry date: 2017-12-28, duration: 63
+
+2018-03-28
+ticker: CAH-SimpleMomentum, Return: 1.016302485781427, gain: 1, entry date: 2017-12-05, duration: 81
+
+2018-03-29
+ticker: LIFE-SimpleMomentum, Return: 0.8666666666666666, gain: -6, entry date: 2018-03-13, duration: 12
+ticker: WMB-SimpleMomentum, Return: 0.9223659889094269, gain: -4, entry date: 2018-03-19, duration: 8
+
+2018-04-10
+ticker: AAPL-StrategyAAPL, Return: 1.0183660293022099, gain: 12, entry date: 2018-04-09, duration: 1
+
+2018-04-12
+ticker: AAPL-StrategyAAPL, Return: 1.006850841720328, gain: 6, entry date: 2018-04-11, duration: 1
+
+2018-04-19
+ticker: AAPL-StrategyAAPL, Return: 1.0009726875138782, gain: 1, entry date: 2018-04-13, duration: 4
+
+2018-04-23
+ticker: AAPL-StrategyAAPL, Return: 0.9779596681462431, gain: -29, entry date: 2018-04-20, duration: 1
+
+2018-04-25
+ticker: MAS-SimpleMomentum, Return: 0.882138517618469, gain: -5, entry date: 2018-03-21, duration: 25
+
+2018-05-01
+ticker: GT-SimpleMomentum, Return: 0.9121475054229935, gain: -5, entry date: 2018-04-11, duration: 14
+ticker: CL-SimpleMomentum, Return: 0.9241352052990559, gain: -5, entry date: 2018-04-04, duration: 19
+
+2018-05-02
+ticker: PBI-SimpleMomentum, Return: 0.9352189781021897, gain: -3, entry date: 2018-04-19, duration: 9
+ticker: XYL-SimpleMomentum, Return: 1.3907337442831578, gain: 20, entry date: 2017-01-27, duration: 328
+ticker: TEL-SimpleMomentum, Return: 1.4635350318471338, gain: 29, entry date: 2016-09-07, duration: 430
+
+2018-05-03
+ticker: RRD-SimpleMomentum, Return: 0.9274809160305343, gain: -4, entry date: 2018-02-28, duration: 46
+
+2018-05-04
+ticker: AAPL-StrategyAAPL, Return: 1.0134749102352232, gain: 15, entry date: 2018-05-03, duration: 1
+
+2018-05-09
+ticker: XRAY-SimpleMomentum, Return: 0.8939546097893653, gain: -5, entry date: 2018-04-20, duration: 13
+ticker: BIG-SimpleMomentum, Return: 0.9461683121767748, gain: -2, entry date: 2018-04-26, duration: 9
+ticker: AAPL-StrategyAAPL, Return: 1.0073968776838456, gain: 9, entry date: 2018-05-07, duration: 2
+
+2018-05-10
+ticker: QEP-SimpleMomentum, Return: 1.0641135789446823, gain: 2, entry date: 2018-04-27, duration: 9
+
+2018-05-15
+ticker: LIFE-SimpleMomentum, Return: 0.6595744680851063, gain: -11, entry date: 2018-05-10, duration: 3
+
+2018-05-16
+ticker: AAPL-StrategyAAPL, Return: 0.9949419935870499, gain: -5, entry date: 2018-05-10, duration: 4
+
+2018-05-18
+ticker: AAPL-StrategyAAPL, Return: 0.995690454849244, gain: -5, entry date: 2018-05-17, duration: 1
+
+2018-05-24
+ticker: AAPL-StrategyAAPL, Return: 1.0040949619897224, gain: 4, entry date: 2018-05-21, duration: 3
+
+2018-05-30
+ticker: AAPL-StrategyAAPL, Return: 0.9972897308930493, gain: -3, entry date: 2018-05-25, duration: 3
+
+2018-06-06
+ticker: FSLR-SimpleMomentum, Return: 0.8105398825719605, gain: -13, entry date: 2018-03-29, duration: 49
+
+2018-06-11
+ticker: AAPL-StrategyAAPL, Return: 0.9985132524466647, gain: -1, entry date: 2018-06-04, duration: 5
+
+2018-06-12
+ticker: AEP-SimpleMomentum, Return: 0.9192792264869616, gain: -6, entry date: 2018-04-03, duration: 50
+
+2018-06-13
+ticker: PCG-SimpleMomentum, Return: 0.8597334498579855, gain: -6, entry date: 2018-04-17, duration: 41
+
+2018-06-18
+ticker: AAPL-StrategyAAPL, Return: 0.9816856009871903, gain: -16, entry date: 2018-06-12, duration: 4
+
+2018-06-21
+ticker: SBUX-SimpleMomentum, Return: 0.9398346428801443, gain: -3, entry date: 2018-02-21, duration: 86
+
+2018-06-27
+ticker: AFL-SimpleMomentum, Return: 1.3514423791295487, gain: 10, entry date: 2016-05-10, duration: 556
+
+2018-06-28
+ticker: MAR-SimpleMomentum, Return: 1.916135417668094, gain: 58, entry date: 2016-10-24, duration: 438
+ticker: FAST-SimpleMomentum, Return: 0.9118744320961766, gain: -6, entry date: 2017-12-27, duration: 131
+
+2018-06-29
+ticker: PBI-SimpleMomentum, Return: 0.9238302502720349, gain: -3, entry date: 2018-05-21, duration: 29
+ticker: DFS-SimpleMomentum, Return: 1.0018335684062059, gain: 0, entry date: 2018-04-16, duration: 54
+ticker: RRD-SimpleMomentum, Return: 0.8347953216374269, gain: -6, entry date: 2018-06-12, duration: 13
+ticker: FHN-SimpleMomentum, Return: 0.9741697416974171, gain: -1, entry date: 2018-04-16, duration: 54
+ticker: AAPL-StrategyAAPL, Return: 1.01189688151966, gain: 5, entry date: 2018-06-28, duration: 1
+
+2018-07-05
+ticker: BK-SimpleMomentum, Return: 1.0215566577642121, gain: 1, entry date: 2018-04-13, duration: 59
+
+2018-07-06
+ticker: AAPL-StrategyAAPL, Return: 1.000864223854393, gain: 1, entry date: 2018-07-05, duration: 1
+
+2018-07-12
+ticker: AAPL-StrategyAAPL, Return: 1.0001596636419277, gain: 0, entry date: 2018-07-09, duration: 3
+
+2018-07-18
+ticker: AAPL-StrategyAAPL, Return: 1.0036638897930101, gain: 5, entry date: 2018-07-13, duration: 3
+
+2018-07-20
+ticker: AA-SimpleMomentum, Return: 0.7856602345819145, gain: -11, entry date: 2018-01-19, duration: 130
+ticker: AAPL-StrategyAAPL, Return: 1.0110190518387239, gain: 18, entry date: 2018-07-19, duration: 1
+
+2018-07-24
+ticker: LIFE-SimpleMomentum, Return: 0.907142857142857, gain: -3, entry date: 2018-06-12, duration: 30
+ticker: AAPL-StrategyAAPL, Return: 1.009282521884008, gain: 16, entry date: 2018-07-23, duration: 1
+
+2018-07-27
+ticker: AAPL-StrategyAAPL, Return: 1.0099973880109703, gain: 18, entry date: 2018-07-25, duration: 2
+
+2018-07-30
+ticker: QEP-SimpleMomentum, Return: 0.8126951592499478, gain: -12, entry date: 2018-05-14, duration: 55
+ticker: RRC-SimpleMomentum, Return: 0.8874010955569082, gain: -4, entry date: 2018-07-02, duration: 20
+
+2018-08-03
+ticker: AAPL-StrategyAAPL, Return: 1.0788443893583615, gain: 140, entry date: 2018-07-30, duration: 4
+
+2018-08-07
+ticker: WU-SimpleMomentum, Return: 0.9799588900308325, gain: -1, entry date: 2018-04-18, duration: 79
+ticker: RRD-SimpleMomentum, Return: 0.9078156312625251, gain: -6, entry date: 2018-08-02, duration: 3
+
+2018-08-09
+ticker: AAPL-StrategyAAPL, Return: 0.9965391981768665, gain: -6, entry date: 2018-08-06, duration: 3
+
+2018-08-13
+ticker: AAPL-StrategyAAPL, Return: 1.0016397911891515, gain: 2, entry date: 2018-08-10, duration: 1
+
+2018-08-14
+ticker: SEE-SimpleMomentum, Return: 0.9307926116436754, gain: -3, entry date: 2018-03-05, duration: 116
+
+2018-08-16
+ticker: MU-SimpleMomentum, Return: 3.8652899243036676, gain: 105, entry date: 2016-06-09, duration: 570
+ticker: NFLX-SimpleMomentum, Return: 2.697244706074728, gain: 208, entry date: 2016-11-03, duration: 465
+ticker: AAPL-StrategyAAPL, Return: 1.0075897660702187, gain: 12, entry date: 2018-08-14, duration: 2
+
+2018-08-20
+ticker: CHRW-SimpleMomentum, Return: 1.0060149087889523, gain: 1, entry date: 2018-08-17, duration: 1
+
+2018-08-22
+ticker: AFL-SimpleMomentum, Return: 1.0834423366073953, gain: 6, entry date: 2018-07-24, duration: 21
+
+2018-08-23
+ticker: AAPL-StrategyAAPL, Return: 1.0056699574655095, gain: 8, entry date: 2018-08-17, duration: 4
+
+2018-08-29
+ticker: SO-SimpleMomentum, Return: 1.015546410608139, gain: 1, entry date: 2018-02-20, duration: 136
+
+2018-08-31
+ticker: DVA-SimpleMomentum, Return: 1.0348258706467663, gain: 2, entry date: 2018-05-09, duration: 82
+ticker: DLTR-SimpleMomentum, Return: 0.8469645868465431, gain: -15, entry date: 2018-08-22, duration: 7
+
+2018-09-05
+ticker: PLL-SimpleMomentum, Return: 0.9777777777777777, gain: -1, entry date: 2018-04-17, duration: 101
+
+2018-09-07
+ticker: SLB-SimpleMomentum, Return: 0.9350527867992293, gain: -4, entry date: 2018-03-05, duration: 134
+ticker: AEE-SimpleMomentum, Return: 1.162263477329525, gain: 9, entry date: 2018-02-20, duration: 143
+ticker: AAPL-StrategyAAPL, Return: 1.0242377491778654, gain: 48, entry date: 2018-08-24, duration: 10
+
+2018-09-10
+ticker: AN-SimpleMomentum, Return: 0.9357188772230555, gain: -3, entry date: 2018-04-12, duration: 107
+ticker: ETFC-SimpleMomentum, Return: 1.943562610229277, gain: 80, entry date: 2016-09-21, duration: 513
+
+2018-09-11
+ticker: AAPL-StrategyAAPL, Return: 0.9866935537365509, gain: -34, entry date: 2018-09-10, duration: 1
+
+2018-09-12
+ticker: TXN-SimpleMomentum, Return: 1.1054805959653673, gain: 9, entry date: 2017-11-15, duration: 215
+
+2018-09-13
+ticker: TER-SimpleMomentum, Return: 1.0204733272621345, gain: 1, entry date: 2018-05-11, duration: 89
+
+2018-09-14
+ticker: CRM-SimpleMomentum, Return: 2.01646867525787, gain: 80, entry date: 2017-02-02, duration: 421
+ticker: ABT-SimpleMomentum, Return: 1.44038721881201, gain: 19, entry date: 2017-06-29, duration: 316
+
+2018-09-17
+ticker: WMB-SimpleMomentum, Return: 1.1152931854199684, gain: 6, entry date: 2018-04-16, duration: 110
+ticker: GPS-SimpleMomentum, Return: 1.020471690050246, gain: 0, entry date: 2017-09-18, duration: 260
+
+2018-09-19
+ticker: AAPL-StrategyAAPL, Return: 1.0032609615221924, gain: 8, entry date: 2018-09-18, duration: 1
+
+2018-09-21
+ticker: AAPL-StrategyAAPL, Return: 1.0024527372738112, gain: 7, entry date: 2018-09-20, duration: 1
+
+2018-09-24
+ticker: WY-SimpleMomentum, Return: 0.9734356552538369, gain: -1, entry date: 2017-02-23, duration: 412
+
+2018-09-28
+ticker: AAPL-StrategyAAPL, Return: 1.0043349573052545, gain: 13, entry date: 2018-09-27, duration: 1
+
+2018-10-01
+ticker: LEG-SimpleMomentum, Return: 0.9783916239697037, gain: -1, entry date: 2018-07-06, duration: 61
+
+2018-10-02
+ticker: ETFC-SimpleMomentum, Return: 0.978227943960621, gain: -1, entry date: 2018-10-01, duration: 1
+
+2018-10-03
+ticker: AAPL-StrategyAAPL, Return: 1.0092127380110405, gain: 30, entry date: 2018-10-01, duration: 2
+
+2018-10-04
+ticker: K-SimpleMomentum, Return: 1.1052374756018217, gain: 6, entry date: 2018-05-14, duration: 103
+
+2018-10-05
+ticker: MCO-SimpleMomentum, Return: 1.2558106715049389, gain: 32, entry date: 2017-08-02, duration: 307
+ticker: AKAM-SimpleMomentum, Return: 1.015003061849357, gain: 1, entry date: 2018-01-12, duration: 190
+ticker: MAT-SimpleMomentum, Return: 1.105263157894737, gain: 4, entry date: 2018-04-06, duration: 130
+ticker: WDC-SimpleMomentum, Return: 0.9425916708146673, gain: -3, entry date: 2018-09-24, duration: 9
+ticker: TER-SimpleMomentum, Return: 0.9806548703318629, gain: -1, entry date: 2018-10-02, duration: 3
+ticker: BMS-SimpleMomentum, Return: 0.938754816467248, gain: -6, entry date: 2018-08-16, duration: 36
+ticker: KMX-SimpleMomentum, Return: 1.1536730429191449, gain: 10, entry date: 2018-03-16, duration: 145
+ticker: AAPL-StrategyAAPL, Return: 0.9877810902664245, gain: -36, entry date: 2018-10-04, duration: 1
+
+2018-10-09
+ticker: AAPL-StrategyAAPL, Return: 1.0064355400105909, gain: 18, entry date: 2018-10-08, duration: 1
+
+2018-10-10
+ticker: IP-SimpleMomentum, Return: 0.8526496378192908, gain: -8, entry date: 2018-04-09, duration: 132
+ticker: FAST-SimpleMomentum, Return: 0.9286354575558002, gain: -3, entry date: 2018-07-27, duration: 53
+ticker: KSS-SimpleMomentum, Return: 1.656721769670669, gain: 21, entry date: 2017-10-03, duration: 266
+ticker: XYL-SimpleMomentum, Return: 0.9137994820569736, gain: -7, entry date: 2018-09-24, duration: 12
+
+2018-10-11
+ticker: RL-SimpleMomentum, Return: 1.5116970401964585, gain: 40, entry date: 2017-08-07, duration: 308
+ticker: MAR-SimpleMomentum, Return: 0.9490940634520915, gain: -6, entry date: 2018-08-24, duration: 34
+ticker: FLIR-SimpleMomentum, Return: 1.4917788404362124, gain: 36, entry date: 2017-07-24, duration: 318
+ticker: AMZN-SimpleMomentum, Return: 1.5259738646526881, gain: 30, entry date: 2017-11-20, duration: 233
+ticker: NTAP-SimpleMomentum, Return: 1.182190056639396, gain: 12, entry date: 2018-01-25, duration: 185
+ticker: LUV-SimpleMomentum, Return: 0.9745257988032064, gain: -1, entry date: 2018-08-17, duration: 39
+ticker: EFX-SimpleMomentum, Return: 0.8984162062615101, gain: -14, entry date: 2018-09-18, duration: 17
+ticker: VRSN-SimpleMomentum, Return: 0.8827273300144938, gain: -19, entry date: 2018-09-10, duration: 23
+ticker: TSS-SimpleMomentum, Return: 1.8646431501230518, gain: 42, entry date: 2016-08-30, duration: 552
+ticker: BAX-SimpleMomentum, Return: 0.9155692515107013, gain: -6, entry date: 2018-09-26, duration: 11
+ticker: X-SimpleMomentum, Return: 0.9335781041388518, gain: -8, entry date: 2018-09-21, duration: 14
+
+2018-10-12
+ticker: ALL-SimpleMomentum, Return: 0.9522373051784816, gain: -5, entry date: 2018-08-23, duration: 36
+ticker: HST-SimpleMomentum, Return: 1.0226793248945147, gain: 1, entry date: 2018-03-15, duration: 151
+ticker: AFL-SimpleMomentum, Return: 0.9659834814880441, gain: -3, entry date: 2018-08-24, duration: 35
+ticker: EMR-SimpleMomentum, Return: 0.9355627009646301, gain: -10, entry date: 2018-09-14, duration: 20
+ticker: FSLR-SimpleMomentum, Return: 0.8641651031894936, gain: -7, entry date: 2018-07-06, duration: 70
+ticker: VMC-SimpleMomentum, Return: 0.9109185132237313, gain: -10, entry date: 2018-08-29, duration: 32
+ticker: ADP-SimpleMomentum, Return: 0.9500338524035207, gain: -7, entry date: 2018-09-19, duration: 17
+ticker: MSI-SimpleMomentum, Return: 1.4960382237912486, gain: 37, entry date: 2016-12-29, duration: 466
+ticker: DVN-SimpleMomentum, Return: 1.1258783990223038, gain: 4, entry date: 2018-03-12, duration: 154
+ticker: NVDA-SimpleMomentum, Return: 5.355880775015171, gain: 248, entry date: 2016-06-13, duration: 609
+
+2018-10-15
+ticker: USB-SimpleMomentum, Return: 0.9799344009261046, gain: -1, entry date: 2018-04-13, duration: 131
+ticker: KIM-SimpleMomentum, Return: 1.0646673720976247, gain: 5, entry date: 2018-02-22, duration: 167
+
+2018-10-18
+ticker: NFX-SimpleMomentum, Return: 1.03464499572284, gain: 2, entry date: 2018-03-20, duration: 152
+
+2018-10-22
+ticker: PSX-SimpleMomentum, Return: 0.9434444952032892, gain: -12, entry date: 2018-10-15, duration: 5
+ticker: GPS-SimpleMomentum, Return: 0.9334308380977707, gain: -6, entry date: 2018-10-08, duration: 10
+ticker: URBN-SimpleMomentum, Return: 1.589799476896251, gain: 14, entry date: 2017-09-15, duration: 286
+
+2018-10-23
+ticker: AAPL-StrategyAAPL, Return: 0.9819840417019137, gain: -52, entry date: 2018-10-22, duration: 1
+
+2018-10-24
+ticker: APA-SimpleMomentum, Return: 1.131179775280899, gain: 5, entry date: 2018-03-14, duration: 160
+ticker: QEP-SimpleMomentum, Return: 1.0082980955711698, gain: 1, entry date: 2018-09-05, duration: 35
+ticker: CVX-SimpleMomentum, Return: 0.893814271190812, gain: -11, entry date: 2018-10-10, duration: 10
+ticker: HP-SimpleMomentum, Return: 1.2966708000862628, gain: 11, entry date: 2017-10-02, duration: 277
+
+2018-10-25
+ticker: LH-SimpleMomentum, Return: 0.8976603185463945, gain: -17, entry date: 2018-10-22, duration: 3
+ticker: HAS-SimpleMomentum, Return: 0.8590710229917156, gain: -15, entry date: 2018-09-21, duration: 24
+ticker: XOM-SimpleMomentum, Return: 0.9200562653850661, gain: -7, entry date: 2018-10-05, duration: 14
+ticker: PRU-SimpleMomentum, Return: 0.9464377505911381, gain: -10, entry date: 2018-10-15, duration: 8
+ticker: WPX-SimpleMomentum, Return: 1.798264642082429, gain: 59, entry date: 2017-07-10, duration: 338
+
+2018-10-26
+ticker: T-SimpleMomentum, Return: 0.916028194912657, gain: -3, entry date: 2018-05-22, duration: 113
+ticker: AAPL-StrategyAAPL, Return: 0.9916868788480884, gain: -22, entry date: 2018-10-25, duration: 1
+
+2018-10-29
+ticker: MCO-SimpleMomentum, Return: 0.9295711147431742, gain: -10, entry date: 2018-10-25, duration: 2
+ticker: ADM-SimpleMomentum, Return: 0.9896164441618989, gain: 0, entry date: 2018-07-17, duration: 74
+ticker: DFS-SimpleMomentum, Return: 0.8502191609267377, gain: -12, entry date: 2018-09-24, duration: 25
+ticker: WDC-SimpleMomentum, Return: 0.9419831223628692, gain: -6, entry date: 2018-10-26, duration: 1
+
+2018-10-30
+ticker: CL-SimpleMomentum, Return: 0.9861319793447664, gain: -1, entry date: 2018-10-29, duration: 1
+
+2018-10-31
+ticker: GE-SimpleMomentum, Return: 0.7759148447511215, gain: -53, entry date: 2018-10-11, duration: 14
+ticker: AAPL-StrategyAAPL, Return: 1.0271361029359267, gain: 53, entry date: 2018-10-30, duration: 1
+
+2018-11-05
+ticker: AAPL-StrategyAAPL, Return: 0.9326650111546336, gain: -127, entry date: 2018-11-01, duration: 2
+
+2018-11-12
+ticker: PCG-SimpleMomentum, Return: 0.7383656201291472, gain: -12, entry date: 2018-07-09, duration: 90
+
+2018-11-15
+ticker: AAPL-SimpleMomentum, Return: 0.8521502940798961, gain: -16, entry date: 2018-09-07, duration: 49
+
+2018-11-20
+ticker: ROST-SimpleMomentum, Return: 1.1141634300721894, gain: 8, entry date: 2017-12-18, duration: 241
+ticker: TJX-SimpleMomentum, Return: 0.9755286399078041, gain: -1, entry date: 2018-07-12, duration: 93
+ticker: URBN-SimpleMomentum, Return: 0.8997461928934011, gain: -8, entry date: 2018-11-01, duration: 13
+ticker: TGT-SimpleMomentum, Return: 1.2632850241545892, gain: 14, entry date: 2017-04-04, duration: 425
+
+2018-11-21
+ticker: KSS-SimpleMomentum, Return: 0.9153954139604439, gain: -5, entry date: 2018-10-23, duration: 21
+ticker: DVN-SimpleMomentum, Return: 0.8842843481032833, gain: -4, entry date: 2018-11-13, duration: 6
+
+2018-11-30
+ticker: MCD-SimpleMomentum, Return: 1.1489050204355518, gain: 49, entry date: 2018-10-12, duration: 35
+
+2018-12-03
+ticker: AAPL-StrategyAAPL, Return: 1.023129374513943, gain: 19, entry date: 2018-11-30, duration: 1
+
+2018-12-06
+ticker: SWN-SimpleMomentum, Return: 1.1675531914893618, gain: 9, entry date: 2018-02-28, duration: 201
+ticker: AAPL-StrategyAAPL, Return: 0.9492124622373913, gain: -73, entry date: 2018-12-04, duration: 2
+
+2018-12-07
+ticker: AN-SimpleMomentum, Return: 0.8335317932841152, gain: -14, entry date: 2018-10-24, duration: 32
+
+2018-12-10
+ticker: UNM-SimpleMomentum, Return: 0.8337236533957846, gain: -6, entry date: 2018-05-24, duration: 142
+ticker: BIG-SimpleMomentum, Return: 0.7166276346604216, gain: -12, entry date: 2018-05-18, duration: 146
+ticker: RRC-SimpleMomentum, Return: 0.7994117647058824, gain: -55, entry date: 2018-10-11, duration: 42
+ticker: AAPL-StrategyAAPL, Return: 0.9510622893881704, gain: -75, entry date: 2018-12-07, duration: 1
+
+2018-12-11
+ticker: FHN-SimpleMomentum, Return: 0.8692810457516341, gain: -9, entry date: 2018-11-02, duration: 27
+
+2018-12-14
+ticker: DFS-SimpleMomentum, Return: 0.8681578216171159, gain: -9, entry date: 2018-12-03, duration: 9
+ticker: SEE-SimpleMomentum, Return: 1.0181116389548694, gain: 1, entry date: 2018-11-06, duration: 28
+
+2018-12-18
+ticker: PBI-SimpleMomentum, Return: 0.7607655502392345, gain: -14, entry date: 2018-11-30, duration: 12
+ticker: IP-SimpleMomentum, Return: 0.9085764040052243, gain: -8, entry date: 2018-10-31, duration: 34
+ticker: NTAP-SimpleMomentum, Return: 0.8019182096709738, gain: -30, entry date: 2018-10-25, duration: 38
+ticker: RRD-SimpleMomentum, Return: 0.7291338582677166, gain: -5, entry date: 2018-11-14, duration: 24
+ticker: PLL-SimpleMomentum, Return: 0.7446183953033267, gain: -13, entry date: 2018-10-04, duration: 53
+ticker: CAH-SimpleMomentum, Return: 1.003652110654529, gain: 0, entry date: 2018-07-23, duration: 106
+ticker: WPX-SimpleMomentum, Return: 0.847970479704797, gain: -12, entry date: 2018-12-06, duration: 8
+
+2018-12-19
+ticker: CVS-SimpleMomentum, Return: 1.0928303068252974, gain: 6, entry date: 2018-04-11, duration: 180
+ticker: BMS-SimpleMomentum, Return: 1.009657594381036, gain: 1, entry date: 2018-10-24, duration: 40
+ticker: PCG-SimpleMomentum, Return: 0.8779467680608365, gain: -6, entry date: 2018-12-03, duration: 12
+
+2018-12-20
+ticker: ATI-SimpleMomentum, Return: 0.7613559322033898, gain: -7, entry date: 2018-10-03, duration: 56
+ticker: DVA-SimpleMomentum, Return: 0.7540682043299844, gain: -70, entry date: 2018-10-12, duration: 49
+ticker: AON-SimpleMomentum, Return: 1.0788363636363636, gain: 11, entry date: 2018-02-09, duration: 224
+ticker: EFX-SimpleMomentum, Return: 0.9449144008056395, gain: -5, entry date: 2018-12-10, duration: 8
+ticker: TJX-SimpleMomentum, Return: 0.9296866247979534, gain: -6, entry date: 2018-12-11, duration: 7
+ticker: WY-SimpleMomentum, Return: 0.8562430529825862, gain: -4, entry date: 2018-11-13, duration: 27
+ticker: MMC-SimpleMomentum, Return: 0.9653371693288056, gain: -3, entry date: 2018-10-30, duration: 37
+ticker: TER-SimpleMomentum, Return: 0.8491283964709924, gain: -11, entry date: 2018-11-02, duration: 34
+ticker: DVN-SimpleMomentum, Return: 0.8570378537302462, gain: -12, entry date: 2018-12-12, duration: 6
+ticker: NVDA-SimpleMomentum, Return: 0.8719561992911897, gain: -10, entry date: 2018-12-07, duration: 9
+ticker: AAPL-StrategyAAPL, Return: 0.9662672227207941, gain: -50, entry date: 2018-12-19, duration: 1
+
+2018-12-21
+ticker: APH-SimpleMomentum, Return: 0.8670478101602507, gain: -11, entry date: 2018-10-31, duration: 37
+ticker: DIS-SimpleMomentum, Return: 0.9813807724214214, gain: -2, entry date: 2017-12-26, duration: 258
+ticker: WAT-SimpleMomentum, Return: 1.0061148227833767, gain: 1, entry date: 2018-10-25, duration: 41
+
+2018-12-24
+ticker: PLD-SimpleMomentum, Return: 1.1339898827296342, gain: 6, entry date: 2017-04-20, duration: 437
+ticker: LLL-SimpleMomentum, Return: 0.7657482141200482, gain: -50, entry date: 2018-10-22, duration: 45
+
+2018-12-26
+ticker: AKAM-SimpleMomentum, Return: 0.917068616772989, gain: -5, entry date: 2018-10-24, duration: 45
+ticker: SO-SimpleMomentum, Return: 0.9862825788751715, gain: -3, entry date: 2018-10-15, duration: 52
+ticker: BSX-SimpleMomentum, Return: 1.2417282989490073, gain: 19, entry date: 2017-12-19, duration: 266
+ticker: MKC-SimpleMomentum, Return: 1.1340168429697342, gain: 7, entry date: 2018-07-12, duration: 119
+ticker: MAS-SimpleMomentum, Return: 0.8677998111425874, gain: -4, entry date: 2018-11-07, duration: 35
+ticker: MSFT-SimpleMomentum, Return: 1.7276150611635395, gain: 38, entry date: 2016-08-31, duration: 605
+ticker: URBN-SimpleMomentum, Return: 0.8160773340117018, gain: -14, entry date: 2018-12-04, duration: 16
+ticker: CCI-SimpleMomentum, Return: 0.998751800288046, gain: 0, entry date: 2018-02-09, duration: 228
+ticker: AEE-SimpleMomentum, Return: 0.9915506180566421, gain: -3, entry date: 2018-10-12, duration: 53
+ticker: HRL-SimpleMomentum, Return: 1.1713464858439384, gain: 5, entry date: 2018-04-18, duration: 180
+ticker: LEG-SimpleMomentum, Return: 0.9209677419354837, gain: -3, entry date: 2018-11-08, duration: 34
+ticker: CL-SimpleMomentum, Return: 0.8938710070926928, gain: -6, entry date: 2018-12-14, duration: 8
+ticker: CMS-SimpleMomentum, Return: 1.113851117769071, gain: 5, entry date: 2018-02-21, duration: 220
+
+2019-01-15
+ticker: AAPL-StrategyAAPL, Return: 0.996154888823728, gain: -5, entry date: 2019-01-14, duration: 1
+
+2019-01-18
+ticker: AAPL-StrategyAAPL, Return: 1.0288734659608225, gain: 35, entry date: 2019-01-16, duration: 2
+
+2019-01-23
+ticker: AAPL-StrategyAAPL, Return: 0.9855504746252889, gain: -21, entry date: 2019-01-22, duration: 1
+
+2019-01-29
+ticker: AAPL-StrategyAAPL, Return: 1.0138853537678374, gain: 18, entry date: 2019-01-24, duration: 3
+
+2019-02-08
+ticker: AAPL-StrategyAAPL, Return: 1.0216973524557424, gain: 34, entry date: 2019-01-31, duration: 6
+
+2019-02-15
+ticker: AAPL-StrategyAAPL, Return: 1.0011708663196175, gain: 2, entry date: 2019-02-11, duration: 4
+
+2019-02-21
+ticker: AAPL-StrategyAAPL, Return: 1.0035631240928353, gain: 7, entry date: 2019-02-20, duration: 1
+
+2019-02-27
+ticker: AAPL-StrategyAAPL, Return: 1.0095002385351761, gain: 22, entry date: 2019-02-22, duration: 3
+
+2019-03-01
+ticker: AAPL-StrategyAAPL, Return: 0.9997711730479989, gain: -1, entry date: 2019-02-28, duration: 1
+
+2019-03-04
+ticker: XRAY-SimpleMomentum, Return: 1.384397661794412, gain: 26, entry date: 2018-10-23, duration: 94
+
+2019-03-07
+ticker: AAPL-StrategyAAPL, Return: 0.9896411779730765, gain: -25, entry date: 2019-03-04, duration: 3
+
+2019-03-08
+ticker: BMS-SimpleMomentum, Return: 0.9979229607250756, gain: 0, entry date: 2019-03-06, duration: 2
+ticker: DLTR-SimpleMomentum, Return: 1.2106382978723405, gain: 18, entry date: 2018-09-20, duration: 121
+
+2019-03-11
+ticker: X-SimpleMomentum, Return: 0.9421487603305785, gain: -2, entry date: 2019-01-08, duration: 44
+ticker: AAPL-StrategyAAPL, Return: 1.0303558882079706, gain: 80, entry date: 2019-03-08, duration: 1
+
+2019-03-15
+ticker: CME-SimpleMomentum, Return: 1.079705220859912, gain: 10, entry date: 2018-02-08, duration: 286
+
+2019-03-18
+ticker: ALL-SimpleMomentum, Return: 1.1724732241782592, gain: 14, entry date: 2019-01-03, duration: 52
+
+2019-03-19
+ticker: AAPL-StrategyAAPL, Return: 1.0463895512706574, gain: 117, entry date: 2019-03-12, duration: 5
+
+2019-03-21
+ticker: AAPL-StrategyAAPL, Return: 1.0203505170740415, gain: 57, entry date: 2019-03-20, duration: 1
+
+2019-03-22
+ticker: FHN-SimpleMomentum, Return: 1.0146092037983931, gain: 1, entry date: 2019-01-07, duration: 54
+
+2019-03-25
+ticker: UNM-SimpleMomentum, Return: 0.9815032295948326, gain: -1, entry date: 2019-01-28, duration: 40
+ticker: RRD-SimpleMomentum, Return: 0.8880157170923378, gain: -4, entry date: 2019-01-16, duration: 48
+ticker: LEG-SimpleMomentum, Return: 0.9113498992612491, gain: -4, entry date: 2019-02-15, duration: 26
+
+2019-04-03
+ticker: AAPL-StrategyAAPL, Return: 0.9893005813421708, gain: -34, entry date: 2019-03-22, duration: 8
+
+2019-04-05
+ticker: AAPL-StrategyAAPL, Return: 1.0085218303910441, gain: 28, entry date: 2019-04-04, duration: 1
+
+2019-04-09
+ticker: AAPL-StrategyAAPL, Return: 1.0198553474685808, gain: 63, entry date: 2019-04-08, duration: 1
+
+2019-04-11
+ticker: AAPL-StrategyAAPL, Return: 1.0109210762969563, gain: 36, entry date: 2019-04-10, duration: 1
+
+2019-04-16
+ticker: AAPL-StrategyAAPL, Return: 1.0013057744013985, gain: 4, entry date: 2019-04-12, duration: 2
+
+2019-04-17
+ticker: FOSL-SimpleMomentum, Return: 0.9387900355871885, gain: -6, entry date: 2018-02-20, duration: 301
+
+2019-04-18
+ticker: ABT-SimpleMomentum, Return: 1.0385504029131951, gain: 5, entry date: 2018-10-05, duration: 139
+
+2019-04-22
+ticker: AAPL-StrategyAAPL, Return: 1.0164880358663715, gain: 58, entry date: 2019-04-17, duration: 3
+
+2019-04-24
+ticker: AAPL-StrategyAAPL, Return: 1.0143334498654462, gain: 51, entry date: 2019-04-23, duration: 1
+
+2019-04-26
+ticker: AAPL-StrategyAAPL, Return: 0.9906684184727144, gain: -36, entry date: 2019-04-25, duration: 1
+
+2019-05-01
+ticker: AAPL-StrategyAAPL, Return: 1.026809019279401, gain: 96, entry date: 2019-04-29, duration: 2
+
+2019-05-02
+ticker: RRC-SimpleMomentum, Return: 0.7807017543859649, gain: -10, entry date: 2019-01-10, duration: 80
+
+2019-05-03
+ticker: SWN-SimpleMomentum, Return: 0.9721518987341772, gain: -2, entry date: 2019-01-07, duration: 84
+ticker: AAPL-StrategyAAPL, Return: 1.005003801859743, gain: 18, entry date: 2019-05-02, duration: 1
+
+2019-05-07
+ticker: AAPL-StrategyAAPL, Return: 1.0077838501888503, gain: 25, entry date: 2019-05-06, duration: 1
+
+2019-05-09
+ticker: SLB-SimpleMomentum, Return: 0.9902610393332559, gain: 0, entry date: 2019-01-08, duration: 87
+ticker: AAPL-StrategyAAPL, Return: 0.9925705947845987, gain: -24, entry date: 2019-05-08, duration: 1
+
+2019-05-14
+ticker: NTAP-SimpleMomentum, Return: 1.1171505739365295, gain: 7, entry date: 2019-01-07, duration: 91
+ticker: PWR-SimpleMomentum, Return: 1.1787651856672252, gain: 16, entry date: 2019-01-04, duration: 92
+ticker: ORLY-SimpleMomentum, Return: 1.0440523452433466, gain: 15, entry date: 2018-12-20, duration: 103
+ticker: APH-SimpleMomentum, Return: 0.9044067922030672, gain: -5, entry date: 2019-04-25, duration: 13
+ticker: NVDA-SimpleMomentum, Return: 0.8436107590838944, gain: -7, entry date: 2019-04-08, duration: 26
+
+2019-05-15
+ticker: TGT-SimpleMomentum, Return: 1.0709541062801933, gain: 5, entry date: 2019-01-04, duration: 93
+
+2019-05-16
+ticker: SEE-SimpleMomentum, Return: 1.2569134701159679, gain: 164, entry date: 2018-12-27, duration: 100
+
+2019-05-20
+ticker: BIG-SimpleMomentum, Return: 1.0726842461122381, gain: 6, entry date: 2019-01-04, duration: 96
+
+2019-05-21
+ticker: WY-SimpleMomentum, Return: 0.9026446914526639, gain: -3, entry date: 2019-02-07, duration: 73
+
+2019-05-22
+ticker: KSS-SimpleMomentum, Return: 0.8444801334528312, gain: -31, entry date: 2018-12-31, duration: 102
+
+2019-05-28
+ticker: TER-SimpleMomentum, Return: 1.0299530719295777, gain: 1, entry date: 2019-02-28, duration: 63
+
+2019-05-30
+ticker: LIFE-SimpleMomentum, Return: 0.7522837184309511, gain: -17, entry date: 2019-04-03, duration: 41
+
+2019-06-03
+ticker: AAPL-SimpleMomentum, Return: 1.148497858724547, gain: 5, entry date: 2019-01-23, duration: 93
+ticker: MAS-SimpleMomentum, Return: 0.8990002563445271, gain: -4, entry date: 2019-03-14, duration: 57
+
+2019-06-11
+ticker: BMS-SimpleMomentum, Return: 1.0, gain: 0, entry date: 2019-03-20, duration: 59
+
+2019-06-13
+ticker: QEP-SimpleMomentum, Return: 0.6883783366397795, gain: -13, entry date: 2019-01-15, duration: 107
+ticker: AAPL-StrategyAAPL, Return: 1.0634701379500557, gain: 171, entry date: 2019-06-06, duration: 5
+
+2019-06-17
+ticker: AAPL-StrategyAAPL, Return: 1.0070745441737652, gain: 17, entry date: 2019-06-14, duration: 1
+
+2019-06-24
+ticker: AAPL-StrategyAAPL, Return: 1.012700798655607, gain: 31, entry date: 2019-06-18, duration: 4
+
+2019-06-26
+ticker: AAPL-StrategyAAPL, Return: 0.9966730702242914, gain: -9, entry date: 2019-06-25, duration: 1
+
+2019-06-27
+ticker: SJM-SimpleMomentum, Return: 1.1133513409222457, gain: 24, entry date: 2018-10-16, duration: 182
+
+2019-07-01
+ticker: URBN-SimpleMomentum, Return: 0.9609147609147609, gain: -1, entry date: 2019-06-18, duration: 9
+ticker: AAPL-StrategyAAPL, Return: 1.0143785582178688, gain: 35, entry date: 2019-06-27, duration: 2
+
+2019-07-03
+ticker: AAPL-StrategyAAPL, Return: 1.0092844328543158, gain: 27, entry date: 2019-07-02, duration: 1
+
+2019-07-08
+ticker: AAPL-StrategyAAPL, Return: 0.9875088539164841, gain: -39, entry date: 2019-07-05, duration: 1
+
+2019-07-10
+ticker: AAPL-StrategyAAPL, Return: 1.0133040780749707, gain: 37, entry date: 2019-07-09, duration: 1
+
+2019-07-17
+ticker: AAPL-StrategyAAPL, Return: 1.0079037807712832, gain: 24, entry date: 2019-07-12, duration: 3
+
+2019-07-22
+ticker: GPC-SimpleMomentum, Return: 0.9636529310519389, gain: -4, entry date: 2019-05-28, duration: 39
+ticker: QEP-SimpleMomentum, Return: 0.7528479589023205, gain: -15, entry date: 2019-07-02, duration: 14
+
+2019-07-25
+ticker: AAPL-StrategyAAPL, Return: 1.0239714493241736, gain: 80, entry date: 2019-07-18, duration: 5
+
+2019-07-31
+ticker: AAPL-StrategyAAPL, Return: 1.0430891746428188, gain: 134, entry date: 2019-07-26, duration: 3
+
+2019-08-02
+ticker: AFL-SimpleMomentum, Return: 1.2174946592384701, gain: 75, entry date: 2018-12-21, duration: 160
+ticker: GT-SimpleMomentum, Return: 0.8786049631120053, gain: -5, entry date: 2019-06-13, duration: 36
+ticker: XRAY-SimpleMomentum, Return: 1.0248032491206724, gain: 1, entry date: 2019-03-20, duration: 97
+
+2019-08-05
+ticker: PWR-SimpleMomentum, Return: 0.880772364347401, gain: -13, entry date: 2019-06-05, duration: 43
+ticker: AAPL-StrategyAAPL, Return: 0.9256206982625673, gain: -254, entry date: 2019-08-01, duration: 2
+
+2019-08-06
+ticker: AA-SimpleMomentum, Return: 0.8919276576973973, gain: -2, entry date: 2019-06-19, duration: 34
+ticker: FLIR-SimpleMomentum, Return: 0.9087151112701367, gain: -5, entry date: 2019-02-28, duration: 113
+ticker: XYL-SimpleMomentum, Return: 0.9794136807817589, gain: -2, entry date: 2019-03-18, duration: 101
+ticker: MET-SimpleMomentum, Return: 1.121175030599755, gain: 25, entry date: 2018-12-31, duration: 156
+ticker: L-SimpleMomentum, Return: 0.9843688112929546, gain: -2, entry date: 2019-05-20, duration: 56
+ticker: APH-SimpleMomentum, Return: 0.9314218268963228, gain: -3, entry date: 2019-06-10, duration: 41
+ticker: DD-SimpleMomentum, Return: 1.0381601478969833, gain: 2, entry date: 2019-05-29, duration: 49
+ticker: TGT-SimpleMomentum, Return: 0.9924186842748838, gain: -1, entry date: 2019-05-28, duration: 50
+
+2019-08-09
+ticker: PLL-SimpleMomentum, Return: 0.8440449438202248, gain: -7, entry date: 2019-04-15, duration: 84
+
+2019-08-12
+ticker: GE-SimpleMomentum, Return: 1.330392071531236, gain: 183, entry date: 2018-12-24, duration: 165
+
+2019-08-15
+ticker: DVN-SimpleMomentum, Return: 0.7804532577903683, gain: -6, entry date: 2019-06-21, duration: 39
+ticker: AAPL-StrategyAAPL, Return: 1.0014774855955302, gain: 4, entry date: 2019-08-14, duration: 1
+
+2019-08-16
+ticker: PCG-SimpleMomentum, Return: 0.6485148514851485, gain: -16, entry date: 2019-07-05, duration: 30
+
+2019-08-22
+ticker: AFL-SimpleMomentum, Return: 0.9262701624827843, gain: -3, entry date: 2019-08-19, duration: 3
+
+2019-08-26
+ticker: MAT-SimpleMomentum, Return: 0.7367205542725174, gain: -17, entry date: 2019-08-08, duration: 12
+ticker: AAPL-StrategyAAPL, Return: 1.0077344453280477, gain: 21, entry date: 2019-08-16, duration: 6
+
+2019-08-28
+ticker: SJM-SimpleMomentum, Return: 0.9108472172988302, gain: -10, entry date: 2019-08-15, duration: 9
+
+2019-08-29
+ticker: AAPL-StrategyAAPL, Return: 1.0030805668401677, gain: 7, entry date: 2019-08-27, duration: 2
+
+2019-09-06
+ticker: AAPL-StrategyAAPL, Return: 1.0096699723242748, gain: 18, entry date: 2019-09-05, duration: 1
+
+2019-09-11
+ticker: AAPL-StrategyAAPL, Return: 1.0150348234454196, gain: 32, entry date: 2019-09-09, duration: 2
+
+2019-09-16
+ticker: AAPL-StrategyAAPL, Return: 0.968549906183455, gain: -72, entry date: 2019-09-12, duration: 2
+
+2019-09-20
+ticker: AAPL-StrategyAAPL, Return: 1.006455785182061, gain: 15, entry date: 2019-09-17, duration: 3
+
+2019-09-26
+ticker: RRD-SimpleMomentum, Return: 1.1424148606811146, gain: 4, entry date: 2019-09-18, duration: 6
+ticker: AAPL-StrategyAAPL, Return: 1.0066351605022121, gain: 18, entry date: 2019-09-25, duration: 1
+
+2019-10-03
+ticker: SBUX-SimpleMomentum, Return: 1.670515811470104, gain: 31, entry date: 2018-07-16, duration: 318
+ticker: DFS-SimpleMomentum, Return: 0.9009784274431216, gain: -8, entry date: 2019-08-05, duration: 43
+ticker: PCG-SimpleMomentum, Return: 0.8301369863013699, gain: -4, entry date: 2019-09-17, duration: 12
+ticker: AAPL-StrategyAAPL, Return: 0.9792437240407916, gain: -55, entry date: 2019-10-02, duration: 1
+
+2019-10-08
+ticker: AAPL-StrategyAAPL, Return: 0.9980101279385691, gain: -6, entry date: 2019-10-07, duration: 1
+
+2019-10-09
+ticker: TEL-SimpleMomentum, Return: 1.140901771336554, gain: 10, entry date: 2019-01-02, duration: 200
+
+2019-10-11
+ticker: NTAP-SimpleMomentum, Return: 1.0774647887323945, gain: 4, entry date: 2019-08-22, duration: 36
+
+2019-10-15
+ticker: AAPL-StrategyAAPL, Return: 1.041227920424538, gain: 109, entry date: 2019-10-09, duration: 4
+
+2019-10-17
+ticker: AAPL-StrategyAAPL, Return: 1.0073710507810982, gain: 23, entry date: 2019-10-16, duration: 1
+
+2019-10-21
+ticker: AAPL-StrategyAAPL, Return: 1.012491277899736, gain: 39, entry date: 2019-10-18, duration: 1
+
+2019-10-23
+ticker: MCD-SimpleMomentum, Return: 1.0037620385232744, gain: 1, entry date: 2019-05-16, duration: 114
+ticker: CL-SimpleMomentum, Return: 1.0280019881054103, gain: 2, entry date: 2019-03-19, duration: 156
+
+2019-10-28
+ticker: BAX-SimpleMomentum, Return: 1.0243211507201342, gain: 2, entry date: 2019-03-13, duration: 163
+ticker: AAPL-StrategyAAPL, Return: 1.0259569288005308, gain: 87, entry date: 2019-10-22, duration: 4
+
+2019-10-30
+ticker: AAPL-StrategyAAPL, Return: 0.9830913514166997, gain: -71, entry date: 2019-10-29, duration: 1
+
+2019-11-06
+ticker: AAPL-StrategyAAPL, Return: 1.038544922103002, gain: 150, entry date: 2019-10-31, duration: 4
+
+2019-11-08
+ticker: EXPE-SimpleMomentum, Return: 0.7599356765449115, gain: -31, entry date: 2019-08-02, duration: 70
+ticker: VMC-SimpleMomentum, Return: 1.0480416156670747, gain: 6, entry date: 2019-05-22, duration: 122
+
+2019-11-11
+ticker: AAPL-StrategyAAPL, Return: 0.9982999439140374, gain: -7, entry date: 2019-11-07, duration: 2
+
+2019-11-13
+ticker: CMS-SimpleMomentum, Return: 1.0781870711448176, gain: 4, entry date: 2019-03-14, duration: 174
+ticker: AEP-SimpleMomentum, Return: 1.2947261072261074, gain: 20, entry date: 2018-07-10, duration: 351
+ticker: AAPL-StrategyAAPL, Return: 0.998393655094801, gain: -6, entry date: 2019-11-12, duration: 1
+
+2019-11-15
+ticker: FOSL-SimpleMomentum, Return: 0.582776540460282, gain: -11, entry date: 2019-09-13, duration: 45
+ticker: AAPL-StrategyAAPL, Return: 0.9997350283207966, gain: -1, entry date: 2019-11-14, duration: 1
+
+2019-11-20
+ticker: WDC-SimpleMomentum, Return: 0.8515596988167802, gain: -8, entry date: 2019-07-29, duration: 82
+ticker: BIG-SimpleMomentum, Return: 0.7952787952787952, gain: -10, entry date: 2019-08-30, duration: 58
+
+2019-11-21
+ticker: URBN-SimpleMomentum, Return: 0.8631690889755406, gain: -4, entry date: 2019-10-04, duration: 34
+ticker: RRD-SimpleMomentum, Return: 0.9136490250696379, gain: -4, entry date: 2019-10-03, duration: 35
+ticker: AAPL-StrategyAAPL, Return: 0.9920611230116074, gain: -24, entry date: 2019-11-18, duration: 3
+
+2019-11-22
+ticker: SEE-SimpleMomentum, Return: 0.8505589778690396, gain: -13, entry date: 2019-06-06, duration: 121
+
+2019-11-27
+ticker: DLTR-SimpleMomentum, Return: 0.8017987442728661, gain: -23, entry date: 2019-10-23, duration: 25
+
+2019-12-02
+ticker: AAPL-StrategyAAPL, Return: 1.0178221138868144, gain: 44, entry date: 2019-11-22, duration: 6
+
+2019-12-03
+ticker: APA-SimpleMomentum, Return: 0.9114583333333333, gain: -6, entry date: 2019-08-28, duration: 69
+
+2019-12-04
+ticker: AAPL-StrategyAAPL, Return: 1.0106852127414079, gain: 19, entry date: 2019-12-03, duration: 1
+
+2019-12-09
+ticker: DVA-SimpleMomentum, Return: 1.2478073946689596, gain: 14, entry date: 2019-08-07, duration: 88
+
+2019-12-10
+ticker: AAPL-StrategyAAPL, Return: 0.9948141087910447, gain: -9, entry date: 2019-12-09, duration: 1
+
+2019-12-13
+ticker: AAPL-StrategyAAPL, Return: 1.0098579724019594, gain: 16, entry date: 2019-12-11, duration: 2
+
+2019-12-18
+ticker: AAPL-StrategyAAPL, Return: 1.010108205737828, gain: 22, entry date: 2019-12-16, duration: 2
+
+2019-12-20
+ticker: AAPL-StrategyAAPL, Return: 1.009766271358203, gain: 25, entry date: 2019-12-19, duration: 1
+
+2019-12-23
+ticker: ATI-SimpleMomentum, Return: 1.1434903047091414, gain: 10, entry date: 2019-08-28, duration: 83
+
+2019-12-26
+ticker: KMX-SimpleMomentum, Return: 1.4212208373282198, gain: 26, entry date: 2019-01-03, duration: 255
+
+2019-12-31
+ticker: AAPL-StrategyAAPL, Return: 1.03350840274562, gain: 91, entry date: 2019-12-23, duration: 6
+
+2020-01-06
+ticker: AAPL-StrategyAAPL, Return: 0.9917292408803087, gain: -30, entry date: 2020-01-02, duration: 2
+
+2020-01-08
+ticker: IP-SimpleMomentum, Return: 0.9291657776829528, gain: -3, entry date: 2019-12-13, duration: 18
+
+2020-01-09
+ticker: PSX-SimpleMomentum, Return: 1.0159198113207546, gain: 2, entry date: 2019-08-02, duration: 114
+ticker: AN-SimpleMomentum, Return: 1.3371113048532404, gain: 162, entry date: 2018-12-28, duration: 269
+ticker: AAPL-StrategyAAPL, Return: 1.0246638185387895, gain: 90, entry date: 2020-01-07, duration: 2
+
+2020-01-10
+ticker: PBI-SimpleMomentum, Return: 0.8954545454545454, gain: -5, entry date: 2019-06-14, duration: 150
+ticker: USB-SimpleMomentum, Return: 0.9809311114928706, gain: -1, entry date: 2019-11-13, duration: 42
+
+2020-01-15
+ticker: AAPL-StrategyAAPL, Return: 1.004024925153069, gain: 15, entry date: 2020-01-10, duration: 3
+
+2020-01-17
+ticker: TGT-SimpleMomentum, Return: 1.0291545189504372, gain: 3, entry date: 2019-10-23, duration: 62
+
+2020-01-22
+ticker: SWN-SimpleMomentum, Return: 0.7688888888888888, gain: -8, entry date: 2019-09-12, duration: 94
+ticker: AAPL-StrategyAAPL, Return: 1.0159134259289606, gain: 53, entry date: 2020-01-16, duration: 4
+
+2020-01-24
+ticker: QEP-SimpleMomentum, Return: 0.7550591644530307, gain: -11, entry date: 2019-09-10, duration: 98
+
+2020-01-28
+ticker: HST-SimpleMomentum, Return: 1.0206938527084601, gain: 1, entry date: 2019-09-05, duration: 103
+ticker: UNM-SimpleMomentum, Return: 0.9579537491240364, gain: -1, entry date: 2019-09-11, duration: 99
+ticker: APH-SimpleMomentum, Return: 1.0174527014968542, gain: 1, entry date: 2019-10-24, duration: 68
+ticker: DD-SimpleMomentum, Return: 0.9554179677685654, gain: -2, entry date: 2020-01-24, duration: 2
+ticker: DIS-SimpleMomentum, Return: 1.0285585110391078, gain: 4, entry date: 2019-05-23, duration: 178
+ticker: AAPL-StrategyAAPL, Return: 0.9832662656397896, gain: -53, entry date: 2020-01-23, duration: 3
+
+2020-01-30
+ticker: NTAP-SimpleMomentum, Return: 0.8888888888888888, gain: -7, entry date: 2019-11-21, duration: 50
+ticker: HP-SimpleMomentum, Return: 0.9401256263506615, gain: -2, entry date: 2019-09-10, duration: 102
+
+2020-01-31
+ticker: KSS-SimpleMomentum, Return: 0.9442804769908809, gain: -2, entry date: 2019-07-08, duration: 149
+ticker: AAPL-StrategyAAPL, Return: 1.001205545509343, gain: 4, entry date: 2020-01-30, duration: 1
+
+2020-02-03
+ticker: NBR-SimpleMomentum, Return: 0.6506411204278562, gain: -53, entry date: 2020-01-09, duration: 17
+ticker: EMR-SimpleMomentum, Return: 1.0283839680502067, gain: 2, entry date: 2019-10-25, duration: 71
+ticker: GT-SimpleMomentum, Return: 1.0710534846029174, gain: 4, entry date: 2019-09-09, duration: 105
+ticker: ROST-SimpleMomentum, Return: 1.385975201287418, gain: 30, entry date: 2019-01-02, duration: 283
+ticker: LEG-SimpleMomentum, Return: 1.2687915006640107, gain: 10, entry date: 2019-06-11, duration: 169
+ticker: CVS-SimpleMomentum, Return: 1.1652470187393527, gain: 19, entry date: 2019-08-13, duration: 124
+
+2020-02-04
+ticker: WY-SimpleMomentum, Return: 1.1893812709030098, gain: 9, entry date: 2019-06-10, duration: 171
+ticker: AAPL-StrategyAAPL, Return: 1.0361812819754208, gain: 102, entry date: 2020-02-03, duration: 1
+
+2020-02-07
+ticker: K-SimpleMomentum, Return: 1.0294548413344182, gain: 2, entry date: 2019-08-07, duration: 132
+
+2020-02-10
+ticker: CAH-SimpleMomentum, Return: 1.084145044661846, gain: 4, entry date: 2019-11-07, duration: 67
+ticker: AAPL-StrategyAAPL, Return: 0.9734665870363547, gain: -81, entry date: 2020-02-05, duration: 3
+
+2020-02-11
+ticker: MSI-SimpleMomentum, Return: 1.0669312656481902, gain: 11, entry date: 2019-08-12, duration: 131
+
+2020-02-14
+ticker: AAPL-StrategyAAPL, Return: 1.0101407767919222, gain: 30, entry date: 2020-02-12, duration: 2
+
+2020-02-18
+ticker: AEP-SimpleMomentum, Return: 1.0205922729947048, gain: 2, entry date: 2020-02-06, duration: 8
+
+2020-02-19
+ticker: AAPL-StrategyAAPL, Return: 1.0147132451717693, gain: 51, entry date: 2020-02-18, duration: 1
+
+2020-02-21
+ticker: AAPL-StrategyAAPL, Return: 0.9875707708460977, gain: -48, entry date: 2020-02-20, duration: 1
+
+2020-02-26
+ticker: RL-SimpleMomentum, Return: 0.8797656449010784, gain: -14, entry date: 2020-01-10, duration: 33
+ticker: ADM-SimpleMomentum, Return: 0.8959894226531511, gain: -5, entry date: 2019-12-19, duration: 49
+ticker: MS-SimpleMomentum, Return: 0.9852881078872089, gain: -1, entry date: 2019-11-22, duration: 68
+ticker: WU-SimpleMomentum, Return: 1.1423841059602649, gain: 24, entry date: 2019-08-06, duration: 146
+ticker: XRAY-SimpleMomentum, Return: 0.9744080014665676, gain: -1, entry date: 2019-08-20, duration: 136
+ticker: BIG-SimpleMomentum, Return: 0.8613998613998614, gain: -12, entry date: 2019-12-26, duration: 44
+ticker: C-SimpleMomentum, Return: 0.8543191800878478, gain: -12, entry date: 2020-01-16, duration: 29
+ticker: WYNN-SimpleMomentum, Return: 0.8031167385557255, gain: -28, entry date: 2020-01-09, duration: 34
+ticker: FHN-SimpleMomentum, Return: 0.9750479846449136, gain: -4, entry date: 2019-08-06, duration: 146
+
+2020-02-27
+ticker: GE-SimpleMomentum, Return: 0.9533296482037857, gain: -3, entry date: 2019-12-17, duration: 52
+ticker: PAYX-SimpleMomentum, Return: 0.9206493359064593, gain: -7, entry date: 2020-01-16, duration: 30
+ticker: PBI-SimpleMomentum, Return: 0.7333333333333333, gain: -21, entry date: 2020-01-17, duration: 29
+ticker: BSX-SimpleMomentum, Return: 0.9038146501287152, gain: -4, entry date: 2019-07-03, duration: 171
+ticker: MKC-SimpleMomentum, Return: 1.0103164587612272, gain: 1, entry date: 2019-04-23, duration: 222
+
+2020-02-28
+ticker: ALL-SimpleMomentum, Return: 0.8619490497371612, gain: -17, entry date: 2020-02-13, duration: 11
+ticker: FLIR-SimpleMomentum, Return: 0.9072136984708914, gain: -4, entry date: 2019-08-27, duration: 133
+ticker: KMB-SimpleMomentum, Return: 1.1443658898490008, gain: 17, entry date: 2018-12-18, duration: 313
+ticker: AAPL-SimpleMomentum, Return: 0.9820589050296122, gain: -1, entry date: 2019-11-22, duration: 70
+ticker: PLD-SimpleMomentum, Return: 1.417806071600542, gain: 22, entry date: 2019-01-10, duration: 296
+ticker: MAS-SimpleMomentum, Return: 0.9048954065128316, gain: -4, entry date: 2019-11-07, duration: 81
+ticker: KIM-SimpleMomentum, Return: 1.1695350609756099, gain: 22, entry date: 2018-10-29, duration: 349
+ticker: WDC-SimpleMomentum, Return: 0.842741935483871, gain: -10, entry date: 2019-12-30, duration: 44
+ticker: HRL-SimpleMomentum, Return: 1.0621963455478143, gain: 15, entry date: 2019-05-17, duration: 205
+ticker: TXN-SimpleMomentum, Return: 0.901729184665575, gain: -11, entry date: 2019-08-02, duration: 150
+ticker: TER-SimpleMomentum, Return: 1.2422939019390669, gain: 11, entry date: 2019-06-07, duration: 190
+ticker: BAX-SimpleMomentum, Return: 1.0178513142677534, gain: 1, entry date: 2019-11-13, duration: 77
+ticker: CMS-SimpleMomentum, Return: 0.9152668351419653, gain: -17, entry date: 2020-02-05, duration: 17
+ticker: SHW-SimpleMomentum, Return: 0.9851730017363758, gain: -2, entry date: 2019-08-12, duration: 144
+ticker: WPX-SimpleMomentum, Return: 0.767605633802817, gain: -5, entry date: 2019-06-24, duration: 179
+ticker: AVB-SimpleMomentum, Return: 0.9330073573093267, gain: -15, entry date: 2020-02-27, duration: 1
+ticker: T-SimpleMomentum, Return: 1.0158350761876307, gain: 1, entry date: 2019-07-02, duration: 173
+
+2020-03-02
+ticker: AKAM-SimpleMomentum, Return: 1.203114234532176, gain: 15, entry date: 2019-03-18, duration: 250
+ticker: SO-SimpleMomentum, Return: 1.1887125220458552, gain: 10, entry date: 2019-03-20, duration: 248
+ticker: MMC-SimpleMomentum, Return: 0.9357759957722046, gain: -7, entry date: 2020-01-13, duration: 35
+ticker: MSI-SimpleMomentum, Return: 0.9051002978276104, gain: -16, entry date: 2020-02-18, duration: 9
+ticker: AIZ-SimpleMomentum, Return: 1.1132614505575522, gain: 12, entry date: 2019-08-06, duration: 149
+
+2020-03-03
+ticker: PLL-SimpleMomentum, Return: 0.8430913348946137, gain: -12, entry date: 2019-10-28, duration: 91
+
+2020-03-05
+ticker: DLTR-SimpleMomentum, Return: 0.943145016192875, gain: -28, entry date: 2020-02-28, duration: 4
+ticker: AAPL-StrategyAAPL, Return: 0.9968955484876866, gain: -9, entry date: 2020-03-04, duration: 1
+
+2020-03-06
+ticker: ATI-SimpleMomentum, Return: 0.8104338842975206, gain: -22, entry date: 2020-02-07, duration: 20
+
+2020-03-09
+ticker: APA-SimpleMomentum, Return: 0.4288910194950464, gain: -36, entry date: 2020-01-22, duration: 33
+ticker: AAPL-StrategyAAPL, Return: 0.9352842113835799, gain: -169, entry date: 2020-03-06, duration: 1
+
+2020-03-10
+ticker: FAST-SimpleMomentum, Return: 0.8910430961375375, gain: -7, entry date: 2019-10-29, duration: 95
+ticker: PWR-SimpleMomentum, Return: 0.8024889316055298, gain: -8, entry date: 2019-11-11, duration: 86
+ticker: CRM-SimpleMomentum, Return: 0.8257879026286561, gain: -33, entry date: 2020-02-05, duration: 24
+
+2020-03-11
+ticker: AAPL-StrategyAAPL, Return: 1.0009026713151772, gain: 2, entry date: 2020-03-10, duration: 1
+
+2020-03-12
+ticker: AN-SimpleMomentum, Return: 0.840850666043468, gain: -41, entry date: 2020-02-27, duration: 10
+
+2020-03-13
+ticker: ICE-SimpleMomentum, Return: 0.9974209649481481, gain: -1, entry date: 2019-05-17, duration: 215
+ticker: MU-SimpleMomentum, Return: 0.8867313072338354, gain: -5, entry date: 2019-07-30, duration: 163
+ticker: K-SimpleMomentum, Return: 1.0264866712235132, gain: 3, entry date: 2020-03-12, duration: 1
+ticker: ETFC-SimpleMomentum, Return: 0.727950855638438, gain: -260, entry date: 2020-03-02, duration: 9
+ticker: VMC-SimpleMomentum, Return: 0.942413620430646, gain: -7, entry date: 2020-03-11, duration: 2
+ticker: AGN-SimpleMomentum, Return: 0.9402236388337339, gain: -11, entry date: 2020-01-09, duration: 46
+ticker: CME-SimpleMomentum, Return: 1.0014088649819288, gain: 0, entry date: 2019-05-23, duration: 211
+ticker: PCG-SimpleMomentum, Return: 0.6495781959766386, gain: -173, entry date: 2020-02-28, duration: 10
+
+2020-03-16
+ticker: LIFE-SimpleMomentum, Return: 0.624138363203409, gain: -9, entry date: 2019-09-25, duration: 123
+
+2020-03-17
+ticker: CTAS-SimpleMomentum, Return: 0.9307439282656693, gain: -15, entry date: 2019-05-16, duration: 218
+ticker: AEE-SimpleMomentum, Return: 0.7975265017667843, gain: -17, entry date: 2020-02-25, duration: 15
+
+2020-03-23
+ticker: EFX-SimpleMomentum, Return: 0.7771173848439822, gain: -30, entry date: 2020-03-12, duration: 7
+
+2020-03-24
+ticker: PSA-SimpleMomentum, Return: 0.7904180001939676, gain: -43, entry date: 2020-03-13, duration: 7
+
+2020-03-27
+ticker: AAPL-StrategyAAPL, Return: 1.025271622950247, gain: 14, entry date: 2020-03-26, duration: 1
+
+2020-03-31
+ticker: AAPL-StrategyAAPL, Return: 1.0193817785112504, gain: 17, entry date: 2020-03-30, duration: 1
+
+2020-04-02
+ticker: AAPL-StrategyAAPL, Return: 0.9750108142281968, gain: -23, entry date: 2020-04-01, duration: 1
+
+2020-04-03
+ticker: NBR-SimpleMomentum, Return: 0.9003271537622682, gain: -5, entry date: 2020-03-27, duration: 5
+
+2020-04-06
+ticker: URBN-SimpleMomentum, Return: 0.9218106995884773, gain: -6, entry date: 2020-03-30, duration: 5
+
+2020-04-16
+ticker: AAPL-StrategyAAPL, Return: 1.0937815593006577, gain: 84, entry date: 2020-04-08, duration: 6
+
+2020-04-20
+ticker: AAPL-StrategyAAPL, Return: 0.9763246526127154, gain: -30, entry date: 2020-04-17, duration: 1
+
+2020-04-21
+ticker: QEP-SimpleMomentum, Return: 0.8787878787878787, gain: -5, entry date: 2020-04-16, duration: 3
+
+2020-04-22
+ticker: AAPL-StrategyAAPL, Return: 0.9903351022377257, gain: -10, entry date: 2020-04-21, duration: 1
+
+2020-05-04
+ticker: AAPL-StrategyAAPL, Return: 1.0155945952563739, gain: 14, entry date: 2020-04-29, duration: 3
+
+2020-05-07
+ticker: LUV-SimpleMomentum, Return: 0.7689223392348393, gain: -7, entry date: 2020-04-17, duration: 14
+
+2020-05-12
+ticker: AAPL-StrategyAAPL, Return: 1.080018847259364, gain: 86, entry date: 2020-05-05, duration: 5
+
+2020-05-15
+ticker: AAPL-StrategyAAPL, Return: 0.9621975700777826, gain: -46, entry date: 2020-05-13, duration: 2
+
+2020-05-18
+ticker: GE-SimpleMomentum, Return: 0.7632970325774384, gain: -11, entry date: 2020-04-01, duration: 33
+
+2020-05-22
+ticker: AAPL-StrategyAAPL, Return: 1.002348761933697, gain: 3, entry date: 2020-05-19, duration: 3
+
+2020-05-28
+ticker: AAPL-StrategyAAPL, Return: 0.9791958791302576, gain: -23, entry date: 2020-05-26, duration: 2
+
+2020-06-02
+ticker: AAPL-StrategyAAPL, Return: 1.004682835581863, gain: 5, entry date: 2020-05-29, duration: 2
+
+2020-06-05
+ticker: AAPL-StrategyAAPL, Return: 0.9959646583188134, gain: -5, entry date: 2020-06-03, duration: 2
+
+2020-06-09
+ticker: AAPL-StrategyAAPL, Return: 1.005723288122536, gain: 7, entry date: 2020-06-08, duration: 1
+
+2020-06-12
+ticker: AAPL-StrategyAAPL, Return: 0.9908589097706793, gain: -13, entry date: 2020-06-10, duration: 2
+
+2020-06-16
+ticker: AAPL-StrategyAAPL, Return: 1.0546433331942293, gain: 67, entry date: 2020-06-15, duration: 1
+
+2020-06-19
+ticker: AAPL-StrategyAAPL, Return: 0.9985500052402511, gain: -2, entry date: 2020-06-17, duration: 2
+
+2020-06-24
+ticker: PCG-SimpleMomentum, Return: 1.1871980676328504, gain: 9, entry date: 2020-04-06, duration: 57
+
+2020-06-25
+ticker: AAPL-StrategyAAPL, Return: 1.0266402007066644, gain: 39, entry date: 2020-06-22, duration: 3
+
+2020-06-29
+ticker: BIG-SimpleMomentum, Return: 2.2973684210526315, gain: 49, entry date: 2020-04-17, duration: 51
+ticker: AAPL-StrategyAAPL, Return: 0.9693743202243975, gain: -55, entry date: 2020-06-26, duration: 1
+
+2020-07-13
+ticker: AAPL-StrategyAAPL, Return: 1.0655685181492494, gain: 117, entry date: 2020-07-01, duration: 8
+
+2020-07-15
+ticker: AAPL-StrategyAAPL, Return: 1.0437577967565494, gain: 106, entry date: 2020-07-14, duration: 1
+
+2020-07-17
+ticker: AAPL-StrategyAAPL, Return: 1.004401078454836, gain: 11, entry date: 2020-07-16, duration: 1
+
+2020-07-23
+ticker: AAPL-StrategyAAPL, Return: 1.0060378647191646, gain: 16, entry date: 2020-07-20, duration: 3
+
+2020-08-03
+ticker: BEAM-SimpleMomentum, Return: 0.7530010913059294, gain: -7, entry date: 2020-06-09, duration: 39
+
+2020-08-06
+ticker: AAPL-StrategyAAPL, Return: 1.0203785960004537, gain: 65, entry date: 2020-08-03, duration: 3
+
+2020-08-07
+ticker: SEE-SimpleMomentum, Return: 1.6034761519805985, gain: 45, entry date: 2020-03-30, duration: 94
+
+2020-08-10
+ticker: AAPL-StrategyAAPL, Return: 0.994656065955705, gain: -15, entry date: 2020-08-07, duration: 1
+
+2020-08-11
+ticker: AN-SimpleMomentum, Return: 1.0655737704918034, gain: 3, entry date: 2020-08-03, duration: 6
+
+2020-08-12
+ticker: AAPL-StrategyAAPL, Return: 0.986860480803941, gain: -36, entry date: 2020-08-11, duration: 1
+
+2020-08-17
+ticker: AAPL-StrategyAAPL, Return: 1.0142662183015048, gain: 37, entry date: 2020-08-13, duration: 2
+
+2020-08-19
+ticker: AAPL-StrategyAAPL, Return: 1.0142616146739858, gain: 38, entry date: 2020-08-18, duration: 1
+
+2020-08-24
+ticker: CHRW-SimpleMomentum, Return: 1.561062195990817, gain: 96, entry date: 2020-03-26, duration: 107
+
+2020-08-26
+ticker: PBI-SimpleMomentum, Return: 1.0615384615384615, gain: 3, entry date: 2020-08-18, duration: 6
+ticker: AAPL-StrategyAAPL, Return: 1.0901007193737093, gain: 255, entry date: 2020-08-20, duration: 4
+
+2020-09-04
+ticker: AAPL-StrategyAAPL, Return: 0.9443739774480636, gain: -187, entry date: 2020-08-27, duration: 6
+
+2020-09-09
+ticker: WPX-SimpleMomentum, Return: 1.211586901763224, gain: 11, entry date: 2020-04-06, duration: 112
+
+2020-09-10
+ticker: XOM-SimpleMomentum, Return: 1.0382528486163864, gain: 1, entry date: 2020-04-01, duration: 116
+ticker: HP-SimpleMomentum, Return: 0.9868124385261405, gain: -1, entry date: 2020-03-31, duration: 117
+
+2020-09-11
+ticker: DVN-SimpleMomentum, Return: 1.205761316872428, gain: 13, entry date: 2020-04-02, duration: 116
+
+2020-09-15
+ticker: APA-SimpleMomentum, Return: 1.327113062568606, gain: 12, entry date: 2020-04-09, duration: 113
+
+2020-09-16
+ticker: C-SimpleMomentum, Return: 1.0089265788886408, gain: 0, entry date: 2020-04-07, duration: 116
+
+2020-09-17
+ticker: K-SimpleMomentum, Return: 0.9413075780089154, gain: -28, entry date: 2020-03-18, duration: 131
+
+2020-09-18
+ticker: AAPL-StrategyAAPL, Return: 1.0061974168437269, gain: 23, entry date: 2020-09-17, duration: 1
+
+2020-09-21
+ticker: NBR-SimpleMomentum, Return: 2.204979253112033, gain: 29, entry date: 2020-05-06, duration: 98
+
+2020-09-22
+ticker: GT-SimpleMomentum, Return: 1.4290780141843973, gain: 29, entry date: 2020-04-01, duration: 124
+
+2020-09-23
+ticker: AA-SimpleMomentum, Return: 1.5699346405228758, gain: 22, entry date: 2020-04-09, duration: 119
+
+2020-09-25
+ticker: ETFC-SimpleMomentum, Return: 0.8857089760267607, gain: -6, entry date: 2020-07-21, duration: 48
+
+2020-09-28
+ticker: SLB-SimpleMomentum, Return: 1.14495583796072, gain: 8, entry date: 2020-04-03, duration: 126
+
+2020-09-30
+ticker: LIFE-SimpleMomentum, Return: 0.8401015228426396, gain: -5, entry date: 2020-06-23, duration: 71
+ticker: AAPL-StrategyAAPL, Return: 0.9933653216428983, gain: -32, entry date: 2020-09-29, duration: 1
+
+2020-10-05
+ticker: AAPL-StrategyAAPL, Return: 0.9682931633001001, gain: -150, entry date: 2020-10-01, duration: 2
+
+2020-10-07
+ticker: AAPL-StrategyAAPL, Return: 0.9906656245147996, gain: -40, entry date: 2020-10-06, duration: 1
+
+2020-10-15
+ticker: AAPL-StrategyAAPL, Return: 1.0212469302624103, gain: 87, entry date: 2020-10-08, duration: 5
+
+2020-10-22
+ticker: AAPL-StrategyAAPL, Return: 0.9684200427192898, gain: -116, entry date: 2020-10-16, duration: 4
+
+2020-10-23
+ticker: KMB-SimpleMomentum, Return: 0.9661135127597268, gain: -5, entry date: 2020-03-10, duration: 163
+
+2020-10-29
+ticker: AKAM-SimpleMomentum, Return: 1.0797270306258322, gain: 14, entry date: 2020-03-25, duration: 156
+ticker: CHRW-SimpleMomentum, Return: 0.8979692093412156, gain: -9, entry date: 2020-09-04, duration: 39
+
+2020-11-09
+ticker: RRC-SimpleMomentum, Return: 2.0620915032679736, gain: 325, entry date: 2020-03-20, duration: 166
+ticker: AAPL-StrategyAAPL, Return: 1.0184245244672863, gain: 49, entry date: 2020-11-06, duration: 1
+
+2020-11-11
+ticker: AAPL-StrategyAAPL, Return: 1.0141935279064722, gain: 40, entry date: 2020-11-10, duration: 1
+
+2020-11-17
+ticker: AAPL-StrategyAAPL, Return: 0.9994148121521453, gain: -2, entry date: 2020-11-12, duration: 3
+
+2020-11-20
+ticker: AAPL-StrategyAAPL, Return: 1.0089293528320475, gain: 32, entry date: 2020-11-19, duration: 1
+
+2020-12-03
+ticker: AAPL-StrategyAAPL, Return: 1.0122935761430136, gain: 50, entry date: 2020-12-02, duration: 1
+
+2020-12-07
+ticker: AAPL-StrategyAAPL, Return: 0.9976346979668874, gain: -10, entry date: 2020-12-04, duration: 1
+
+2020-12-08
+ticker: FOSL-SimpleMomentum, Return: 2.5644820295983086, gain: 67, entry date: 2020-06-18, duration: 123
+
+2020-12-11
+ticker: AAPL-StrategyAAPL, Return: 0.9844011142061282, gain: -59, entry date: 2020-12-08, duration: 3
+
+2020-12-17
+ticker: AAPL-StrategyAAPL, Return: 1.011695130094727, gain: 45, entry date: 2020-12-16, duration: 1
+
+2020-12-22
+ticker: MS-SimpleMomentum, Return: 1.3427109974424554, gain: 17, entry date: 2020-07-28, duration: 105
+ticker: AAPL-StrategyAAPL, Return: 1.0205491736637466, gain: 86, entry date: 2020-12-18, duration: 2
+
+2021-01-04
+ticker: MU-SimpleMomentum, Return: 1.5624093809090929, gain: 27, entry date: 2020-09-30, duration: 68
+
+2021-01-06
+ticker: AAPL-StrategyAAPL, Return: 0.9664046110683219, gain: -148, entry date: 2020-12-23, duration: 10
+
+2021-01-07
+ticker: MAT-SimpleMomentum, Return: 1.3028776978417265, gain: 21, entry date: 2020-11-02, duration: 48
+
+2021-01-12
+ticker: HRL-SimpleMomentum, Return: 0.9352836047679743, gain: -25, entry date: 2020-03-19, duration: 213
+
+2021-01-15
+ticker: WPX-SimpleMomentum, Return: 1.0, gain: 0, entry date: 2020-09-25, duration: 80
+
+2021-01-19
+ticker: AAPL-StrategyAAPL, Return: 0.9922350284560019, gain: -32, entry date: 2021-01-15, duration: 2
+
+2021-01-25
+ticker: AAPL-StrategyAAPL, Return: 1.0498239984209206, gain: 167, entry date: 2021-01-22, duration: 1
+
+2021-01-28
+ticker: PCG-SimpleMomentum, Return: 0.8571428571428572, gain: -7, entry date: 2020-12-03, duration: 40
+
+2021-01-29
+ticker: AAPL-StrategyAAPL, Return: 0.9458912332686217, gain: -183, entry date: 2021-01-26, duration: 3
+
+2021-02-01
+ticker: AA-SimpleMomentum, Return: 1.428902627511592, gain: 11, entry date: 2020-10-09, duration: 81
+
+2021-02-04
+ticker: AAPL-StrategyAAPL, Return: 1.0190651334925014, gain: 50, entry date: 2021-02-01, duration: 3
+
+2021-02-05
+ticker: FLIR-SimpleMomentum, Return: 1.5204554933811818, gain: 37, entry date: 2020-09-29, duration: 93
+
+2021-02-10
+ticker: AAPL-StrategyAAPL, Return: 0.9989745575591938, gain: -4, entry date: 2021-02-09, duration: 1
+
+2021-02-11
+ticker: KIM-SimpleMomentum, Return: 1.7914017592753875, gain: 29, entry date: 2020-04-15, duration: 216
+
+2021-02-12
+ticker: AAPL-StrategyAAPL, Return: 0.9885944909182652, gain: -41, entry date: 2021-02-11, duration: 1
+
+2021-02-16
+ticker: DVA-SimpleMomentum, Return: 1.4326674819948362, gain: 32, entry date: 2019-12-19, duration: 303
+
+2021-03-01
+ticker: FSLR-SimpleMomentum, Return: 1.4199620100155415, gain: 24, entry date: 2020-07-13, duration: 165
+
+2021-03-03
+ticker: AMT-SimpleMomentum, Return: 1.437788335743304, gain: 64, entry date: 2018-10-17, duration: 620
+
+2021-03-04
+ticker: CCI-SimpleMomentum, Return: 0.9097349456455356, gain: -15, entry date: 2020-02-26, duration: 266
+ticker: AAPL-StrategyAAPL, Return: 0.9754832672239097, gain: -99, entry date: 2021-03-03, duration: 1
+
+2021-03-05
+ticker: TGT-SimpleMomentum, Return: 1.0989351403678607, gain: 15, entry date: 2020-09-28, duration: 114
+
+2021-03-08
+ticker: AN-SimpleMomentum, Return: 1.4906735751295337, gain: 28, entry date: 2020-08-26, duration: 138
+
+2021-03-17
+ticker: QEP-SimpleMomentum, Return: 1.0, gain: 0, entry date: 2020-04-27, duration: 232
+
+2021-03-18
+ticker: AAPL-StrategyAAPL, Return: 0.9775653944712351, gain: -108, entry date: 2021-03-16, duration: 2
+
+2021-03-22
+ticker: AAPL-StrategyAAPL, Return: 1.0035867810951944, gain: 15, entry date: 2021-03-19, duration: 1
+
+2021-03-25
+ticker: AAPL-StrategyAAPL, Return: 0.9732942896549439, gain: -106, entry date: 2021-03-24, duration: 1
+
+2021-03-31
+ticker: AAPL-StrategyAAPL, Return: 1.0128219028628835, gain: 45, entry date: 2021-03-30, duration: 1
+
+2021-04-08
+ticker: AAPL-StrategyAAPL, Return: 1.0410105830318312, gain: 145, entry date: 2021-04-05, duration: 3
+
+2021-04-12
+ticker: AAPL-StrategyAAPL, Return: 1.0209554624898398, gain: 88, entry date: 2021-04-09, duration: 1
+
+2021-04-19
+ticker: AAPL-StrategyAAPL, Return: 1.0080791304621703, gain: 34, entry date: 2021-04-13, duration: 4
+
+2021-04-22
+ticker: AAPL-StrategyAAPL, Return: 0.985335782769752, gain: -72, entry date: 2021-04-20, duration: 2
+
+2021-04-29
+ticker: AAPL-StrategyAAPL, Return: 1.0108137843723861, gain: 50, entry date: 2021-04-27, duration: 2
+
+2021-05-03
+ticker: AAPL-StrategyAAPL, Return: 1.0019733459331008, gain: 9, entry date: 2021-04-30, duration: 1
+
+2021-05-04
+ticker: CMS-SimpleMomentum, Return: 1.0135387488328664, gain: 2, entry date: 2020-03-11, duration: 299
+
+2021-05-13
+ticker: AMAT-SimpleMomentum, Return: 2.624630819421852, gain: 143, entry date: 2019-08-05, duration: 463
+ticker: MU-SimpleMomentum, Return: 1.0180187007337504, gain: 1, entry date: 2021-01-11, duration: 88
+ticker: FOSL-SimpleMomentum, Return: 1.095241998278759, gain: 5, entry date: 2020-12-15, duration: 107
+ticker: PLL-SimpleMomentum, Return: 7.4726114649681525, gain: 203, entry date: 2020-06-03, duration: 246
+
+2021-05-17
+ticker: FLIR-SimpleMomentum, Return: 1.0, gain: 0, entry date: 2021-02-10, duration: 68
+
+2021-05-20
+ticker: T-SimpleMomentum, Return: 0.9676450967311542, gain: -1, entry date: 2021-03-24, duration: 41
+
+2021-05-24
+ticker: AAPL-StrategyAAPL, Return: 0.9858398584939394, gain: -68, entry date: 2021-05-21, duration: 1
+
+2021-05-28
+ticker: AAPL-StrategyAAPL, Return: 0.9890907287194807, gain: -44, entry date: 2021-05-26, duration: 2
+
+2021-06-02
+ticker: AAPL-StrategyAAPL, Return: 0.9936044694007642, gain: -22, entry date: 2021-06-01, duration: 1
+
+2021-06-03
+ticker: ADM-SimpleMomentum, Return: 1.1833391425583828, gain: 11, entry date: 2021-03-02, duration: 67
+ticker: SLB-SimpleMomentum, Return: 1.096493032764133, gain: 9, entry date: 2021-05-21, duration: 9
+
+2021-06-11
+ticker: AAPL-StrategyAAPL, Return: 0.9946545028328341, gain: -15, entry date: 2021-06-09, duration: 2
+
+2021-06-14
+ticker: CAT-SimpleMomentum, Return: 1.4920659465376487, gain: 68, entry date: 2020-09-17, duration: 192
+
+2021-06-16
+ticker: AAPL-StrategyAAPL, Return: 1.0199497481846889, gain: 53, entry date: 2021-06-14, duration: 2
+
+2021-06-17
+ticker: C-SimpleMomentum, Return: 1.2834659593280284, gain: 16, entry date: 2020-12-01, duration: 142
+
+2021-06-18
+ticker: LUV-SimpleMomentum, Return: 1.3977131271961385, gain: 30, entry date: 2020-09-14, duration: 199
+ticker: VMC-SimpleMomentum, Return: 0.981811676307472, gain: -3, entry date: 2021-03-08, duration: 74
+ticker: AAPL-StrategyAAPL, Return: 1.0070111960036183, gain: 23, entry date: 2021-06-17, duration: 1
+
+2021-06-21
+ticker: USB-SimpleMomentum, Return: 1.0414223567240402, gain: 2, entry date: 2021-03-09, duration: 74
+ticker: MET-SimpleMomentum, Return: 0.9893796358732299, gain: -1, entry date: 2021-03-04, duration: 77
+ticker: PWR-SimpleMomentum, Return: 1.6967289866704436, gain: 35, entry date: 2020-09-08, duration: 204
+ticker: WY-SimpleMomentum, Return: 1.2784328642069227, gain: 15, entry date: 2020-07-27, duration: 235
+ticker: LEG-SimpleMomentum, Return: 2.0500413564929696, gain: 51, entry date: 2020-04-02, duration: 317
+ticker: DD-SimpleMomentum, Return: 0.9681394641854388, gain: -2, entry date: 2021-01-22, duration: 106
+ticker: FHN-SimpleMomentum, Return: 2.2175622542595024, gain: 65, entry date: 2020-04-03, duration: 316
+
+2021-06-22
+ticker: AAPL-StrategyAAPL, Return: 1.0140449722849934, gain: 54, entry date: 2021-06-21, duration: 1
+
+2021-06-24
+ticker: AAPL-StrategyAAPL, Return: 1.0050833571872748, gain: 23, entry date: 2021-06-23, duration: 1
+
+2021-07-01
+ticker: AAPL-StrategyAAPL, Return: 1.0235275584079342, gain: 108, entry date: 2021-06-25, duration: 4
+
+2021-07-08
+ticker: WYNN-SimpleMomentum, Return: 1.8226008894745511, gain: 50, entry date: 2020-03-31, duration: 332
+
+2021-07-09
+ticker: AAPL-StrategyAAPL, Return: 1.0351703535227803, gain: 201, entry date: 2021-07-02, duration: 5
+
+2021-07-14
+ticker: AAPL-StrategyAAPL, Return: 1.0129272077814717, gain: 78, entry date: 2021-07-12, duration: 2
+
+2021-07-16
+ticker: NE-SimpleMomentum, Return: 0.8921294446664002, gain: -14, entry date: 2021-06-29, duration: 13
+
+2021-07-19
+ticker: PSX-SimpleMomentum, Return: 1.2267848014994036, gain: 27, entry date: 2020-11-10, duration: 179
+ticker: APA-SimpleMomentum, Return: 1.1939298245614036, gain: 6, entry date: 2020-12-21, duration: 150
+ticker: IGT-SimpleMomentum, Return: 1.461711749575509, gain: 38, entry date: 2020-11-27, duration: 166
+ticker: AAPL-StrategyAAPL, Return: 0.9632131105144776, gain: -227, entry date: 2021-07-15, duration: 2
+
+2021-07-20
+ticker: NBR-SimpleMomentum, Return: 2.0333333333333337, gain: 87, entry date: 2020-11-18, duration: 174
+ticker: GT-SimpleMomentum, Return: 0.8608100399315458, gain: -7, entry date: 2021-03-16, duration: 90
+ticker: XOM-SimpleMomentum, Return: 1.2333333333333334, gain: 10, entry date: 2021-01-27, duration: 124
+ticker: GPS-SimpleMomentum, Return: 2.28152542055725, gain: 68, entry date: 2020-07-09, duration: 268
+ticker: SLB-SimpleMomentum, Return: 0.7502101738912406, gain: -8, entry date: 2021-06-08, duration: 30
+ticker: WDC-SimpleMomentum, Return: 1.2350049164208456, gain: 12, entry date: 2021-01-11, duration: 136
+ticker: SEE-SimpleMomentum, Return: 1.001816200508536, gain: 0, entry date: 2021-05-20, duration: 43
+ticker: HP-SimpleMomentum, Return: 1.1502564646134137, gain: 10, entry date: 2020-12-10, duration: 158
+
+2021-07-22
+ticker: AAPL-StrategyAAPL, Return: 1.0172523287599464, gain: 97, entry date: 2021-07-20, duration: 2
+
+2021-07-29
+ticker: AAPL-StrategyAAPL, Return: 0.999136588113252, gain: -5, entry date: 2021-07-28, duration: 1
+
+2021-08-09
+ticker: AAPL-StrategyAAPL, Return: 0.9989751016929186, gain: -5, entry date: 2021-08-06, duration: 1
+
+2021-08-17
+ticker: AAPL-StrategyAAPL, Return: 1.0258809645993614, gain: 123, entry date: 2021-08-10, duration: 5
+
+2021-08-19
+ticker: WMB-SimpleMomentum, Return: 0.8595160707836764, gain: -4, entry date: 2021-06-11, duration: 49
+ticker: AAPL-StrategyAAPL, Return: 0.9681576182326308, gain: -136, entry date: 2021-08-18, duration: 1
+
+2021-08-20
+ticker: AMZN-SimpleMomentum, Return: 1.6814948716114129, gain: 65, entry date: 2020-01-10, duration: 420
+ticker: SWN-SimpleMomentum, Return: 2.825, gain: 583, entry date: 2020-03-16, duration: 374
+ticker: TER-SimpleMomentum, Return: 1.4418750270998217, gain: 35, entry date: 2020-09-29, duration: 233
+
+2021-08-23
+ticker: RRD-SimpleMomentum, Return: 3.425531914893617, gain: 386, entry date: 2020-09-28, duration: 235
+ticker: RRC-SimpleMomentum, Return: 0.973293768545994, gain: -1, entry date: 2021-05-26, duration: 63
+
+2021-08-25
+ticker: AAPL-StrategyAAPL, Return: 1.010114223507176, gain: 44, entry date: 2021-08-23, duration: 2
+
+2021-08-30
+ticker: MS-SimpleMomentum, Return: 1.455961405926947, gain: 33, entry date: 2021-01-22, duration: 156
+
+2021-08-31
+ticker: SJM-SimpleMomentum, Return: 1.1748822907658307, gain: 73, entry date: 2020-02-28, duration: 392
+
+2021-09-01
+ticker: BIG-SimpleMomentum, Return: 1.1636926005234356, gain: 7, entry date: 2020-07-01, duration: 305
+ticker: AAPL-StrategyAAPL, Return: 1.025704465014974, gain: 121, entry date: 2021-08-30, duration: 2
+
+2021-09-02
+ticker: PLD-SimpleMomentum, Return: 1.125408359740086, gain: 14, entry date: 2021-06-22, duration: 52
+ticker: DLTR-SimpleMomentum, Return: 0.8959451401311866, gain: -10, entry date: 2021-06-18, duration: 54
+
+2021-09-07
+ticker: HRL-SimpleMomentum, Return: 0.9178139196171585, gain: -4, entry date: 2021-01-26, duration: 160
+
+2021-09-14
+ticker: AAPL-StrategyAAPL, Return: 0.9771239503829372, gain: -121, entry date: 2021-09-02, duration: 8
+
+2021-09-15
+ticker: ROST-SimpleMomentum, Return: 1.0060732759179876, gain: 1, entry date: 2020-11-25, duration: 210
+
+2021-09-20
+ticker: PAYX-SimpleMomentum, Return: 1.1740316421167483, gain: 16, entry date: 2020-11-12, duration: 222
+ticker: AEP-SimpleMomentum, Return: 0.9811573912028936, gain: -2, entry date: 2021-07-08, duration: 52
+
+2021-09-21
+ticker: DVA-SimpleMomentum, Return: 0.9083327071906229, gain: -24, entry date: 2021-08-23, duration: 21
+ticker: EMR-SimpleMomentum, Return: 1.9634750309533637, gain: 47, entry date: 2020-04-06, duration: 381
+ticker: IP-SimpleMomentum, Return: 1.3606398448860884, gain: 30, entry date: 2020-09-29, duration: 255
+ticker: TEL-SimpleMomentum, Return: 1.4203132895401718, gain: 42, entry date: 2020-09-14, duration: 266
+ticker: WYNN-SimpleMomentum, Return: 0.8107497297828438, gain: -39, entry date: 2021-08-30, duration: 16
+ticker: X-SimpleMomentum, Return: 2.6075205640423036, gain: 55, entry date: 2020-05-05, duration: 360
+
+2021-09-22
+ticker: PBI-SimpleMomentum, Return: 1.2685185185185184, gain: 19, entry date: 2020-11-02, duration: 232
+ticker: PRU-SimpleMomentum, Return: 1.8680060082613594, gain: 46, entry date: 2020-03-31, duration: 386
+
+2021-09-27
+ticker: SO-SimpleMomentum, Return: 1.090108751941999, gain: 5, entry date: 2020-10-29, duration: 237
+ticker: CCI-SimpleMomentum, Return: 0.9274433391447031, gain: -14, entry date: 2021-06-21, duration: 70
+
+2021-09-28
+ticker: SWN-SimpleMomentum, Return: 1.125237191650854, gain: 11, entry date: 2021-09-16, duration: 8
+ticker: CMS-SimpleMomentum, Return: 0.9876994680851064, gain: -1, entry date: 2021-07-02, duration: 62
+
+2021-09-29
+ticker: MAS-SimpleMomentum, Return: 1.3722263774619796, gain: 15, entry date: 2020-04-13, duration: 382
+ticker: AEE-SimpleMomentum, Return: 0.9293298321726224, gain: -19, entry date: 2021-08-24, duration: 26
+ticker: ABT-SimpleMomentum, Return: 0.9890221445771754, gain: -3, entry date: 2021-07-26, duration: 47
+ticker: TGT-SimpleMomentum, Return: 1.0136554167927057, gain: 3, entry date: 2021-06-21, duration: 72
+
+2021-10-01
+ticker: HAS-SimpleMomentum, Return: 1.3691151663855239, gain: 24, entry date: 2020-03-30, duration: 394
+ticker: URBN-SimpleMomentum, Return: 1.626979792463135, gain: 23, entry date: 2020-04-14, duration: 383
+ticker: VRSN-SimpleMomentum, Return: 0.9583507646539301, gain: -9, entry date: 2021-08-30, duration: 24
+ticker: ETN-SimpleMomentum, Return: 1.429035029111387, gain: 45, entry date: 2020-09-18, duration: 270
+
+2021-10-04
+ticker: XYL-SimpleMomentum, Return: 1.523875345564212, gain: 42, entry date: 2020-08-24, duration: 290
+
+2021-10-05
+ticker: BEAM-SimpleMomentum, Return: 0.8739112401493156, gain: -12, entry date: 2021-01-12, duration: 190
+ticker: LH-SimpleMomentum, Return: 0.9109296546127706, gain: -26, entry date: 2021-08-24, duration: 30
+ticker: AMZN-SimpleMomentum, Return: 0.9283022418290062, gain: -12, entry date: 2021-09-03, duration: 22
+
+2021-10-06
+ticker: TJX-SimpleMomentum, Return: 0.9874669816659573, gain: -1, entry date: 2020-12-11, duration: 213
+ticker: CL-SimpleMomentum, Return: 0.8835344420943715, gain: -9, entry date: 2021-05-21, duration: 98
+
+2021-10-11
+ticker: AAPL-StrategyAAPL, Return: 0.9877805426582565, gain: -49, entry date: 2021-10-08, duration: 1
+
+2021-10-13
+ticker: CAH-SimpleMomentum, Return: 0.9353886396827619, gain: -12, entry date: 2021-08-25, duration: 35
+ticker: AAPL-StrategyAAPL, Return: 0.9860710072746273, gain: -51, entry date: 2021-10-12, duration: 1
+
+2021-10-18
+ticker: AA-SimpleMomentum, Return: 1.8968609865470853, gain: 52, entry date: 2021-03-09, duration: 159
+
+2021-10-19
+ticker: AAPL-StrategyAAPL, Return: 1.0344803470014885, gain: 106, entry date: 2021-10-14, duration: 3
+
+2021-10-21
+ticker: AAPL-StrategyAAPL, Return: 1.0007399869871412, gain: 3, entry date: 2021-10-20, duration: 1
+
+2021-10-26
+ticker: ATI-SimpleMomentum, Return: 1.9703225806451612, gain: 60, entry date: 2020-04-02, duration: 408
+ticker: AAPL-StrategyAAPL, Return: 0.9975948574665108, gain: -9, entry date: 2021-10-22, duration: 2
+
+2021-10-28
+ticker: WU-SimpleMomentum, Return: 0.9180569185475957, gain: -17, entry date: 2021-10-06, duration: 16
+
+2021-11-01
+ticker: AAPL-StrategyAAPL, Return: 0.9974890510948905, gain: -10, entry date: 2021-10-27, duration: 3
+
+2021-11-03
+ticker: LMT-SimpleMomentum, Return: 0.9407514450867052, gain: -20, entry date: 2021-10-05, duration: 21
+
+2021-11-05
+ticker: APA-SimpleMomentum, Return: 1.1225325884543762, gain: 13, entry date: 2021-10-28, duration: 6
+
+2021-11-08
+ticker: ALL-SimpleMomentum, Return: 1.0768388392042343, gain: 8, entry date: 2021-01-12, duration: 214
+
+2021-11-10
+ticker: PCG-SimpleMomentum, Return: 1.0472103004291844, gain: 4, entry date: 2021-11-01, duration: 7
+ticker: AAPL-StrategyAAPL, Return: 0.9911477011186639, gain: -32, entry date: 2021-11-04, duration: 4
+
+2021-11-12
+ticker: AAPL-StrategyAAPL, Return: 0.9964417359759935, gain: -12, entry date: 2021-11-11, duration: 1
+
+2021-11-18
+ticker: DVA-SimpleMomentum, Return: 0.9033503997125661, gain: -11, entry date: 2021-10-28, duration: 15
+
+2021-11-19
+ticker: HP-SimpleMomentum, Return: 0.7414394435271936, gain: -24, entry date: 2021-10-26, duration: 18
+
+2021-11-22
+ticker: NBR-SimpleMomentum, Return: 1.025706627680312, gain: 6, entry date: 2021-08-31, duration: 59
+ticker: IBM-SimpleMomentum, Return: 0.958678255880349, gain: -4, entry date: 2021-11-10, duration: 8
+ticker: AAPL-StrategyAAPL, Return: 1.0518504170710223, gain: 165, entry date: 2021-11-18, duration: 2
+
+2021-11-26
+ticker: AAPL-StrategyAAPL, Return: 0.9903483239357922, gain: -29, entry date: 2021-11-23, duration: 3
+
+2021-11-29
+ticker: NE-SimpleMomentum, Return: 0.8342265094676671, gain: -14, entry date: 2021-09-14, duration: 54
+
+2021-12-01
+ticker: BAX-SimpleMomentum, Return: 0.9034390417948698, gain: -23, entry date: 2021-09-21, duration: 51
+ticker: COF-SimpleMomentum, Return: 0.893906588308073, gain: -17, entry date: 2021-09-23, duration: 49
+ticker: AAPL-StrategyAAPL, Return: 1.0508877589535235, gain: 136, entry date: 2021-11-29, duration: 2
+
+2021-12-02
+ticker: RRC-SimpleMomentum, Return: 1.0203389830508474, gain: 2, entry date: 2021-09-13, duration: 58
+ticker: AIZ-SimpleMomentum, Return: 0.9318195956454121, gain: -11, entry date: 2021-05-17, duration: 143
+
+2021-12-03
+ticker: LIFE-SimpleMomentum, Return: 1.863741339491917, gain: 34, entry date: 2020-12-17, duration: 251
+ticker: AAPL-StrategyAAPL, Return: 1.033294480840745, gain: 68, entry date: 2021-12-02, duration: 1
+
+2021-12-06
+ticker: BEAM-SimpleMomentum, Return: 0.7360433604336044, gain: -24, entry date: 2021-10-18, duration: 35
+
+2021-12-07
+ticker: C-SimpleMomentum, Return: 0.9297001919952741, gain: -5, entry date: 2021-07-07, duration: 109
+
+2021-12-08
+ticker: FAST-SimpleMomentum, Return: 1.6881045558591157, gain: 24, entry date: 2020-05-19, duration: 406
+ticker: DLTR-SimpleMomentum, Return: 1.4102564102564101, gain: 121, entry date: 2021-10-05, duration: 46
+
+2021-12-10
+ticker: AAPL-StrategyAAPL, Return: 1.066437529933965, gain: 172, entry date: 2021-12-06, duration: 4
+
+2021-12-15
+ticker: AAPL-StrategyAAPL, Return: 0.9668441746660822, gain: -107, entry date: 2021-12-13, duration: 2
+
+2021-12-17
+ticker: AAPL-StrategyAAPL, Return: 0.9478468591415001, gain: -148, entry date: 2021-12-16, duration: 1
+
+2021-12-28
+ticker: AAPL-StrategyAAPL, Return: 1.0173646356171466, gain: 49, entry date: 2021-12-27, duration: 1
+
+2021-12-31
+ticker: RRD-SimpleMomentum, Return: 2.2178217821782176, gain: 375, entry date: 2021-09-29, duration: 67
+ticker: AAPL-StrategyAAPL, Return: 0.9930575241778187, gain: -25, entry date: 2021-12-29, duration: 2
+
+2022-01-06
+ticker: KMX-SimpleMomentum, Return: 0.9417972993946918, gain: -8, entry date: 2021-07-19, duration: 123
+ticker: AAPL-StrategyAAPL, Return: 0.971152460813485, gain: -86, entry date: 2022-01-03, duration: 3
+
+2022-01-11
+ticker: AON-SimpleMomentum, Return: 1.020720329789542, gain: 6, entry date: 2021-08-20, duration: 102
+
+2022-01-14
+ticker: SBUX-SimpleMomentum, Return: 1.2255245816243445, gain: 18, entry date: 2020-09-11, duration: 350
+
+2022-01-18
+ticker: DVA-SimpleMomentum, Return: 1.0208717004297114, gain: 2, entry date: 2022-01-11, duration: 5
+ticker: EFX-SimpleMomentum, Return: 1.0538719093406592, gain: 13, entry date: 2021-05-13, duration: 178
+
+2022-01-19
+ticker: ROST-SimpleMomentum, Return: 0.873085797065525, gain: -14, entry date: 2021-09-24, duration: 83
+
+2022-01-20
+ticker: ICE-SimpleMomentum, Return: 1.1118522407691358, gain: 12, entry date: 2021-01-15, duration: 264
+
+2022-01-21
+ticker: FAST-SimpleMomentum, Return: 0.8914415628157628, gain: -19, entry date: 2021-12-10, duration: 30
+ticker: PWR-SimpleMomentum, Return: 0.8504249044947275, gain: -35, entry date: 2021-09-21, duration: 88
+ticker: ADP-SimpleMomentum, Return: 1.1002643787100315, gain: 20, entry date: 2021-09-30, duration: 81
+ticker: MMC-SimpleMomentum, Return: 1.201902881066404, gain: 26, entry date: 2021-05-13, duration: 181
+ticker: MSI-SimpleMomentum, Return: 1.1569519315765702, gain: 32, entry date: 2021-06-21, duration: 154
+ticker: APH-SimpleMomentum, Return: 1.4648643974983429, gain: 24, entry date: 2020-08-07, duration: 380
+ticker: NVDA-SimpleMomentum, Return: 6.33753243141818, gain: 198, entry date: 2019-06-12, duration: 682
+ticker: AAPL-StrategyAAPL, Return: 0.9846387104012713, gain: -56, entry date: 2022-01-20, duration: 1
+
+2022-01-24
+ticker: PAYX-SimpleMomentum, Return: 1.042526910181754, gain: 10, entry date: 2021-10-01, duration: 81
+ticker: DIS-SimpleMomentum, Return: 0.8862739942150932, gain: -17, entry date: 2021-12-13, duration: 30
+
+2022-01-26
+ticker: MSFT-SimpleMomentum, Return: 1.8656711251975497, gain: 140, entry date: 2020-02-24, duration: 502
+ticker: WDC-SimpleMomentum, Return: 0.8443614637789395, gain: -10, entry date: 2022-01-13, duration: 9
+
+2022-01-27
+ticker: TEL-SimpleMomentum, Return: 0.8823493159127326, gain: -19, entry date: 2021-11-23, duration: 47
+
+2022-01-28
+ticker: ADM-SimpleMomentum, Return: 1.0712119023544704, gain: 20, entry date: 2022-01-21, duration: 5
+ticker: MAS-SimpleMomentum, Return: 0.9588977113498365, gain: -3, entry date: 2021-11-04, duration: 61
+ticker: TER-SimpleMomentum, Return: 0.7049984885865181, gain: -45, entry date: 2021-12-03, duration: 40
+
+2022-01-31
+ticker: CVS-SimpleMomentum, Return: 1.073717630717333, gain: 7, entry date: 2021-12-21, duration: 29
+
+2022-02-02
+ticker: PBI-SimpleMomentum, Return: 0.6925133689839571, gain: -39, entry date: 2021-09-27, duration: 92
+ticker: AAPL-StrategyAAPL, Return: 1.004223932435704, gain: 19, entry date: 2022-02-01, duration: 1
+
+2022-02-03
+ticker: ATI-SimpleMomentum, Return: 1.1403598971722366, gain: 22, entry date: 2022-01-25, duration: 7
+ticker: CHRW-SimpleMomentum, Return: 0.8532973940778499, gain: -15, entry date: 2022-01-10, duration: 18
+
+2022-02-04
+ticker: AAPL-StrategyAAPL, Return: 0.9852078853358639, gain: -64, entry date: 2022-02-03, duration: 1
+
+2022-02-09
+ticker: K-SimpleMomentum, Return: 0.9750158127767236, gain: -3, entry date: 2021-09-23, duration: 99
+
+2022-02-11
+ticker: AAPL-StrategyAAPL, Return: 0.9969341055018764, gain: -12, entry date: 2022-02-07, duration: 4
+
+2022-02-14
+ticker: GT-SimpleMomentum, Return: 0.8623417721518988, gain: -29, entry date: 2021-10-06, duration: 93
+
+2022-02-16
+ticker: CL-SimpleMomentum, Return: 0.9586865492640124, gain: -3, entry date: 2021-12-23, duration: 39
+
+2022-02-18
+ticker: GPS-SimpleMomentum, Return: 0.8340863860599892, gain: -15, entry date: 2021-12-28, duration: 38
+ticker: AAPL-StrategyAAPL, Return: 0.9929250345794554, gain: -17, entry date: 2022-02-17, duration: 1
+
+2022-02-23
+ticker: IBM-SimpleMomentum, Return: 1.0450941732196206, gain: 5, entry date: 2021-12-07, duration: 56
+
+2022-02-24
+ticker: SBUX-SimpleMomentum, Return: 0.9229700669628818, gain: -7, entry date: 2022-02-08, duration: 12
+ticker: SO-SimpleMomentum, Return: 0.922509225092251, gain: -5, entry date: 2021-12-29, duration: 41
+ticker: PLD-SimpleMomentum, Return: 1.0178693465609767, gain: 2, entry date: 2021-09-08, duration: 121
+ticker: GPC-SimpleMomentum, Return: 1.150375939849624, gain: 15, entry date: 2020-09-18, duration: 374
+ticker: TJX-SimpleMomentum, Return: 0.8490411517877907, gain: -11, entry date: 2022-02-02, duration: 16
+ticker: BIG-SimpleMomentum, Return: 0.692687111301737, gain: -29, entry date: 2021-09-24, duration: 109
+ticker: CAT-SimpleMomentum, Return: 0.8620476375998466, gain: -28, entry date: 2022-01-24, duration: 23
+
+2022-02-28
+ticker: RRD-SimpleMomentum, Return: 1.0, gain: 0, entry date: 2022-01-07, duration: 36
+
+2022-03-01
+ticker: C-SimpleMomentum, Return: 0.9662419328148271, gain: -4, entry date: 2021-12-31, duration: 42
+
+2022-03-02
+ticker: MS-SimpleMomentum, Return: 0.844538218087657, gain: -32, entry date: 2021-08-31, duration: 131
+ticker: IP-SimpleMomentum, Return: 0.8943298969072164, gain: -15, entry date: 2021-12-31, duration: 43
+ticker: NTAP-SimpleMomentum, Return: 0.8832768361581921, gain: -10, entry date: 2021-09-20, duration: 117
+
+2022-03-07
+ticker: AAPL-StrategyAAPL, Return: 0.993130710189385, gain: -9, entry date: 2022-03-04, duration: 1
+
+2022-03-08
+ticker: EXPE-SimpleMomentum, Return: 0.9350825471698113, gain: -11, entry date: 2021-10-04, duration: 111
+ticker: LUV-SimpleMomentum, Return: 0.8980702829480544, gain: -8, entry date: 2021-12-30, duration: 48
+ticker: DFS-SimpleMomentum, Return: 3.3278849297155935, gain: 71, entry date: 2020-04-03, duration: 502
+ticker: IGT-SimpleMomentum, Return: 0.7852807369842187, gain: -17, entry date: 2021-10-20, duration: 99
+
+2022-03-09
+ticker: RL-SimpleMomentum, Return: 0.8506711409395973, gain: -19, entry date: 2022-02-24, duration: 9
+ticker: KMB-SimpleMomentum, Return: 0.9088537893058977, gain: -13, entry date: 2020-11-12, duration: 344
+
+2022-03-14
+ticker: BAX-SimpleMomentum, Return: 0.9086316096118263, gain: -7, entry date: 2022-01-03, duration: 50
+
+2022-03-18
+ticker: FHN-SimpleMomentum, Return: 1.2646897309170786, gain: 29, entry date: 2022-01-14, duration: 45
+
+2022-03-22
+ticker: AAPL-StrategyAAPL, Return: 1.0122312393299848, gain: 14, entry date: 2022-03-21, duration: 1
+
+2022-03-24
+ticker: RRC-SimpleMomentum, Return: 1.2668752793920428, gain: 36, entry date: 2022-01-18, duration: 47
+ticker: AAPL-StrategyAAPL, Return: 1.0182748084709283, gain: 33, entry date: 2022-03-23, duration: 1
+
+2022-03-28
+ticker: AAPL-StrategyAAPL, Return: 0.9901658377011315, gain: -22, entry date: 2022-03-25, duration: 1
+
+2022-03-31
+ticker: AAPL-StrategyAAPL, Return: 1.006508318569887, gain: 15, entry date: 2022-03-29, duration: 2
+
+2022-04-01
+ticker: C-SimpleMomentum, Return: 0.9458694498496373, gain: -9, entry date: 2022-03-25, duration: 5
+
+2022-04-04
+ticker: AAPL-StrategyAAPL, Return: 1.0031028160132969, gain: 10, entry date: 2022-04-01, duration: 1
+
+2022-04-06
+ticker: AAPL-StrategyAAPL, Return: 0.9710422312427777, gain: -102, entry date: 2022-04-05, duration: 1
+
+2022-04-11
+ticker: PWR-SimpleMomentum, Return: 1.0054490771491025, gain: 1, entry date: 2022-04-01, duration: 6
+
+2022-04-12
+ticker: T-SimpleMomentum, Return: 0.7515220700152206, gain: -33, entry date: 2022-01-12, duration: 64
+
+2022-04-14
+ticker: USB-SimpleMomentum, Return: 0.8338150289017341, gain: -10, entry date: 2022-01-14, duration: 64
+
+2022-04-20
+ticker: XRAY-SimpleMomentum, Return: 0.7968252975795043, gain: -31, entry date: 2021-12-10, duration: 93
+
+2022-04-22
+ticker: AAPL-StrategyAAPL, Return: 0.9854952274484138, gain: -41, entry date: 2022-04-21, duration: 1
+
+2022-04-26
+ticker: AA-SimpleMomentum, Return: 1.0874493927125506, gain: 5, entry date: 2022-01-13, duration: 73
+
+2022-04-27
+ticker: CME-SimpleMomentum, Return: 1.1263312514589252, gain: 22, entry date: 2021-09-29, duration: 150
+
+2022-04-29
+ticker: AFL-SimpleMomentum, Return: 0.9437176200574451, gain: -3, entry date: 2022-01-20, duration: 71
+
+2022-05-02
+ticker: PNC-SimpleMomentum, Return: 0.9474513334083493, gain: -9, entry date: 2021-03-08, duration: 300
+ticker: C-SimpleMomentum, Return: 0.9709477058705671, gain: -3, entry date: 2022-04-28, duration: 2
+
+2022-05-03
+ticker: AVB-SimpleMomentum, Return: 0.9822691899540149, gain: -4, entry date: 2021-07-26, duration: 201
+
+2022-05-04
+ticker: X-SimpleMomentum, Return: 1.0731174972717352, gain: 8, entry date: 2022-03-01, duration: 46
+
+2022-05-06
+ticker: AKAM-SimpleMomentum, Return: 0.8146656598707945, gain: -22, entry date: 2022-04-08, duration: 20
+
+2022-05-09
+ticker: UNM-SimpleMomentum, Return: 1.2962962962962963, gain: 25, entry date: 2022-01-19, duration: 78
+ticker: AAPL-StrategyAAPL, Return: 0.9930456116728594, gain: -18, entry date: 2022-05-06, duration: 1
+
+2022-05-10
+ticker: BSX-SimpleMomentum, Return: 0.9037608035505722, gain: -16, entry date: 2022-01-26, duration: 74
+ticker: PLL-SimpleMomentum, Return: 0.6693815220157802, gain: -26, entry date: 2022-04-05, duration: 25
+ticker: WYNN-SimpleMomentum, Return: 0.7356429829712272, gain: -23, entry date: 2021-10-07, duration: 153
+
+2022-05-12
+ticker: KSS-SimpleMomentum, Return: 2.7423250824858454, gain: 51, entry date: 2020-04-15, duration: 541
+ticker: FOSL-SimpleMomentum, Return: 0.6625980819529206, gain: -39, entry date: 2022-02-02, duration: 71
+ticker: FHN-SimpleMomentum, Return: 0.9113655640373197, gain: -15, entry date: 2022-03-30, duration: 31
+
+2022-05-13
+ticker: MET-SimpleMomentum, Return: 0.9429465216743632, gain: -4, entry date: 2022-01-14, duration: 85
+ticker: PRU-SimpleMomentum, Return: 0.862689878818911, gain: -16, entry date: 2022-01-18, duration: 83
+
+2022-05-20
+ticker: MKC-SimpleMomentum, Return: 1.0250002070925042, gain: 4, entry date: 2021-12-09, duration: 116
+ticker: HRL-SimpleMomentum, Return: 1.1679461757466802, gain: 20, entry date: 2021-10-07, duration: 161
+
+2022-05-23
+ticker: ROST-SimpleMomentum, Return: 0.703562662017389, gain: -30, entry date: 2022-04-27, duration: 18
+ticker: SJM-SimpleMomentum, Return: 0.9431343283582089, gain: -8, entry date: 2021-11-24, duration: 128
+
+2022-05-25
+ticker: URBN-SimpleMomentum, Return: 0.625, gain: -86, entry date: 2022-02-01, duration: 81
+
+2022-06-01
+ticker: AAPL-StrategyAAPL, Return: 1.0055675168116245, gain: 10, entry date: 2022-05-31, duration: 1
+
+2022-06-03
+ticker: AAPL-StrategyAAPL, Return: 0.9937087712394725, gain: -14, entry date: 2022-06-02, duration: 1
+
+2022-06-08
+ticker: AAPL-StrategyAAPL, Return: 1.0105422079839985, gain: 23, entry date: 2022-06-06, duration: 2
+
+2022-06-10
+ticker: CAH-SimpleMomentum, Return: 0.9833957772469825, gain: -2, entry date: 2022-01-18, duration: 103
+
+2022-06-14
+ticker: GE-SimpleMomentum, Return: 0.924866703153344, gain: -9, entry date: 2022-05-25, duration: 14
+ticker: DVA-SimpleMomentum, Return: 0.923298969072165, gain: -7, entry date: 2022-06-06, duration: 6
+ticker: AKAM-SimpleMomentum, Return: 0.9282884713052311, gain: -7, entry date: 2022-05-24, duration: 15
+ticker: SO-SimpleMomentum, Return: 0.9241203330647328, gain: -6, entry date: 2022-04-12, duration: 45
+ticker: IP-SimpleMomentum, Return: 0.9847031963470321, gain: -1, entry date: 2022-03-17, duration: 63
+ticker: KIM-SimpleMomentum, Return: 1.109127467000429, gain: 9, entry date: 2021-02-26, duration: 337
+ticker: FOSL-SimpleMomentum, Return: 0.8367911479944674, gain: -19, entry date: 2022-06-06, duration: 6
+ticker: AEE-SimpleMomentum, Return: 0.9932667750174136, gain: -1, entry date: 2022-03-03, duration: 73
+ticker: CMS-SimpleMomentum, Return: 1.0947883285545623, gain: 6, entry date: 2021-10-12, duration: 175
+ticker: AEP-SimpleMomentum, Return: 1.0381270903010034, gain: 3, entry date: 2022-01-12, duration: 109
+ticker: PCG-SimpleMomentum, Return: 0.8389154704944178, gain: -28, entry date: 2022-01-26, duration: 99
+
+2022-06-15
+ticker: KMB-SimpleMomentum, Return: 1.0253206454282169, gain: 3, entry date: 2022-03-28, duration: 57
+ticker: MU-SimpleMomentum, Return: 0.7268249342967735, gain: -44, entry date: 2021-12-06, duration: 137
+ticker: WMB-SimpleMomentum, Return: 1.3134872417982988, gain: 46, entry date: 2021-09-01, duration: 205
+ticker: WY-SimpleMomentum, Return: 1.0260432080497188, gain: 2, entry date: 2021-07-07, duration: 245
+
+2022-06-16
+ticker: LIFE-SimpleMomentum, Return: 0.8721926910299005, gain: -14, entry date: 2022-06-09, duration: 5
+
+2022-06-17
+ticker: ATI-SimpleMomentum, Return: 0.9185708350643955, gain: -6, entry date: 2022-02-23, duration: 82
+ticker: PBI-SimpleMomentum, Return: 0.7154150197628459, gain: -32, entry date: 2022-05-03, duration: 33
+ticker: XYL-SimpleMomentum, Return: 0.8891317547055252, gain: -9, entry date: 2022-05-16, duration: 24
+ticker: MAS-SimpleMomentum, Return: 0.8366231935142756, gain: -9, entry date: 2022-03-18, duration: 65
+ticker: WU-SimpleMomentum, Return: 0.8961937716262975, gain: -18, entry date: 2021-12-08, duration: 137
+ticker: WDC-SimpleMomentum, Return: 0.8933717579250721, gain: -11, entry date: 2022-02-28, duration: 79
+ticker: BAX-SimpleMomentum, Return: 0.9075095941388533, gain: -6, entry date: 2022-05-11, duration: 27
+ticker: T-SimpleMomentum, Return: 0.957957957957958, gain: -5, entry date: 2022-05-09, duration: 29
+ticker: FHN-SimpleMomentum, Return: 0.9184303350970017, gain: -11, entry date: 2022-05-25, duration: 17
+
+2022-06-21
+ticker: ICE-SimpleMomentum, Return: 0.9370163657270069, gain: -6, entry date: 2022-05-26, duration: 18
+ticker: EMR-SimpleMomentum, Return: 0.9351212085724323, gain: -11, entry date: 2022-06-15, duration: 4
+ticker: AMAT-SimpleMomentum, Return: 0.8515813271485536, gain: -16, entry date: 2022-05-09, duration: 31
+ticker: CVX-SimpleMomentum, Return: 1.396236240162789, gain: 40, entry date: 2021-11-03, duration: 164
+ticker: HP-SimpleMomentum, Return: 1.3507026662463621, gain: 29, entry date: 2022-01-19, duration: 109
+
+2022-06-23
+ticker: MAR-SimpleMomentum, Return: 0.9220671570630705, gain: -11, entry date: 2021-03-08, duration: 338
+ticker: BIG-SimpleMomentum, Return: 0.6580406654343808, gain: -33, entry date: 2022-05-17, duration: 27
+
+2022-06-24
+ticker: ADM-SimpleMomentum, Return: 0.9561170212765958, gain: -10, entry date: 2022-02-01, duration: 103
+ticker: NE-SimpleMomentum, Return: 0.8033313851548801, gain: -20, entry date: 2022-03-31, duration: 61
+ticker: DVN-SimpleMomentum, Return: 2.4970969182670832, gain: 168, entry date: 2021-02-25, duration: 346
+ticker: AAPL-StrategyAAPL, Return: 1.022510915177171, gain: 46, entry date: 2022-06-23, duration: 1
+
+2022-07-01
+ticker: DO-SimpleMomentum, Return: 0.7371069182389938, gain: -38, entry date: 2022-04-20, duration: 52
+ticker: AAPL-StrategyAAPL, Return: 0.953361718631674, gain: -99, entry date: 2022-06-27, duration: 4
+
+2022-07-05
+ticker: KSS-SimpleMomentum, Return: 0.6131218146219664, gain: -31, entry date: 2022-06-10, duration: 17
+
+2022-07-06
+ticker: APA-SimpleMomentum, Return: 1.1093480510520868, gain: 25, entry date: 2022-01-24, duration: 117
+ticker: SLB-SimpleMomentum, Return: 0.8820596671608907, gain: -34, entry date: 2022-01-21, duration: 118
+
+2022-07-11
+ticker: AAPL-StrategyAAPL, Return: 1.0027885440963302, gain: 4, entry date: 2022-07-08, duration: 1
+
+2022-07-14
+ticker: AAPL-StrategyAAPL, Return: 0.988474225846973, gain: -23, entry date: 2022-07-12, duration: 2
+
+2022-07-15
+ticker: AKAM-SimpleMomentum, Return: 0.9585248413219524, gain: -4, entry date: 2022-06-30, duration: 11
+
+2022-07-21
+ticker: IBM-SimpleMomentum, Return: 0.9799265187124412, gain: -2, entry date: 2022-05-02, duration: 58
+
+2022-07-26
+ticker: AAPL-StrategyAAPL, Return: 1.0165910139087797, gain: 32, entry date: 2022-07-15, duration: 7
+
+2022-08-01
+ticker: BAX-SimpleMomentum, Return: 0.9025368216928574, gain: -6, entry date: 2022-07-11, duration: 15
+
+2022-08-02
+ticker: AAPL-StrategyAAPL, Return: 1.0492859161632413, gain: 97, entry date: 2022-07-27, duration: 4
+
+2022-08-05
+ticker: AAPL-StrategyAAPL, Return: 1.0161464919760441, gain: 28, entry date: 2022-08-03, duration: 2
+
+2022-08-10
+ticker: AAPL-StrategyAAPL, Return: 1.0078743785060382, gain: 19, entry date: 2022-08-08, duration: 2
+
+2022-08-16
+ticker: AAPL-StrategyAAPL, Return: 1.015994136076473, gain: 49, entry date: 2022-08-11, duration: 3
+
+2022-08-18
+ticker: AAPL-StrategyAAPL, Return: 1.0056721268987352, gain: 18, entry date: 2022-08-17, duration: 1
+
+2022-08-22
+ticker: AAPL-StrategyAAPL, Return: 0.9806970015597205, gain: -73, entry date: 2022-08-19, duration: 1
+
+2022-08-31
+ticker: CAH-SimpleMomentum, Return: 1.2847962709096923, gain: 60, entry date: 2022-06-28, duration: 46
+
+2022-09-06
+ticker: PBI-SimpleMomentum, Return: 0.706766917293233, gain: -23, entry date: 2022-07-21, duration: 33
+ticker: KMB-SimpleMomentum, Return: 0.9444444444444444, gain: -7, entry date: 2022-06-28, duration: 50
+ticker: CRM-SimpleMomentum, Return: 0.916931813677622, gain: -14, entry date: 2022-06-15, duration: 59
+ticker: HRL-SimpleMomentum, Return: 0.9888819499005039, gain: -5, entry date: 2022-06-27, duration: 51
+
+2022-09-07
+ticker: MKC-SimpleMomentum, Return: 0.9759171941291701, gain: -2, entry date: 2022-06-30, duration: 49
+ticker: SEE-SimpleMomentum, Return: 0.7968181818181819, gain: -27, entry date: 2022-01-26, duration: 160
+
+2022-09-14
+ticker: AAPL-StrategyAAPL, Return: 0.9680113730612595, gain: -107, entry date: 2022-09-13, duration: 1
+
+2022-09-16
+ticker: FAST-SimpleMomentum, Return: 0.8083968389391792, gain: -32, entry date: 2022-03-29, duration: 123
+ticker: WY-SimpleMomentum, Return: 0.9132340052585453, gain: -12, entry date: 2022-07-06, duration: 52
+
+2022-09-19
+ticker: GE-SimpleMomentum, Return: 0.86439041765075, gain: -8, entry date: 2022-08-08, duration: 30
+ticker: IP-SimpleMomentum, Return: 0.8171098265895954, gain: -16, entry date: 2022-07-08, duration: 51
+ticker: CHRW-SimpleMomentum, Return: 1.1534520088275633, gain: 13, entry date: 2022-02-24, duration: 147
+
+2022-09-21
+ticker: LIFE-SimpleMomentum, Return: 1.053763440860215, gain: 12, entry date: 2022-06-29, duration: 60
+
+2022-09-22
+ticker: AIZ-SimpleMomentum, Return: 0.8125378391766195, gain: -34, entry date: 2022-03-30, duration: 126
+ticker: CME-SimpleMomentum, Return: 0.9080044064318369, gain: -17, entry date: 2022-06-14, duration: 72
+ticker: C-SimpleMomentum, Return: 0.9862462970799831, gain: -2, entry date: 2022-05-12, duration: 95
+ticker: AVB-SimpleMomentum, Return: 0.9691636736788095, gain: -6, entry date: 2022-06-29, duration: 61
+
+2022-09-26
+ticker: AA-SimpleMomentum, Return: 0.6392785571142285, gain: -20, entry date: 2022-08-30, duration: 19
+ticker: GT-SimpleMomentum, Return: 0.7832512315270936, gain: -28, entry date: 2022-03-22, duration: 134
+ticker: NTAP-SimpleMomentum, Return: 0.8709855272226051, gain: -9, entry date: 2022-08-09, duration: 34
+ticker: LUV-SimpleMomentum, Return: 0.8896966926655402, gain: -11, entry date: 2022-07-05, duration: 59
+ticker: KIM-SimpleMomentum, Return: 0.940646854939601, gain: -8, entry date: 2022-06-30, duration: 62
+ticker: L-SimpleMomentum, Return: 0.8815408579379387, gain: -7, entry date: 2022-07-11, duration: 55
+ticker: TEL-SimpleMomentum, Return: 0.876792149045465, gain: -16, entry date: 2022-03-24, duration: 132
+ticker: APH-SimpleMomentum, Return: 0.9567062205803912, gain: -3, entry date: 2022-05-04, duration: 103
+
+2022-09-27
+ticker: WMB-SimpleMomentum, Return: 0.9692101740294512, gain: -4, entry date: 2022-07-06, duration: 59
+ticker: RRC-SimpleMomentum, Return: 0.7746705239472839, gain: -28, entry date: 2022-03-31, duration: 128
+
+2022-09-28
+ticker: BK-SimpleMomentum, Return: 0.9264705882352943, gain: -9, entry date: 2022-05-12, duration: 99
+ticker: SO-SimpleMomentum, Return: 0.9235466225671034, gain: -6, entry date: 2022-08-30, duration: 21
+ticker: HAS-SimpleMomentum, Return: 0.7742114615726342, gain: -20, entry date: 2022-05-03, duration: 106
+ticker: AEE-SimpleMomentum, Return: 0.9751440515196023, gain: -2, entry date: 2022-07-07, duration: 59
+ticker: CL-SimpleMomentum, Return: 0.9798680033277406, gain: -3, entry date: 2022-03-30, duration: 130
+ticker: AEP-SimpleMomentum, Return: 0.9892529765040565, gain: -1, entry date: 2022-07-12, duration: 56
+
+2022-09-29
+ticker: AAPL-StrategyAAPL, Return: 0.9895692161405965, gain: -20, entry date: 2022-09-28, duration: 1
+
+2022-09-30
+ticker: MAT-SimpleMomentum, Return: 0.8666359021688971, gain: -9, entry date: 2021-11-02, duration: 238
+ticker: PRU-SimpleMomentum, Return: 0.9065253881661771, gain: -9, entry date: 2022-07-01, duration: 65
+ticker: TER-SimpleMomentum, Return: 0.6477163914235503, gain: -41, entry date: 2022-02-25, duration: 155
+ticker: KMX-SimpleMomentum, Return: 0.6175185255557667, gain: -40, entry date: 2022-02-08, duration: 168
+
+2022-10-03
+ticker: AAPL-SimpleMomentum, Return: 0.9433585091649022, gain: -16, entry date: 2021-07-23, duration: 311
+ticker: XRAY-SimpleMomentum, Return: 0.9004296493506911, gain: -9, entry date: 2022-09-19, duration: 10
+
+2022-10-10
+ticker: CVS-SimpleMomentum, Return: 0.8253505222546343, gain: -37, entry date: 2022-02-01, duration: 179
+
+2022-10-13
+ticker: AAPL-StrategyAAPL, Return: 0.9702440063962702, gain: -12, entry date: 2022-10-12, duration: 1
+
+2022-10-17
+ticker: AMZN-SimpleMomentum, Return: 1.0568185207384666, gain: 6, entry date: 2022-06-14, duration: 89
+
+2022-10-20
+ticker: AAPL-StrategyAAPL, Return: 1.0093868910941266, gain: 8, entry date: 2022-10-19, duration: 1
+
+2022-10-24
+ticker: AAPL-StrategyAAPL, Return: 1.0302024935092804, gain: 39, entry date: 2022-10-21, duration: 1
+
+2022-10-27
+ticker: AAPL-StrategyAAPL, Return: 0.9865410497981156, gain: -22, entry date: 2022-10-25, duration: 2
+
+2022-11-01
+ticker: AAPL-StrategyAAPL, Return: 1.0464243328288492, gain: 75, entry date: 2022-10-28, duration: 2
+
+2022-11-02
+ticker: DVA-SimpleMomentum, Return: 0.8472536637674252, gain: -13, entry date: 2022-07-08, duration: 83
+
+2022-11-03
+ticker: AAPL-StrategyAAPL, Return: 0.9537747244860096, gain: -102, entry date: 2022-11-02, duration: 1
+
+2022-11-04
+ticker: SEE-SimpleMomentum, Return: 0.8740925119269861, gain: -6, entry date: 2022-10-18, duration: 13
+
+2022-11-15
+ticker: AAPL-StrategyAAPL, Return: 1.0217825476030682, gain: 32, entry date: 2022-11-14, duration: 1
+
+2022-11-17
+ticker: AAPL-StrategyAAPL, Return: 0.9818946939172328, gain: -29, entry date: 2022-11-16, duration: 1
+
+2022-11-22
+ticker: AAPL-StrategyAAPL, Return: 0.9725881237679332, gain: -46, entry date: 2022-11-18, duration: 2
+
+2022-12-05
+ticker: AAPL-StrategyAAPL, Return: 1.0124006420714045, gain: 20, entry date: 2022-12-02, duration: 1
+
+2022-12-08
+ticker: AAPL-StrategyAAPL, Return: 1.0011959732028362, gain: 2, entry date: 2022-12-07, duration: 1
+
+2022-12-12
+ticker: AAPL-StrategyAAPL, Return: 1.0025294805440081, gain: 5, entry date: 2022-12-09, duration: 1
+
+2022-12-14
+ticker: ROST-SimpleMomentum, Return: 1.3158837992525192, gain: 28, entry date: 2022-09-20, duration: 61
+
+2022-12-15
+ticker: AAPL-StrategyAAPL, Return: 0.9708289895229023, gain: -72, entry date: 2022-12-14, duration: 1
+
+2022-12-20
+ticker: LEG-SimpleMomentum, Return: 0.9511754068716094, gain: -5, entry date: 2022-10-31, duration: 36
+ticker: DVN-SimpleMomentum, Return: 1.056451612903226, gain: 3, entry date: 2022-07-21, duration: 108
+
+2022-12-21
+ticker: AN-SimpleMomentum, Return: 0.856326530612245, gain: -18, entry date: 2021-09-22, duration: 325
+
+2022-12-23
+ticker: MU-SimpleMomentum, Return: 0.9026937499418448, gain: -5, entry date: 2022-10-06, duration: 56
+ticker: PLL-SimpleMomentum, Return: 0.8058023572076156, gain: -11, entry date: 2022-08-11, duration: 96
+ticker: TGT-SimpleMomentum, Return: 0.8201455604075693, gain: -31, entry date: 2022-09-09, duration: 75
+
+2022-12-29
+ticker: LUV-SimpleMomentum, Return: 0.8087513434193122, gain: -7, entry date: 2022-12-01, duration: 20
+
+2023-01-06
+ticker: ADM-SimpleMomentum, Return: 1.0240048250904703, gain: 2, entry date: 2022-08-08, duration: 109
+
+2023-01-11
+ticker: AAPL-StrategyAAPL, Return: 1.00760038647343, gain: 15, entry date: 2023-01-10, duration: 1
+
+2023-01-17
+ticker: K-SimpleMomentum, Return: 1.098478908577701, gain: 6, entry date: 2022-03-01, duration: 230
+ticker: AAPL-StrategyAAPL, Return: 1.0070955641255497, gain: 14, entry date: 2023-01-12, duration: 3
+
+2023-01-20
+ticker: EMR-SimpleMomentum, Return: 0.9084763390535621, gain: -9, entry date: 2022-12-15, duration: 26
+ticker: MKC-SimpleMomentum, Return: 1.0292137466716333, gain: 2, entry date: 2022-10-19, duration: 67
+ticker: GPC-SimpleMomentum, Return: 1.2189077212806028, gain: 29, entry date: 2022-05-20, duration: 175
+ticker: AAPL-StrategyAAPL, Return: 0.9887809875085917, gain: -27, entry date: 2023-01-18, duration: 2
+
+2023-01-24
+ticker: SJM-SimpleMomentum, Return: 1.1740340276673555, gain: 22, entry date: 2022-06-15, duration: 159
+
+2023-01-25
+ticker: AAPL-StrategyAAPL, Return: 1.0200551677484442, gain: 55, entry date: 2023-01-23, duration: 2
+
+2023-01-30
+ticker: CL-SimpleMomentum, Return: 1.0195040877220667, gain: 1, entry date: 2022-10-20, duration: 72
+ticker: AAPL-StrategyAAPL, Return: 1.0124671846793152, gain: 41, entry date: 2023-01-26, duration: 2
+
+2023-02-01
+ticker: AAPL-StrategyAAPL, Return: 1.0088992842048818, gain: 32, entry date: 2023-01-31, duration: 1
+
+2023-02-06
+ticker: AAPL-StrategyAAPL, Return: 1.0246814656737553, gain: 91, entry date: 2023-02-02, duration: 2
+
+2023-02-08
+ticker: AAPL-StrategyAAPL, Return: 1.0215083229456643, gain: 84, entry date: 2023-02-07, duration: 1
+
+2023-02-10
+ticker: BAX-SimpleMomentum, Return: 0.8772310394098566, gain: -11, entry date: 2023-01-30, duration: 9
+
+2023-02-13
+ticker: AAPL-StrategyAAPL, Return: 0.983136930351692, gain: -72, entry date: 2023-02-09, duration: 2
+
+2023-02-15
+ticker: AAPL-StrategyAAPL, Return: 1.0065075477508747, gain: 25, entry date: 2023-02-14, duration: 1
+
+2023-02-17
+ticker: AAPL-StrategyAAPL, Return: 0.9924439682722634, gain: -29, entry date: 2023-02-16, duration: 1
+
+2023-02-21
+ticker: DVN-SimpleMomentum, Return: 0.8807219031993436, gain: -7, entry date: 2022-12-30, duration: 37
+
+2023-02-23
+ticker: AAPL-StrategyAAPL, Return: 1.0081953651887414, gain: 25, entry date: 2023-02-22, duration: 1
+
+2023-02-27
+ticker: ABT-SimpleMomentum, Return: 0.8962832353103989, gain: -11, entry date: 2023-01-24, duration: 24
+
+2023-02-28
+ticker: ROST-SimpleMomentum, Return: 0.9529168148256605, gain: -5, entry date: 2023-01-19, duration: 28
+
+2023-03-01
+ticker: SO-SimpleMomentum, Return: 0.9417694854047549, gain: -4, entry date: 2022-10-27, duration: 89
+
+2023-03-02
+ticker: VRSN-SimpleMomentum, Return: 1.1997917559870153, gain: 33, entry date: 2022-06-14, duration: 187
+ticker: AEE-SimpleMomentum, Return: 1.01474815648044, gain: 1, entry date: 2022-10-26, duration: 91
+ticker: CMS-SimpleMomentum, Return: 1.030848787446505, gain: 3, entry date: 2022-10-26, duration: 91
+ticker: AEP-SimpleMomentum, Return: 1.000581057524695, gain: 0, entry date: 2022-10-25, duration: 92
+ticker: FHN-SimpleMomentum, Return: 0.9547974413646056, gain: -4, entry date: 2022-09-21, duration: 116
+
+2023-03-03
+ticker: HRL-SimpleMomentum, Return: 0.8894392865041503, gain: -64, entry date: 2022-09-28, duration: 112
+ticker: WYNN-SimpleMomentum, Return: 1.9266520196045294, gain: 110, entry date: 2022-09-23, duration: 115
+
+2023-03-08
+ticker: AAPL-StrategyAAPL, Return: 0.9942094942578956, gain: -13, entry date: 2023-03-07, duration: 1
+
+2023-03-09
+ticker: ALL-SimpleMomentum, Return: 1.0616278061887838, gain: 7, entry date: 2021-12-17, duration: 319
+ticker: CAH-SimpleMomentum, Return: 1.064407003218027, gain: 39, entry date: 2022-09-07, duration: 131
+
+2023-03-10
+ticker: HST-SimpleMomentum, Return: 0.7821830641213902, gain: -31, entry date: 2022-05-02, duration: 224
+ticker: DVA-SimpleMomentum, Return: 0.9383304086237152, gain: -5, entry date: 2023-01-24, duration: 33
+ticker: AFL-SimpleMomentum, Return: 0.9366398369052534, gain: -4, entry date: 2022-11-15, duration: 83
+ticker: KMB-SimpleMomentum, Return: 1.0920877364354853, gain: 10, entry date: 2022-10-21, duration: 100
+ticker: USB-SimpleMomentum, Return: 0.8302193338748984, gain: -17, entry date: 2023-02-01, duration: 27
+ticker: MET-SimpleMomentum, Return: 0.8557795698924731, gain: -11, entry date: 2022-11-16, duration: 82
+ticker: NFLX-SimpleMomentum, Return: 1.3205008865248227, gain: 145, entry date: 2022-09-26, duration: 119
+ticker: GPS-SimpleMomentum, Return: 1.1489569411354525, gain: 13, entry date: 2022-07-20, duration: 167
+ticker: FOSL-SimpleMomentum, Return: 0.8923444976076556, gain: -18, entry date: 2022-09-22, duration: 121
+
+2023-03-13
+ticker: KIM-SimpleMomentum, Return: 0.9540877370456143, gain: -4, entry date: 2022-10-18, duration: 104
+ticker: AAPL-StrategyAAPL, Return: 0.9625291329510044, gain: -69, entry date: 2023-03-09, duration: 2
+
+2023-03-14
+ticker: BK-SimpleMomentum, Return: 0.9337979094076656, gain: -6, entry date: 2023-01-20, duration: 37
+ticker: MAT-SimpleMomentum, Return: 0.8280859570214892, gain: -17, entry date: 2023-01-13, duration: 42
+ticker: NBR-SimpleMomentum, Return: 1.2428501708150317, gain: 25, entry date: 2022-01-25, duration: 295
+ticker: APA-SimpleMomentum, Return: 0.9877672344803934, gain: -1, entry date: 2022-07-26, duration: 165
+ticker: UNM-SimpleMomentum, Return: 1.0633050150726224, gain: 7, entry date: 2022-05-10, duration: 220
+ticker: TJX-SimpleMomentum, Return: 1.252414474917756, gain: 44, entry date: 2022-03-23, duration: 254
+ticker: IGT-SimpleMomentum, Return: 1.0214711624483825, gain: 1, entry date: 2022-11-28, duration: 76
+ticker: L-SimpleMomentum, Return: 0.9642168682905563, gain: -2, entry date: 2023-01-04, duration: 49
+ticker: WDC-SimpleMomentum, Return: 0.8201634877384196, gain: -8, entry date: 2023-02-02, duration: 28
+ticker: DVN-SimpleMomentum, Return: 0.9273415326395458, gain: -19, entry date: 2023-03-10, duration: 2
+ticker: HP-SimpleMomentum, Return: 0.9290830648753353, gain: -5, entry date: 2022-08-31, duration: 139
+ticker: DIS-SimpleMomentum, Return: 0.8737683584309351, gain: -14, entry date: 2023-01-31, duration: 30
+
+2023-03-15
+ticker: CHK-SimpleMomentum, Return: 1.4108481262327415, gain: 21, entry date: 2021-05-24, duration: 472
+
+2023-03-16
+ticker: XOM-SimpleMomentum, Return: 1.2454134204574014, gain: 20, entry date: 2022-02-09, duration: 286
+ticker: SLB-SimpleMomentum, Return: 1.2596967421960827, gain: 18, entry date: 2022-07-25, duration: 168
+
+2023-03-17
+ticker: KMX-SimpleMomentum, Return: 0.7873866558397618, gain: -16, entry date: 2023-02-10, duration: 25
+
+2023-03-20
+ticker: BAX-SimpleMomentum, Return: 0.971068884621318, gain: -2, entry date: 2023-03-02, duration: 12
+
+2023-03-22
+ticker: AAPL-StrategyAAPL, Return: 1.0272782672397585, gain: 59, entry date: 2023-03-20, duration: 2
+
+2023-03-27
+ticker: BEAM-SimpleMomentum, Return: 0.7154870357393132, gain: -146, entry date: 2022-06-27, duration: 195
+ticker: PBI-SimpleMomentum, Return: 1.0694864048338368, gain: 6, entry date: 2022-11-14, duration: 95
+ticker: AAPL-StrategyAAPL, Return: 1.006989001279186, gain: 18, entry date: 2023-03-23, duration: 2
+
+2023-03-29
+ticker: AAPL-StrategyAAPL, Return: 1.0088624036422023, gain: 24, entry date: 2023-03-28, duration: 1
+
+2023-04-04
+ticker: AAPL-StrategyAAPL, Return: 1.0313560941242954, gain: 91, entry date: 2023-03-30, duration: 3
+
+2023-04-06
+ticker: AAPL-StrategyAAPL, Return: 0.9859779007615188, gain: -46, entry date: 2023-04-05, duration: 1
+
+2023-04-11
+ticker: AAPL-StrategyAAPL, Return: 1.005760817101842, gain: 18, entry date: 2023-04-10, duration: 1
+
+2023-04-20
+ticker: AAPL-StrategyAAPL, Return: 0.9999400808726645, gain: 0, entry date: 2023-04-18, duration: 2
+
+2023-04-21
+ticker: LIFE-SimpleMomentum, Return: 0.7586206896551725, gain: -42, entry date: 2023-03-29, duration: 17
+ticker: T-SimpleMomentum, Return: 1.0617944147355913, gain: 7, entry date: 2022-10-21, duration: 130
+
+2023-04-24
+ticker: AAPL-StrategyAAPL, Return: 0.9996966712409617, gain: -1, entry date: 2023-04-21, duration: 1
+
+2023-04-26
+ticker: USB-SimpleMomentum, Return: 0.8987234042553192, gain: -4, entry date: 2023-04-06, duration: 14
+ticker: AAPL-StrategyAAPL, Return: 0.9870756310192159, gain: -38, entry date: 2023-04-25, duration: 1
+
+2023-04-28
+ticker: IP-SimpleMomentum, Return: 1.002411817907748, gain: 0, entry date: 2022-10-19, duration: 137
+
+2023-05-01
+ticker: X-SimpleMomentum, Return: 1.189958592132505, gain: 15, entry date: 2022-07-20, duration: 203
+
+2023-05-02
+ticker: AAPL-StrategyAAPL, Return: 1.0047854363102848, gain: 14, entry date: 2023-05-01, duration: 1
+
+2023-05-03
+ticker: FSLR-SimpleMomentum, Return: 1.3013718837586663, gain: 41, entry date: 2022-09-22, duration: 159
+ticker: FHN-SimpleMomentum, Return: 0.919637804187889, gain: -9, entry date: 2023-03-30, duration: 24
+
+2023-05-04
+ticker: KSS-SimpleMomentum, Return: 0.8510648133167538, gain: -6, entry date: 2023-04-05, duration: 21
+
+2023-05-05
+ticker: IBM-SimpleMomentum, Return: 0.9530106525173155, gain: -6, entry date: 2023-03-28, duration: 28
+ticker: CCI-SimpleMomentum, Return: 0.8925413738381318, gain: -28, entry date: 2023-03-17, duration: 35
+ticker: AAPL-StrategyAAPL, Return: 1.0087020061113325, gain: 26, entry date: 2023-05-03, duration: 2
+
+2023-05-09
+ticker: AAPL-StrategyAAPL, Return: 1.0033047928238785, gain: 9, entry date: 2023-05-08, duration: 1
+
+2023-05-10
+ticker: MET-SimpleMomentum, Return: 0.9018739352640545, gain: -6, entry date: 2023-04-04, duration: 26
+
+2023-05-15
+ticker: GPS-SimpleMomentum, Return: 0.8263623732262618, gain: -10, entry date: 2023-04-05, duration: 28
+ticker: FOSL-SimpleMomentum, Return: 0.8370607028753995, gain: -7, entry date: 2023-04-06, duration: 27
+
+2023-05-17
+ticker: AAPL-StrategyAAPL, Return: 0.99380847407008, gain: -17, entry date: 2023-05-10, duration: 5
+
+2023-05-19
+ticker: AEP-SimpleMomentum, Return: 0.9619607408228901, gain: -10, entry date: 2023-03-15, duration: 47
+
+2023-05-23
+ticker: AAPL-StrategyAAPL, Return: 0.9815181807419817, gain: -45, entry date: 2023-05-19, duration: 2
+
+2023-05-24
+ticker: XRAY-SimpleMomentum, Return: 0.9975713987350923, gain: 0, entry date: 2023-02-06, duration: 77
+
+2023-05-26
+ticker: SBUX-SimpleMomentum, Return: 1.1748960177902235, gain: 14, entry date: 2022-08-05, duration: 210
+ticker: AEE-SimpleMomentum, Return: 0.9424041039990673, gain: -15, entry date: 2023-03-17, duration: 50
+ticker: SJM-SimpleMomentum, Return: 0.9599214145383106, gain: -6, entry date: 2023-03-20, duration: 49
+ticker: CMS-SimpleMomentum, Return: 0.9262148545424996, gain: -23, entry date: 2023-03-16, duration: 51
+ticker: ABT-SimpleMomentum, Return: 0.916554582685932, gain: -9, entry date: 2023-05-04, duration: 16
+
+2023-05-31
+ticker: KMB-SimpleMomentum, Return: 1.0439928365646656, gain: 6, entry date: 2023-03-21, duration: 51
+ticker: CL-SimpleMomentum, Return: 1.0400591756031792, gain: 9, entry date: 2023-03-22, duration: 50
+
+2023-06-07
+ticker: MKC-SimpleMomentum, Return: 1.2013364806926026, gain: 15, entry date: 2023-02-28, duration: 71
+
+2023-06-08
+ticker: AAPL-StrategyAAPL, Return: 1.0263958749892845, gain: 41, entry date: 2023-05-26, duration: 9
+
+2023-06-14
+ticker: AAPL-StrategyAAPL, Return: 1.0103029716387573, gain: 20, entry date: 2023-06-09, duration: 3
+
+2023-06-21
+ticker: AAPL-StrategyAAPL, Return: 1.0051096113410125, gain: 14, entry date: 2023-06-15, duration: 4
+
+2023-06-23
+ticker: AAPL-StrategyAAPL, Return: 1.0098506314479319, gain: 31, entry date: 2023-06-22, duration: 1
+
+2023-06-29
+ticker: AAPL-StrategyAAPL, Return: 1.0120428776308867, gain: 43, entry date: 2023-06-26, duration: 3
+
+2023-06-30
+ticker: EFX-SimpleMomentum, Return: 1.19897415062719, gain: 39, entry date: 2023-03-23, duration: 71
+
+2023-07-05
+ticker: AAPL-StrategyAAPL, Return: 0.9996610489147801, gain: -1, entry date: 2023-06-30, duration: 3
+
+2023-07-07
+ticker: AAPL-StrategyAAPL, Return: 1.0082702273929138, gain: 33, entry date: 2023-07-06, duration: 1
+
+2023-07-11
+ticker: AAPL-StrategyAAPL, Return: 0.9994716802583462, gain: -2, entry date: 2023-07-10, duration: 1
+
+2023-07-17
+ticker: T-SimpleMomentum, Return: 0.8936708860759492, gain: -8, entry date: 2023-06-13, duration: 24
+
+2023-07-18
+ticker: AAPL-SimpleMomentum, Return: 1.2608760834839083, gain: 40, entry date: 2023-03-09, duration: 93
+
+2023-07-19
+ticker: AAPL-StrategyAAPL, Return: 1.006253665278765, gain: 24, entry date: 2023-07-17, duration: 2
+
+2023-07-21
+ticker: AAPL-StrategyAAPL, Return: 0.9949256288931944, gain: -20, entry date: 2023-07-20, duration: 1
+
+2023-07-28
+ticker: VRSN-SimpleMomentum, Return: 1.0319001386962552, gain: 6, entry date: 2023-03-27, duration: 89
+
+2023-08-02
+ticker: ETN-SimpleMomentum, Return: 1.2270988071123117, gain: 40, entry date: 2023-03-06, duration: 107
+ticker: AAPL-StrategyAAPL, Return: 1.008427451816994, gain: 28, entry date: 2023-07-24, duration: 7
+
+2023-08-04
+ticker: AAPL-StrategyAAPL, Return: 0.9684189343853367, gain: -115, entry date: 2023-08-03, duration: 1
+
+2023-08-08
+ticker: BEAM-SimpleMomentum, Return: 0.8145547398659432, gain: -6, entry date: 2023-04-17, duration: 81
+
+2023-08-09
+ticker: K-SimpleMomentum, Return: 0.8957921491104208, gain: -7, entry date: 2023-05-05, duration: 68
+ticker: PLL-SimpleMomentum, Return: 0.7208265199940539, gain: -19, entry date: 2023-01-27, duration: 138
+
+2023-08-15
+ticker: FOSL-SimpleMomentum, Return: 0.9579439252336447, gain: -4, entry date: 2023-06-02, duration: 52
+ticker: X-SimpleMomentum, Return: 1.4293351929335192, gain: 37, entry date: 2023-05-23, duration: 60
+
+2023-08-16
+ticker: DFS-SimpleMomentum, Return: 0.7981953843484296, gain: -23, entry date: 2023-06-27, duration: 36
+ticker: AEP-SimpleMomentum, Return: 0.9532451923076923, gain: -4, entry date: 2023-06-13, duration: 46
+
+2023-08-17
+ticker: TEL-SimpleMomentum, Return: 0.9132484345317669, gain: -12, entry date: 2023-08-02, duration: 11
+ticker: WYNN-SimpleMomentum, Return: 0.8377401727481051, gain: -18, entry date: 2023-03-08, duration: 116
+
+2023-08-18
+ticker: RL-SimpleMomentum, Return: 0.9588030503978779, gain: -5, entry date: 2023-01-23, duration: 149
+ticker: KIM-SimpleMomentum, Return: 0.9580562659846548, gain: -3, entry date: 2023-04-03, duration: 99
+ticker: XRAY-SimpleMomentum, Return: 0.9545693139467746, gain: -3, entry date: 2023-06-09, duration: 50
+ticker: BIG-SimpleMomentum, Return: 0.7288977159880834, gain: -30, entry date: 2023-07-12, duration: 27
+ticker: CVS-SimpleMomentum, Return: 0.9816311535635562, gain: -1, entry date: 2023-05-26, duration: 60
+
+2023-08-23
+ticker: COF-SimpleMomentum, Return: 0.9713206084681717, gain: -3, entry date: 2023-05-30, duration: 61
+
+2023-08-24
+ticker: CAH-SimpleMomentum, Return: 1.045172043758632, gain: 4, entry date: 2023-05-01, duration: 83
+
+2023-08-28
+ticker: TGT-SimpleMomentum, Return: 0.9265901664260202, gain: -10, entry date: 2023-07-03, duration: 40
+ticker: AAPL-StrategyAAPL, Return: 1.015277478690376, gain: 24, entry date: 2023-08-25, duration: 1
+
+2023-08-30
+ticker: AAPL-StrategyAAPL, Return: 1.0291888743394886, gain: 52, entry date: 2023-08-29, duration: 1
+
+2023-09-01
+ticker: PCG-SimpleMomentum, Return: 1.6299603174603174, gain: 83, entry date: 2022-07-05, duration: 303
+
+2023-09-05
+ticker: APA-SimpleMomentum, Return: 1.4593378334940534, gain: 43, entry date: 2023-05-31, duration: 69
+
+2023-09-06
+ticker: BAX-SimpleMomentum, Return: 0.9875304254006603, gain: -2, entry date: 2023-03-28, duration: 116
+ticker: AAPL-StrategyAAPL, Return: 1.0029808860356833, gain: 6, entry date: 2023-08-31, duration: 4
+
+2023-09-07
+ticker: PBI-SimpleMomentum, Return: 0.896969696969697, gain: -8, entry date: 2023-06-06, duration: 67
+ticker: SO-SimpleMomentum, Return: 0.9822058823529413, gain: -5, entry date: 2023-03-20, duration: 123
+ticker: LUV-SimpleMomentum, Return: 1.0141510242270744, gain: 1, entry date: 2023-05-30, duration: 72
+ticker: HRL-SimpleMomentum, Return: 0.9467348053366623, gain: -4, entry date: 2023-04-03, duration: 113
+ticker: CHRW-SimpleMomentum, Return: 0.9148748516732956, gain: -8, entry date: 2022-10-31, duration: 223
+
+2023-09-08
+ticker: AAPL-StrategyAAPL, Return: 1.0180956397972447, gain: 51, entry date: 2023-09-07, duration: 1
+
+2023-09-13
+ticker: SEE-SimpleMomentum, Return: 0.9233038348082596, gain: -11, entry date: 2023-09-01, duration: 8
+
+2023-09-19
+ticker: AAPL-StrategyAAPL, Return: 1.005892765640285, gain: 22, entry date: 2023-09-18, duration: 1
+
+2023-09-20
+ticker: PAYX-SimpleMomentum, Return: 1.0203849518810149, gain: 2, entry date: 2022-10-25, duration: 236
+
+2023-09-22
+ticker: BK-SimpleMomentum, Return: 1.0079328044797013, gain: 0, entry date: 2023-06-05, duration: 79
+ticker: KSS-SimpleMomentum, Return: 0.7527054525704124, gain: -20, entry date: 2023-08-09, duration: 32
+ticker: PWR-SimpleMomentum, Return: 1.5423831153341552, gain: 65, entry date: 2022-06-16, duration: 331
+ticker: TEL-SimpleMomentum, Return: 0.9291782572738893, gain: -9, entry date: 2023-09-05, duration: 13
+ticker: PLL-SimpleMomentum, Return: 0.908153916628493, gain: -16, entry date: 2023-09-11, duration: 9
+ticker: AMT-SimpleMomentum, Return: 0.8229394868798987, gain: -36, entry date: 2023-03-17, duration: 135
+ticker: DVN-SimpleMomentum, Return: 0.9262116716122651, gain: -7, entry date: 2023-03-30, duration: 126
+ticker: NVDA-SimpleMomentum, Return: 1.7762391240527815, gain: 182, entry date: 2023-03-10, duration: 140
+ticker: FHN-SimpleMomentum, Return: 0.9832893579595428, gain: -1, entry date: 2023-05-24, duration: 87
+
+2023-09-25
+ticker: PLD-SimpleMomentum, Return: 1.1388162274068028, gain: 14, entry date: 2022-10-21, duration: 241
+ticker: ROST-SimpleMomentum, Return: 0.9124625343590372, gain: -11, entry date: 2023-09-05, duration: 14
+ticker: ABT-SimpleMomentum, Return: 0.9093189470866153, gain: -10, entry date: 2023-07-03, duration: 60
+
+2023-09-26
+ticker: AAPL-StrategyAAPL, Return: 1.0035590301757875, gain: 14, entry date: 2023-09-25, duration: 1
+
+2023-09-27
+ticker: EXPE-SimpleMomentum, Return: 0.923119418101464, gain: -8, entry date: 2023-08-22, duration: 26
+ticker: MAS-SimpleMomentum, Return: 1.0060480060480061, gain: 1, entry date: 2023-05-11, duration: 99
+ticker: APH-SimpleMomentum, Return: 0.9674782573630835, gain: -3, entry date: 2023-07-18, duration: 51
+
+2023-09-28
+ticker: USB-SimpleMomentum, Return: 0.8821104699093157, gain: -17, entry date: 2023-09-12, duration: 12
+ticker: DFS-SimpleMomentum, Return: 0.935430463576159, gain: -12, entry date: 2023-09-07, duration: 15
+ticker: CRM-SimpleMomentum, Return: 1.096450342584678, gain: 18, entry date: 2023-03-09, duration: 145
+ticker: COF-SimpleMomentum, Return: 0.9774705581157194, gain: -4, entry date: 2023-09-25, duration: 3
+ticker: CMS-SimpleMomentum, Return: 0.9414035087719298, gain: -3, entry date: 2023-09-19, duration: 7
+
+2023-09-29
+ticker: WY-SimpleMomentum, Return: 1.0687738798193818, gain: 6, entry date: 2022-10-10, duration: 254
+
+2023-10-02
+ticker: SO-SimpleMomentum, Return: 0.9597014925373134, gain: -5, entry date: 2023-09-27, duration: 3
+ticker: PCG-SimpleMomentum, Return: 0.9469026548672567, gain: -7, entry date: 2023-09-13, duration: 13
+
+2023-10-03
+ticker: K-SimpleMomentum, Return: 0.86234151160876, gain: -8, entry date: 2023-09-21, duration: 8
+ticker: AEP-SimpleMomentum, Return: 0.8819220263223243, gain: -10, entry date: 2023-09-20, duration: 9
+
+2023-10-04
+ticker: ADM-SimpleMomentum, Return: 0.8740968849934856, gain: -11, entry date: 2023-08-01, duration: 46
+
+2023-10-05
+ticker: ATI-SimpleMomentum, Return: 1.2451713395638628, gain: 16, entry date: 2022-08-30, duration: 287
+ticker: MET-SimpleMomentum, Return: 1.128842504743833, gain: 14, entry date: 2023-05-26, duration: 94
+
+2023-10-06
+ticker: HAS-SimpleMomentum, Return: 0.9621848739495797, gain: -2, entry date: 2023-05-18, duration: 101
+
+2023-10-09
+ticker: AAPL-StrategyAAPL, Return: 1.017318676805329, gain: 60, entry date: 2023-10-06, duration: 1
+
+2023-10-10
+ticker: DVA-SimpleMomentum, Return: 1.0053409090909091, gain: 0, entry date: 2023-05-08, duration: 111
+ticker: HRL-SimpleMomentum, Return: 0.9374028692554102, gain: -9, entry date: 2023-09-27, duration: 9
+
+2023-10-11
+ticker: AAPL-StrategyAAPL, Return: 1.0005617939578442, gain: 2, entry date: 2023-10-10, duration: 1
+
+2023-10-17
+ticker: AAPL-StrategyAAPL, Return: 0.9809793653144422, gain: -58, entry date: 2023-10-12, duration: 3
+
+2023-10-20
+ticker: BEAM-SimpleMomentum, Return: 0.7459050818983621, gain: -42, entry date: 2023-09-06, duration: 32
+
+2023-10-23
+ticker: PNC-SimpleMomentum, Return: 0.8842063492063492, gain: -15, entry date: 2023-09-13, duration: 28
+
+2023-10-24
+ticker: AVY-SimpleMomentum, Return: 0.9542677893346541, gain: -8, entry date: 2023-10-04, duration: 14
+ticker: IP-SimpleMomentum, Return: 1.04302103250478, gain: 4, entry date: 2023-06-12, duration: 96
+ticker: DFS-SimpleMomentum, Return: 0.942853883882742, gain: -5, entry date: 2023-10-09, duration: 11
+ticker: WY-SimpleMomentum, Return: 0.9701842546063651, gain: -1, entry date: 2023-10-18, duration: 4
+ticker: TER-SimpleMomentum, Return: 0.8790217113295596, gain: -13, entry date: 2023-06-02, duration: 102
+ticker: C-SimpleMomentum, Return: 0.9104093567251462, gain: -4, entry date: 2023-09-15, duration: 27
+
+2023-10-25
+ticker: ADM-SimpleMomentum, Return: 0.9727957589285714, gain: -2, entry date: 2023-10-24, duration: 1
+
+2023-10-26
+ticker: EMR-SimpleMomentum, Return: 0.9374013677012099, gain: -6, entry date: 2023-08-18, duration: 49
+ticker: NE-SimpleMomentum, Return: 1.774680603948897, gain: 60, entry date: 2022-07-19, duration: 332
+
+2023-10-27
+ticker: MAT-SimpleMomentum, Return: 0.8835322195704058, gain: -12, entry date: 2023-07-19, duration: 72
+ticker: WU-SimpleMomentum, Return: 1.0567567567567568, gain: 9, entry date: 2023-03-29, duration: 152
+ticker: IGT-SimpleMomentum, Return: 0.9623040218132243, gain: -2, entry date: 2023-06-07, duration: 102
+ticker: WDC-SimpleMomentum, Return: 0.9953667953667954, gain: 0, entry date: 2023-05-31, duration: 107
+
+2023-10-30
+ticker: PAYX-SimpleMomentum, Return: 0.9563186575555748, gain: -5, entry date: 2023-10-05, duration: 17
+ticker: VRSN-SimpleMomentum, Return: 0.9579321581987853, gain: -9, entry date: 2023-10-02, duration: 20
+ticker: CVX-SimpleMomentum, Return: 0.9647274247401147, gain: -5, entry date: 2022-09-01, duration: 302
+ticker: DO-SimpleMomentum, Return: 1.8426470588235293, gain: 74, entry date: 2022-08-31, duration: 303
+
+2023-10-31
+ticker: NBR-SimpleMomentum, Return: 1.1956001912960306, gain: 16, entry date: 2023-06-01, duration: 108
+
+2023-11-02
+ticker: UNM-SimpleMomentum, Return: 0.8926342072409488, gain: -21, entry date: 2023-10-04, duration: 21
+ticker: DD-SimpleMomentum, Return: 1.0001438676417698, gain: 0, entry date: 2022-11-21, duration: 248
+
+2023-11-06
+ticker: AAPL-StrategyAAPL, Return: 1.0122817041447083, gain: 23, entry date: 2023-11-03, duration: 1
+
+2023-11-08
+ticker: SJM-SimpleMomentum, Return: 0.961947056774643, gain: -4, entry date: 2023-11-03, duration: 3
+ticker: AAPL-StrategyAAPL, Return: 1.0176916728447734, gain: 41, entry date: 2023-11-07, duration: 1
+
+2023-11-09
+ticker: APA-SimpleMomentum, Return: 0.8297109567555456, gain: -30, entry date: 2023-09-11, duration: 43
+
+2023-11-13
+ticker: CHK-SimpleMomentum, Return: 0.9471756086031671, gain: -4, entry date: 2023-10-06, duration: 26
+
+2023-11-14
+ticker: AAPL-StrategyAAPL, Return: 1.0272284714794229, gain: 65, entry date: 2023-11-09, duration: 3
+
+2023-11-22
+ticker: AAPL-StrategyAAPL, Return: 1.019404434598783, gain: 58, entry date: 2023-11-15, duration: 5
+
+2023-11-27
+ticker: AAPL-StrategyAAPL, Return: 0.995022759021905, gain: -16, entry date: 2023-11-24, duration: 1
+
+2023-11-29
+ticker: AAPL-StrategyAAPL, Return: 1.0059016846655915, gain: 17, entry date: 2023-11-28, duration: 1
+
+2023-12-01
+ticker: HRL-SimpleMomentum, Return: 0.9349027801095627, gain: -8, entry date: 2023-11-02, duration: 21
+ticker: AAPL-StrategyAAPL, Return: 1.0025812372428125, gain: 8, entry date: 2023-11-30, duration: 1
+
+2023-12-07
+ticker: FAST-SimpleMomentum, Return: 1.154072757096337, gain: 25, entry date: 2023-10-03, duration: 47
+ticker: XOM-SimpleMomentum, Return: 0.867668780954036, gain: -15, entry date: 2023-09-25, duration: 53
+ticker: SLB-SimpleMomentum, Return: 1.0875945386293422, gain: 8, entry date: 2023-06-02, duration: 134
+ticker: RRC-SimpleMomentum, Return: 1.0985185185185184, gain: 16, entry date: 2023-03-07, duration: 197
+
+2023-12-11
+ticker: SWN-SimpleMomentum, Return: 0.783625730994152, gain: -22, entry date: 2022-04-22, duration: 426
+ticker: AAPL-StrategyAAPL, Return: 0.9931087644281865, gain: -23, entry date: 2023-12-06, duration: 3
+
+2023-12-13
+ticker: AAPL-StrategyAAPL, Return: 1.0104104599323047, gain: 34, entry date: 2023-12-12, duration: 1
+
+2023-12-15
+ticker: WY-SimpleMomentum, Return: 1.0958859734369937, gain: 9, entry date: 2023-11-06, duration: 29
+
+2023-12-18
+ticker: AAPL-StrategyAAPL, Return: 0.990253260500777, gain: -33, entry date: 2023-12-14, duration: 2
+
+2023-12-20
+ticker: NTAP-SimpleMomentum, Return: 1.4131830280256772, gain: 26, entry date: 2023-01-09, duration: 247
+
+2023-12-21
+ticker: AAPL-StrategyAAPL, Return: 0.999694248919152, gain: -1, entry date: 2023-12-19, duration: 2
+
+2023-12-27
+ticker: AAPL-StrategyAAPL, Return: 0.986217779198214, gain: -48, entry date: 2023-12-22, duration: 3
+
+2024-01-09
+ticker: X-SimpleMomentum, Return: 1.5700843608046724, gain: 35, entry date: 2023-08-24, duration: 98
+
+2024-01-12
+ticker: ETN-SimpleMomentum, Return: 1.0583622183708838, gain: 13, entry date: 2023-09-07, duration: 91
+ticker: HP-SimpleMomentum, Return: 0.8177214025935057, gain: -15, entry date: 2023-08-08, duration: 113
+
+2024-01-16
+ticker: AAPL-StrategyAAPL, Return: 0.9790392834502362, gain: -66, entry date: 2024-01-12, duration: 2
+
+2024-01-18
+ticker: PLL-SimpleMomentum, Return: 0.6722602739726027, gain: -38, entry date: 2023-11-21, duration: 42
+ticker: AAPL-StrategyAAPL, Return: 1.0265902709844625, gain: 82, entry date: 2024-01-17, duration: 1
+
+2024-01-19
+ticker: DFS-SimpleMomentum, Return: 0.8642730496453901, gain: -15, entry date: 2023-12-29, duration: 15
+ticker: APD-SimpleMomentum, Return: 0.9139966273187186, gain: -24, entry date: 2023-03-14, duration: 223
+
+2024-01-25
+ticker: CCI-SimpleMomentum, Return: 1.1487455197132617, gain: 14, entry date: 2023-10-13, duration: 74
+ticker: PCG-SimpleMomentum, Return: 1.0373572090151282, gain: 2, entry date: 2023-10-17, duration: 72
+
+2024-01-26
+ticker: MET-SimpleMomentum, Return: 1.0369772560528245, gain: 3, entry date: 2024-01-16, duration: 8
+
+2024-01-29
+ticker: TGT-SimpleMomentum, Return: 1.29519056261343, gain: 33, entry date: 2023-10-26, duration: 67
+
+2024-01-30
+ticker: AAPL-StrategyAAPL, Return: 1.0085039005297487, gain: 29, entry date: 2024-01-19, duration: 7
+
+2024-02-02
+ticker: CHRW-SimpleMomentum, Return: 0.8473099814844021, gain: -39, entry date: 2023-09-22, duration: 95
+
+2024-02-06
+ticker: AFL-SimpleMomentum, Return: 1.0353416367333153, gain: 5, entry date: 2023-08-02, duration: 134
+
+2024-02-12
+ticker: AAPL-StrategyAAPL, Return: 0.9987543069175722, gain: -6, entry date: 2024-02-09, duration: 1
+
+2024-02-14
+ticker: ADM-SimpleMomentum, Return: 0.9874107478391582, gain: -2, entry date: 2024-02-12, duration: 2
+ticker: GT-SimpleMomentum, Return: 0.8423716558206797, gain: -11, entry date: 2023-05-25, duration: 189
+ticker: AAPL-StrategyAAPL, Return: 0.9975776497819884, gain: -11, entry date: 2024-02-13, duration: 1
+
+2024-02-16
+ticker: AKAM-SimpleMomentum, Return: 1.4771235396695126, gain: 72, entry date: 2023-03-24, duration: 235
+
+2024-03-01
+ticker: DIS-SimpleMomentum, Return: 1.1498142798184068, gain: 15, entry date: 2024-02-06, duration: 18
+ticker: AAPL-StrategyAAPL, Return: 0.9905113918464169, gain: -36, entry date: 2024-02-29, duration: 1
+
+2024-03-13
+ticker: LUV-SimpleMomentum, Return: 1.2552538907190731, gain: 29, entry date: 2023-11-10, duration: 88
+
+2024-03-14
+ticker: LEG-SimpleMomentum, Return: 0.9126026074360212, gain: -7, entry date: 2024-03-05, duration: 7
+ticker: DLTR-SimpleMomentum, Return: 1.1813252458413748, gain: 20, entry date: 2023-10-24, duration: 102
+ticker: X-SimpleMomentum, Return: 0.8128630705394191, gain: -27, entry date: 2024-01-31, duration: 31
+
+2024-03-15
+ticker: AAPL-StrategyAAPL, Return: 0.9899369614250187, gain: -44, entry date: 2024-03-14, duration: 1
+
+2024-03-21
+ticker: AAPL-StrategyAAPL, Return: 1.0084296861650626, gain: 33, entry date: 2024-03-18, duration: 3
+
+2024-03-22
+ticker: MU-SimpleMomentum, Return: 1.894009951905483, gain: 52, entry date: 2023-01-12, duration: 311
+
+2024-03-25
+ticker: AAPL-StrategyAAPL, Return: 0.9930426176059618, gain: -29, entry date: 2024-03-22, duration: 1
+
+2024-03-27
+ticker: PSX-SimpleMomentum, Return: 1.830886670581327, gain: 212, entry date: 2022-01-21, duration: 568
+ticker: BSX-SimpleMomentum, Return: 1.6213776722090263, gain: 26, entry date: 2022-08-15, duration: 422
+ticker: GE-SimpleMomentum, Return: 2.0980915760349785, gain: 73, entry date: 2022-11-17, duration: 354
+ticker: AMAT-SimpleMomentum, Return: 2.060660928961478, gain: 107, entry date: 2022-12-20, duration: 331
+ticker: URBN-SimpleMomentum, Return: 1.6083208395802098, gain: 81, entry date: 2023-01-24, duration: 306
+ticker: MAR-SimpleMomentum, Return: 1.5846497312509635, gain: 94, entry date: 2023-03-13, duration: 272
+ticker: CME-SimpleMomentum, Return: 1.2059905575862329, gain: 36, entry date: 2023-03-21, duration: 266
+ticker: AIZ-SimpleMomentum, Return: 1.5689918533604887, gain: 67, entry date: 2023-03-29, duration: 260
+ticker: L-SimpleMomentum, Return: 1.3442698842821017, gain: 20, entry date: 2023-03-31, duration: 258
+ticker: AMZN-SimpleMomentum, Return: 1.6201026749527154, gain: 69, entry date: 2023-05-11, duration: 229
+ticker: GPS-SimpleMomentum, Return: 3.3565233236151606, gain: 175, entry date: 2023-06-05, duration: 212
+ticker: PRU-SimpleMomentum, Return: 1.2278814721079827, gain: 22, entry date: 2023-08-03, duration: 169
+ticker: TJX-SimpleMomentum, Return: 1.1322368465710464, gain: 12, entry date: 2023-08-23, duration: 155
+ticker: IBM-SimpleMomentum, Return: 1.3166812964588495, gain: 46, entry date: 2023-08-31, duration: 149
+ticker: HST-SimpleMomentum, Return: 1.282099936748893, gain: 54, entry date: 2023-09-08, duration: 143
+ticker: RL-SimpleMomentum, Return: 1.5862869924294563, gain: 68, entry date: 2023-09-12, duration: 141
+ticker: CVS-SimpleMomentum, Return: 1.125176803394625, gain: 18, entry date: 2023-09-13, duration: 140
+ticker: NSC-SimpleMomentum, Return: 1.239597348881248, gain: 48, entry date: 2023-09-22, duration: 133
+ticker: PBI-SimpleMomentum, Return: 1.3209876543209877, gain: 100, entry date: 2023-09-22, duration: 133
+ticker: LH-SimpleMomentum, Return: 1.0568588590449852, gain: 12, entry date: 2023-09-25, duration: 132
+ticker: T-SimpleMomentum, Return: 1.168243243243243, gain: 17, entry date: 2023-09-26, duration: 131
+ticker: ALL-SimpleMomentum, Return: 1.5173392461197341, gain: 58, entry date: 2023-09-27, duration: 130
+ticker: CAH-SimpleMomentum, Return: 1.2832031474553394, gain: 49, entry date: 2023-09-28, duration: 129
+ticker: TEL-SimpleMomentum, Return: 1.1557085020242914, gain: 19, entry date: 2023-10-10, duration: 121
+ticker: AA-SimpleMomentum, Return: 1.1476121562952242, gain: 20, entry date: 2023-10-10, duration: 121
+ticker: XYL-SimpleMomentum, Return: 1.3966340933767645, gain: 37, entry date: 2023-10-11, duration: 120
+ticker: CMS-SimpleMomentum, Return: 1.084937083641747, gain: 5, entry date: 2023-10-16, duration: 117
+ticker: USB-SimpleMomentum, Return: 1.3339494762784965, gain: 22, entry date: 2023-10-17, duration: 116
+ticker: FHN-SimpleMomentum, Return: 1.3402527075812274, gain: 15, entry date: 2023-10-19, duration: 114
+ticker: K-SimpleMomentum, Return: 1.1157057654075546, gain: 12, entry date: 2023-10-25, duration: 110
+ticker: MKC-SimpleMomentum, Return: 1.2171864496964107, gain: 28, entry date: 2023-10-27, duration: 108
+ticker: DVA-SimpleMomentum, Return: 1.7504170409341715, gain: 58, entry date: 2023-10-27, duration: 108
+ticker: KSS-SimpleMomentum, Return: 1.255633197212419, gain: 44, entry date: 2023-10-30, duration: 107
+ticker: BAX-SimpleMomentum, Return: 1.3092567738786849, gain: 40, entry date: 2023-11-01, duration: 105
+ticker: SO-SimpleMomentum, Return: 1.0295683027794205, gain: 4, entry date: 2023-11-01, duration: 105
+ticker: ATI-SimpleMomentum, Return: 1.3050760113372841, gain: 36, entry date: 2023-11-02, duration: 104
+ticker: KMX-SimpleMomentum, Return: 1.3057537574009412, gain: 40, entry date: 2023-11-07, duration: 101
+ticker: TXN-SimpleMomentum, Return: 1.1673802191911782, gain: 24, entry date: 2023-11-09, duration: 99
+ticker: MAS-SimpleMomentum, Return: 1.298972545056426, gain: 36, entry date: 2023-11-16, duration: 94
+ticker: XRAY-SimpleMomentum, Return: 1.0772371106867715, gain: 9, entry date: 2023-11-21, duration: 91
+ticker: SJM-SimpleMomentum, Return: 1.098482832046846, gain: 11, entry date: 2023-11-22, duration: 90
+ticker: HAS-SimpleMomentum, Return: 1.2009172308364273, gain: 18, entry date: 2023-11-24, duration: 88
+ticker: UNM-SimpleMomentum, Return: 1.2488284910965324, gain: 21, entry date: 2023-12-01, duration: 83
+ticker: BK-SimpleMomentum, Return: 1.19062565390249, gain: 27, entry date: 2023-12-07, duration: 79
+ticker: C-SimpleMomentum, Return: 1.2920224953134765, gain: 42, entry date: 2023-12-12, duration: 76
+ticker: KIM-SimpleMomentum, Return: 0.9360865290068829, gain: -9, entry date: 2023-12-13, duration: 75
+ticker: PNC-SimpleMomentum, Return: 1.0329823167097159, gain: 5, entry date: 2023-12-21, duration: 69
+ticker: PAYX-SimpleMomentum, Return: 1.0116493462956755, gain: 1, entry date: 2023-12-26, duration: 66
+ticker: APH-SimpleMomentum, Return: 1.1870789816824485, gain: 18, entry date: 2024-01-03, duration: 60
+ticker: MS-SimpleMomentum, Return: 0.9922371967654987, gain: -1, entry date: 2024-01-09, duration: 56
+ticker: COF-SimpleMomentum, Return: 1.1026278961281293, gain: 13, entry date: 2024-01-12, duration: 53
+ticker: LIFE-SimpleMomentum, Return: 1.2387096774193547, gain: 30, entry date: 2024-01-16, duration: 51
+ticker: ICE-SimpleMomentum, Return: 1.0903724281621667, gain: 11, entry date: 2024-01-23, duration: 46
+ticker: ABT-SimpleMomentum, Return: 1.0052962890794146, gain: 1, entry date: 2024-01-25, duration: 44
+ticker: MET-SimpleMomentum, Return: 1.0407816482582837, gain: 6, entry date: 2024-01-29, duration: 42
+ticker: FAST-SimpleMomentum, Return: 1.1430402419270291, gain: 19, entry date: 2024-01-29, duration: 42
+ticker: WDC-SimpleMomentum, Return: 1.1957011613797885, gain: 23, entry date: 2024-01-31, duration: 40
+ticker: AEE-SimpleMomentum, Return: 1.0460005859947261, gain: 6, entry date: 2024-02-08, duration: 34
+ticker: WYNN-SimpleMomentum, Return: 0.960551330798479, gain: -4, entry date: 2024-02-14, duration: 30
+ticker: PLL-SimpleMomentum, Return: 0.8564425770308124, gain: -23, entry date: 2024-02-22, duration: 24
+ticker: ADM-SimpleMomentum, Return: 1.1609345794392523, gain: 17, entry date: 2024-02-23, duration: 23
+ticker: EMR-SimpleMomentum, Return: 1.0589013898080741, gain: 6, entry date: 2024-02-26, duration: 22
+ticker: BEAM-SimpleMomentum, Return: 0.838790302424394, gain: -19, entry date: 2024-03-01, duration: 18
+ticker: CL-SimpleMomentum, Return: 1.040287936839661, gain: 3, entry date: 2024-03-04, duration: 17
+ticker: CHRW-SimpleMomentum, Return: 1.033390410958904, gain: 2, entry date: 2024-03-05, duration: 16
+ticker: DIS-SimpleMomentum, Return: 1.0824682298192232, gain: 9, entry date: 2024-03-14, duration: 9
+ticker: HRL-SimpleMomentum, Return: 0.9965330583087152, gain: 0, entry date: 2024-03-20, duration: 5
+ticker: DFS-SimpleMomentum, Return: 0.996540336530901, gain: 0, entry date: 2024-03-22, duration: 3
+
