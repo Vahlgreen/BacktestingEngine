@@ -255,9 +255,9 @@ def create_strategy_figs(logs: dict,p_colors: dict) -> dict:
         bt_results = pd.read_csv(data_file, sep=",")
 
         #################################################### Create main plot. Portfolio index vs s&p 500 ####################################################
-        portfolio_vs_index_fig = go.Figure()
+        strategy_vs_index_fig = go.Figure()
 
-        portfolio_vs_index_fig.add_trace(go.Scatter(x=states["date"],
+        strategy_vs_index_fig.add_trace(go.Scatter(x=states["date"],
                                  y=states["strategy_index"],
                                  name="Strategy index",
                                  line=dict(color="blue"),
@@ -269,28 +269,34 @@ def create_strategy_figs(logs: dict,p_colors: dict) -> dict:
                                 "funds: <b>%{customdata[3]:$,.0f}</b><br>" +
                                 "trades: <b>%{customdata[4]}</b><br>" +
                                 "<extra></extra>"))
-        portfolio_vs_index_fig.add_trace(go.Scatter(x=states["date"],
+        strategy_vs_index_fig.add_trace(go.Scatter(x=states["date"],
                                  y=states["exchange_index"],
                                  name="S&P 500",
                                  line=dict(color="purple"),
                                  hoverinfo='skip'))
-
-        # moving average
-        portfolio_vs_index_fig.add_trace(go.Scatter(x=states["date"],
-                                 y=states["moving_average"],
-                                 name="Moving average",
-                                 line=dict(color="grey"),
-                                 hoverinfo='skip'))
-        max_val = [states["strategy_index"].max()]*len(states)
-        min_val = [states["strategy_index"].min()]*len(states)
-        portfolio_vs_index_fig.add_trace(go.Scatter(y=max_val,x=states["date"], line_width=1.5, line_dash = "dash",line_color="green", name="peak"))
-        portfolio_vs_index_fig.add_trace(go.Scatter(y=min_val,x=states["date"], line_width=1.5, line_dash="dash", line_color="red", name="Max drawdown"))
-        portfolio_vs_index_fig.update_layout(
+        strategy_vs_index_fig.update_layout(
             margin=dict(l=0, r=0, t=0, b=0),
             plot_bgcolor=p_colors["graph_bg"],
             paper_bgcolor=p_colors["paper_bg"],
             legend_y=0.8
         )
+
+        # moving average
+        # portfolio_vs_index_fig.add_trace(go.Scatter(x=states["date"],
+        #                          y=states["moving_average"],
+        #                          name="Moving average",
+        #                          line=dict(color="grey"),
+        #                          hoverinfo='skip'))
+        # max_val = [states["strategy_index"].max()]*len(states)
+        # min_val = [states["strategy_index"].min()]*len(states)
+        # portfolio_vs_index_fig.add_trace(go.Scatter(y=max_val,x=states["date"], line_width=1.5, line_dash = "dash",line_color="green", name="peak"))
+        # portfolio_vs_index_fig.add_trace(go.Scatter(y=min_val,x=states["date"], line_width=1.5, line_dash="dash", line_color="red", name="Max drawdown"))
+        # portfolio_vs_index_fig.update_layout(
+        #     margin=dict(l=0, r=0, t=0, b=0),
+        #     plot_bgcolor=p_colors["graph_bg"],
+        #     paper_bgcolor=p_colors["paper_bg"],
+        #     legend_y=0.8
+        # )
 
         # confidence interval
         # portfolio_vs_index_fig.add_traces([go.Scatter(x=states["date"],
@@ -310,20 +316,20 @@ def create_strategy_figs(logs: dict,p_colors: dict) -> dict:
         #################################################### Risk vs cumulative returns ####################################################
 
         # risk and cummulative returns
-        risk_cum_return_fig = make_subplots(specs=[[{"secondary_y": True}]])
-        risk_cum_return_fig.add_trace(go.Scatter(x=states["date"],
-                                 y=states["cummulative_returns"],
-                                 name="Cummulative returns"))
+        # risk_cum_return_fig = make_subplots(specs=[[{"secondary_y": True}]])
+        # risk_cum_return_fig.add_trace(go.Scatter(x=states["date"],
+        #                          y=states["cummulative_returns"],
+        #                          name="Cummulative returns"))
         # risk_cum_return_fig.add_trace(go.Scatter(x=states["date"],
         #                          y=states["risk"]*states["win_rate"],
         #                          name="Effective risk",opacity = 0.75),secondary_y=True)
         #risk_cum_return_fig.write_html(functions.get_absolute_path("Results/Plots/cum_returns_and_risk.html"))
-        risk_cum_return_fig.update_layout(
-            margin=dict(l=0, r=0, t=0, b=0),
-            plot_bgcolor=p_colors["graph_bg"],
-            paper_bgcolor=p_colors["paper_bg"],
-            legend_y=0.8
-        )
+        # risk_cum_return_fig.update_layout(
+        #     margin=dict(l=0, r=0, t=0, b=0),
+        #     plot_bgcolor=p_colors["graph_bg"],
+        #     paper_bgcolor=p_colors["paper_bg"],
+        #     legend_y=0.8
+        # )
 
 
         #################################################### Funds and asset value ####################################################
@@ -405,8 +411,8 @@ def create_strategy_figs(logs: dict,p_colors: dict) -> dict:
 
 
         return_dict[name] = {
-            "portfolio_vs_index_fig": portfolio_vs_index_fig,
-            "risk_cum_return_fig": risk_cum_return_fig,
+            "portfolio_vs_index_fig": strategy_vs_index_fig,
+            # "risk_cum_return_fig": risk_cum_return_fig,
             "hist_figure": hist_figure,
             "funds_and_asset_value_fig": funds_and_asset_value_fig,
             "positions_fig": positions_fig,
@@ -525,7 +531,7 @@ dashboard_layout = html.Div(children=[
                                      'text-align': 'center'
                                  }
                                  )
-        ],style={"margin-left":"20%","margin-right":"20%","padding-top":"5%"}),
+        ],style={"margin-left":"30%","margin-right":"30%","padding-top":"5%"}),
         html.Div(
         [
                     html.H4("Portfolio index vs S&P 500"),
@@ -570,7 +576,7 @@ strategies_layout = html.Div(children=[
                                          'textOverflow': 'ellipsis',
                                          'overflow': 'hidden',
                                          'text-align': 'center'
-                                     }),style={"margin-left":"20%","margin-right":"20%","padding-top":"5%"}),
+                                     }),style={"margin-left":"30%","margin-right":"30%","padding-top":"5%"}),
 
             html.Div([
                 html.H4("Strategy vs S&P 500 index"),
