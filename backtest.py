@@ -43,7 +43,7 @@ def structure_input_data(data: pd.DataFrame, s_date: str, input_tickers: list) -
     """Validates input parameters and isolates tickers according to said parameters"""
 
     grouped_data = data.groupby("Ticker")
-    available_tickers= list(set(data['Ticker'].values))
+    available_tickers= list(pd.unique(data['Ticker'].values))
     ticker_data = {}
 
     if not isinstance(input_tickers,list):
@@ -62,6 +62,7 @@ def structure_input_data(data: pd.DataFrame, s_date: str, input_tickers: list) -
             for key in available_tickers:
                 ticker_data.update({key: grouped_data.get_group(key)})
     elif input_tickers[0].lower() == "half":
+
         for i, key in enumerate(available_tickers, start=1):
             if i % 2 == 0:
                 ticker_data.update({key: grouped_data.get_group(key)})

@@ -178,10 +178,10 @@ class BaseStrategy(ABC):
         pass
 class SimpleMomentum(BaseStrategy):
     """Basic momentum strategy used for testing"""
-    def __init__(self, funds: float, name: str):
+    def __init__(self, funds: float, name: str, strats: list[str]):
         self.tickers = ["all"]
         self.max_drawdown = 1
-        self.funds = funds
+        self.funds = funds/len(strats)
         self.primo_funds = funds
         self.asset_value = 0
         self.returns = []
@@ -193,7 +193,6 @@ class SimpleMomentum(BaseStrategy):
         self.open_trades = {}
         self.all_trades = []
         self.trade_log = {}
-
 
     @staticmethod
     def get_buy_signal(current_date: str, stock_data: pd.DataFrame) -> bool:
@@ -220,10 +219,10 @@ class SimpleMomentum(BaseStrategy):
         return sorted(pool, key=lambda x: pool[x]['dmi'], reverse=True)
 class StrategyAAPL(BaseStrategy):
     """Strategy applied to APPL ticker"""
-    def __init__(self, funds: float, name: str):
+    def __init__(self, funds: float, name: str, strats: list[str]):
         self.tickers = ["AAPL"]
         self.max_drawdown = 1
-        self.funds = funds
+        self.funds = funds/len(strats)
         self.primo_funds = funds
         self.asset_value = 0
         self.returns = []
@@ -269,3 +268,33 @@ class StrategyAAPL(BaseStrategy):
     @staticmethod
     def sort_candidates(current_date: str, pool: dict) -> dict:
         return sorted(pool, key=lambda x: pool[x]['dmi'], reverse=True)
+class ValidationStrategy(BaseStrategy):
+    """Strategy applied to APPL ticker"""
+    def __init__(self, funds: float, name: str, strats: list[str]):
+        self.tickers = ["AAPL"]
+        self.max_drawdown = 1
+        self.funds = funds/len(strats)
+        self.primo_funds = funds
+        self.asset_value = 0
+        self.returns = []
+        self.state_log = {}
+        self.name = name
+        self.num_trades = 0
+        self.win_count = 0
+        self.win_rate = [1]
+        self.open_trades = {}
+        self.all_trades = []
+        self.trade_log = {}
+    @staticmethod
+    def get_buy_signal(current_date: str, stock_data: pd.DataFrame) -> bool:
+        pass
+    @staticmethod
+    def get_sell_signal(current_date: str, stock_data: pd.DataFrame) -> bool:
+        pass
+    @staticmethod
+    def compute_order_key(pool: dict, stock_data: pd.DataFrame, current_date: str, current_price: float,
+                          stock_ticker: str) -> dict:
+        pass
+    @staticmethod
+    def sort_candidates(current_date: str, pool: dict) -> dict:
+        pass

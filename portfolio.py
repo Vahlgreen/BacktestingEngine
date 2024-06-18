@@ -18,7 +18,7 @@ class Portfolio:
         self.portfolio_value = 0
         self.transaction_fee = transaction_fee
         self.transaction_expenses = 0
-        self.strategies = [getattr(strategy, name)(funds=funds/len(strategies), name=name) for name in strategies] # instantiate strategy objects
+        self.strategies = [getattr(strategy, name)(funds=funds, name=name, strats=strategies) for name in strategies] # instantiate strategy objects
         self.winrate = [1]                     # Current winrate. Avoid collapsing the kelly criteria by appending 1
         self.returns = []                      # List of average, daily returns
         self.state_log = {}                    # Portfolio states, updates every trade day
@@ -107,6 +107,7 @@ class Portfolio:
 
         # Delete all existing files before proceeding
         files = os.listdir("Results/Strategies/")
+        yearly_risk_free_rate = 1.04
         for f in files:
             os.remove(f"Results/Strategies/{f}")
 
@@ -114,7 +115,7 @@ class Portfolio:
         for strat in self.strategies:
 
             num_trades = len(strat.all_trades)
-            risk_free_rate = 1.02 ** (num_days / 252)
+
 
             # All remaining holdings have been sold off
             strat_return = strat.funds/strat.primo_funds
@@ -144,21 +145,21 @@ class Portfolio:
                 if max_trade_duration["Duration"] < trade.duration:
                     max_trade_duration = {"Duration": trade.duration, "Ticker": trade.ticker}
 
-                sharpe_dates.append(trade.exit_date)
+                sharpe_dates.append(trade.exit_date.split("-")[0])
                 sharpe_returns.append(trade.return_)
 
             average_profit = np.mean(list_of_profits)
             average_loss = np.mean(list_of_losses)
 
             # Computing sharpe ratio
-            temp_df = pd.DataFrame(columns=["Dates","Returns"],data=[])
-            temp_df["Dates"] = sharpe_dates
+            temp_df = pd.DataFrame(columns=["Years","Returns"],data=[])
+            temp_df["Years"] = sharpe_dates
             temp_df["Returns"] = sharpe_returns
-            temp_df_grouped = temp_df.groupby("Dates")
+            temp_df_grouped = temp_df.groupby("Years")
             daily_returns = temp_df_grouped.mean()["Returns"].to_list()
             average_return = np.mean(daily_returns)
             sharpe_deviation = np.std(daily_returns)
-            sharpe_ratio = (average_return - risk_free_rate) / sharpe_deviation
+            sharpe_ratio = (average_return - yearly_risk_free_rate) / sharpe_deviation
 
             # Profit factor
             win_rate = win_count / num_trades
@@ -214,7 +215,7 @@ class Portfolio:
 
         # Finally log results aggregated on entire portfolio
 
-        risk_free_rate = 1.02 ** (num_days / 252)
+
 
         portfolio_return = self.portfolio_value / self.portfolio_value_primo
 
@@ -249,21 +250,21 @@ class Portfolio:
             if max_trade_duration["Duration"] < trade.duration:
                 max_trade_duration = {"Duration": trade.duration, "Ticker": trade.ticker}
 
-            sharpe_dates.append(trade.exit_date)
+            sharpe_dates.append(trade.exit_date.split("-")[0])
             sharpe_returns.append(trade.return_)
 
         average_profit = np.mean(list_of_profits)
         average_loss = np.mean(list_of_losses)
 
         # Computing sharpe ratio
-        temp_df = pd.DataFrame(columns=["Dates", "Returns"], data=[])
-        temp_df["Dates"] = sharpe_dates
+        temp_df = pd.DataFrame(columns=["Years", "Returns"], data=[])
+        temp_df["Years"] = sharpe_dates
         temp_df["Returns"] = sharpe_returns
-        temp_df_grouped = temp_df.groupby("Dates")
+        temp_df_grouped = temp_df.groupby("Years")
         daily_returns = temp_df_grouped.mean()["Returns"].to_list()
         average_return = np.mean(daily_returns)
         sharpe_deviation = np.std(daily_returns)
-        sharpe_ratio = (average_return - risk_free_rate) / sharpe_deviation
+        sharpe_ratio = (average_return - yearly_risk_free_rate) / sharpe_deviation
 
         # Profit factor
         win_rate = win_count / num_trades
@@ -273,7 +274,7 @@ class Portfolio:
         # For plotting purpose: The dataframe in dashhboard
 
         aggregated_backtest_results = {
-            "Total portfolio return" : [f"{round((portfolio_return - 1) * 100, 1)}%"],
+            "Total portfolio return": [f"{round((portfolio_return - 1) * 100, 1)}%"],
             "Average profit": [f"${round(average_profit)}"],
             "Average loss": [f"${round(average_loss)}"],
             "Profit factor": [round(profitFactor, 1)],
