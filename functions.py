@@ -109,9 +109,9 @@ def trim_stock_data(arr: np.array, current_date_index: int, max_obs: int = 50):
     available_observations = current_date_index - first_valid_index
 
     if available_observations >= max_obs:
-        arr = arr[current_date_index - max_obs:current_date_index]
+        arr = arr[current_date_index - max_obs:current_date_index+1]
     else:
-        arr = arr[first_valid_index:current_date_index]
+        arr = arr[first_valid_index:current_date_index+1]
 
     return arr
 def chaikin_volatility(data: pd.DataFrame, current_date: str, look_back_period: int):
@@ -124,3 +124,17 @@ def chaikin_volatility(data: pd.DataFrame, current_date: str, look_back_period: 
 
     cv = (smoothed_difference[look_back_period:]/smoothed_difference[:-look_back_period]-1)*100
     return cv
+
+def volatility_coefficient(data: pd.DataFrame, current_date: str, look_back_period: int = 14) -> float:
+    """Computes the volatility coefficient in the specified time frame"""
+
+    current_date_index = np.where(data["Date"].values == current_date)[0][0]
+    data_open = trim_stock_data(data["Open"].values,current_date_index, max_obs=look_back_period)
+
+    volatility = np.std(data_open)
+    mean = np.mean(data_open)
+
+    if np.isnan(-(volatility / mean)):
+        print("test")
+
+    return -(volatility / mean)

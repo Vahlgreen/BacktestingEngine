@@ -18,6 +18,7 @@ class Portfolio:
         self.portfolio_value = 0
         self.transaction_fee = transaction_fee
         self.transaction_expenses = 0
+        self.validation_log = []
         self.strategies = [getattr(strategy, name)(funds=funds, name=name, strats=strategies) for name in strategies] # instantiate strategy objects
         self.winrate = [1]                     # Current winrate. Avoid collapsing the kelly criteria by appending 1
         self.returns = []                      # List of average, daily returns
@@ -47,12 +48,13 @@ class Portfolio:
             strat_obj.update_parameters(data, current_date)
 
         # The order of function calls are of importance here
-        self.update_portfolio_value(data, current_date)
+        self.update_portfolio_value()
         self.update_max_drawdown()
         self.update_returns_and_winrate(current_date)
         self.update_risk_tolerance()
         self.log_portfolio_state(current_date)
-    def update_portfolio_value(self, data: dict, current_date: str):
+        self.validate_session(current_date)
+    def update_portfolio_value(self):
         """
         portfolio value is the sum of current holdings value and funds of the underlying strategies
         """
@@ -102,8 +104,46 @@ class Portfolio:
             "number_of_open_positions": sum([len(strat.open_trades) for strat in self.strategies])
         }})
 
+    def validate_session(self, current_date: str):
+        """Validates parameters during backtest"""
+
+        # At all times the funds of the underlying strategies are bounded by that of the portfolio
+        val_check =  round(sum([strat.asset_value+strat.funds for strat in self.strategies]))
+        tot_value_check = round(self.portfolio_value) >= val_check
+        if not tot_value_check:
+            self.validation_log.append(
+                f"Total value validation failed on {current_date}.\n portfolio value: {self.portfolio_value}, "
+                f"Validation check: {sum([strat.asset_value+strat.funds for strat in self.strategies])}"
+            )
+
+        # Transaction cost must align with number of open and completed trades
+        trans_cost_check = self.transaction_expenses == sum([len(strat.open_trades) + len(strat.all_trades) for strat in
+                            self.strategies])*self.transaction_fee
+
+        if not trans_cost_check:
+            self.validation_log.append(
+                f"Transaction cost failed on {current_date}.\n Portfolio registered costs: {self.transaction_expenses}, "
+                f"validation check: {sum([len(strat.open_trades) + len(strat.all_trades) for strat in self.strategies])*self.transaction_fee}"
+            )
+
+    def validate_backtest(self):
+        """Validates performance metrics at the end of backtest"""
+        pass
+
     def log_back_test_results(self):
         """Summarizes backtest and prints to files"""
+
+        # Write validation log
+        if len(self.validation_log) != 0:
+            data_file = functions.get_absolute_path(f"Results/Portfolio/validation_log.txt")
+            log_string = ""
+            for message in self.validation_log:
+                log_string += message + "\n\n"
+
+            with open(data_file, "w") as f:
+                f.write(log_string)
+
+            print("Validations failed during backtest")
 
         # Delete all existing files before proceeding
         files = os.listdir("Results/Strategies/")
@@ -189,14 +229,14 @@ class Portfolio:
 
 
             data_file = functions.get_absolute_path(f"Results/Strategies/{strat.name}_states.csv")
-            logString = "total_value,asset_value,funds,return,win_rate,trades,positions,date\n"
+            log_string = "total_value,asset_value,funds,return,win_rate,trades,positions,date\n"
             for date, state in strat.state_log.items():
-                logString += (f'{state["total_equity"]},{state["asset_value"]},'
+                log_string += (f'{state["total_equity"]},{state["asset_value"]},'
                               f'{state["funds"]},{state["return"]},'
                               f'{state["win_rate"]},{state["number_of_trades"]},'
                               f'{state["number_of_open_positions"]},{date}\n')
             with open(data_file, "w") as f:
-                f.write(logString)
+                f.write(log_string)
 
             data_file = functions.get_absolute_path(f"Results/Strategies/{strat.name}_returns.csv")
             printList = [str(trade.return_) + "\n" for trade in strat.all_trades]
@@ -204,14 +244,14 @@ class Portfolio:
                 f.writelines(printList)
 
             data_file = functions.get_absolute_path(f"Results/Strategies/{strat.name}_trade_log.txt")
-            logString = ""
+            log_string = ""
             for date in strat.trade_log:
-                logString = logString + f"{date}\n"
+                log_string = log_string + f"{date}\n"
                 for ticker, trade in strat.trade_log[date].items():
-                    logString += f"ticker: {ticker}, Return: {trade.return_}, gain: {round(trade.gain)}, entry date: {trade.entry_date}, duration: {trade.duration}\n"
-                logString += "\n"
+                    log_string += f"ticker: {ticker}, Return: {trade.return_}, gain: {round(trade.gain)}, entry date: {trade.entry_date}, duration: {trade.duration}\n"
+                log_string += "\n"
             with open(data_file, "w") as f:
-                f.write(logString)
+                f.write(log_string)
 
         # Finally log results aggregated on entire portfolio
 
@@ -296,14 +336,14 @@ class Portfolio:
 
 
         data_file = functions.get_absolute_path("Results/Portfolio/portfolio_states.csv")
-        logString = "total_value,asset_value,funds,return,win_rate,risk_tolerance,trades,positions,date\n"
+        log_string = "total_value,asset_value,funds,return,win_rate,risk_tolerance,trades,positions,date\n"
         for date,state in self.state_log.items():
-            logString += (f'{state["total_portfolio_value"]},{state["asset_value"]},'
+            log_string += (f'{state["total_portfolio_value"]},{state["asset_value"]},'
                           f'{state["funds"]},{state["return"]},'
                           f'{state["win_rate"]},{state["risk_tolerance"]},{state["number_of_trades"]},'
                           f'{state["number_of_open_positions"]},{date}\n')
         with open(data_file, "w") as f:
-            f.write(logString)
+            f.write(log_string)
 
 
         data_file = functions.get_absolute_path("Results/Portfolio/returns.csv")

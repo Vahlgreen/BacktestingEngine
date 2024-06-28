@@ -35,7 +35,6 @@ class BaseStrategy(ABC):
 
             if stock_ticker in self.tickers or self.tickers[0].lower() == "all":
 
-                # The id of the trade, should it be in current holdings
                 current_price = stock_data.at[current_date, "Open"]
 
                 # If price is nan and in holding it means the stock is delisted. sell at entry price
@@ -49,11 +48,11 @@ class BaseStrategy(ABC):
                     if self.open_trades[stock_ticker].stop_loss > current_price:
                         self.sell(stock_ticker, current_price, current_date)
 
-                    elif self.get_sell_signal(current_date,stock_data):
+                    elif self.get_sell_signal(current_date,stock_data,stock_ticker):
                         self.sell(stock_ticker, current_price, current_date)
                 else:
                     # If buy signal is true we add the ticker to the pool of candidates
-                    if self.get_buy_signal(current_date, stock_data):
+                    if self.get_buy_signal(current_date, stock_data,stock_ticker):
                         pool = self.compute_order_key(pool, stock_data, current_date, current_price, stock_ticker)
 
         # Evaluate pool of candidates
@@ -161,14 +160,14 @@ class BaseStrategy(ABC):
         The key should thus reflect the goodness of the candidate, e.g. by momentum or something else.
         """
         pass
-    @staticmethod
+
     @abstractmethod
-    def get_buy_signal(current_date: str, stock_data: pd.DataFrame) -> bool:
+    def get_buy_signal(self,current_date: str, stock_data: pd.DataFrame,ticker: str) -> bool:
         """Logic that computes the buy signal"""
         pass
-    @staticmethod
+
     @abstractmethod
-    def get_sell_signal(current_date: str, stock_data: pd.DataFrame) -> bool:
+    def get_sell_signal(self,current_date: str, stock_data: pd.DataFrame,ticker: str) -> bool:
         """Logic that computes the sell signal"""
         pass
     @staticmethod
@@ -182,7 +181,7 @@ class SimpleMomentum(BaseStrategy):
         self.tickers = ["all"]
         self.max_drawdown = 1
         self.funds = funds/len(strats)
-        self.primo_funds = funds
+        self.primo_funds = self.funds
         self.asset_value = 0
         self.returns = []
         self.state_log = {}
@@ -194,16 +193,17 @@ class SimpleMomentum(BaseStrategy):
         self.all_trades = []
         self.trade_log = {}
 
-    @staticmethod
-    def get_buy_signal(current_date: str, stock_data: pd.DataFrame) -> bool:
+
+    def get_buy_signal(self,current_date: str, stock_data: pd.DataFrame, ticker: str) -> bool:
         signal = False
         if moving_average(stock_data, current_date):
             if rsi(stock_data, current_date):
                 signal = True
         return signal
-    @staticmethod
-    def get_sell_signal(current_date: str, stock_data: pd.DataFrame) -> bool:
+
+    def get_sell_signal(self,current_date: str, stock_data: pd.DataFrame, ticker: str) -> bool:
         signal = False
+
         if not moving_average(stock_data, current_date):
             if not rsi(stock_data, current_date):
                 signal = True
@@ -223,7 +223,7 @@ class StrategyAAPL(BaseStrategy):
         self.tickers = ["AAPL"]
         self.max_drawdown = 1
         self.funds = funds/len(strats)
-        self.primo_funds = funds
+        self.primo_funds = self.funds
         self.asset_value = 0
         self.returns = []
         self.state_log = {}
@@ -234,8 +234,8 @@ class StrategyAAPL(BaseStrategy):
         self.open_trades = {}
         self.all_trades = []
         self.trade_log = {}
-    @staticmethod
-    def get_buy_signal(current_date: str, stock_data: pd.DataFrame) -> bool:
+
+    def get_buy_signal(self,current_date: str, stock_data: pd.DataFrame, ticker: str) -> bool:
         signal = False
 
         current_date_index = np.where(stock_data["Date"].values == current_date)[0][0]
@@ -245,8 +245,8 @@ class StrategyAAPL(BaseStrategy):
             signal = True
 
         return signal
-    @staticmethod
-    def get_sell_signal(current_date: str, stock_data: pd.DataFrame) -> bool:
+
+    def get_sell_signal(self,current_date: str, stock_data: pd.DataFrame, ticker: str) -> bool:
         signal = False
 
         current_date_index = np.where(stock_data["Date"].values == current_date)[0][0]
@@ -268,13 +268,13 @@ class StrategyAAPL(BaseStrategy):
     @staticmethod
     def sort_candidates(current_date: str, pool: dict) -> dict:
         return sorted(pool, key=lambda x: pool[x]['dmi'], reverse=True)
-class ValidationStrategy(BaseStrategy):
-    """Strategy applied to APPL ticker"""
+class ImpliedVolatilityStrategy(BaseStrategy):
+    """Trades only on implied volatility"""
     def __init__(self, funds: float, name: str, strats: list[str]):
-        self.tickers = ["AAPL"]
+        self.tickers = ["all"]
         self.max_drawdown = 1
         self.funds = funds/len(strats)
-        self.primo_funds = funds
+        self.primo_funds = self.funds
         self.asset_value = 0
         self.returns = []
         self.state_log = {}
@@ -285,16 +285,27 @@ class ValidationStrategy(BaseStrategy):
         self.open_trades = {}
         self.all_trades = []
         self.trade_log = {}
-    @staticmethod
-    def get_buy_signal(current_date: str, stock_data: pd.DataFrame) -> bool:
-        pass
-    @staticmethod
-    def get_sell_signal(current_date: str, stock_data: pd.DataFrame) -> bool:
-        pass
+
+    def get_buy_signal(self,current_date: str, stock_data: pd.DataFrame, ticker: str) -> bool:
+        signal = False
+        if moving_average(stock_data, current_date):
+            if rsi(stock_data, current_date):
+                signal = True
+        return signal
+
+    def get_sell_signal(self,current_date: str, stock_data: pd.DataFrame, ticker: str) -> bool:
+        days_in_holding = np.busday_count(begindates=self.open_trades[ticker].entry_date,enddates=current_date)
+        return days_in_holding>=30
     @staticmethod
     def compute_order_key(pool: dict, stock_data: pd.DataFrame, current_date: str, current_price: float,
                           stock_ticker: str) -> dict:
-        pass
+
+        vol = functions.volatility_coefficient(stock_data,current_date,look_back_period=100)
+
+        pool.update({stock_ticker: {"current_price": current_price, "var_coef": vol}})
+
+        return pool
+
     @staticmethod
     def sort_candidates(current_date: str, pool: dict) -> dict:
-        pass
+        return sorted(pool, key=lambda x: pool[x]['var_coef'], reverse=True)
