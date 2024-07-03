@@ -161,10 +161,8 @@ class Portfolio:
             strat_return = strat.funds/strat.primo_funds
 
 
-            # Aggregate returns on a day-basis for sharpe
             sharpe_dates = []
             sharpe_returns = []
-
             win_count = 0
             max_trade_duration = {
                 "Duration": 0,
@@ -173,8 +171,10 @@ class Portfolio:
             list_of_losses = []
             list_of_profits = []
 
+
             # Compute trade-based statistics
             for trade in strat.all_trades:
+
                 if trade.win:
                     win_count += trade.win
                     list_of_profits.append(trade.profit)
@@ -204,7 +204,7 @@ class Portfolio:
             # Profit factor
             win_rate = win_count / num_trades
             lossRate = 1 - win_rate
-            profitFactor = (win_rate * average_profit) / (lossRate * average_loss)
+            profit_factor = (win_rate * average_profit) / (lossRate * average_loss)
 
             # For plotting purpose: The dataframe in dashhboard
 
@@ -212,7 +212,7 @@ class Portfolio:
                 "Total return" : [f"{round((strat_return - 1) * 100, 1)}%"],
                 "Average profit": [f"${round(average_profit)}"],
                 "Average loss": [f"${round(average_loss)}"],
-                "Profit factor": [round(profitFactor, 1)],
+                "Profit factor": [round(profit_factor, 1)],
                 "Average Profit var. coefficient": [f"{round(np.std(list_of_profits) / average_profit, 1)}%"],
                 "Average loss var. coefficient": [f"{round(np.std(list_of_losses)/average_loss,1)}%"],
                 "Max drawdown": [f"{round((strat.max_drawdown - 1) * 100, 1)}%"],
@@ -238,10 +238,16 @@ class Portfolio:
             with open(data_file, "w") as f:
                 f.write(log_string)
 
-            data_file = functions.get_absolute_path(f"Results/Strategies/{strat.name}_returns.csv")
-            printList = [str(trade.return_) + "\n" for trade in strat.all_trades]
+            data_file = functions.get_absolute_path(f"Results/Strategies/{strat.name}_holdings_log.csv")
+            print_list = [f"{trade.entry_date},{trade.exit_date},{trade.ticker}\n" for trade in strat.all_trades]
             with open(data_file, "w") as f:
-                f.writelines(printList)
+                f.writelines(print_list)
+
+
+            data_file = functions.get_absolute_path(f"Results/Strategies/{strat.name}_returns.csv")
+            print_list = [str(trade.return_) + "\n" for trade in strat.all_trades]
+            with open(data_file, "w") as f:
+                f.writelines(print_list)
 
             data_file = functions.get_absolute_path(f"Results/Strategies/{strat.name}_trade_log.txt")
             log_string = ""
@@ -253,8 +259,10 @@ class Portfolio:
             with open(data_file, "w") as f:
                 f.write(log_string)
 
-        # Finally log results aggregated on entire portfolio
 
+        ######################################################
+        # Finally log results aggregated on entire portfolio #
+        ######################################################
 
 
         portfolio_return = self.portfolio_value / self.portfolio_value_primo
@@ -309,7 +317,7 @@ class Portfolio:
         # Profit factor
         win_rate = win_count / num_trades
         lossRate = 1 - win_rate
-        profitFactor = (win_rate * average_profit) / (lossRate * average_loss)
+        profit_factor = (win_rate * average_profit) / (lossRate * average_loss)
 
         # For plotting purpose: The dataframe in dashhboard
 
@@ -317,7 +325,7 @@ class Portfolio:
             "Total portfolio return": [f"{round((portfolio_return - 1) * 100, 1)}%"],
             "Average profit": [f"${round(average_profit)}"],
             "Average loss": [f"${round(average_loss)}"],
-            "Profit factor": [round(profitFactor, 1)],
+            "Profit factor": [round(profit_factor, 1)],
             "Average Profit var. coefficient": [f"{round(np.std(list_of_profits) / average_profit, 1)}%"],
             "Average loss var. coefficient": [f"{round(np.std(list_of_losses)/average_loss,1)}%"],
             "Max drawdown": [f"{round((self.max_drawdown - 1) * 100, 1)}%"],
@@ -347,18 +355,6 @@ class Portfolio:
 
 
         data_file = functions.get_absolute_path("Results/Portfolio/returns.csv")
-        printList = [str(trade.return_) + "\n" for trade in all_trades]
+        print_list = [str(trade.return_) + "\n" for trade in all_trades]
         with open(data_file, "w") as f:
-            f.writelines(printList)
-
-
-        # data_file = functions.get_absolute_path("Results/trade_log.txt")
-        # logString = ""
-        # for date in self.trade_log:
-        #     logString = logString + f"{date}\n"
-        #     for ticker, trade in self.trade_log[date].items():
-        #         logString += f"ticker: {ticker}, Return: {trade.return_}, gain: {round(trade.gain)}, entry date: {trade.entry_date}, duration: {trade.duration}\n"
-        #     logString += "\n"
-        # with open(data_file, "w") as f:
-        #     f.write(logString)
-
+            f.writelines(print_list)
