@@ -76,14 +76,14 @@ def structure_input_data(data: pd.DataFrame, s_date: str, input_tickers: list) -
         raise Exception
 
     # Define market days
-    # Temporary solution. All tickers have well-defined index for the entire period. Might as well pick AAPL
-    market_days = data[data["Ticker"].values == "AAPL"].index
+    market_days = pd.unique(data["Date"])
     try:
-        market_days.get_loc(s_date)
+        idx = np.where(market_days==s_date)[0][0]
+        market_days = market_days[idx:]
     except Exception:
-        print("Start date is not an open market day")
+        raise Exception("Start date is not an open market day")
 
-    market_days = market_days[market_days.get_loc(s_date):].tolist()
+
 
     return ticker_data, market_days
 def log_index(s_date: str, end_date: str):
