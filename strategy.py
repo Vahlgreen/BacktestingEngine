@@ -309,3 +309,96 @@ class ImpliedVolatilityStrategy(BaseStrategy):
     @staticmethod
     def sort_candidates(current_date: str, pool: dict) -> dict:
         return sorted(pool, key=lambda x: pool[x]['var_coef'], reverse=True)
+class ValidationStrategy(BaseStrategy):
+    """For validation purposes"""
+    def __init__(self, funds: float, name: str, strats: list[str]):
+        self.tickers = ["all"]
+        self.max_drawdown = 1
+        self.funds = funds/len(strats)
+        self.primo_funds = self.funds
+        self.asset_value = 0
+        self.returns = []
+        self.state_log = {}
+        self.name = name
+        self.num_trades = 0
+        self.win_count = 0
+        self.win_rate = [1]
+        self.open_trades = {}
+        self.all_trades = []
+        self.trade_log = {}
+
+    def get_buy_signal(self,current_date: str, stock_data: pd.DataFrame, ticker: str) -> bool:
+        signal = False
+        if current_date == "2001-02-01":
+            signal = True
+        return signal
+
+    def get_sell_signal(self,current_date: str, stock_data: pd.DataFrame, ticker: str) -> bool:
+        return False
+    @staticmethod
+    def compute_order_key(pool: dict, stock_data: pd.DataFrame, current_date: str, current_price: float,
+                          stock_ticker: str) -> dict:
+
+        vol = functions.volatility_coefficient(stock_data,current_date,look_back_period=100)
+
+        pool.update({stock_ticker: {"current_price": current_price, "foo": 1}})
+
+        return pool
+
+    @staticmethod
+    def sort_candidates(current_date: str, pool: dict) -> dict:
+        return sorted(pool, key=lambda x: pool[x]['foo'], reverse=True)
+class PeakStrategy(BaseStrategy):
+    """Basic momentum strategy used for testing"""
+    def __init__(self, funds: float, name: str, strats: list[str]):
+        self.tickers = ["all"]
+        self.max_drawdown = 1
+        self.funds = funds/len(strats)
+        self.primo_funds = self.funds
+        self.asset_value = 0
+        self.returns = []
+        self.state_log = {}
+        self.name = name
+        self.num_trades = 0
+        self.win_count = 0
+        self.win_rate = [1]
+        self.open_trades = {}
+        self.all_trades = []
+        self.trade_log = {}
+
+
+    def get_buy_signal(self,current_date: str, stock_data: pd.DataFrame, ticker: str) -> bool:
+        signal = False
+
+        peaks = functions.compute_peaks(stock_data, current_date)
+
+        if len(peaks)<3:
+            return False
+        else:
+            peaks = peaks[-3:]
+            if peaks[0] < peaks[1] < peaks[2]:
+                if moving_average(stock_data, current_date):
+                    if rsi(stock_data, current_date):
+                        signal = True
+
+        return signal
+
+    def get_sell_signal(self,current_date: str, stock_data: pd.DataFrame, ticker: str) -> bool:
+        signal = False
+        # entry_date = self.open_trades[ticker].entry_date
+        # date_diff = functions.date_difference(entry_date,current_date)
+        # if date_diff > 20:
+        if not moving_average(stock_data, current_date):
+            if not rsi(stock_data, current_date):
+                signal = True
+
+        return signal
+    @staticmethod
+    def compute_order_key(pool: dict, stock_data: pd.DataFrame, current_date: str, current_price: float,
+                          stock_ticker: str) -> dict:
+        dmi = functions.directional_movement_index(stock_data, 14, current_date)
+        pool.update({stock_ticker: {"current_price": current_price, "dmi": dmi[-1]}})
+        return pool
+    @staticmethod
+    def sort_candidates(current_date: str, pool: dict) -> dict:
+        return sorted(pool, key=lambda x: pool[x]['dmi'], reverse=True)

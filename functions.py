@@ -1,7 +1,9 @@
 from datetime import timedelta, datetime
+from scipy.signal import find_peaks
 import os
 import numpy as np
 import pandas as pd
+
 
 def date_difference(start: str, end: str) -> int:
     """Returns number of days between two dates"""
@@ -138,3 +140,13 @@ def volatility_coefficient(data: pd.DataFrame, current_date: str, look_back_peri
         print("test")
 
     return -(volatility / mean)
+def compute_peaks(data: pd.DataFrame, current_date: str, look_back_period: int = 100):
+    """Returns array of values of identified peaks"""
+
+    current_date_index = np.where(data["Date"].values == current_date)[0][0]
+    data_open = trim_stock_data(data["Open"].values,current_date_index, max_obs=look_back_period)
+
+    peaks,_ = find_peaks(data_open, prominence=5)
+    peak_values = data_open[peaks]
+
+    return peak_values
