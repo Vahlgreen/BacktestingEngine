@@ -8,24 +8,30 @@ from trade import Trade
 import functions
 from indicators import rsi, moving_average
 
+from alpaca.trading.client import TradingClient
+from alpaca.data.historical.stock import StockHistoricalDataClient, StockBarsRequest, StockLatestQuoteRequest
+from alpaca.trading.requests import MarketOrderRequest, GetOrdersRequest, LimitOrderRequest
+from alpaca.data.timeframe import TimeFrame
+from alpaca.trading.enums import OrderSide, TimeInForce
+
 class BaseStrategy(ABC):
     """ Parent strategy class. Portfolio object can contain multiple strategies."""
 
-    # Specify which tickers the strategy is implemented for
-    tickers: list[str]
-    max_drawdown: float
-    funds: float
-    primo_funds: float
-    asset_value: float
-    name: str
-    num_trades: int
-    win_count: int
-    win_rate: list  # Current winrate. Avoid collapsing the kelly criteria by appending 1
-    open_trades: dict # Currently open positions
-    all_trades: list  # List of all completed trades
-    returns: list  # List of average, daily returns
-    state_log: dict  # Portfolio states, updates every trade day
-    trade_log: dict # Completed trades, aggregated on date
+    def __init__(self,funds: float, name: str, strats: list[str]):
+        self.tickers = ["all"]
+        self.max_drawdown = 1
+        self.funds = funds/len(strats)
+        self.primo_funds = self.funds
+        self.asset_value = 0
+        self.returns = []
+        self.state_log = {}
+        self.name = name
+        self.num_trades = 0
+        self.win_count = 0
+        self.win_rate = [1]
+        self.open_trades = {}
+        self.all_trades = []
+        self.trade_log = {}
 
     def deploy(self,portfolio, ticker_data: dict, current_date: str):
         """Deploys trading strategy"""
@@ -52,7 +58,7 @@ class BaseStrategy(ABC):
                         self.sell(stock_ticker, current_price, current_date)
                 else:
                     # If buy signal is true we add the ticker to the pool of candidates
-                    if self.get_buy_signal(current_date, stock_data,stock_ticker):
+                    if self.get_buy_signal(current_date, stock_data, stock_ticker):
                         pool = self.compute_order_key(pool, stock_data, current_date, current_price, stock_ticker)
 
         # Evaluate pool of candidates
@@ -95,9 +101,11 @@ class BaseStrategy(ABC):
 
         self.open_trades[stock_ticker] = trade_object
 
+
         # Adjust funds
         self.funds -= current_price * position_size - portfolio.transaction_fee
         portfolio.transaction_expenses += portfolio.transaction_fee
+
     def update_parameters(self, data: dict, current_date: str):
         """Updates parameters each trade day. The order of function calls are of importance here"""
 
@@ -112,7 +120,7 @@ class BaseStrategy(ABC):
             "asset_value": round(self.asset_value),
             "funds": round(self.funds),
             "return": round(self.returns[-1],4),
-            "win_rate": round(functions.mean_list(self.win_rate[-min(14, len(self.win_rate)):]),4),
+            "win_rate": round(functions.mean_list(self.win_rate[-min(14, len(self.win_rate)):]), 4),
             "number_of_trades": len(self.all_trades),
             "number_of_open_positions": len(self.open_trades)
         }})
@@ -152,6 +160,7 @@ class BaseStrategy(ABC):
 
         self.max_drawdown = min(self.max_drawdown, (self.asset_value + self.funds) / self.primo_funds)
 
+
     @staticmethod
     @abstractmethod
     def compute_order_key(pool: dict, stock_data: pd.DataFrame, current_date: str, current_price: float, stock_ticker: str)-> dict:
@@ -177,22 +186,8 @@ class BaseStrategy(ABC):
         pass
 class SimpleMomentum(BaseStrategy):
     """Basic momentum strategy used for testing"""
-    def __init__(self, funds: float, name: str, strats: list[str]):
-        self.tickers = ["all"]
-        self.max_drawdown = 1
-        self.funds = funds/len(strats)
-        self.primo_funds = self.funds
-        self.asset_value = 0
-        self.returns = []
-        self.state_log = {}
-        self.name = name
-        self.num_trades = 0
-        self.win_count = 0
-        self.win_rate = [1]
-        self.open_trades = {}
-        self.all_trades = []
-        self.trade_log = {}
-
+    def __init__(self,funds: float, name: str, strats: list[str]):
+        super().__init__(funds, name, strats)
 
     def get_buy_signal(self,current_date: str, stock_data: pd.DataFrame, ticker: str) -> bool:
         signal = False
@@ -219,21 +214,9 @@ class SimpleMomentum(BaseStrategy):
         return sorted(pool, key=lambda x: pool[x]['dmi'], reverse=True)
 class StrategyAAPL(BaseStrategy):
     """Strategy applied to APPL ticker"""
-    def __init__(self, funds: float, name: str, strats: list[str]):
+    def __init__(self,funds: float, name: str, strats: list[str]):
+        super().__init__(funds, name, strats)
         self.tickers = ["AAPL"]
-        self.max_drawdown = 1
-        self.funds = funds/len(strats)
-        self.primo_funds = self.funds
-        self.asset_value = 0
-        self.returns = []
-        self.state_log = {}
-        self.name = name
-        self.num_trades = 0
-        self.win_count = 0
-        self.win_rate = [1]
-        self.open_trades = {}
-        self.all_trades = []
-        self.trade_log = {}
 
     def get_buy_signal(self,current_date: str, stock_data: pd.DataFrame, ticker: str) -> bool:
         signal = False
@@ -270,21 +253,8 @@ class StrategyAAPL(BaseStrategy):
         return sorted(pool, key=lambda x: pool[x]['dmi'], reverse=True)
 class ImpliedVolatilityStrategy(BaseStrategy):
     """Trades only on implied volatility"""
-    def __init__(self, funds: float, name: str, strats: list[str]):
-        self.tickers = ["all"]
-        self.max_drawdown = 1
-        self.funds = funds/len(strats)
-        self.primo_funds = self.funds
-        self.asset_value = 0
-        self.returns = []
-        self.state_log = {}
-        self.name = name
-        self.num_trades = 0
-        self.win_count = 0
-        self.win_rate = [1]
-        self.open_trades = {}
-        self.all_trades = []
-        self.trade_log = {}
+    def __init__(self,funds: float, name: str, strats: list[str]):
+        super().__init__(funds, name, strats)
 
     def get_buy_signal(self,current_date: str, stock_data: pd.DataFrame, ticker: str) -> bool:
         signal = False
@@ -300,7 +270,7 @@ class ImpliedVolatilityStrategy(BaseStrategy):
     def compute_order_key(pool: dict, stock_data: pd.DataFrame, current_date: str, current_price: float,
                           stock_ticker: str) -> dict:
 
-        vol = functions.volatility_coefficient(stock_data,current_date,look_back_period=100)
+        vol = functions.volatility_coefficient(stock_data, current_date, look_back_period=100)
 
         pool.update({stock_ticker: {"current_price": current_price, "var_coef": vol}})
 
@@ -311,22 +281,9 @@ class ImpliedVolatilityStrategy(BaseStrategy):
         return sorted(pool, key=lambda x: pool[x]['var_coef'], reverse=True)
 class ValidationStrategy(BaseStrategy):
     """For validation purposes"""
-    def __init__(self, funds: float, name: str, strats: list[str]):
+    def __init__(self,funds: float, name: str, strats: list[str], live: bool):
+        super().__init__(funds, name, strats)
         self.tickers = ["all"]
-        self.max_drawdown = 1
-        self.funds = funds/len(strats)
-        self.primo_funds = self.funds
-        self.asset_value = 0
-        self.returns = []
-        self.state_log = {}
-        self.name = name
-        self.num_trades = 0
-        self.win_count = 0
-        self.win_rate = [1]
-        self.open_trades = {}
-        self.all_trades = []
-        self.trade_log = {}
-
     def get_buy_signal(self,current_date: str, stock_data: pd.DataFrame, ticker: str) -> bool:
         signal = False
         if current_date == "2001-02-01":
@@ -339,7 +296,7 @@ class ValidationStrategy(BaseStrategy):
     def compute_order_key(pool: dict, stock_data: pd.DataFrame, current_date: str, current_price: float,
                           stock_ticker: str) -> dict:
 
-        vol = functions.volatility_coefficient(stock_data,current_date,look_back_period=100)
+        vol = functions.volatility_coefficient(stock_data, current_date, look_back_period=100)
 
         pool.update({stock_ticker: {"current_price": current_price, "foo": 1}})
 
@@ -350,23 +307,9 @@ class ValidationStrategy(BaseStrategy):
         return sorted(pool, key=lambda x: pool[x]['foo'], reverse=True)
 class PeakStrategy(BaseStrategy):
     """Basic momentum strategy used for testing"""
-    def __init__(self, funds: float, name: str, strats: list[str]):
+    def __init__(self,funds: float, name: str, strats: list[str]):
+        super().__init__(funds, name, strats)
         self.tickers = ["all"]
-        self.max_drawdown = 1
-        self.funds = funds/len(strats)
-        self.primo_funds = self.funds
-        self.asset_value = 0
-        self.returns = []
-        self.state_log = {}
-        self.name = name
-        self.num_trades = 0
-        self.win_count = 0
-        self.win_rate = [1]
-        self.open_trades = {}
-        self.all_trades = []
-        self.trade_log = {}
-
-
     def get_buy_signal(self,current_date: str, stock_data: pd.DataFrame, ticker: str) -> bool:
         signal = False
 

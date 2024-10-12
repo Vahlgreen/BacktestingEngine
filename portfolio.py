@@ -1,7 +1,6 @@
 import pandas as pd
 import numpy as np
 import os
-import glob
 
 #Project files
 import functions
@@ -24,6 +23,7 @@ class Portfolio:
         self.returns = []                      # List of average, daily returns
         self.state_log = {}                    # Portfolio states, updates every trade day
         self.risk_tolerance = risk_tolerance   # Ratio of total equity assigned to trading
+
 
     def deploy_strategies(self,ticker_data: dict, current_date: str):
         """Deploys all strategies associated with the portfolio"""
@@ -99,7 +99,7 @@ class Portfolio:
             "funds": round(self.funds),
             "risk_tolerance": round(self.risk_tolerance,4),
             "return": round(self.returns[-1],4),
-            "win_rate": round(functions.mean_list(self.winrate[-min(14, len(self.winrate)):]),4),
+            "win_rate": round(functions.mean_list(self.winrate[-min(14, len(self.winrate)):]), 4),
             "number_of_trades": sum([len(strat.all_trades) for strat in self.strategies]),
             "number_of_open_positions": sum([len(strat.open_trades) for strat in self.strategies])
         }})
@@ -225,7 +225,8 @@ class Portfolio:
 
             print_df = pd.DataFrame.from_dict(data=aggregated_backtest_results,columns=["Results"],orient="index")
             print_df.index.name = "Metric"
-            print_df.to_csv(functions.get_absolute_path(f"Results/Strategies/{strat.name}_backtest_results_df.csv"))
+            print_df.to_csv(functions.get_absolute_path(
+                f"Results/Strategies/{strat.name}_backtest_results_df.csv"))
 
 
             data_file = functions.get_absolute_path(f"Results/Strategies/{strat.name}_states.csv")

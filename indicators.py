@@ -7,7 +7,7 @@ def rsi(data: pd.DataFrame, current_date: str, look_back_period: int = 14) -> bo
     """Source: https://en.wikipedia.org/wiki/Relative_strength_index"""
 
     current_date_index = np.where(data["Date"].values == current_date)[0][0]
-    data_close = functions.trim_stock_data(data["Close"].values,current_date_index)
+    data_close = functions.trim_stock_data(data["Close"].values, current_date_index)
 
     if data_close.size < look_back_period:
         return False
@@ -64,9 +64,9 @@ def dmi_(data: pd.DataFrame,current_date: str, look_back_period: int = 14) -> bo
     """Source: https://en.wikipedia.org/wiki/Average_directional_movement_index"""
 
     current_date_index = np.where(data["Date"].values == current_date)[0][0]
-    data_high = functions.trim_stock_data(data["High"].values,current_date_index)
-    data_low = functions.trim_stock_data(data["Low"].values,current_date_index)
-    data_close = functions.trim_stock_data(data["Close"].values,current_date_index)
+    data_high = functions.trim_stock_data(data["High"].values, current_date_index)
+    data_low = functions.trim_stock_data(data["Low"].values, current_date_index)
+    data_close = functions.trim_stock_data(data["Close"].values, current_date_index)
 
     if data_close.size < look_back_period:
         return False
@@ -76,15 +76,15 @@ def dmi_(data: pd.DataFrame,current_date: str, look_back_period: int = 14) -> bo
     lc = np.abs(functions.shifted_array_difference(data_low, data_close, 2))
     tr = np.nanmax(np.column_stack((hc, hl, lc)),axis=1)
 
-    atr = functions.exponential_moving_average(tr,look_back_period)
-    hph = functions.shifted_array_difference(data_high,data_high,2)
-    pll = functions.shifted_array_difference(data_low,data_low,1)
+    atr = functions.exponential_moving_average(tr, look_back_period)
+    hph = functions.shifted_array_difference(data_high, data_high, 2)
+    pll = functions.shifted_array_difference(data_low, data_low, 1)
 
     pdx = np.where((hph>pll) & (hph>0), hph, 0)
     mdx = np.where((hph<pll) & (pll>0), pll, 0)
 
-    spdm = functions.exponential_moving_average(pdx,look_back_period)
-    smdm = functions.exponential_moving_average(mdx,look_back_period)
+    spdm = functions.exponential_moving_average(pdx, look_back_period)
+    smdm = functions.exponential_moving_average(mdx, look_back_period)
 
     pdmi = (spdm/atr)*100
     mdmi = (smdm/atr)*100
@@ -103,7 +103,7 @@ def chaikin_volatility(data: pd.DataFrame, current_date: str, look_back_period: 
     if data_high.size <= look_back_period:
         return False
 
-    smoothed_difference = functions.exponential_moving_average(data_high-data_low,look_back_period)
+    smoothed_difference = functions.exponential_moving_average(data_high - data_low, look_back_period)
 
     cv = (smoothed_difference[look_back_period:]/smoothed_difference[:-look_back_period]-1)*100
 

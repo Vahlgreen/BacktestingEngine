@@ -1,16 +1,15 @@
 import pandas as pd
 import os
-import matplotlib.pyplot as plt
 import plotly.express as px
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 from dash import Dash, dcc, html, dash_table, ctx, MATCH
 import dash_bootstrap_components as dbc
-from dash.dependencies import Input, Output, State
+from dash.dependencies import Input, Output
 
 # project files
 import functions
-from parameters import data_provider, strategies, start_date
+
 
 def load_portfolio_logs() -> tuple:
     """Loads portfolio logs into dataframes"""
@@ -485,6 +484,16 @@ def create_ticker_data()-> tuple:
     path = functions.get_absolute_path(f"Resources/Data/BacktestData/{data_provider}_historical_data.csv")
     data = pd.read_csv(path,sep=",").groupby("Ticker")
     return data,list(data.groups.keys())
+
+
+
+from parameters import backtest_parameters
+
+data_provider = backtest_parameters["data_provider"]
+strategies = backtest_parameters["strategies"]
+start_date = backtest_parameters["start_date"]
+
+
 
 # Colors
 app_color = {"page_bg": "#dedfe0"}

@@ -1,23 +1,7 @@
 # Libraries
 import yfinance as yf
-import os
 import pandas as pd
-import datetime  # import datetime, timedelta
-from datetime import timedelta, datetime
-import statistics as stat
-import matplotlib.pyplot as plt
 import functions
-import json
-import requests
-import re
-import cloudscraper
-import tls_client
-from bs4 import BeautifulSoup
-import requests
-import numpy as np
-from investiny import historical_data
-import matplotlib.pyplot as plt
-import plotly.express as px
 import plotly.graph_objects as go
 
 def compare_stocks():

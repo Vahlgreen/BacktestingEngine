@@ -6,7 +6,7 @@ import numpy as np
 # Project files
 import functions
 from portfolio import Portfolio
-from parameters import *
+from parameters import backtest_parameters
 
 
 def main():
@@ -14,8 +14,15 @@ def main():
 
     main_timer = time.time()
 
+    start_date = backtest_parameters["start_date"]
+    strategies = backtest_parameters["strategies"]
+    initial_funds = backtest_parameters["initial_funds"]
+    transaction_fee = backtest_parameters["transaction_fee"]
+    ticker_list = backtest_parameters["ticker_list"]
+    data_provider = backtest_parameters["data_provider"]
+
     # Initiate backtest parameters
-    backtest_data = get_backtest_data()
+    backtest_data = get_backtest_data(data_provider)
     end_date = str(backtest_data.last_valid_index())
     portfolio = Portfolio(start_date, end_date, strategies=strategies, funds=initial_funds, transaction_fee=transaction_fee)
 
@@ -33,7 +40,7 @@ def main():
 
 
     # Log comparable index in the backtest time frame
-    log_index(start_date, end_date)
+    log_index(start_date, end_date, data_provider)
 
     # Log results
     portfolio.log_back_test_results()
@@ -86,14 +93,14 @@ def structure_input_data(data: pd.DataFrame, s_date: str, input_tickers: list) -
 
 
     return ticker_data, market_days
-def log_index(s_date: str, end_date: str):
+def log_index(s_date: str, end_date: str, data_provider: str):
     """Logs index in the backtest time period"""
 
     path = functions.get_absolute_path(f"Resources/Data/BacktestData/{data_provider}_index.csv")
     data = pd.read_csv(path, sep=",", index_col="date")
     log_path = functions.get_absolute_path(f"Results/index/{path.split('/')[-1]}")
     (data.loc[s_date:end_date, "index"] / data.loc[s_date, "index"]).to_csv(log_path, sep=",", header=False)
-def get_backtest_data() -> pd.DataFrame:
+def get_backtest_data(data_provider: str) -> pd.DataFrame:
     """Fetches backtest data"""
 
     path = functions.get_absolute_path(f"Resources/Data/BacktestData/{data_provider}_historical_data.csv")
